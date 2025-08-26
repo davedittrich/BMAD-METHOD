@@ -1,0 +1,41 @@
+template:
+  id: fact-check-report-tmpl
+  name: Fact Check Report Template
+  version: 1.0
+  output: fact-check-report.md
+
+workflow:
+  mode: incremental
+  elicit: true
+  iterative: true
+
+sections:
+  - id: claims_analyzed
+    title: Claims Analyzed
+    instruction: |
+      List all factual claims that were examined, numbered for reference.
+
+  - id: source_evaluation
+    title: Source Credibility Assessment
+    instruction: |
+      Evaluate each source used - expertise, bias indicators, reliability track record.
+
+  - id: verification_results
+    title: Verification Results
+    instruction: |
+      For each claim, provide verification status: Verified, Partially Verified, Unverified, or False.
+
+  - id: logical_analysis
+    title: Logical Structure Analysis
+    instruction: |
+      Identify any logical fallacies, weak reasoning, or argument structure issues.
+
+  - id: integrity_assessment
+    title: Integrity Analysis (Carter Framework)
+    instruction: |
+      Apply Carter's 3-step integrity analysis: Discernment, Acknowledgment, Action consistency.
+
+  - id: recommendations
+    title: Recommendations
+    instruction: |
+      Suggest improvements for accuracy, sourcing, or logical consistency.

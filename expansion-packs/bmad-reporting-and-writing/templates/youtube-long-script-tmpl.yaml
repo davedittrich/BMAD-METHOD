@@ -1,0 +1,41 @@
+template:
+  id: youtube-long-script-tmpl
+  name: YouTube Long-form Video Script Template
+  version: 1.0
+  output: youtube-script.md
+
+workflow:
+  mode: incremental
+  elicit: true
+  iterative: true
+
+sections:
+  - id: hook
+    title: Hook (0-15 seconds)
+    instruction: |
+      Create a compelling opening that immediately grabs attention and promises value.
+
+  - id: introduction
+    title: Introduction (15-60 seconds)
+    instruction: |
+      Introduce yourself, the topic, and what viewers will learn. Include subscribe prompt.
+
+  - id: main_content
+    title: Main Content Structure
+    instruction: |
+      Outline the main points with clear transitions. Include visual cues and B-roll suggestions.
+
+  - id: engagement_moments
+    title: Engagement Moments
+    instruction: |
+      Plan moments for viewer interaction - questions, polls, comments prompts.
+
+  - id: call_to_action
+    title: Call to Action
+    instruction: |
+      Design clear, compelling CTA for desired viewer action (subscribe, comment, next video).
+
+  - id: outro
+    title: Outro & End Screen
+    instruction: |
+      Plan the closing, thank viewers, tease next content, and describe end screen elements.

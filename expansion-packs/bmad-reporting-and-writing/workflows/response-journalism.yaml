@@ -1,0 +1,110 @@
+# Response Journalism Workflow
+# Analyzing and responding to others' published work with integrity and depth
+
+name: Response Journalism
+description: Systematic approach to analyzing and responding to published content with thorough research and integrity analysis
+agents: [subject-analyst, fact-checker, argument-analyst, context-researcher, style-editor]
+complexity: high
+estimated_time: 3-7 days
+
+phases:
+  analysis:
+    description: Analyze the original content and its creators
+    steps:
+      - step: subject_analysis
+        agent: subject-analyst
+        action: analyze the original author/organization
+        deliverables:
+          - Author credibility assessment
+          - Track record analysis
+          - Potential conflicts of interest identified
+          - Motivation analysis completed
+        transitions:
+          next: content_analysis
+
+      - step: content_analysis
+        agent: argument-analyst
+        action: analyze the logical structure and arguments
+        deliverables:
+          - Arguments mapped to normal form
+          - Logical fallacies identified
+          - Evidence quality assessed
+          - Counterarguments considered
+        transitions:
+          next: fact_verification
+
+  verification:
+    description: Fact-check claims and apply integrity framework
+    steps:
+      - step: fact_verification
+        agent: fact-checker
+        action: verify factual claims and apply integrity analysis
+        deliverables:
+          - Claims verified against multiple sources
+          - Source credibility evaluated
+          - Carter integrity framework applied
+          - Contradictions or inaccuracies documented
+        transitions:
+          next: context_research
+
+  contextualization:
+    description: Gather broader context and background
+    steps:
+      - step: context_research
+        agent: context-researcher
+        action: gather historical and situational context
+        deliverables:
+          - Historical precedents identified
+          - Broader context documented
+          - Timeline of related events
+          - Stakeholder relationships mapped
+        transitions:
+          next: response_creation
+
+  response:
+    description: Create well-reasoned response
+    steps:
+      - step: response_creation
+        agent: style-editor
+        action: craft response maintaining user's voice and integrity
+        deliverables:
+          - Response structured logically
+          - Original work fairly represented
+          - Disagreements clearly articulated
+          - Evidence-based arguments presented
+          - User's voice and style maintained
+        transitions:
+          next: complete
+
+response_types:
+  critique:
+    focus: Identifying flaws, inaccuracies, or weak reasoning
+    tone: Analytical but respectful
+
+  counter_argument:
+    focus: Presenting alternative viewpoint with evidence
+    tone: Persuasive but fair
+
+  fact_check:
+    focus: Correcting factual inaccuracies
+    tone: Objective and evidence-based
+
+  contextualization:
+    focus: Adding missing context or perspective
+    tone: Informative and balanced
+
+ethical_guidelines:
+  - Fair representation of original work
+  - Clear distinction between fact and opinion
+  - Acknowledgment of valid points
+  - Respectful tone even in disagreement
+  - Transparency about sources and methods
+  - Integrity in presenting evidence
+
+completion_criteria:
+  - Original work fairly and accurately represented
+  - Claims thoroughly fact-checked
+  - Arguments logically structured
+  - Response maintains user's voice and style
+  - Ethical standards upheld throughout
+  - Evidence properly cited and verified

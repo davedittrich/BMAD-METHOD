@@ -1,0 +1,118 @@
+template:
+  name: Integrity Analysis Report
+  description: Systematic integrity assessment using Carter's three-step framework
+  version: 1.0
+  category: analysis
+
+workflow:
+  mode: interactive
+  elicit_on_start: true
+  completion_confirmation: true
+
+variables:
+  - name: analysis_subject
+    description: "Individual or organization being analyzed"
+    required: true
+  - name: analysis_context
+    description: "Specific situation or time period for analysis"
+    required: true
+
+sections:
+  - name: executive_summary
+    title: "Executive Summary"
+    instruction: "Provide overview of integrity assessment findings"
+    subsections:
+      - name: subject_overview
+        title: "Analysis Subject"
+        content: |
+          **Subject:** {{analysis_subject}}
+          **Context:** {{analysis_context}}
+          **Analysis Date:** [Date]
+          **Overall Integrity Assessment:** [High/Moderate/Low]
+
+      - name: key_findings
+        title: "Key Findings"
+        content: |
+          **Primary Strengths:** [Main integrity strengths identified]
+          **Primary Concerns:** [Main integrity concerns identified]
+          **Recommendation:** [Overall assessment and guidance]
+
+  - name: discernment_assessment
+    title: "Step 1: Discernment Assessment"
+    instruction: "Evaluate subject's ability to distinguish right from wrong"
+    subsections:
+      - name: moral_awareness
+        title: "Moral Awareness Evidence"
+        content: |
+          **Evidence of Moral Recognition:** [Specific examples]
+          **Understanding of Consequences:** [Demonstrated awareness]
+          **Acknowledgment of Competing Values:** [Examples]
+          **Recognition of Stakeholder Impact:** [Evidence]
+
+      - name: discernment_failures
+        title: "Discernment Red Flags"
+        content: |
+          **Moral Blindness:** [Any evidence of willful ignorance]
+          **Ethical Dismissal:** [Examples of dismissing moral concerns]
+          **Oversimplification:** [Reducing complex moral issues]
+          **Pattern Analysis:** [Consistent discernment patterns]
+
+  - name: acknowledgment_assessment
+    title: "Step 2: Acknowledgment Assessment"
+    instruction: "Evaluate consistency between understanding and action"
+    subsections:
+      - name: consistency_evidence
+        title: "Values-Action Alignment"
+        content: |
+          **Stated Values:** [What subject claims to value]
+          **Demonstrated Actions:** [How actions align with values]
+          **Promise Keeping:** [Track record of following through]
+          **Moral Courage:** [Examples of doing right despite cost]
+
+      - name: acknowledgment_failures
+        title: "Acknowledgment Red Flags"
+        content: |
+          **Hypocrisy Patterns:** [Say one thing, do another]
+          **Convenient Flexibility:** [Values change based on convenience]
+          **Promise Breaking:** [Pattern of not following through]
+          **Cost Avoidance:** [Avoiding moral action when costly]
+
+  - name: consistency_assessment
+    title: "Step 3: Action Consistency Assessment"
+    instruction: "Evaluate public defensibility and transparency"
+    subsections:
+      - name: transparency_evidence
+        title: "Transparency and Accountability"
+        content: |
+          **Public Defensibility:** [Willingness to defend actions publicly]
+          **Moral Reasoning:** [Openness about decision-making process]
+          **Responsibility Taking:** [Acceptance of accountability]
+          **Response to Criticism:** [How challenges are handled]
+
+      - name: consistency_failures
+        title: "Consistency Red Flags"
+        content: |
+          **Secretive Behavior:** [Hidden decision-making processes]
+          **Public vs. Private:** [Different behavior in different contexts]
+          **Blame Shifting:** [Avoiding responsibility]
+          **Ethics as PR:** [Using ethics for image management]
+
+  - name: overall_assessment
+    title: "Overall Integrity Assessment"
+    instruction: "Synthesize findings into comprehensive evaluation"
+    subsections:
+      - name: integrity_rating
+        title: "Integrity Rating"
+        content: |
+          **Overall Assessment:** [High/Moderate/Low Integrity]
+          **Confidence Level:** [How certain is this assessment]
+          **Key Supporting Evidence:** [Most important findings]
+          **Assessment Limitations:** [What couldn't be determined]
+
+      - name: recommendations
+        title: "Recommendations"
+        content: |
+          **Trustworthiness:** [Level of trust appropriate]
+          **Verification Needs:** [What should be verified]
+          **Monitoring:** [What to watch for going forward]
+          **Context Considerations:** [Important factors to remember]

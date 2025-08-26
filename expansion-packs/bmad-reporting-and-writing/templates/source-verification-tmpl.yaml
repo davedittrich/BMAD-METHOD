@@ -1,0 +1,122 @@
+template:
+  name: Source Verification Report
+  description: Systematic assessment of source credibility and reliability
+  version: 1.0
+  category: fact-checking
+
+workflow:
+  mode: interactive
+  elicit_on_start: true
+  completion_confirmation: true
+
+variables:
+  - name: source_url
+    description: "URL or citation of source being verified"
+    required: true
+  - name: source_author
+    description: "Author or organization behind the source"
+    required: true
+  - name: verification_purpose
+    description: "Why this source verification is needed"
+    required: true
+
+sections:
+  - name: source_identification
+    title: "Source Identification"
+    instruction: "Clearly identify the source being evaluated with complete citation information"
+    subsections:
+      - name: basic_info
+        title: "Basic Information"
+        content: |
+          **Source:** {{source_url}}
+          **Author/Organization:** {{source_author}}
+          **Publication Date:** [Date]
+          **Type of Source:** [Academic, News, Government, Personal Blog, etc.]
+          **Purpose of Verification:** {{verification_purpose}}
+
+      - name: source_context
+        title: "Source Context"
+        content: |
+          **Publication Platform:** [Description]
+          **Intended Audience:** [Analysis]
+          **Content Type:** [News, Opinion, Research, etc.]
+
+  - name: credibility_assessment
+    title: "Credibility Assessment"
+    instruction: "Systematically evaluate source credibility using established criteria"
+    subsections:
+      - name: author_expertise
+        title: "Author/Organization Expertise"
+        content: |
+          **Relevant Qualifications:** [Assessment]
+          **Track Record:** [Historical performance]
+          **Peer Recognition:** [Awards, citations, etc.]
+          **Specialization:** [Area of expertise match]
+
+      - name: publication_standards
+        title: "Publication Standards"
+        content: |
+          **Editorial Process:** [Fact-checking, peer review]
+          **Correction Policy:** [How errors are handled]
+          **Transparency:** [Funding, ownership disclosure]
+          **Reputation:** [Industry standing]
+
+  - name: content_analysis
+    title: "Content Analysis"
+    instruction: "Evaluate the quality and reliability of the content itself"
+    subsections:
+      - name: evidence_quality
+        title: "Evidence and Documentation"
+        content: |
+          **Source Citations:** [Quality of sources cited]
+          **Evidence Type:** [Primary vs. secondary sources]
+          **Verifiability:** [Can claims be checked independently]
+          **Documentation:** [Completeness and accessibility]
+
+      - name: bias_assessment
+        title: "Bias and Independence"
+        content: |
+          **Financial Conflicts:** [Assessment]
+          **Political Bias:** [Evaluation]
+          **Institutional Pressure:** [Analysis]
+          **Balance:** [Multiple perspectives included]
+
+  - name: verification_results
+    title: "Verification Results"
+    instruction: "Provide overall assessment and recommendations"
+    subsections:
+      - name: credibility_rating
+        title: "Overall Credibility Rating"
+        content: |
+          **Credibility Level:** [High/Moderate/Low/Insufficient Data]
+          **Confidence Level:** [How certain is this assessment]
+          **Key Strengths:** [What makes this source reliable]
+          **Key Weaknesses:** [Concerns or limitations]
+
+      - name: usage_recommendations
+        title: "Usage Recommendations"
+        content: |
+          **Recommended Use:** [How to appropriately use this source]
+          **Additional Verification:** [What else should be checked]
+          **Limitations:** [What this source cannot establish]
+          **Risk Assessment:** [Potential for misinformation]
+
+  - name: supporting_documentation
+    title: "Supporting Documentation"
+    instruction: "Document the verification process and evidence"
+    subsections:
+      - name: methodology
+        title: "Verification Methodology"
+        content: |
+          **Assessment Criteria Used:** [Which standards applied]
+          **Sources Consulted:** [What was checked]
+          **Time Frame:** [When verification conducted]
+          **Limitations:** [What couldn't be verified]
+
+      - name: evidence_record
+        title: "Evidence Record"
+        content: |
+          **Supporting Evidence:** [What supports credibility assessment]
+          **Contradictory Evidence:** [Any concerning findings]
+          **Cross-References:** [Other sources confirming/contradicting]
+          **Follow-up Needed:** [Additional verification required]

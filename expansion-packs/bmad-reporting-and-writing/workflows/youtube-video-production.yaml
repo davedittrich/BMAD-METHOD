@@ -1,0 +1,91 @@
+# YouTube Video Production Workflow
+# From concept to optimized video script ready for recording
+
+name: YouTube Video Production
+description: Complete workflow for creating engaging, algorithm-optimized YouTube video content
+agents: [research-strategist, script-writer, platform-specialist, audience-optimizer, style-editor]
+complexity: medium
+estimated_time: 1-2 days
+
+phases:
+  concept:
+    description: Video concept and research
+    steps:
+      - step: topic_research
+        agent: research-strategist
+        action: research topic and gather supporting information
+        deliverables:
+          - Key points identified
+          - Supporting facts gathered
+          - Visual opportunities noted
+        transitions:
+          next: script_development
+
+  scripting:
+    description: Script creation and optimization
+    steps:
+      - step: script_development
+        agent: script-writer
+        action: create engaging video script
+        deliverables:
+          - Hook designed (0-15 seconds)
+          - Main content structured
+          - Call-to-action planned
+          - Visual cues included
+        transitions:
+          next: platform_optimization
+
+  optimization:
+    description: Platform and audience optimization
+    steps:
+      - step: platform_optimization
+        agent: platform-specialist
+        action: optimize for YouTube algorithm
+        deliverables:
+          - Title optimized for search
+          - Description with keywords
+          - Tags strategically chosen
+          - Thumbnail concept planned
+        transitions:
+          next: audience_targeting
+
+      - step: audience_targeting
+        agent: audience-optimizer
+        action: optimize for target audience engagement
+        deliverables:
+          - Engagement moments planned
+          - Retention hooks added
+          - Community interaction prompts included
+        transitions:
+          next: final_polish
+
+  finalization:
+    description: Final editing and style consistency
+    steps:
+      - step: final_polish
+        agent: style-editor
+        action: ensure script matches user's voice and style
+        deliverables:
+          - Voice consistency verified
+          - Flow optimized
+          - Final script ready for recording
+        transitions:
+          next: complete
+
+script_types:
+  long_form:
+    target_length: 10-20 minutes
+    focus: detailed explanation and education
+    retention_strategy: chapter markers and engagement hooks
+
+  short_form:
+    target_length: 15-60 seconds
+    focus: immediate impact and viral potential
+    retention_strategy: strong hook and fast pacing
+
+completion_criteria:
+  - Script optimized for platform algorithm
+  - Engagement and retention elements included
+  - Voice consistent with user's style
+  - Clear call-to-action included
+  - Visual and B-roll opportunities marked

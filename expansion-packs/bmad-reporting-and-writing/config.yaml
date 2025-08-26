@@ -1,0 +1,11 @@
+# <!-- Powered by BMAD™ Core -->
+name: bmad-reporting-and-writing
+version: 1.0.0
+short-title: Reporting & Writing Pack
+description: >-
+  Comprehensive AI-powered reporting and content creation framework providing
+  specialized agents, workflows, and tools for journalists, content creators,
+  and independent researchers. Includes research-focused agents, fact-checking
+  workflows, platform optimization, and integrity analysis capabilities.
+author: Dave Dittrich
+slashPrefix: bmad-rw

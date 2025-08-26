@@ -1,0 +1,100 @@
+# Article Research to Publication Workflow
+# Complete process from initial research through final publication
+
+name: Article Research to Publication
+description: Comprehensive workflow for creating well-researched, fact-checked articles from concept to publication
+agents:
+  [
+    research-strategist,
+    context-researcher,
+    subject-analyst,
+    fact-checker,
+    style-analyst,
+    style-editor,
+    platform-specialist,
+  ]
+complexity: medium
+estimated_time: 2-5 days
+
+phases:
+  planning:
+    description: Research planning and strategy
+    steps:
+      - step: research_planning
+        agent: research-strategist
+        action: create research brief and strategy
+        deliverables:
+          - Research questions defined
+          - Source strategy outlined
+          - Timeline established
+        transitions:
+          next: context_research
+
+  research:
+    description: Information gathering and analysis
+    steps:
+      - step: context_research
+        agent: context-researcher
+        action: gather historical and background context
+        deliverables:
+          - Timeline of relevant events
+          - Background context documented
+          - Key stakeholders identified
+        transitions:
+          next: subject_analysis
+
+      - step: subject_analysis
+        agent: subject-analyst
+        action: analyze people/organizations involved
+        deliverables:
+          - Subject profiles created
+          - Credibility assessments completed
+          - Motivation analysis documented
+        transitions:
+          next: fact_verification
+
+  verification:
+    description: Fact-checking and integrity analysis
+    steps:
+      - step: fact_verification
+        agent: fact-checker
+        action: verify claims and apply integrity analysis
+        deliverables:
+          - Facts verified from multiple sources
+          - Logical consistency checked
+          - Carter integrity framework applied
+        transitions:
+          next: content_creation
+
+  creation:
+    description: Content development and editing
+    steps:
+      - step: content_creation
+        agent: style-editor
+        action: draft article with user's voice
+        deliverables:
+          - First draft completed
+          - Style consistency maintained
+          - Voice alignment achieved
+        transitions:
+          next: platform_optimization
+
+  publication:
+    description: Platform optimization and publishing
+    steps:
+      - step: platform_optimization
+        agent: platform-specialist
+        action: optimize for target platform
+        deliverables:
+          - SEO optimization completed
+          - Platform-specific formatting applied
+          - Engagement strategies integrated
+        transitions:
+          next: complete
+
+completion_criteria:
+  - Research thoroughly documented and verified
+  - All claims fact-checked with sources
+  - Style consistent with user's voice
+  - Platform-optimized for maximum reach
+  - Integrity analysis completed where applicable
