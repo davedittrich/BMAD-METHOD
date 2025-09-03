@@ -1,243 +1,238 @@
+# <!-- Powered by BMAD™ Core -->
 template:
+  id: source-analysis-report
   name: Source Analysis Report
-  description: Comprehensive analysis and evaluation of information sources
   version: 1.0
-  category: analysis
+  output:
+    format: markdown
+    filename: docs/source-analysis-{{source_description}}.md
+    title: "Source Analysis Report: {{source_description}}"
 
 workflow:
   mode: interactive
-  elicit_on_start: true
-  completion_confirmation: true
-
-variables:
-  - name: source_description
-    description: "Description of the source being analyzed"
-    required: true
-  - name: analysis_purpose
-    description: "Purpose of the source analysis"
-    required: true
+  elicitation: advanced-elicitation
 
 sections:
-  - name: executive_summary
+  - id: executive_summary
     title: "Executive Summary"
     instruction: "Provide overview of source analysis"
-    subsections:
-      - name: source_overview
+    sections:
+      - id: source_overview
         title: "Source Overview"
-        content: |
+        template: |
           **Source:** {{source_description}}
           **Analysis Purpose:** {{analysis_purpose}}
           **Analysis Date:** [Date]
           **Overall Reliability Rating:** [High/Moderate/Low]
 
-      - name: key_findings
+      - id: key_findings
         title: "Key Analysis Findings"
-        content: |
+        template: |
           **Primary Strengths:** [Main reliability strengths]
           **Primary Concerns:** [Main reliability concerns]
           **Recommended Usage:** [How this source should be used]
 
-  - name: source_identification
+  - id: source_identification
     title: "Source Identification and Classification"
     instruction: "Identify and classify the source type and characteristics"
-    subsections:
-      - name: basic_information
+    sections:
+      - id: basic_information
         title: "Basic Source Information"
-        content: |
+        template: |
           **Source Type:** [Primary/Secondary/Tertiary]
           **Publication Type:** [Book, journal, website, etc.]
           **Author(s):** [Author names and credentials]
           **Publication Date:** [Date of publication]
           **Publisher/Platform:** [Publishing organization or platform]
 
-      - name: source_classification
+      - id: source_classification
         title: "Source Classification"
-        content: |
+        template: |
           **Academic Status:** [Peer-reviewed, scholarly, popular, etc.]
           **Bias Orientation:** [Political, ideological, commercial, etc.]
           **Target Audience:** [Academic, professional, general public, etc.]
           **Geographic Scope:** [Local, national, international]
           **Temporal Relevance:** [Current, historical, ongoing relevance]
 
-  - name: author_credibility
+  - id: author_credibility
     title: "Author Credibility Assessment"
     instruction: "Evaluate the credibility and expertise of the author(s)"
-    subsections:
-      - name: qualifications
+    sections:
+      - id: qualifications
         title: "Author Qualifications"
-        content: |
+        template: |
           **Educational Background:** [Relevant education and degrees]
           **Professional Experience:** [Relevant work experience]
           **Subject Matter Expertise:** [Specific expertise in topic area]
           **Track Record:** [Previous publications and accuracy record]
           **Peer Recognition:** [Awards, citations, professional standing]
 
-      - name: credibility_factors
+      - id: credibility_factors
         title: "Credibility Factors"
-        content: |
+        template: |
           **Institutional Affiliation:** [Current institutional connections]
           **Financial Interests:** [Potential financial conflicts of interest]
           **Ideological Commitments:** [Strong ideological positions that might bias work]
           **Professional Reputation:** [Standing within relevant professional community]
           **Access to Information:** [Quality of access to relevant information and sources]
 
-  - name: publication_assessment
+  - id: publication_assessment
     title: "Publication/Platform Assessment"
     instruction: "Evaluate the reliability and standards of the publication or platform"
-    subsections:
-      - name: publication_credibility
+    sections:
+      - id: publication_credibility
         title: "Publication Credibility"
-        content: |
+        template: |
           **Editorial Standards:** [Quality of editorial oversight and standards]
           **Peer Review Process:** [Peer review procedures if applicable]
           **Fact-Checking Practices:** [Fact-checking and verification procedures]
           **Correction Policies:** [Policies for corrections and retractions]
           **Professional Standing:** [Reputation within relevant field or industry]
 
-      - name: bias_assessment
+      - id: bias_assessment
         title: "Publication Bias Assessment"
-        content: |
+        template: |
           **Editorial Stance:** [Known editorial positions or biases]
           **Funding Sources:** [Sources of funding that might influence content]
           **Commercial Interests:** [Commercial relationships that might affect objectivity]
           **Political Affiliations:** [Political connections or orientations]
           **Audience Considerations:** [How target audience might influence content]
 
-  - name: content_analysis
+  - id: content_analysis
     title: "Content Quality Analysis"
     instruction: "Analyze the quality and reliability of the content itself"
-    subsections:
-      - name: factual_accuracy
+    sections:
+      - id: factual_accuracy
         title: "Factual Accuracy"
-        content: |
+        template: |
           **Fact Verification:** [How well facts can be independently verified]
           **Source Attribution:** [Quality of source citation and attribution]
           **Evidence Quality:** [Strength and relevance of supporting evidence]
           **Data Integrity:** [Accuracy and appropriateness of statistical data]
           **Claim Verification:** [How well major claims can be corroborated]
 
-      - name: methodological_rigor
+      - id: methodological_rigor
         title: "Methodological Rigor"
-        content: |
+        template: |
           **Research Methods:** [Quality of research methodology if applicable]
           **Sample Size/Scope:** [Appropriateness of sample or scope of investigation]
           **Control Measures:** [Controls for bias or confounding factors]
           **Transparency:** [Transparency of methods and limitations]
           **Reproducibility:** [Whether findings could be reproduced]
 
-  - name: reliability_factors
+  - id: reliability_factors
     title: "Reliability Factors"
     instruction: "Assess specific factors that affect source reliability"
-    subsections:
-      - name: timeliness_relevance
+    sections:
+      - id: timeliness_relevance
         title: "Timeliness and Relevance"
-        content: |
+        template: |
           **Publication Currency:** [How current the information is]
           **Topic Relevance:** [Direct relevance to research topic]
           **Temporal Context:** [Whether time period affects reliability]
           **Update Frequency:** [How often source is updated or revised]
           **Obsolescence Risk:** [Risk of information becoming outdated]
 
-      - name: consistency_corroboration
+      - id: consistency_corroboration
         title: "Consistency and Corroboration"
-        content: |
+        template: |
           **Internal Consistency:** [Consistency within the source itself]
           **External Corroboration:** [Support from other independent sources]
           **Contradictory Evidence:** [Any contradictory information from reliable sources]
           **Consensus Level:** [Level of expert consensus on the topic]
           **Controversial Elements:** [Any controversial claims that require additional verification]
 
-  - name: bias_analysis
+  - id: bias_analysis
     title: "Bias Analysis"
     instruction: "Identify and assess potential biases in the source"
-    subsections:
-      - name: bias_identification
+    sections:
+      - id: bias_identification
         title: "Bias Identification"
-        content: |
+        template: |
           **Selection Bias:** [Bias in selection of information or examples]
           **Confirmation Bias:** [Tendency to favor supporting evidence]
           **Cultural Bias:** [Cultural or geographic perspectives that may limit objectivity]
           **Temporal Bias:** [Bias related to time period or historical context]
           **Professional Bias:** [Bias related to professional interests or loyalties]
 
-      - name: bias_impact
+      - id: bias_impact
         title: "Bias Impact Assessment"
-        content: |
+        template: |
           **Objectivity Level:** [Overall level of objectivity maintained]
           **Balance Assessment:** [Whether multiple perspectives are considered]
           **Transparency:** [How transparent the source is about potential biases]
           **Mitigation Efforts:** [Efforts made to mitigate or acknowledge bias]
           **Impact on Reliability:** [How bias affects overall reliability of information]
 
-  - name: contextual_factors
+  - id: contextual_factors
     title: "Contextual Factors"
     instruction: "Consider contextual factors that affect source evaluation"
-    subsections:
-      - name: situational_context
+    sections:
+      - id: situational_context
         title: "Situational Context"
-        content: |
+        template: |
           **Publication Context:** [Circumstances surrounding publication]
           **Political Climate:** [Political context that might affect content]
           **Economic Factors:** [Economic conditions affecting perspective]
           **Social Context:** [Social factors influencing content or reception]
           **Technological Constraints:** [Technical limitations affecting quality or scope]
 
-      - name: access_limitations
+      - id: access_limitations
         title: "Access and Information Limitations"
-        content: |
+        template: |
           **Information Access:** [Author's access to relevant information]
           **Resource Constraints:** [Financial or technical resource limitations]
           **Time Constraints:** [Time pressure affecting thoroughness]
           **Legal Restrictions:** [Legal limitations on information disclosure]
           **Ethical Considerations:** [Ethical constraints on information gathering or disclosure]
 
-  - name: verification_assessment
+  - id: verification_assessment
     title: "Verification and Cross-Reference"
     instruction: "Assess how well the source can be verified and corroborated"
-    subsections:
-      - name: verifiability
+    sections:
+      - id: verifiability
         title: "Verifiability"
-        content: |
+        template: |
           **Source Citations:** [Quality and accessibility of cited sources]
           **Independent Verification:** [How easily claims can be independently verified]
           **Primary Source Access:** [Access to underlying primary sources]
           **Documentation Quality:** [Quality of supporting documentation]
           **Transparency Level:** [Level of transparency in methodology and sources]
 
-      - name: corroboration_status
+      - id: corroboration_status
         title: "Corroboration Status"
-        content: |
+        template: |
           **Supporting Sources:** [Other sources that support key claims]
           **Contradicting Sources:** [Sources that contradict or challenge claims]
           **Expert Opinion:** [Expert opinion on the source and its claims]
           **Replication Status:** [Whether findings have been replicated by others]
           **Consensus Level:** [Level of agreement among experts in the field]
 
-  - name: usage_recommendations
+  - id: usage_recommendations
     title: "Usage Recommendations"
     instruction: "Provide specific recommendations for how this source should be used"
-    subsections:
-      - name: reliability_rating
+    sections:
+      - id: reliability_rating
         title: "Overall Reliability Rating"
-        content: |
+        template: |
           **Reliability Level:** [High/Moderate/Low with specific justification]
           **Confidence Level:** [Confidence in this assessment]
           **Key Strengths:** [Most important reliability strengths]
           **Key Limitations:** [Most important limitations or concerns]
           **Context Dependencies:** [Contexts where reliability might vary]
 
-      - name: usage_guidelines
+      - id: usage_guidelines
         title: "Usage Guidelines"
-        content: |
+        template: |
           **Appropriate Uses:** [How this source can appropriately be used]
           **Usage Limitations:** [How this source should not be used]
           **Verification Requirements:** [What should be independently verified]
           **Supplementary Sources:** [What additional sources should be consulted]
           **Caution Areas:** [Specific areas requiring extra caution or verification]
 
-      - name: integration_strategy
+      - id: integration_strategy
         title: "Integration Strategy"
-        content: |
+        template: |
           **Source Combination:** [How to combine with other sources effectively]
           **Weight Assignment:** [How much weight to give this source relative to others]
           **Quality Control:** [Quality control measures when using this source]

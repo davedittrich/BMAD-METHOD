@@ -1,8 +1,12 @@
+# <!-- Powered by BMAD™ Core -->
 template:
   id: youtube-long-script-tmpl
   name: YouTube Long-form Video Script Template
   version: 1.0
-  output: youtube-script.md
+  output:
+    format: markdown
+    filename: youtube-script.md
+    title: "YouTube Long-form Video Script"
 
 workflow:
   mode: incremental

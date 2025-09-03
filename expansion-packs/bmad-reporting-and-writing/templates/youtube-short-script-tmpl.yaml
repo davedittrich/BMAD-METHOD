@@ -1,63 +1,55 @@
+# <!-- Powered by BMAD™ Core -->
 template:
+  id: youtube-short-script-tmpl
   name: YouTube Shorts Script
-  description: Optimized script template for YouTube Shorts (15-60 seconds)
   version: 1.0
-  category: video-content
+  output:
+    format: markdown
+    filename: docs/youtube-short-script-{{video_topic}}.md
+    title: "YouTube Shorts Script: {{video_topic}}"
 
 workflow:
   mode: interactive
-  elicit_on_start: true
-  completion_confirmation: true
-
-variables:
-  - name: video_topic
-    description: "Main topic or message for the short"
-    required: true
-  - name: target_length
-    description: "Target length in seconds (15, 30, or 60)"
-    required: true
-  - name: content_style
-    description: "Style approach (educational, entertaining, trend-based, etc.)"
-    required: true
+  elicitation: advanced-elicitation
 
 sections:
-  - name: script_header
+  - id: script_header
     title: "Script Information"
     instruction: "Document the basic script parameters and optimization strategy"
-    subsections:
-      - name: video_details
+    sections:
+      - id: video_details
         title: "Video Details"
-        content: |
+        template: |
           **Topic:** {{video_topic}}
           **Target Length:** {{target_length}} seconds
           **Style:** {{content_style}}
           **Hook Strategy:** [Primary attention-grabbing approach]
           **Key Message:** [Core takeaway in one sentence]
 
-      - name: optimization_notes
+      - id: optimization_notes
         title: "Optimization Strategy"
-        content: |
+        template: |
           **Trending Elements:** [Hashtags, sounds, formats to leverage]
           **Engagement Triggers:** [Questions, challenges, calls-to-action]
           **Retention Hooks:** [What keeps viewers watching]
           **Shareability Factor:** [What makes this worth sharing]
 
-  - name: script_content
+  - id: script_content
     title: "Script Content"
     instruction: "Write the complete script with timing and visual cues"
-    subsections:
-      - name: hook_section
+    sections:
+      - id: hook_section
         title: "Hook (0-3 seconds)"
-        content: |
+        template: |
           **VISUAL:** [What viewer sees]
           **AUDIO/SCRIPT:** [Exact words to say]
 
           **HOOK TECHNIQUE:** [Pattern interrupt, question, bold statement, etc.]
           **ATTENTION GRAB:** [Why this stops the scroll]
 
-      - name: main_content
+      - id: main_content
         title: "Main Content (3-50 seconds)"
-        content: |
+        template: |
           **SECTION 1 (3-15 seconds)**
           **VISUAL:** [Scene/shot description]
           **SCRIPT:** [Exact dialogue]
@@ -70,79 +62,79 @@ sections:
           **VISUAL:** [Scene/shot description]
           **SCRIPT:** [Exact dialogue]
 
-      - name: conclusion_cta
+      - id: conclusion_cta
         title: "Conclusion & CTA (50-60 seconds)"
-        content: |
+        template: |
           **FINAL MESSAGE:** [Key takeaway]
           **VISUAL CTA:** [Text overlay or visual element]
           **SCRIPT CTA:** [Exact call-to-action words]
           **ENGAGEMENT ASK:** [Like, follow, comment request]
 
-  - name: production_notes
+  - id: production_notes
     title: "Production Guidelines"
     instruction: "Provide technical and creative guidance for filming"
-    subsections:
-      - name: visual_direction
+    sections:
+      - id: visual_direction
         title: "Visual Direction"
-        content: |
+        template: |
           **Aspect Ratio:** 9:16 (vertical)
           **Shot Types:** [Close-up, medium, wide shots needed]
           **Camera Movement:** [Static, handheld, transitions]
           **Lighting:** [Requirements and setup notes]
           **B-Roll Needs:** [Additional footage required]
 
-      - name: audio_requirements
+      - id: audio_requirements
         title: "Audio Requirements"
-        content: |
+        template: |
           **Music/Sound:** [Trending sounds or original audio]
           **Voice Quality:** [Clear, energetic, appropriate volume]
           **Sound Effects:** [Any SFX needed]
           **Audio Timing:** [Sync points with visuals]
 
-      - name: editing_notes
+      - id: editing_notes
         title: "Editing Guidelines"
-        content: |
+        template: |
           **Pacing:** [Fast cuts, smooth transitions, etc.]
           **Text Overlays:** [What text to add and when]
           **Effects:** [Zoom, transitions, filters to use]
           **Color Correction:** [Style and mood notes]
 
-  - name: optimization_checklist
+  - id: optimization_checklist
     title: "Platform Optimization"
     instruction: "Ensure the script meets YouTube Shorts requirements"
-    subsections:
-      - name: algorithm_optimization
+    sections:
+      - id: algorithm_optimization
         title: "Algorithm Optimization"
-        content: |
+        template: |
           **Hook Strength:** [0-3 second engagement assessment]
           **Watch Time Optimization:** [Retention throughout]
           **Engagement Triggers:** [Comment baits, questions]
           **Trending Elements:** [Current hashtags, sounds, formats]
 
-      - name: technical_requirements
+      - id: technical_requirements
         title: "Technical Requirements"
-        content: |
+        template: |
           **Duration:** Under 60 seconds ✓
           **Vertical Format:** 9:16 aspect ratio ✓
-          **Mobile Optimization:** Readable on small screens ✓
+          **Mobile Optimization:** [Readable on small screens ✓]
           **Captions:** [Auto-captions friendly dialogue]
           **Thumbnail:** [First frame optimization]
 
-  - name: performance_metrics
+  - id: performance_metrics
     title: "Success Metrics"
     instruction: "Define what success looks like for this Short"
-    subsections:
-      - name: engagement_targets
+    sections:
+      - id: engagement_targets
         title: "Engagement Targets"
-        content: |
+        template: |
           **View Duration:** [Target average view percentage]
           **Engagement Rate:** [Likes, comments, shares target]
           **Completion Rate:** [How many watch to end]
           **Share Rate:** [Viral potential assessment]
 
-      - name: content_goals
+      - id: content_goals
         title: "Content Goals"
-        content: |
+        template: |
           **Primary Goal:** [Awareness, education, entertainment, etc.]
           **Secondary Goals:** [Channel growth, brand building, etc.]
           **Success Indicators:** [What metrics matter most]

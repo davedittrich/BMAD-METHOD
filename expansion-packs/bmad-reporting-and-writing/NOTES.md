@@ -91,7 +91,7 @@ Identified 48 missing files referenced by agents but not present in filesystem:
 - `youtube-short-script-tmpl.yaml` - Algorithm-optimized short video format
 - `integrity-analysis-tmpl.yaml` - Carter framework assessment template
 - `investigation-plan-tmpl.yaml` - Research strategy documentation
-- `fact-check-tmpl.yaml` - Systematic fact verification template
+- `fact-check-report-tmpl.yaml` - Systematic fact verification template
 - Plus additional templates for various content types and analysis formats
 
 #### Checklist File Creation (12+ files)

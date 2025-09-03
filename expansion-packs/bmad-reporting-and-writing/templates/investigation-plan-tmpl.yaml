@@ -1,318 +1,313 @@
+# <!-- Powered by BMAD™ Core -->
 template:
+  id: investigation-plan-tmpl
   name: Investigation Plan
-  description: Comprehensive plan for conducting thorough investigations and research
   version: 1.0
-  category: planning
+  output:
+    format: markdown
+    filename: docs/investigation-plan-{{investigation_topic}}.md
+    title: "Investigation Plan: {{investigation_topic}}"
 
 workflow:
   mode: interactive
-  elicit_on_start: true
-  completion_confirmation: true
-
-variables:
-  - name: investigation_topic
-    description: "Topic or subject of the investigation"
-    required: true
-  - name: investigation_purpose
-    description: "Purpose and goals of the investigation"
-    required: true
+  elicitation: advanced-elicitation
 
 sections:
-  - name: investigation_overview
+  - id: investigation_overview
     title: "Investigation Overview"
     instruction: "Define the scope and objectives of the investigation"
-    subsections:
-      - name: investigation_summary
+    sections:
+      - id: investigation_summary
         title: "Investigation Summary"
-        content: |
+        template: |
           **Investigation Topic:** {{investigation_topic}}
           **Primary Purpose:** {{investigation_purpose}}
           **Investigation Start Date:** [Date]
           **Estimated Completion:** [Timeline]
           **Lead Investigator:** [Name and credentials]
 
-      - name: core_questions
+      - id: core_questions
         title: "Core Investigation Questions"
-        content: |
+        template: |
           **Primary Question:** [Main question the investigation seeks to answer]
           **Secondary Questions:** [Supporting questions that help answer the primary question]
           **Research Hypotheses:** [If applicable, hypotheses to be tested]
           **Success Criteria:** [How we'll know when we have sufficient information]
           **Scope Limitations:** [What is explicitly outside the scope of this investigation]
 
-  - name: background_research
+  - id: background_research
     title: "Background Research Phase"
     instruction: "Plan comprehensive background research and context gathering"
-    subsections:
-      - name: preliminary_research
+    sections:
+      - id: preliminary_research
         title: "Preliminary Research"
-        content: |
+        template: |
           **Existing Knowledge:** [What is already known about this topic]
           **Key Sources Identified:** [Initial sources that appear most relevant]
           **Knowledge Gaps:** [What critical information appears to be missing]
           **Research Starting Points:** [Where to begin research efforts]
           **Timeline:** [Estimated time for background research phase]
 
-      - name: literature_review
+      - id: literature_review
         title: "Literature Review Plan"
-        content: |
+        template: |
           **Academic Sources:** [Academic journals, books, and scholarly papers to review]
           **Government Sources:** [Official reports, statistics, and regulatory documents]
           **Media Sources:** [News articles, documentaries, and media coverage]
           **Expert Opinions:** [Expert commentary, interviews, and analysis]
           **Historical Context:** [Historical sources providing relevant context]
 
-      - name: source_evaluation
+      - id: source_evaluation
         title: "Source Evaluation Strategy"
-        content: |
+        template: |
           **Credibility Criteria:** [Criteria for assessing source credibility]
           **Bias Assessment:** [How to identify and account for source bias]
           **Verification Methods:** [Methods for verifying information accuracy]
           **Source Prioritization:** [How to prioritize sources based on reliability]
           **Documentation Standards:** [How sources will be documented and referenced]
 
-  - name: investigation_methodology
+  - id: investigation_methodology
     title: "Investigation Methodology"
     instruction: "Define the systematic approach and methods to be used"
-    subsections:
-      - name: investigation_approach
+    sections:
+      - id: investigation_approach
         title: "Investigation Approach"
-        content: |
+        template: |
           **Primary Methods:** [Main investigative methods to be employed]
           **Secondary Methods:** [Supporting methods and techniques]
           **Analytical Framework:** [Conceptual framework for analyzing information]
           **Quality Controls:** [Measures to ensure accuracy and objectivity]
           **Verification Protocols:** [Protocols for verifying findings]
 
-      - name: data_collection
+      - id: data_collection
         title: "Data Collection Plan"
-        content: |
+        template: |
           **Data Types:** [Types of data to be collected (documents, interviews, statistics, etc.)]
           **Collection Methods:** [Specific methods for gathering each type of data]
           **Data Sources:** [Where data will be obtained]
           **Access Requirements:** [What permissions or access will be needed]
           **Documentation Standards:** [How data will be organized and documented]
 
-      - name: analysis_methods
+      - id: analysis_methods
         title: "Analysis Methods"
-        content: |
+        template: |
           **Analytical Techniques:** [Specific techniques for analyzing collected information]
           **Cross-Referencing:** [How information from different sources will be cross-referenced]
           **Pattern Recognition:** [Methods for identifying patterns and trends]
           **Contradiction Resolution:** [How contradictory information will be resolved]
           **Bias Mitigation:** [Steps to minimize investigator bias in analysis]
 
-  - name: information_gathering
+  - id: information_gathering
     title: "Information Gathering Strategy"
     instruction: "Plan comprehensive information collection from multiple sources"
-    subsections:
-      - name: primary_sources
+    sections:
+      - id: primary_sources
         title: "Primary Source Collection"
-        content: |
+        template: |
           **Document Sources:** [Official documents, records, and files to be obtained]
           **Interview Subjects:** [Key individuals to be interviewed]
           **Observational Data:** [Direct observation opportunities]
           **Original Research:** [Any original research or data collection needed]
           **Access Strategy:** [How to gain access to primary sources]
 
-      - name: secondary_sources
+      - id: secondary_sources
         title: "Secondary Source Collection"
-        content: |
+        template: |
           **Published Research:** [Existing research and studies to review]
           **Media Coverage:** [News reports, documentaries, and media analysis]
           **Expert Analysis:** [Expert commentary and professional analysis]
           **Historical Records:** [Historical documentation and context]
           **Comparative Studies:** [Studies of similar cases or situations]
 
-      - name: digital_investigation
+      - id: digital_investigation
         title: "Digital Investigation Strategy"
-        content: |
+        template: |
           **Online Research:** [Web-based research strategies and tools]
           **Database Searches:** [Relevant databases to search]
           **Social Media Analysis:** [Social media content and trends to analyze]
           **Digital Archives:** [Online archives and repositories to access]
           **Technology Tools:** [Specific tools and software for digital investigation]
 
-  - name: stakeholder_analysis
+  - id: stakeholder_analysis
     title: "Stakeholder Analysis and Engagement"
     instruction: "Identify and plan engagement with key stakeholders"
-    subsections:
-      - name: stakeholder_mapping
+    sections:
+      - id: stakeholder_mapping
         title: "Stakeholder Mapping"
-        content: |
+        template: |
           **Primary Stakeholders:** [Those most directly affected by or involved in the topic]
           **Secondary Stakeholders:** [Those with significant but indirect involvement]
           **Key Informants:** [Individuals with special knowledge or insights]
           **Potential Opponents:** [Those who might oppose the investigation or withhold information]
           **Allies and Supporters:** [Those likely to support and assist the investigation]
 
-      - name: engagement_strategy
+      - id: engagement_strategy
         title: "Stakeholder Engagement Strategy"
-        content: |
+        template: |
           **Interview Planning:** [Who to interview and in what order]
           **Information Requests:** [What information to request from each stakeholder]
           **Access Negotiations:** [How to negotiate access to information or individuals]
           **Relationship Building:** [Strategies for building trust and cooperation]
           **Confidentiality Protocols:** [How to handle confidential information and protect sources]
 
-      - name: expert_consultation
+      - id: expert_consultation
         title: "Expert Consultation Plan"
-        content: |
+        template: |
           **Subject Matter Experts:** [Experts to consult for specialized knowledge]
           **Technical Advisors:** [Technical experts for complex or specialized topics]
           **Peer Reviewers:** [Other investigators or researchers for peer review]
           **Advisory Group:** [Formal or informal advisory group for guidance]
           **Consultation Timeline:** [When to engage different experts in the process]
 
-  - name: timeline_and_milestones
+  - id: timeline_and_milestones
     title: "Investigation Timeline and Milestones"
     instruction: "Create detailed timeline with specific milestones and deliverables"
-    subsections:
-      - name: phase_breakdown
+    sections:
+      - id: phase_breakdown
         title: "Investigation Phases"
-        content: |
+        template: |
           **Phase 1 - Background Research:** [Duration and key activities]
           **Phase 2 - Information Gathering:** [Duration and key activities]
           **Phase 3 - Analysis and Verification:** [Duration and key activities]
           **Phase 4 - Report Writing:** [Duration and key activities]
           **Phase 5 - Review and Finalization:** [Duration and key activities]
 
-      - name: key_milestones
+      - id: key_milestones
         title: "Key Milestones"
-        content: |
+        template: |
           **Milestone 1:** [Description and target date]
           **Milestone 2:** [Description and target date]
           **Milestone 3:** [Description and target date]
           **Milestone 4:** [Description and target date]
           **Final Deliverable:** [Description and target date]
 
-      - name: contingency_planning
+      - id: contingency_planning
         title: "Contingency Planning"
-        content: |
+        template: |
           **Potential Delays:** [Factors that could cause delays and mitigation strategies]
           **Access Issues:** [What to do if access to information or sources is denied]
           **Resource Constraints:** [How to handle budget or resource limitations]
           **Quality Concerns:** [What to do if information quality is insufficient]
           **External Pressures:** [How to handle external pressure or interference]
 
-  - name: resource_requirements
+  - id: resource_requirements
     title: "Resource Requirements and Logistics"
     instruction: "Identify all resources needed for the investigation"
-    subsections:
-      - name: human_resources
+    sections:
+      - id: human_resources
         title: "Human Resources"
-        content: |
+        template: |
           **Investigation Team:** [Team members and their roles]
           **Skill Requirements:** [Specialized skills needed for the investigation]
           **External Contractors:** [Any external expertise or services needed]
           **Advisory Support:** [Advisors and consultants required]
           **Administrative Support:** [Administrative and logistical support needs]
 
-      - name: financial_resources
+      - id: financial_resources
         title: "Financial Resources"
-        content: |
+        template: |
           **Budget Estimate:** [Total estimated budget for the investigation]
           **Major Cost Categories:** [Travel, contractor fees, document access, etc.]
           **Funding Sources:** [Where funding will come from]
           **Cost Controls:** [Measures to control and monitor costs]
           **Budget Contingencies:** [Reserve funds for unexpected expenses]
 
-      - name: technical_resources
+      - id: technical_resources
         title: "Technical Resources"
-        content: |
+        template: |
           **Research Tools:** [Software, databases, and research tools needed]
           **Technology Requirements:** [Hardware and technology needs]
           **Access Subscriptions:** [Database subscriptions and access fees]
           **Communication Tools:** [Tools for team communication and collaboration]
           **Documentation Systems:** [Systems for organizing and storing investigation materials]
 
-  - name: quality_assurance
+  - id: quality_assurance
     title: "Quality Assurance and Verification"
     instruction: "Plan measures to ensure investigation quality and accuracy"
-    subsections:
-      - name: accuracy_controls
+    sections:
+      - id: accuracy_controls
         title: "Accuracy Controls"
-        content: |
+        template: |
           **Fact-Checking Protocols:** [Systematic fact-checking procedures]
           **Source Verification:** [Methods for verifying source authenticity and reliability]
           **Cross-Referencing:** [Procedures for cross-referencing information across sources]
           **Expert Review:** [Expert review of findings and conclusions]
           **Peer Review:** [Peer review processes for quality assurance]
 
-      - name: bias_mitigation
+      - id: bias_mitigation
         title: "Bias Mitigation"
-        content: |
+        template: |
           **Investigator Bias:** [Measures to minimize investigator bias]
           **Selection Bias:** [Controls to prevent biased selection of sources or information]
           **Confirmation Bias:** [Procedures to avoid confirming pre-existing beliefs]
           **Multiple Perspectives:** [Ensuring multiple viewpoints are considered]
           **Devil's Advocate:** [Formal processes for challenging findings]
 
-      - name: documentation_standards
+      - id: documentation_standards
         title: "Documentation Standards"
-        content: |
+        template: |
           **Record Keeping:** [Standards for maintaining investigation records]
           **Source Documentation:** [How sources will be documented and attributed]
           **Chain of Custody:** [Procedures for maintaining evidence integrity]
           **Version Control:** [Managing different versions of documents and findings]
           **Archival Procedures:** [Long-term storage and access to investigation materials]
 
-  - name: ethical_considerations
+  - id: ethical_considerations
     title: "Ethical Considerations and Protocols"
     instruction: "Address ethical issues and establish ethical guidelines"
-    subsections:
-      - name: ethical_framework
+    sections:
+      - id: ethical_framework
         title: "Ethical Framework"
-        content: |
+        template: |
           **Ethical Guidelines:** [Ethical principles governing the investigation]
           **Professional Standards:** [Relevant professional codes of conduct]
           **Legal Compliance:** [Legal requirements and restrictions]
           **Institutional Policies:** [Relevant organizational policies]
           **Review Processes:** [Ethical review processes if applicable]
 
-      - name: privacy_protection
+      - id: privacy_protection
         title: "Privacy and Confidentiality"
-        content: |
+        template: |
           **Privacy Rights:** [Respect for individual privacy rights]
           **Confidentiality Agreements:** [Confidentiality commitments to sources]
           **Data Protection:** [Protection of sensitive personal information]
           **Anonymity Procedures:** [When and how to protect source anonymity]
           **Information Security:** [Security measures for sensitive information]
 
-      - name: harm_prevention
+      - id: harm_prevention
         title: "Harm Prevention"
-        content: |
+        template: |
           **Risk Assessment:** [Assessment of potential harm to individuals or organizations]
           **Harm Mitigation:** [Measures to minimize potential harm]
           **Vulnerable Populations:** [Special considerations for vulnerable individuals or groups]
           **Public Interest:** [Balancing investigation goals with potential harm]
           **Professional Responsibility:** [Responsibilities to profession and public]
 
-  - name: communication_plan
+  - id: communication_plan
     title: "Communication and Reporting Plan"
     instruction: "Plan for communication during and after the investigation"
-    subsections:
-      - name: internal_communication
+    sections:
+      - id: internal_communication
         title: "Internal Communication"
-        content: |
+        template: |
           **Team Communication:** [How team members will communicate and coordinate]
           **Progress Reporting:** [Regular progress reports to supervisors or sponsors]
           **Issue Escalation:** [Procedures for escalating problems or concerns]
           **Decision Making:** [How key decisions will be made and communicated]
           **Documentation Sharing:** [How investigation materials will be shared within team]
 
-      - name: external_communication
+      - id: external_communication
         title: "External Communication"
-        content: |
+        template: |
           **Stakeholder Updates:** [How stakeholders will be kept informed]
           **Media Relations:** [Handling media inquiries during investigation]
           **Public Communication:** [Any public statements about the investigation]
           **Confidentiality Management:** [Managing confidential information in communications]
           **Crisis Communication:** [Communication procedures if problems arise]
 
-      - name: final_reporting
+      - id: final_reporting
         title: "Final Reporting Plan"
-        content: |
+        template: |
           **Report Format:** [Format and structure of final report]
           **Target Audience:** [Primary and secondary audiences for the report]
           **Distribution Plan:** [How and to whom the report will be distributed]

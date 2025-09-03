@@ -1,331 +1,162 @@
-name: Historical Timeline Template
-description: Template for creating comprehensive chronological analysis documents that track events, developments, and changes over time
-version: 1.0.0
-author: BMAD Reporting & Writing
-created: 2025-09-02
-tags: [timeline, chronology, historical, analysis]
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: historical-timeline-tmpl
+  name: Historical Timeline Template
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/historical-timeline-{{timeline_title}}.md
+    title: "Historical Timeline: {{timeline_title}}"
 
 workflow:
-  mode: chronological_analysis
-  sections:
-    - name: overview
-      title: Timeline Overview
-      description: High-level summary of the historical period and key themes
-      variables:
-        - name: timeline_title
-          type: text
-          required: true
-          description: Title or name for this timeline
-        - name: time_period
-          type: text
-          required: true
-          description: Start and end dates or period covered
-        - name: subject_scope
-          type: textarea
-          required: true
-          description: What events, entities, or developments are being tracked
-        - name: major_themes
-          type: textarea
-          required: true
-          description: Key themes, trends, or patterns visible in the timeline
-        - name: significance_summary
-          type: textarea
-          required: true
-          description: Why this timeline matters and its broader significance
+  mode: interactive
+  elicitation: advanced-elicitation
 
-    - name: methodology
-      title: Research Methodology
-      description: Sources, methods, and standards used in timeline construction
-      variables:
-        - name: source_types
-          type: textarea
-          required: true
-          description: Types of sources used (primary, secondary, etc.)
-        - name: research_methods
-          type: textarea
-          required: true
-          description: Methods used to gather and verify timeline information
-        - name: verification_standards
-          type: textarea
-          required: true
-          description: Standards applied for fact-checking and source verification
-        - name: limitations_noted
-          type: textarea
-          required: true
-          description: Known limitations, gaps, or uncertainties in the timeline
+sections:
+  - id: overview
+    title: Timeline Overview
+    instruction: High-level summary of the historical period and key themes
+    template: |
+      # {{timeline_title}}
 
-    - name: early_period
-      title: Early Period
-      description: Initial phase or foundation period of the timeline
-      variables:
-        - name: early_period_name
-          type: text
-          required: true
-          description: Name or description of this early period
-        - name: early_timeframe
-          type: text
-          required: true
-          description: Approximate dates for this period
-        - name: early_key_events
-          type: textarea
-          required: true
-          description: Most significant events or developments in this period
-        - name: early_context
-          type: textarea
-          required: true
-          description: Background conditions and context for this period
-        - name: early_outcomes
-          type: textarea
-          required: true
-          description: Results or consequences that emerged from this period
+      **Period:** {{time_period}}
 
-    - name: development_period
-      title: Development Period
-      description: Middle phase showing growth, change, or evolution
-      variables:
-        - name: development_period_name
-          type: text
-          required: true
-          description: Name or description of this development period
-        - name: development_timeframe
-          type: text
-          required: true
-          description: Approximate dates for this period
-        - name: development_key_events
-          type: textarea
-          required: true
-          description: Most significant events or developments in this period
-        - name: development_trends
-          type: textarea
-          required: true
-          description: Major trends or patterns that emerged during this period
-        - name: development_turning_points
-          type: textarea
-          required: false
-          description: Critical moments or decisions that changed the trajectory
+      **Date of Analysis:** {{current_date}}
 
-    - name: mature_period
-      title: Mature Period
-      description: Later phase showing culmination, peak, or current state
-      variables:
-        - name: mature_period_name
-          type: text
-          required: true
-          description: Name or description of this mature period
-        - name: mature_timeframe
-          type: text
-          required: true
-          description: Approximate dates for this period
-        - name: mature_key_events
-          type: textarea
-          required: true
-          description: Most significant events or developments in this period
-        - name: mature_achievements
-          type: textarea
-          required: true
-          description: Major achievements or culminations reached
-        - name: mature_challenges
-          type: textarea
-          required: false
-          description: Challenges or problems that emerged in this period
+      ## Overview
 
-    - name: detailed_chronology
-      title: Detailed Event Chronology
-      description: Specific dated events in chronological order
-      variables:
-        - name: event_entries
-          type: textarea
-          required: true
-          description: Chronological list of specific events with dates and descriptions
-        - name: event_categories
-          type: text
-          required: false
-          description: Categories or types of events tracked (political, economic, etc.)
-        - name: event_significance_notes
-          type: textarea
-          required: false
-          description: Notes on the significance or impact of key events
+      **Scope:** {{subject_scope}}
 
-    - name: patterns_analysis
-      title: Patterns and Trends Analysis
-      description: Analysis of recurring patterns, cycles, or trends visible in the timeline
-      variables:
-        - name: recurring_patterns
-          type: textarea
-          required: true
-          description: Patterns that repeat or cycle throughout the timeline
-        - name: directional_trends
-          type: textarea
-          required: true
-          description: Clear directional trends (growth, decline, etc.)
-        - name: causal_relationships
-          type: textarea
-          required: true
-          description: Cause-and-effect relationships visible in the timeline
-        - name: external_influences
-          type: textarea
-          required: false
-          description: External factors that influenced the timeline events
+      **Major Themes:** {{major_themes}}
 
-    - name: key_figures
-      title: Key Figures and Actors
-      description: Important people or entities that shaped the timeline
-      variables:
-        - name: primary_actors
-          type: textarea
-          required: true
-          description: Most important individuals or entities in the timeline
-        - name: actor_roles
-          type: textarea
-          required: true
-          description: Roles each key actor played in shaping events
-        - name: actor_influences
-          type: textarea
-          required: true
-          description: How these actors influenced the course of events
-        - name: actor_relationships
-          type: textarea
-          required: false
-          description: Important relationships or conflicts between key actors
+      **Significance:** {{significance_summary}}
+  - id: methodology
+    title: Research Methodology
+    instruction: Sources, methods, and standards used in timeline construction
+    template: |
+      ## Research Methodology
 
-    - name: implications_lessons
-      title: Implications and Lessons
-      description: What the timeline reveals and its broader meaning
-      variables:
-        - name: historical_significance
-          type: textarea
-          required: true
-          description: Why this timeline is historically significant
-        - name: lessons_learned
-          type: textarea
-          required: true
-          description: What lessons can be drawn from this timeline
-        - name: contemporary_relevance
-          type: textarea
-          required: true
-          description: How this timeline relates to current situations or issues
-        - name: future_implications
-          type: textarea
-          required: false
-          description: What this timeline suggests about future developments
+      ### Sources and Methods
+      **Source Types:** {{source_types}}
 
-output_format: |
-  # {{timeline_title}}
-  
-  **Period:** {{time_period}}
-  
-  **Date of Analysis:** {{current_date}}
-  
-  ## Overview
-  
-  **Scope:** {{subject_scope}}
-  
-  **Major Themes:** {{major_themes}}
-  
-  **Significance:** {{significance_summary}}
-  
-  ## Research Methodology
-  
-  ### Sources and Methods
-  **Source Types:** {{source_types}}
-  
-  **Research Methods:** {{research_methods}}
-  
-  **Verification Standards:** {{verification_standards}}
-  
-  **Limitations:** {{limitations_noted}}
-  
-  ## Historical Periods
-  
-  ### {{early_period_name}} ({{early_timeframe}})
-  
-  **Key Events:** {{early_key_events}}
-  
-  **Context:** {{early_context}}
-  
-  **Outcomes:** {{early_outcomes}}
-  
-  ### {{development_period_name}} ({{development_timeframe}})
-  
-  **Key Events:** {{development_key_events}}
-  
-  **Major Trends:** {{development_trends}}
-  
-  {{#if development_turning_points}}
-  **Turning Points:** {{development_turning_points}}
-  {{/if}}
-  
-  ### {{mature_period_name}} ({{mature_timeframe}})
-  
-  **Key Events:** {{mature_key_events}}
-  
-  **Achievements:** {{mature_achievements}}
-  
-  {{#if mature_challenges}}
-  **Challenges:** {{mature_challenges}}
-  {{/if}}
-  
-  ## Detailed Chronology
-  
-  {{#if event_categories}}
-  **Event Categories:** {{event_categories}}
-  {{/if}}
-  
-  ### Timeline of Events
-  {{event_entries}}
-  
-  {{#if event_significance_notes}}
-  ### Significance Notes
-  {{event_significance_notes}}
-  {{/if}}
-  
-  ## Analysis of Patterns and Trends
-  
-  ### Recurring Patterns
-  {{recurring_patterns}}
-  
-  ### Directional Trends
-  {{directional_trends}}
-  
-  ### Causal Relationships
-  {{causal_relationships}}
-  
-  {{#if external_influences}}
-  ### External Influences
-  {{external_influences}}
-  {{/if}}
-  
-  ## Key Figures and Actors
-  
-  ### Primary Actors
-  {{primary_actors}}
-  
-  ### Roles and Influence
-  {{actor_roles}}
-  
-  {{actor_influences}}
-  
-  {{#if actor_relationships}}
-  ### Key Relationships
-  {{actor_relationships}}
-  {{/if}}
-  
-  ## Implications and Lessons
-  
-  ### Historical Significance
-  {{historical_significance}}
-  
-  ### Lessons Learned
-  {{lessons_learned}}
-  
-  ### Contemporary Relevance
-  {{contemporary_relevance}}
-  
-  {{#if future_implications}}
-  ### Future Implications
-  {{future_implications}}
-  {{/if}}
-  
-  ---
-  
-  *Generated using BMAD Historical Timeline Template*
+      **Research Methods:** {{research_methods}}
+
+      **Verification Standards:** {{verification_standards}}
+
+      **Limitations:** {{limitations_noted}}
+  - id: early_period
+    title: Early Period
+    instruction: Initial phase or foundation period of the timeline
+    template: |
+      ## Historical Periods
+
+      ### {{early_period_name}} ({{early_timeframe}})
+
+      **Key Events:** {{early_key_events}}
+
+      **Context:** {{early_context}}
+
+      **Outcomes:** {{early_outcomes}}
+  - id: development_period
+    title: Development Period
+    instruction: Middle phase showing growth, change, or evolution
+    template: |
+      ### {{development_period_name}} ({{development_timeframe}})
+
+      **Key Events:** {{development_key_events}}
+
+      **Major Trends:** {{development_trends}}
+
+      {{#if development_turning_points}}
+      **Turning Points:** {{development_turning_points}}
+      {{/if}}
+  - id: mature_period
+    title: Mature Period
+    instruction: Later phase showing culmination, peak, or current state
+    template: |
+      ### {{mature_period_name}} ({{mature_timeframe}})
+
+      **Key Events:** {{mature_key_events}}
+
+      **Achievements:** {{mature_achievements}}
+
+      {{#if mature_challenges}}
+      **Challenges:** {{mature_challenges}}
+      {{/if}}
+  - id: detailed_chronology
+    title: Detailed Event Chronology
+    instruction: Specific dated events in chronological order
+    template: |
+      ## Detailed Chronology
+
+      {{#if event_categories}}
+      **Event Categories:** {{event_categories}}
+      {{/if}}
+
+      ### Timeline of Events
+      {{event_entries}}
+
+      {{#if event_significance_notes}}
+      ### Significance Notes
+      {{event_significance_notes}}
+      {{/if}}
+  - id: patterns_analysis
+    title: Patterns and Trends Analysis
+    instruction: Analysis of recurring patterns, cycles, or trends visible in the timeline
+    template: |
+      ## Analysis of Patterns and Trends
+
+      ### Recurring Patterns
+      {{recurring_patterns}}
+
+      ### Directional Trends
+      {{directional_trends}}
+
+      ### Causal Relationships
+      {{causal_relationships}}
+
+      {{#if external_influences}}
+      ### External Influences
+      {{external_influences}}
+      {{/if}}
+  - id: key_figures
+    title: Key Figures and Actors
+    instruction: Important people or entities that shaped the timeline
+    template: |
+      ## Key Figures and Actors
+
+      ### Primary Actors
+      {{primary_actors}}
+
+      ### Roles and Influence
+      {{actor_roles}}
+
+      {{actor_influences}}
+
+      {{#if actor_relationships}}
+      ### Key Relationships
+      {{actor_relationships}}
+      {{/if}}
+  - id: implications_lessons
+    title: Implications and Lessons
+    instruction: What the timeline reveals and its broader meaning
+    template: |
+      ## Implications and Lessons
+
+      ### Historical Significance
+      {{historical_significance}}
+
+      ### Lessons Learned
+      {{lessons_learned}}
+
+      ### Contemporary Relevance
+      {{contemporary_relevance}}
+
+      {{#if future_implications}}
+      ### Future Implications
+      {{future_implications}}
+      {{/if}}
+
+      ---
+
+      *Generated using BMAD Historical Timeline Template*

@@ -1,443 +1,230 @@
-name: Trend Analysis Template
-description: Template for analyzing patterns, trajectories, and evolutionary changes over time in subjects, topics, or phenomena
-version: 1.0.0
-author: BMAD Reporting & Writing
-created: 2025-09-02
-tags: [trends, analysis, patterns, forecasting]
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: trend-analysis-tmpl
+  name: Trend Analysis Template
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/trend-analysis-{{analysis_subject}}.md
+    title: "Trend Analysis: {{analysis_subject}}"
 
 workflow:
-  mode: trend_analysis
-  sections:
-    - name: executive_summary
-      title: Executive Summary
-      description: Overview of key trends and their significance
-      variables:
-        - name: analysis_subject
-          type: text
-          required: true
-          description: Subject or phenomenon being analyzed for trends
-        - name: analysis_period
-          type: text
-          required: true
-          description: Time period covered by the trend analysis
-        - name: key_trends_summary
-          type: textarea
-          required: true
-          description: Brief summary of the most significant trends identified
-        - name: trend_significance
-          type: textarea
-          required: true
-          description: Why these trends matter and their potential impact
-        - name: confidence_level
-          type: text
-          required: true
-          description: Overall confidence level in trend analysis findings
+  mode: interactive
+  elicitation: advanced-elicitation
 
-    - name: methodology
-      title: Analysis Methodology
-      description: Methods and data sources used for trend identification
-      variables:
-        - name: data_sources
-          type: textarea
-          required: true
-          description: Primary and secondary data sources used
-        - name: analysis_methods
-          type: textarea
-          required: true
-          description: Statistical or analytical methods employed
-        - name: time_period_selection
-          type: text
-          required: true
-          description: Rationale for time period chosen for analysis
-        - name: measurement_criteria
-          type: textarea
-          required: true
-          description: Criteria and metrics used to identify and measure trends
-        - name: methodology_limitations
-          type: textarea
-          required: true
-          description: Known limitations or constraints in the analysis approach
+sections:
+  - id: executive_summary
+    title: Executive Summary
+    instruction: Overview of key trends and their significance
+    template: |
+      # Trend Analysis: {{analysis_subject}}
 
-    - name: baseline_establishment
-      title: Baseline and Historical Context
-      description: Foundation period and historical reference points
-      variables:
-        - name: baseline_period
-          type: text
-          required: true
-          description: Time period used as baseline for comparison
-        - name: baseline_conditions
-          type: textarea
-          required: true
-          description: Key characteristics and conditions during baseline period
-        - name: historical_precedents
-          type: textarea
-          required: false
-          description: Historical precedents or similar patterns from earlier periods
-        - name: contextual_factors
-          type: textarea
-          required: true
-          description: Important contextual factors affecting the baseline period
+      **Analysis Period:** {{analysis_period}}
 
-    - name: primary_trends
-      title: Primary Trends Identified
-      description: Main directional patterns and their characteristics
-      variables:
-        - name: trend_one
-          type: textarea
-          required: true
-          description: First major trend identified, including direction and strength
-        - name: trend_one_evidence
-          type: textarea
-          required: true
-          description: Evidence supporting this trend
-        - name: trend_two
-          type: textarea
-          required: false
-          description: Second major trend identified, including direction and strength
-        - name: trend_two_evidence
-          type: textarea
-          required: false
-          description: Evidence supporting this trend
-        - name: trend_three
-          type: textarea
-          required: false
-          description: Third major trend identified, including direction and strength
-        - name: trend_three_evidence
-          type: textarea
-          required: false
-          description: Evidence supporting this trend
+      **Date of Analysis:** {{current_date}}
 
-    - name: trend_dynamics
-      title: Trend Dynamics and Relationships
-      description: How trends interact, accelerate, or influence each other
-      variables:
-        - name: trend_interactions
-          type: textarea
-          required: true
-          description: How identified trends interact with or influence each other
-        - name: acceleration_factors
-          type: textarea
-          required: true
-          description: Factors that accelerate or amplify the trends
-        - name: deceleration_factors
-          type: textarea
-          required: true
-          description: Factors that slow down or counteract the trends
-        - name: cyclical_patterns
-          type: textarea
-          required: false
-          description: Cyclical or seasonal patterns observed within the trends
+      ## Executive Summary
 
-    - name: driving_forces
-      title: Driving Forces and Influences
-      description: Underlying causes and factors driving the observed trends
-      variables:
-        - name: primary_drivers
-          type: textarea
-          required: true
-          description: Main forces or factors driving the trends
-        - name: secondary_influences
-          type: textarea
-          required: false
-          description: Additional factors contributing to trend development
-        - name: external_forces
-          type: textarea
-          required: true
-          description: External events or conditions influencing the trends
-        - name: internal_dynamics
-          type: textarea
-          required: true
-          description: Internal factors or feedback loops affecting trend evolution
+      {{key_trends_summary}}
 
-    - name: quantitative_analysis
-      title: Quantitative Analysis
-      description: Statistical measures and numerical trend characterization
-      variables:
-        - name: rate_of_change
-          type: textarea
-          required: true
-          description: Quantification of trend speed and rate of change
-        - name: statistical_significance
-          type: text
-          required: true
-          description: Statistical significance of observed trends
-        - name: correlation_analysis
-          type: textarea
-          required: false
-          description: Correlations between different variables or trends
-        - name: variability_measures
-          type: textarea
-          required: true
-          description: Measures of trend consistency or variability over time
+      **Significance:** {{trend_significance}}
 
-    - name: inflection_points
-      title: Inflection Points and Discontinuities
-      description: Points where trends changed direction or intensity
-      variables:
-        - name: major_inflections
-          type: textarea
-          required: true
-          description: Significant points where trends changed direction or speed
-        - name: inflection_causes
-          type: textarea
-          required: true
-          description: Events or factors that caused these inflection points
-        - name: trend_reversals
-          type: textarea
-          required: false
-          description: Points where trends reversed direction entirely
-        - name: discontinuities
-          type: textarea
-          required: false
-          description: Sudden breaks or discontinuities in trend patterns
+      **Confidence Level:** {{confidence_level}}
+  - id: methodology
+    title: Analysis Methodology
+    instruction: Methods and data sources used for trend identification
+    template: |
+      ## Methodology
 
-    - name: comparative_analysis
-      title: Comparative Analysis
-      description: How these trends compare to similar patterns elsewhere
-      variables:
-        - name: peer_comparisons
-          type: textarea
-          required: false
-          description: Comparison with similar entities or contexts
-        - name: industry_benchmarks
-          type: textarea
-          required: false
-          description: How trends compare to industry or sector benchmarks
-        - name: geographic_variations
-          type: textarea
-          required: false
-          description: Geographic or regional variations in trend patterns
-        - name: temporal_comparisons
-          type: textarea
-          required: false
-          description: Comparison with trends from different time periods
+      ### Data and Methods
+      **Data Sources:** {{data_sources}}
 
-    - name: future_projections
-      title: Future Projections
-      description: Potential future development of trends
-      variables:
-        - name: short_term_projection
-          type: textarea
-          required: true
-          description: Projected trend development over next 6-12 months
-        - name: medium_term_projection
-          type: textarea
-          required: true
-          description: Projected trend development over next 1-3 years
-        - name: long_term_projection
-          type: textarea
-          required: false
-          description: Projected trend development over next 5+ years
-        - name: projection_confidence
-          type: text
-          required: true
-          description: Confidence level in future projections
-        - name: key_uncertainties
-          type: textarea
-          required: true
-          description: Major uncertainties that could affect future projections
+      **Analysis Methods:** {{analysis_methods}}
 
-    - name: implications_recommendations
-      title: Implications and Recommendations
-      description: What the trends mean and suggested actions
-      variables:
-        - name: strategic_implications
-          type: textarea
-          required: true
-          description: Strategic implications of the identified trends
-        - name: risk_assessment
-          type: textarea
-          required: true
-          description: Risks associated with continuing current trends
-        - name: opportunity_identification
-          type: textarea
-          required: true
-          description: Opportunities created by trend developments
-        - name: action_recommendations
-          type: textarea
-          required: true
-          description: Recommended actions based on trend analysis
+      **Time Period:** {{time_period_selection}}
 
-output_format: |
-  # Trend Analysis: {{analysis_subject}}
-  
-  **Analysis Period:** {{analysis_period}}
-  
-  **Date of Analysis:** {{current_date}}
-  
-  ## Executive Summary
-  
-  {{key_trends_summary}}
-  
-  **Significance:** {{trend_significance}}
-  
-  **Confidence Level:** {{confidence_level}}
-  
-  ## Methodology
-  
-  ### Data and Methods
-  **Data Sources:** {{data_sources}}
-  
-  **Analysis Methods:** {{analysis_methods}}
-  
-  **Time Period:** {{time_period_selection}}
-  
-  **Measurement Criteria:** {{measurement_criteria}}
-  
-  **Limitations:** {{methodology_limitations}}
-  
-  ## Baseline and Historical Context
-  
-  **Baseline Period:** {{baseline_period}}
-  
-  **Baseline Conditions:** {{baseline_conditions}}
-  
-  **Contextual Factors:** {{contextual_factors}}
-  
-  {{#if historical_precedents}}
-  **Historical Precedents:** {{historical_precedents}}
-  {{/if}}
-  
-  ## Primary Trends Identified
-  
-  ### Trend 1
-  {{trend_one}}
-  
-  **Supporting Evidence:** {{trend_one_evidence}}
-  
-  {{#if trend_two}}
-  ### Trend 2
-  {{trend_two}}
-  
-  **Supporting Evidence:** {{trend_two_evidence}}
-  {{/if}}
-  
-  {{#if trend_three}}
-  ### Trend 3
-  {{trend_three}}
-  
-  **Supporting Evidence:** {{trend_three_evidence}}
-  {{/if}}
-  
-  ## Trend Dynamics and Relationships
-  
-  ### Trend Interactions
-  {{trend_interactions}}
-  
-  ### Acceleration Factors
-  {{acceleration_factors}}
-  
-  ### Deceleration Factors
-  {{deceleration_factors}}
-  
-  {{#if cyclical_patterns}}
-  ### Cyclical Patterns
-  {{cyclical_patterns}}
-  {{/if}}
-  
-  ## Driving Forces and Influences
-  
-  ### Primary Drivers
-  {{primary_drivers}}
-  
-  ### External Forces
-  {{external_forces}}
-  
-  ### Internal Dynamics
-  {{internal_dynamics}}
-  
-  {{#if secondary_influences}}
-  ### Secondary Influences
-  {{secondary_influences}}
-  {{/if}}
-  
-  ## Quantitative Analysis
-  
-  ### Rate of Change
-  {{rate_of_change}}
-  
-  **Statistical Significance:** {{statistical_significance}}
-  
-  ### Variability Measures
-  {{variability_measures}}
-  
-  {{#if correlation_analysis}}
-  ### Correlation Analysis
-  {{correlation_analysis}}
-  {{/if}}
-  
-  ## Inflection Points and Discontinuities
-  
-  ### Major Inflection Points
-  {{major_inflections}}
-  
-  **Causes:** {{inflection_causes}}
-  
-  {{#if trend_reversals}}
-  ### Trend Reversals
-  {{trend_reversals}}
-  {{/if}}
-  
-  {{#if discontinuities}}
-  ### Discontinuities
-  {{discontinuities}}
-  {{/if}}
-  
-  ## Comparative Analysis
-  
-  {{#if peer_comparisons}}
-  ### Peer Comparisons
-  {{peer_comparisons}}
-  {{/if}}
-  
-  {{#if industry_benchmarks}}
-  ### Industry Benchmarks
-  {{industry_benchmarks}}
-  {{/if}}
-  
-  {{#if geographic_variations}}
-  ### Geographic Variations
-  {{geographic_variations}}
-  {{/if}}
-  
-  {{#if temporal_comparisons}}
-  ### Temporal Comparisons
-  {{temporal_comparisons}}
-  {{/if}}
-  
-  ## Future Projections
-  
-  ### Short-term Projection (6-12 months)
-  {{short_term_projection}}
-  
-  ### Medium-term Projection (1-3 years)
-  {{medium_term_projection}}
-  
-  {{#if long_term_projection}}
-  ### Long-term Projection (5+ years)
-  {{long_term_projection}}
-  {{/if}}
-  
-  **Projection Confidence:** {{projection_confidence}}
-  
-  ### Key Uncertainties
-  {{key_uncertainties}}
-  
-  ## Implications and Recommendations
-  
-  ### Strategic Implications
-  {{strategic_implications}}
-  
-  ### Risk Assessment
-  {{risk_assessment}}
-  
-  ### Opportunity Identification
-  {{opportunity_identification}}
-  
-  ### Action Recommendations
-  {{action_recommendations}}
-  
-  ---
-  
-  *Generated using BMAD Trend Analysis Template*
+      **Measurement Criteria:** {{measurement_criteria}}
+
+      **Limitations:** {{methodology_limitations}}
+  - id: baseline_establishment
+    title: Baseline and Historical Context
+    instruction: Foundation period and historical reference points
+    template: |
+      ## Baseline and Historical Context
+
+      **Baseline Period:** {{baseline_period}}
+
+      **Baseline Conditions:** {{baseline_conditions}}
+
+      **Contextual Factors:** {{contextual_factors}}
+
+      {{#if historical_precedents}}
+      **Historical Precedents:** {{historical_precedents}}
+      {{/if}}
+  - id: primary_trends
+    title: Primary Trends Identified
+    instruction: Main directional patterns and their characteristics
+    template: |
+      ## Primary Trends Identified
+
+      ### Trend 1
+      {{trend_one}}
+
+      **Supporting Evidence:** {{trend_one_evidence}}
+
+      {{#if trend_two}}
+      ### Trend 2
+      {{trend_two}}
+
+      **Supporting Evidence:** {{trend_two_evidence}}
+      {{/if}}
+
+      {{#if trend_three}}
+      ### Trend 3
+      {{trend_three}}
+
+      **Supporting Evidence:** {{trend_three_evidence}}
+      {{/if}}
+  - id: trend_dynamics
+    title: Trend Dynamics and Relationships
+    instruction: How trends interact, accelerate, or influence each other
+    template: |
+      ## Trend Dynamics and Relationships
+
+      ### Trend Interactions
+      {{trend_interactions}}
+
+      ### Acceleration Factors
+      {{acceleration_factors}}
+
+      ### Deceleration Factors
+      {{deceleration_factors}}
+
+      {{#if cyclical_patterns}}
+      ### Cyclical Patterns
+      {{cyclical_patterns}}
+      {{/if}}
+  - id: driving_forces
+    title: Driving Forces and Influences
+    instruction: Underlying causes and factors driving the observed trends
+    template: |
+      ## Driving Forces and Influences
+
+      ### Primary Drivers
+      {{primary_drivers}}
+
+      ### External Forces
+      {{external_forces}}
+
+      ### Internal Dynamics
+      {{internal_dynamics}}
+
+      {{#if secondary_influences}}
+      ### Secondary Influences
+      {{secondary_influences}}
+      {{/if}}
+  - id: quantitative_analysis
+    title: Quantitative Analysis
+    instruction: Statistical measures and numerical trend characterization
+    template: |
+      ## Quantitative Analysis
+
+      ### Rate of Change
+      {{rate_of_change}}
+
+      **Statistical Significance:** {{statistical_significance}}
+
+      ### Variability Measures
+      {{variability_measures}}
+
+      {{#if correlation_analysis}}
+      ### Correlation Analysis
+      {{correlation_analysis}}
+      {{/if}}
+  - id: inflection_points
+    title: Inflection Points and Discontinuities
+    instruction: Points where trends changed direction or intensity
+    template: |
+      ## Inflection Points and Discontinuities
+
+      ### Major Inflection Points
+      {{major_inflections}}
+
+      **Causes:** {{inflection_causes}}
+
+      {{#if trend_reversals}}
+      ### Trend Reversals
+      {{trend_reversals}}
+      {{/if}}
+
+      {{#if discontinuities}}
+      ### Discontinuities
+      {{discontinuities}}
+      {{/if}}
+  - id: comparative_analysis
+    title: Comparative Analysis
+    instruction: How these trends compare to similar patterns elsewhere
+    template: |
+      ## Comparative Analysis
+
+      {{#if peer_comparisons}}
+      ### Peer Comparisons
+      {{peer_comparisons}}
+      {{/if}}
+
+      {{#if industry_benchmarks}}
+      ### Industry Benchmarks
+      {{industry_benchmarks}}
+      {{/if}}
+
+      {{#if geographic_variations}}
+      ### Geographic Variations
+      {{geographic_variations}}
+      {{/if}}
+
+      {{#if temporal_comparisons}}
+      ### Temporal Comparisons
+      {{temporal_comparisons}}
+      {{/if}}
+  - id: future_projections
+    title: Future Projections
+    instruction: Potential future development of trends
+    template: |
+      ## Future Projections
+
+      ### Short-term Projection (6-12 months)
+      {{short_term_projection}}
+
+      ### Medium-term Projection (1-3 years)
+      {{medium_term_projection}}
+
+      {{#if long_term_projection}}
+      ### Long-term Projection (5+ years)
+      {{long_term_projection}}
+      {{/if}}
+
+      **Projection Confidence:** {{projection_confidence}}
+
+      ### Key Uncertainties
+      {{key_uncertainties}}
+  - id: implications_recommendations
+    title: Implications and Recommendations
+    instruction: What the trends mean and suggested actions
+    template: |
+      ## Implications and Recommendations
+
+      ### Strategic Implications
+      {{strategic_implications}}
+
+      ### Risk Assessment
+      {{risk_assessment}}
+
+      ### Opportunity Identification
+      {{opportunity_identification}}
+
+      ### Action Recommendations
+      {{action_recommendations}}
+
+      ---
+
+      *Generated using BMAD Trend Analysis Template*

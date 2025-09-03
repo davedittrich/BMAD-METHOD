@@ -1,8 +1,12 @@
+# <!-- Powered by BMAD™ Core -->
 template:
   id: research-brief-tmpl
   name: Research Brief Template
   version: 1.0
-  output: research-brief.md
+  output:
+    format: markdown
+    filename: research-brief.md
+    title: "Research Brief"
 
 workflow:
   mode: incremental

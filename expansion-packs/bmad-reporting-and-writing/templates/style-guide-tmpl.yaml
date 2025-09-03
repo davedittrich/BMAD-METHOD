@@ -1,8 +1,12 @@
+# <!-- Powered by BMAD™ Core -->
 template:
   id: style-guide-tmpl
   name: Personal Writing Style Guide
   version: 1.0
-  output: writing-style-guide.md
+  output:
+    format: markdown
+    filename: writing-style-guide.md
+    title: "Personal Writing Style Guide"
 
 workflow:
   mode: incremental

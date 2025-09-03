@@ -70,7 +70,7 @@ dependencies:
     - research-brief-tmpl.yaml
     - source-analysis-tmpl.yaml
     - investigation-plan-tmpl.yaml
-    - fact-check-tmpl.yaml
+    - fact-check-report-tmpl.yaml
   checklists:
     - source-credibility-checklist.md
     - integrity-assessment-checklist.md

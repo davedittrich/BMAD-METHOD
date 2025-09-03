@@ -1,41 +1,314 @@
+# <!-- Powered by BMAD™ Core -->
 template:
   id: fact-check-report-tmpl
-  name: Fact Check Report Template
+  name: Fact-Check Report
   version: 1.0
-  output: fact-check-report.md
+  output:
+    format: markdown
+    filename: docs/fact-check-report-{{claim_description}}.md
+    title: "Fact-Check Report: {{claim_description}}"
 
 workflow:
-  mode: incremental
-  elicit: true
-  iterative: true
+  mode: interactive
+  elicitation: advanced-elicitation
 
 sections:
-  - id: claims_analyzed
-    title: Claims Analyzed
-    instruction: |
-      List all factual claims that were examined, numbered for reference.
+  - id: fact_check_summary
+    title: "Fact-Check Summary"
+    instruction: "Provide executive summary of fact-check findings"
+    sections:
+      - id: claim_overview
+        title: "Claim Overview"
+        template: |
+          **Claim:** {{claim_description}}
+          **Source:** {{claim_source}}
+          **Fact-Check Date:** [Date]
+          **Fact-Checker:** [Name and credentials]
+          **Overall Rating:** [True/Mostly True/Mixed/Mostly False/False/Unverifiable]
 
-  - id: source_evaluation
-    title: Source Credibility Assessment
-    instruction: |
-      Evaluate each source used - expertise, bias indicators, reliability track record.
+      - id: key_findings
+        title: "Key Findings"
+        template: |
+          **Verification Status:** [What can be verified and what cannot]
+          **Main Evidence:** [Key evidence supporting or refuting the claim]
+          **Critical Issues:** [Most important problems or confirmations found]
+          **Confidence Level:** [How confident we are in this assessment]
 
-  - id: verification_results
-    title: Verification Results
-    instruction: |
-      For each claim, provide verification status: Verified, Partially Verified, Unverified, or False.
+  - id: claim_analysis
+    title: "Detailed Claim Analysis"
+    instruction: "Break down and analyze the specific claim or claims"
+    sections:
+      - id: claim_breakdown
+        title: "Claim Breakdown"
+        template: |
+          **Primary Claim:** [Main factual assertion being made]
+          **Secondary Claims:** [Additional claims or implications]
+          **Implicit Claims:** [Claims that are implied but not directly stated]
+          **Context Claims:** [Claims about context or background]
+          **Numerical Claims:** [Specific numbers, statistics, or quantitative assertions]
+
+      - id: claim_context
+        title: "Claim Context"
+        template: |
+          **Original Context:** [Context in which claim was originally made]
+          **Relevant Background:** [Background information necessary to evaluate claim]
+          **Time Period:** [Specific time period the claim refers to]
+          **Geographic Scope:** [Geographic area or population the claim covers]
+          **Qualifying Conditions:** [Any conditions or qualifications that affect the claim]
+
+  - id: evidence_evaluation
+    title: "Evidence Evaluation"
+    instruction: "Systematically evaluate all available evidence"
+    sections:
+      - id: supporting_evidence
+        title: "Supporting Evidence"
+        template: |
+          **Primary Sources:** [Direct evidence supporting the claim]
+          **Secondary Sources:** [Indirect evidence or expert analysis supporting claim]
+          **Statistical Evidence:** [Numerical data supporting the claim]
+          **Expert Opinion:** [Expert opinions or analysis supporting claim]
+          **Historical Precedent:** [Historical examples or precedents supporting claim]
+
+      - id: contradicting_evidence
+        title: "Contradicting Evidence"
+        template: |
+          **Primary Contradictions:** [Direct evidence contradicting the claim]
+          **Secondary Contradictions:** [Indirect evidence or analysis contradicting claim]
+          **Statistical Contradictions:** [Numerical data contradicting the claim]
+          **Expert Disagreement:** [Expert opinions contradicting the claim]
+          **Counterexamples:** [Specific examples that contradict the claim]
+
+      - id: evidence_quality
+        title: "Evidence Quality Assessment"
+        template: |
+          **Source Credibility:** [Reliability of sources providing evidence]
+          **Evidence Strength:** [How strong and conclusive the evidence is]
+          **Completeness:** [Whether evidence provides complete picture]
+          **Recency:** [How current and relevant the evidence is]
+          **Independence:** [Whether evidence sources are independent of each other]
+
+  - id: source_verification
+    title: "Source Verification and Analysis"
+    instruction: "Verify and analyze the credibility of all sources"
+    sections:
+      - id: primary_sources
+        title: "Primary Source Analysis"
+        template: |
+          **Source Identification:** [Complete identification of primary sources]
+          **Source Credibility:** [Assessment of primary source reliability]
+          **Access Verification:** [Confirmation that sources are accessible and authentic]
+          **Context Accuracy:** [Whether sources are used in proper context]
+          **Chain of Attribution:** [Tracing claims back to original sources]
+
+      - id: expert_sources
+        title: "Expert Source Analysis"
+        template: |
+          **Expert Qualifications:** [Credentials and expertise of cited experts]
+          **Expert Consensus:** [Level of agreement among qualified experts]
+          **Conflicts of Interest:** [Potential conflicts affecting expert opinions]
+          **Methodology Review:** [Review of methods used by expert sources]
+          **Peer Review Status:** [Whether expert analysis has been peer reviewed]
+
+      - id: institutional_sources
+        title: "Institutional Source Analysis"
+        template: |
+          **Institution Credibility:** [Reliability of institutional sources]
+          **Data Collection Methods:** [How institutions collected relevant data]
+          **Publication Standards:** [Standards used for publishing information]
+          **Update Frequency:** [How often institutional data is updated]
+          **Transparency Level:** [How transparent institutions are about their methods]
+
+  - id: statistical_analysis
+    title: "Statistical and Numerical Analysis"
+    instruction: "Analyze any numerical or statistical claims"
+    sections:
+      - id: numerical_accuracy
+        title: "Numerical Accuracy"
+        template: |
+          **Number Verification:** [Verification of specific numbers cited]
+          **Calculation Check:** [Verification of any calculations or math]
+          **Unit Consistency:** [Check that units and measurements are consistent]
+          **Rounding Appropriateness:** [Whether numbers are appropriately rounded]
+          **Precision Claims:** [Whether claimed precision is justified]
+
+      - id: statistical_validity
+        title: "Statistical Validity"
+        template: |
+          **Sample Size:** [Adequacy of sample sizes for statistical claims]
+          **Methodology:** [Appropriateness of statistical methods used]
+          **Margin of Error:** [Whether margins of error are properly reported]
+          **Significance Testing:** [Whether statistical significance is properly assessed]
+          **Correlation vs Causation:** [Whether causal claims are properly supported]
+
+      - id: data_context
+        title: "Data Context and Interpretation"
+        template: |
+          **Time Frame:** [Appropriate time frame for the data presented]
+          **Comparison Validity:** [Whether comparisons being made are valid]
+          **Base Rate Consideration:** [Whether base rates are properly considered]
+          **Selection Effects:** [Whether data selection introduces bias]
+          **Interpretation Accuracy:** [Whether data interpretation is reasonable]
 
   - id: logical_analysis
-    title: Logical Structure Analysis
-    instruction: |
-      Identify any logical fallacies, weak reasoning, or argument structure issues.
+    title: "Logical Analysis"
+    instruction: "Analyze the logical structure and reasoning"
+    sections:
+      - id: logical_structure
+        title: "Logical Structure"
+        template: |
+          **Argument Structure:** [How the argument is structured logically]
+          **Premises and Conclusions:** [Identification of premises and conclusions]
+          **Logical Validity:** [Whether conclusions follow from premises]
+          **Missing Premises:** [Any unstated assumptions or missing premises]
+          **Chain of Reasoning:** [How the logical chain develops]
 
-  - id: integrity_assessment
-    title: Integrity Analysis (Carter Framework)
-    instruction: |
-      Apply Carter's 3-step integrity analysis: Discernment, Acknowledgment, Action consistency.
+      - id: fallacy_analysis
+        title: "Logical Fallacy Analysis"
+        template: |
+          **Identified Fallacies:** [Any logical fallacies present in the claim]
+          **Fallacy Impact:** [How fallacies affect the validity of the claim]
+          **Pattern Recognition:** [Any patterns of fallacious reasoning]
+          **Reasoning Quality:** [Overall quality of reasoning presented]
+          **Alternative Explanations:** [Whether alternative explanations are considered]
 
-  - id: recommendations
-    title: Recommendations
-    instruction: |
-      Suggest improvements for accuracy, sourcing, or logical consistency.
+  - id: contextual_factors
+    title: "Contextual Factors"
+    instruction: "Consider relevant contextual factors affecting the claim"
+    sections:
+      - id: temporal_context
+        title: "Temporal Context"
+        template: |
+          **Time Relevance:** [Whether the time period is relevant to current assessment]
+          **Temporal Changes:** [How relevant conditions may have changed over time]
+          **Historical Context:** [Relevant historical background]
+          **Trend Analysis:** [Whether claim reflects broader trends or anomalies]
+          **Future Projections:** [If claim involves predictions, how reasonable are they]
+
+      - id: situational_context
+        title: "Situational Context"
+        template: |
+          **Specific Circumstances:** [Particular circumstances affecting the claim]
+          **Geographic Relevance:** [Whether geographic factors affect claim validity]
+          **Cultural Context:** [Cultural factors that might affect interpretation]
+          **Economic Context:** [Economic conditions affecting the claim]
+          **Political Context:** [Political factors that might influence claim or evidence]
+
+  - id: verification_process
+    title: "Verification Process Documentation"
+    instruction: "Document the systematic verification process used"
+    sections:
+      - id: methodology
+        title: "Verification Methodology"
+        template: |
+          **Research Approach:** [Systematic approach used for verification]
+          **Source Selection:** [How sources were identified and selected]
+          **Verification Steps:** [Step-by-step process for verification]
+          **Quality Controls:** [Measures taken to ensure accuracy]
+          **Bias Prevention:** [Steps taken to prevent confirmation bias]
+
+      - id: information_gathering
+        title: "Information Gathering"
+        template: |
+          **Database Searches:** [Databases and search terms used]
+          **Expert Consultations:** [Experts consulted and their input]
+          **Document Review:** [Official documents and records reviewed]
+          **Media Analysis:** [News reports and media coverage analyzed]
+          **Stakeholder Contact:** [Direct contact with relevant stakeholders]
+
+      - id: cross_referencing
+        title: "Cross-Referencing Process"
+        template: |
+          **Multiple Source Verification:** [How claims were verified across multiple sources]
+          **Contradictory Information:** [How contradictory information was handled]
+          **Source Independence:** [Verification that sources are truly independent]
+          **Triangulation Methods:** [Methods used to triangulate information]
+          **Consensus Building:** [How consensus was determined among sources]
+
+  - id: limitations_uncertainties
+    title: "Limitations and Uncertainties"
+    instruction: "Acknowledge limitations and areas of uncertainty"
+    sections:
+      - id: verification_limitations
+        title: "Verification Limitations"
+        template: |
+          **Access Limitations:** [Information or sources that could not be accessed]
+          **Time Constraints:** [How time limitations may have affected thoroughness]
+          **Resource Constraints:** [How resource limitations affected investigation]
+          **Technical Limitations:** [Technical barriers to complete verification]
+          **Legal Restrictions:** [Legal barriers to accessing information]
+
+      - id: uncertainty_areas
+        title: "Areas of Uncertainty"
+        template: |
+          **Unverifiable Claims:** [Specific claims that cannot be verified]
+          **Contradictory Evidence:** [Areas where evidence is contradictory]
+          **Missing Information:** [Critical information that is not available]
+          **Evolving Situations:** [Aspects that may change over time]
+          **Definitional Issues:** [Areas where definitions are unclear or disputed]
+
+  - id: fact_check_conclusion
+    title: "Fact-Check Conclusion"
+    instruction: "Provide clear, justified conclusion about the claim"
+    sections:
+      - id: overall_assessment
+        title: "Overall Assessment"
+        template: |
+          **Final Rating:** [True/Mostly True/Mixed/Mostly False/False/Unverifiable]
+          **Confidence Level:** [High/Medium/Low confidence in assessment]
+          **Key Evidence:** [Most important evidence supporting this conclusion]
+          **Critical Factors:** [Most important factors affecting this assessment]
+          **Qualification Needed:** [Any important qualifications or caveats]
+
+      - id: detailed_findings
+        title: "Detailed Findings"
+        template: |
+          **Accurate Elements:** [Aspects of the claim that are accurate]
+          **Inaccurate Elements:** [Aspects of the claim that are inaccurate]
+          **Misleading Elements:** [Aspects that are technically true but misleading]
+          **Missing Context:** [Important context that is missing from the claim]
+          **Exaggerations:** [Any exaggerations or overstatements identified]
+
+      - id: recommendations
+        title: "Recommendations"
+        template: |
+          **For Claim Accuracy:** [How the claim could be made more accurate]
+          **For Further Research:** [Areas requiring additional investigation]
+          **For Context:** [Important context that should be provided]
+          **For Verification:** [How similar claims could be better verified]
+          **For Public Understanding:** [How to help public understand this issue]
+
+  - id: source_documentation
+    title: "Source Documentation"
+    instruction: "Provide complete documentation of all sources used"
+    sections:
+      - id: primary_sources
+        title: "Primary Sources"
+        template: |
+          **Source 1:** [Complete citation and access information]
+          **Source 2:** [Complete citation and access information]
+          **Source 3:** [Complete citation and access information]
+          [Continue for all primary sources used]
+
+      - id: expert_sources
+        title: "Expert Sources"
+        template: |
+          **Expert 1:** [Name, credentials, and consultation details]
+          **Expert 2:** [Name, credentials, and consultation details]
+          **Expert 3:** [Name, credentials, and consultation details]
+          [Continue for all experts consulted]
+
+      - id: institutional_sources
+        title: "Institutional Sources"
+        template: |
+          **Institution 1:** [Complete information and data accessed]
+          **Institution 2:** [Complete information and data accessed]
+          **Institution 3:** [Complete information and data accessed]
+          [Continue for all institutional sources]
+
+## Fact-Check Standards
+
+- [ ] **Transparency**: All sources and methods clearly documented
+- [ ] **Independence**: Fact-checker has no conflicts of interest
+- [ ] **Accuracy**: All information verified through multiple sources when possible
+- [ ] **Fairness**: All perspectives considered and evaluated fairly
+- [ ] **Accountability**: Clear contact information provided for follow-up questions
