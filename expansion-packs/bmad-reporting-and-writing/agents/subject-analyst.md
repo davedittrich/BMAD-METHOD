@@ -75,8 +75,8 @@ dependencies:
     - integrity-assessment-checklist.md
     - conflict-of-interest-checklist.md
   data:
-    - carter-integrity-framework.md
     - bmad-kb.md
+    - carter-integrity-framework.md
 ```
 
 ## Startup Context

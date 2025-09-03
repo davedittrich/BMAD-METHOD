@@ -74,8 +74,8 @@ dependencies:
     - style-consistency-checklist.md
     - voice-analysis-checklist.md
   data:
-    - writing-style-guide.md
     - bmad-kb.md
+    - writing-style-guide.md
 ```
 
 ## Startup Context

@@ -76,10 +76,10 @@ dependencies:
     - integrity-assessment-checklist.md
     - research-methodology-checklist.md
   data:
+    - bmad-kb.md
     - research-methods.md
     - carter-integrity-framework.md
     - source-types.md
-    - bmad-kb.md
 ```
 
 ## Startup Context

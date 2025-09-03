@@ -44,6 +44,6 @@ dependencies:
     - integrity-assessment-checklist.md # conforms to Carter's three steps
     - argument-structure-checklist # proper argument form validation
   data:
-    - carter-integrity-framework.md
     - bmad-kb.md
+    - carter-integrity-framework.md
 ```

@@ -74,8 +74,8 @@ dependencies:
     - context-completeness-checklist.md
     - historical-accuracy-checklist.md
   data:
-    - bmad-kb.md
     - research-methods.md
+    - bmad-kb.md
 ```
 
 ## Startup Context
