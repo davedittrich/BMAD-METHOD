@@ -73,9 +73,11 @@ dependencies:
     - fact-check-tmpl.yaml
   checklists:
     - source-credibility-checklist.md
+    - integrity-assessment-checklist.md
     - research-methodology-checklist.md
   data:
     - research-methods.md
+    - carter-integrity-framework.md
     - source-types.md
     - bmad-kb.md
 ```

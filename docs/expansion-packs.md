@@ -147,6 +147,33 @@ Key tasks include:
 - `habit-tracking`: Monitors habit formation progress
 - `reflection-exercise`: Facilitates deep self-reflection
 
+### Reporting and Writing Pack
+
+Transform your AI into a comprehensive reporting and content creation studio with specialized agents for journalism, research, and platform-optimized content. This pack provides structured AI assistance throughout your research and writing process.
+
+**Research Team**
+- **Research Strategist**: Investigation planning, source strategy, methodology development
+- **Context Researcher**: Historical background, timeline development, stakeholder mapping
+- **Subject Analyst**: People and organization analysis, credibility assessment, motivation analysis
+- **Fact Checker**: Source verification, claim checking, integrity analysis using Carter framework
+
+**Content Creation Team**
+- **Content Strategist**: Content planning, series development, distribution strategy
+- **Script Writer**: Video scripts, social media content, engaging narratives
+- **Style Editor**: Voice consistency, style refinement, final polish
+- **Argument Analyst**: Logical structure analysis, fallacy identification
+
+**Optimization Team**
+- **Platform Specialist**: Algorithm optimization, platform-specific formatting
+- **Audience Optimizer**: Engagement optimization, retention strategies
+- **Style Analyst**: Writing style analysis, voice pattern extraction
+
+Key features include:
+- **Fact-Checking Framework**: Systematic verification using multiple independent sources
+- **Carter Integrity Analysis**: Three-step integrity assessment (discernment, acknowledgment, consistency)
+- **Source Credibility Assessment**: Comprehensive evaluation of source reliability and trustworthiness
+- **Logical Fallacy Detection**: Systematic identification and analysis of reasoning flaws
+
 ## Unique & Innovative Packs
 
 ### Role-Playing Game Master Pack

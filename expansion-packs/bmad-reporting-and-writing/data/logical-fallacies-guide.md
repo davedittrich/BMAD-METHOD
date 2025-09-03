@@ -1,8 +1,38 @@
 <!-- Powered by BMAD™ Core -->
 
 # Logical Fallacies Guide
+*Based on T. Edward Damer's "Attacking Faulty Reasoning" methodology*
 
-## Formal Fallacies (Invalid Logical Structure)
+## Damer's Framework for Good Arguments
+
+### Five Criteria for Good Arguments
+
+T. Edward Damer defines a fallacy as a violation of one or more of the five criteria of a good argument:
+
+1. **Structural Criterion**: Use well-formed arguments without internal contradictions or invalid logical inferences
+2. **Relevance Criterion**: Provide reasons that genuinely evidence the conclusion  
+3. **Acceptability Criterion**: Use reasons likely to be accepted by rational people
+4. **Sufficiency Criterion**: Provide enough relevant and acceptable reasons to justify the conclusion
+5. **Rebuttal Criterion**: Anticipate and effectively address potential serious criticisms
+
+### Code of Intellectual Conduct (12 Principles)
+
+1. **Fallibility Principle**: Acknowledge that your initial view may not be the most defensible
+2. **Truth-Seeking Principle**: Earnestly search for truth by examining alternatives seriously
+3. **Clarity Principle**: Ensure arguments are free of linguistic confusion
+4. **Burden-of-Proof Principle**: The claim maker bears responsibility of proving it
+5. **Principle of Charity**: Reformulate opponent's arguments in strongest possible version
+6. **Structural Principle**: Use well-formed arguments without contradictions
+7. **Relevance Principle**: Provide reasons that genuinely evidence the conclusion
+8. **Acceptability Principle**: Use reasons likely accepted by rational people
+9. **Sufficiency Principle**: Provide enough relevant and acceptable reasons
+10. **Rebuttal Principle**: Anticipate and address potential serious criticisms
+11. **Suspension-of-Judgment Principle**: Withhold judgment if positions seem equally strong
+12. **Resolution Principle**: Consider issue resolved when one argument meets standards better
+
+## Fallacy Categories by Damer's Criteria
+
+### 1. Structural Criterion Violations (Formal Fallacies)
 
 ### Affirming the Consequent
 
@@ -22,7 +52,7 @@
 - **Example**: "You're either with us or against us."
 - **Problem**: Excludes middle ground or alternative options.
 
-## Informal Fallacies (Misleading Content)
+### 2. Relevance Criterion Violations
 
 ### Ad Hominem
 
@@ -66,7 +96,46 @@
 - **Pattern**: Assuming correlation implies causation
 - **Example**: "I wore my lucky shirt and won the game, so the shirt caused the victory."
 
-## Statistical and Probabilistic Fallacies
+### 3. Acceptability Criterion Violations
+
+### False Dilemma (Either/Or)
+
+- **Pattern**: Only two options presented when more exist
+- **Example**: "You're either with us or against us."
+- **Problem**: Excludes middle ground or alternative options.
+- **Damer Category**: Violates acceptability - presents unreasonable limitation of options
+
+### Loaded Question/Complex Question
+
+- **Pattern**: Question contains controversial assumptions
+- **Example**: "Have you stopped beating your wife?" (assumes wife-beating occurred)
+- **Problem**: Forces acceptance of unproven premises
+- **Damer Category**: Violates acceptability - contains unacceptable assumptions
+
+### Equivocation
+
+- **Pattern**: Using same word with different meanings within argument
+- **Example**: Using "bank" to mean both river bank and financial institution
+- **Problem**: Creates confusion and invalid reasoning
+- **Damer Category**: Violates acceptability - based on linguistic confusion
+
+### 4. Sufficiency Criterion Violations
+
+### Hasty Generalization
+
+- **Pattern**: Drawing broad conclusions from limited evidence
+- **Example**: "I met three rude New Yorkers, so all New Yorkers are rude."
+- **Problem**: Sample size inadequate for conclusion
+- **Damer Category**: Violates sufficiency - insufficient evidence
+
+### Anecdotal Evidence
+
+- **Pattern**: Using personal experience as universal proof
+- **Example**: "Smoking isn't dangerous - my grandfather smoked and lived to 90."
+- **Problem**: Personal anecdotes insufficient for general claims
+- **Damer Category**: Violates sufficiency - inadequate evidence type
+
+### Statistical and Probabilistic Fallacies (Sufficiency Violations)
 
 ### Cherry Picking
 
@@ -88,7 +157,30 @@
 - **Pattern**: Focusing only on survivors while overlooking those who didn't survive
 - **Example**: "Successful entrepreneurs dropped out of college, so dropping out leads to success."
 
-## Rhetorical Fallacies
+### 5. Rebuttal Criterion Violations
+
+### Straw Man
+
+- **Pattern**: Misrepresenting opponent's position to easily defeat it
+- **Example**: Person A: "We should have background checks for guns." Person B: "You want to take away all guns and leave us defenseless."
+- **Problem**: Attacks weaker version of argument instead of actual position
+- **Damer Category**: Violates rebuttal - fails to address actual counterarguments
+
+### Red Herring
+
+- **Pattern**: Introducing irrelevant information to distract from main issue
+- **Example**: Responding to criticism of policy by attacking the critic's personal life
+- **Problem**: Diverts attention from real issues that need addressing
+- **Damer Category**: Violates rebuttal - avoids addressing actual challenges
+
+### Poisoning the Well
+
+- **Pattern**: Preemptively discrediting opposition before they can present arguments
+- **Example**: "Don't listen to my opponent - he's funded by special interests"
+- **Problem**: Prevents fair consideration of counterarguments
+- **Damer Category**: Violates rebuttal - undermines fair hearing of challenges
+
+## Additional Rhetorical Fallacies
 
 ### Red Herring
 
@@ -128,11 +220,29 @@
 - Academic or professional disagreements
 - Personal conflicts and negotiations
 
-### Assessment Framework:
+### Damer's Assessment Framework:
 
-1. **Identify the argument structure**
-2. **Check for formal logical validity**
-3. **Examine premise truth and relevance**
-4. **Look for missing information or context**
-5. **Consider rhetorical techniques being used**
-6. **Assess overall argument strength despite fallacies**
+1. **Apply the Five Criteria**:
+   - **Structural**: Check for valid logical form and internal consistency
+   - **Relevance**: Ensure premises provide genuine evidence for conclusion
+   - **Acceptability**: Verify premises would be accepted by rational people
+   - **Sufficiency**: Confirm adequate evidence quantity and quality
+   - **Rebuttal**: Assess whether counterarguments are properly addressed
+
+2. **Follow the Code of Intellectual Conduct**:
+   - Apply principle of charity to opposing arguments
+   - Maintain focus on truth-seeking rather than winning
+   - Acknowledge fallibility and remain open to correction
+   - Provide clear definitions and avoid linguistic confusion
+
+3. **Normal Form Analysis**:
+   - Identify and number all premises
+   - Clearly state the conclusion
+   - Map logical structure and connections
+   - Check for hidden assumptions or missing premises
+
+4. **Constructive Approach**:
+   - Focus on strengthening arguments rather than just attacking
+   - Suggest improvements for identified problems
+   - Maintain respectful discourse focused on ideas, not persons
+   - Recognize when issues are effectively resolved

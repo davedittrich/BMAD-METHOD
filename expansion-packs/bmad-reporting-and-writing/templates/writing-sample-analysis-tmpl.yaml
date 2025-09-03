@@ -1,0 +1,198 @@
+template:
+  name: Writing Sample Analysis Report
+  description: Detailed analysis of writing samples for style, quality, and characteristics
+  version: 1.0
+  category: analysis
+
+workflow:
+  mode: interactive
+  elicit_on_start: true
+  completion_confirmation: true
+
+variables:
+  - name: sample_description
+    description: "Description of the writing sample(s) being analyzed"
+    required: true
+  - name: analysis_purpose
+    description: "Purpose of the writing sample analysis"
+    required: true
+
+sections:
+  - name: executive_summary
+    title: "Executive Summary"
+    instruction: "Provide overview of writing sample analysis"
+    subsections:
+      - name: analysis_overview
+        title: "Analysis Overview"
+        content: |
+          **Sample:** {{sample_description}}
+          **Analysis Purpose:** {{analysis_purpose}}
+          **Analysis Date:** [Date]
+          **Sample Characteristics:** [Brief overview of key characteristics]
+
+      - name: key_findings
+        title: "Key Analysis Findings"
+        content: |
+          **Writing Quality:** [Overall assessment of writing quality]
+          **Distinctive Features:** [Most notable characteristics]
+          **Analysis Confidence:** [How confident in the analysis results]
+
+  - name: content_analysis
+    title: "Content Analysis"
+    instruction: "Analyze the substantive content and messaging"
+    subsections:
+      - name: message_clarity
+        title: "Message and Clarity"
+        content: |
+          **Main Message:** [Primary message or purpose of the writing]
+          **Clarity Level:** [How clearly the message is communicated]
+          **Audience Targeting:** [Apparent intended audience]
+          **Message Effectiveness:** [How effectively the message is conveyed]
+
+      - name: argument_structure
+        title: "Argument Structure"
+        content: |
+          **Logical Flow:** [Quality of logical organization and flow]
+          **Evidence Usage:** [How evidence and support are used]
+          **Persuasive Elements:** [Persuasive techniques and effectiveness]
+          **Counterargument Handling:** [How opposing views are addressed]
+
+  - name: style_analysis
+    title: "Style Analysis"
+    instruction: "Analyze writing style and voice characteristics"
+    subsections:
+      - name: voice_tone
+        title: "Voice and Tone"
+        content: |
+          **Voice Character:** [Personality and character of the writing voice]
+          **Tone Consistency:** [Consistency of tone throughout]
+          **Emotional Register:** [Emotional level and appropriateness]
+          **Authority Level:** [Perceived authority and credibility]
+
+      - name: language_choices
+        title: "Language and Word Choice"
+        content: |
+          **Vocabulary Level:** [Sophistication and appropriateness of vocabulary]
+          **Language Precision:** [Precision and clarity of language use]
+          **Stylistic Devices:** [Use of metaphor, analogy, and other devices]
+          **Cultural References:** [Cultural, professional, or specialized references]
+
+  - name: technical_analysis
+    title: "Technical Analysis"
+    instruction: "Evaluate technical writing aspects"
+    subsections:
+      - name: grammar_mechanics
+        title: "Grammar and Mechanics"
+        content: |
+          **Grammar Accuracy:** [Overall grammar correctness]
+          **Punctuation Usage:** [Accuracy and effectiveness of punctuation]
+          **Spelling Accuracy:** [Spelling correctness and patterns]
+          **Style Consistency:** [Consistency in mechanical elements]
+
+      - name: sentence_structure
+        title: "Sentence and Paragraph Structure"
+        content: |
+          **Sentence Variety:** [Variety and complexity of sentence structures]
+          **Sentence Length:** [Appropriateness of sentence length patterns]
+          **Paragraph Development:** [Quality of paragraph organization]
+          **Transition Quality:** [Effectiveness of transitions between ideas]
+
+  - name: rhetorical_analysis
+    title: "Rhetorical Analysis"
+    instruction: "Analyze rhetorical effectiveness and techniques"
+    subsections:
+      - name: rhetorical_strategies
+        title: "Rhetorical Strategies"
+        content: |
+          **Persuasive Appeals:** [Use of ethos, pathos, logos]
+          **Rhetorical Questions:** [Effectiveness of rhetorical questions]
+          **Repetition/Emphasis:** [Use of repetition and emphasis techniques]
+          **Analogy/Metaphor:** [Effectiveness of figurative language]
+
+      - name: audience_engagement
+        title: "Audience Engagement"
+        content: |
+          **Reader Connection:** [How well the writing connects with readers]
+          **Engagement Techniques:** [Techniques used to maintain interest]
+          **Accessibility:** [How accessible the writing is to the intended audience]
+          **Call to Action:** [Effectiveness of any calls to action]
+
+  - name: structural_analysis
+    title: "Structural Analysis"
+    instruction: "Analyze organizational and structural elements"
+    subsections:
+      - name: organization_pattern
+        title: "Organization Pattern"
+        content: |
+          **Overall Structure:** [How the piece is organized overall]
+          **Introduction Effectiveness:** [Quality of opening and introduction]
+          **Body Development:** [How the main content is developed]
+          **Conclusion Strength:** [Effectiveness of conclusion or ending]
+
+      - name: formatting_presentation
+        title: "Formatting and Presentation"
+        content: |
+          **Visual Organization:** [Use of headers, spacing, formatting]
+          **Readability Features:** [Elements that aid or hinder readability]
+          **Professional Presentation:** [Overall professional appearance]
+          **Medium Appropriateness:** [Suitability for the intended medium]
+
+  - name: contextual_analysis
+    title: "Contextual Analysis"
+    instruction: "Consider contextual factors affecting the writing"
+    subsections:
+      - name: purpose_alignment
+        title: "Purpose Alignment"
+        content: |
+          **Purpose Achievement:** [How well the writing achieves its purpose]
+          **Genre Conventions:** [Adherence to relevant genre conventions]
+          **Context Appropriateness:** [Suitability for the context and situation]
+          **Stakeholder Considerations:** [Consideration of different stakeholders]
+
+      - name: situational_factors
+        title: "Situational Factors"
+        content: |
+          **Time Constraints:** [Evidence of time pressure or rushed writing]
+          **Resource Limitations:** [Any apparent resource or information limitations]
+          **External Pressures:** [Signs of external pressures or constraints]
+          **Collaborative Elements:** [Evidence of collaboration or multiple contributors]
+
+  - name: comparative_analysis
+    title: "Comparative Analysis"
+    instruction: "Compare with benchmarks or other samples if applicable"
+    subsections:
+      - name: quality_benchmarking
+        title: "Quality Benchmarking"
+        content: |
+          **Industry Standards:** [Comparison to industry or field standards]
+          **Peer Comparison:** [How it compares to similar writers or content]
+          **Historical Comparison:** [Comparison to the author's previous work]
+          **Best Practice Alignment:** [Alignment with writing best practices]
+
+      - name: distinctive_elements
+        title: "Distinctive Elements"
+        content: |
+          **Unique Characteristics:** [What makes this writing distinctive]
+          **Signature Elements:** [Elements that could identify the author]
+          **Innovation/Creativity:** [Creative or innovative elements present]
+          **Memorability Factors:** [What makes this writing memorable]
+
+  - name: overall_assessment
+    title: "Overall Assessment"
+    instruction: "Synthesize findings into comprehensive evaluation"
+    subsections:
+      - name: quality_rating
+        title: "Quality Rating"
+        content: |
+          **Overall Quality:** [High/Moderate/Low with specific justification]
+          **Strengths:** [Primary strengths identified in the analysis]
+          **Weaknesses:** [Primary weaknesses or areas for improvement]
+          **Effectiveness:** [How effective the writing is for its purpose]
+
+      - name: recommendations
+        title: "Recommendations"
+        content: |
+          **Improvement Areas:** [Specific areas where improvement is needed]
+          **Strengths to Maintain:** [Strengths that should be preserved]
+          **Contextual Considerations:** [Important context for interpreting the analysis]
+          **Future Analysis:** [Recommendations for additional analysis if needed]

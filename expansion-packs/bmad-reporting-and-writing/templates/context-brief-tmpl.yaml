@@ -1,0 +1,325 @@
+name: Context Brief Template
+description: Template for creating comprehensive context analysis documents that provide background, historical perspective, and situational awareness for subjects or topics
+version: 1.0.0
+author: BMAD Reporting & Writing
+created: 2025-09-02
+tags: [context, background, analysis, situation]
+
+workflow:
+  mode: structured_analysis
+  sections:
+    - name: executive_summary
+      title: Executive Summary
+      description: High-level overview of subject and key contextual factors
+      variables:
+        - name: subject_name
+          type: text
+          required: true
+          description: Primary subject or topic being analyzed
+        - name: analysis_scope
+          type: text
+          required: true
+          description: Scope and boundaries of contextual analysis
+        - name: key_findings
+          type: textarea
+          required: true
+          description: Most important contextual insights and implications
+        - name: relevance_statement
+          type: textarea
+          required: true
+          description: Why this context matters and to whom
+
+    - name: historical_background
+      title: Historical Background
+      description: Historical development and evolution of subject
+      variables:
+        - name: origin_timeline
+          type: textarea
+          required: true
+          description: Key dates and milestones in subject's development
+        - name: historical_precedents
+          type: textarea
+          required: false
+          description: Similar historical situations or precedents
+        - name: evolution_summary
+          type: textarea
+          required: true
+          description: How subject has changed over time
+        - name: historical_context
+          type: textarea
+          required: true
+          description: Broader historical context and influences
+
+    - name: current_situation
+      title: Current Situation
+      description: Present state and immediate circumstances
+      variables:
+        - name: current_status
+          type: textarea
+          required: true
+          description: Current state of the subject or situation
+        - name: active_factors
+          type: textarea
+          required: true
+          description: Forces and factors currently influencing the subject
+        - name: recent_developments
+          type: textarea
+          required: true
+          description: Important recent changes or developments
+        - name: immediate_context
+          type: textarea
+          required: true
+          description: Immediate circumstances and environment
+
+    - name: stakeholder_landscape
+      title: Stakeholder Landscape
+      description: Key parties with interest or influence in the subject
+      variables:
+        - name: primary_stakeholders
+          type: textarea
+          required: true
+          description: Most important stakeholders and their interests
+        - name: secondary_stakeholders
+          type: textarea
+          required: false
+          description: Additional parties with significant interest
+        - name: power_dynamics
+          type: textarea
+          required: true
+          description: Relationships and power dynamics between stakeholders
+        - name: conflicting_interests
+          type: textarea
+          required: false
+          description: Areas where stakeholder interests conflict
+
+    - name: environmental_factors
+      title: Environmental Factors
+      description: External conditions and influences affecting the subject
+      variables:
+        - name: political_context
+          type: textarea
+          required: false
+          description: Political environment and considerations
+        - name: economic_factors
+          type: textarea
+          required: false
+          description: Economic conditions and constraints
+        - name: social_cultural_context
+          type: textarea
+          required: false
+          description: Social and cultural influences
+        - name: technological_factors
+          type: textarea
+          required: false
+          description: Technological context and implications
+        - name: regulatory_environment
+          type: textarea
+          required: false
+          description: Legal and regulatory considerations
+
+    - name: critical_issues
+      title: Critical Issues and Challenges
+      description: Key problems, controversies, and areas of concern
+      variables:
+        - name: primary_challenges
+          type: textarea
+          required: true
+          description: Most significant challenges or problems
+        - name: controversy_areas
+          type: textarea
+          required: false
+          description: Areas of significant disagreement or controversy
+        - name: risk_factors
+          type: textarea
+          required: true
+          description: Potential risks and vulnerabilities
+        - name: uncertainty_areas
+          type: textarea
+          required: false
+          description: Areas with significant uncertainty or ambiguity
+
+    - name: information_landscape
+      title: Information Landscape
+      description: Sources, quality, and gaps in available information
+      variables:
+        - name: primary_sources
+          type: textarea
+          required: true
+          description: Most authoritative and reliable information sources
+        - name: information_gaps
+          type: textarea
+          required: true
+          description: Significant gaps or limitations in available information
+        - name: conflicting_accounts
+          type: textarea
+          required: false
+          description: Areas where sources provide conflicting information
+        - name: source_reliability
+          type: textarea
+          required: true
+          description: Assessment of source credibility and reliability
+
+    - name: implications_outlook
+      title: Implications and Outlook
+      description: Consequences, trends, and future considerations
+      variables:
+        - name: immediate_implications
+          type: textarea
+          required: true
+          description: Short-term consequences and implications
+        - name: long_term_implications
+          type: textarea
+          required: false
+          description: Longer-term effects and consequences
+        - name: trend_analysis
+          type: textarea
+          required: true
+          description: Observable trends and their trajectory
+        - name: future_scenarios
+          type: textarea
+          required: false
+          description: Potential future developments or scenarios
+
+output_format: |
+  # {{subject_name}} - Context Brief
+  
+  **Analysis Scope:** {{analysis_scope}}
+  
+  **Date:** {{current_date}}
+  
+  ## Executive Summary
+  
+  {{key_findings}}
+  
+  **Relevance:** {{relevance_statement}}
+  
+  ## Historical Background
+  
+  ### Timeline and Development
+  {{origin_timeline}}
+  
+  ### Evolution Over Time
+  {{evolution_summary}}
+  
+  ### Historical Context
+  {{historical_context}}
+  
+  {{#if historical_precedents}}
+  ### Historical Precedents
+  {{historical_precedents}}
+  {{/if}}
+  
+  ## Current Situation
+  
+  ### Current Status
+  {{current_status}}
+  
+  ### Active Influences
+  {{active_factors}}
+  
+  ### Recent Developments
+  {{recent_developments}}
+  
+  ### Immediate Context
+  {{immediate_context}}
+  
+  ## Stakeholder Landscape
+  
+  ### Primary Stakeholders
+  {{primary_stakeholders}}
+  
+  {{#if secondary_stakeholders}}
+  ### Secondary Stakeholders
+  {{secondary_stakeholders}}
+  {{/if}}
+  
+  ### Power Dynamics
+  {{power_dynamics}}
+  
+  {{#if conflicting_interests}}
+  ### Conflicting Interests
+  {{conflicting_interests}}
+  {{/if}}
+  
+  ## Environmental Factors
+  
+  {{#if political_context}}
+  ### Political Context
+  {{political_context}}
+  {{/if}}
+  
+  {{#if economic_factors}}
+  ### Economic Factors
+  {{economic_factors}}
+  {{/if}}
+  
+  {{#if social_cultural_context}}
+  ### Social and Cultural Context
+  {{social_cultural_context}}
+  {{/if}}
+  
+  {{#if technological_factors}}
+  ### Technological Factors
+  {{technological_factors}}
+  {{/if}}
+  
+  {{#if regulatory_environment}}
+  ### Regulatory Environment
+  {{regulatory_environment}}
+  {{/if}}
+  
+  ## Critical Issues and Challenges
+  
+  ### Primary Challenges
+  {{primary_challenges}}
+  
+  {{#if controversy_areas}}
+  ### Areas of Controversy
+  {{controversy_areas}}
+  {{/if}}
+  
+  ### Risk Factors
+  {{risk_factors}}
+  
+  {{#if uncertainty_areas}}
+  ### Areas of Uncertainty
+  {{uncertainty_areas}}
+  {{/if}}
+  
+  ## Information Landscape
+  
+  ### Primary Sources
+  {{primary_sources}}
+  
+  ### Information Gaps
+  {{information_gaps}}
+  
+  {{#if conflicting_accounts}}
+  ### Conflicting Accounts
+  {{conflicting_accounts}}
+  {{/if}}
+  
+  ### Source Reliability Assessment
+  {{source_reliability}}
+  
+  ## Implications and Outlook
+  
+  ### Immediate Implications
+  {{immediate_implications}}
+  
+  {{#if long_term_implications}}
+  ### Long-term Implications
+  {{long_term_implications}}
+  {{/if}}
+  
+  ### Trend Analysis
+  {{trend_analysis}}
+  
+  {{#if future_scenarios}}
+  ### Future Scenarios
+  {{future_scenarios}}
+  {{/if}}
+  
+  ---
+  
+  *Generated using BMAD Context Brief Template*

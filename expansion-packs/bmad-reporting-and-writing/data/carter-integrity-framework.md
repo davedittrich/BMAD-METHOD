@@ -6,6 +6,32 @@ Based on Stephen L. Carter's "Integrity" - A framework for analyzing integrity i
 
 ## The Three-Step Analysis
 
+In his book, Carter defines "integrity" this way:
+
+> "When I refer to *integrity*, I have something very simple and specific in mind. Integrity,
+> as I will use the term, requires three steps: (1) *discerning* what is right and what is wrong;
+> (2) *acting* on what you have discerned, even at personal cost; and (3) *saying openly* that
+> you are acting on your understanding of right and wrong. The first criterion captures the idea
+> of integrity as requiring a degree of moral reflectiveness. The second brings in the ideal of
+> of an integral person as steadfast, which includes the sense of keeping commitments. The third
+> reminds us that a person of integrity is unashamed of doing the right." -- Stephen L. Carter
+
+As to the opposite of integrity, Carter says:
+
+> "If integrity has an opposite, perhaps it is corruption. We say that we are a nation that demands
+> integrity, but are we really? We call ourselves a nation of laws, but millions of us cheat on our
+> taxes. We seem not to believe in the integrity of our commitments, with half of marriages ending
+> in divorce. We say we want integrity in our politics, and our politicians promise it endlessly.
+> (Try searching the Nexis database for uses of the word *integrity* by politicians and
+> commentators and you will be inundated.) But we reward innuendo and smear and barefaced lies
+> with our votes." -- Stephen L. Carter
+
+"Corruption" can involve money, but a direct *quid pro quo* or "pay-to-play" arrangement trading
+money for a policy or judicial decision is not necessary for an act to be corrupt. Illegality is
+similarly not a requirement for an act to be corrupt, or for someone to be acting with corrupt
+intent. The application of Carter's three criteria together helps decide when an act is
+corrupt, or someone is acting in an unintegral way.
+
 ### Step 1: Discernment
 
 **The ability to distinguish right from wrong**
@@ -21,7 +47,7 @@ Based on Stephen L. Carter's "Integrity" - A framework for analyzing integrity i
 - Refusing to acknowledge ethical dimensions
 - Claiming "it's just business" to avoid moral consideration
 
-### Step 2: Acknowledgment
+### Step 2: Acting
 
 **Acting according to what discernment tells you**
 
@@ -37,7 +63,7 @@ Based on Stephen L. Carter's "Integrity" - A framework for analyzing integrity i
 - Abandoning principles under pressure
 - Self-serving interpretation of ethical rules
 
-### Step 3: Action Consistency
+### Step 3: Saying openly
 
 **Being willing to say openly that you are acting on your understanding of right and wrong**
 
@@ -70,7 +96,7 @@ Based on Stephen L. Carter's "Integrity" - A framework for analyzing integrity i
 ### Red Flags (Corruption Indicators)
 
 - Moral relativism when convenient
-- Different standards for self vs. others
+- Different standards for self (or one's own tribe/team/political party) vs. others
 - Secrecy around decision-making processes
 - Blame-shifting when confronted
 - Pattern of promise-breaking
@@ -86,4 +112,15 @@ Use this framework to:
 - Provide objective criteria for integrity analysis
 - Support claims about character and trustworthiness
 
-Remember: Integrity analysis should be based on observable actions and verifiable patterns, not assumptions about internal motivations.
+REMEMBER: Integrity analysis should be based on observable actions and verifiable patterns,
+not assumptions about internal motivations.
+
+## Other quotes from Carter's book
+
+> "Instead of a nation of public dissenters, we have become a nation experienced in
+> misdirection--in beguiling the audience into looking in one direction while we are busy
+> somewhere else. The media culture unfortunately rewards this, not only because a misleading
+> soundbite is more attractive (that is, marketable) than a principled argument, but also
+> because the media seem far more interested in tracking down hypocrisy than in reporting
+> episodes of integrity." -- Stephen L. Carter
+

@@ -71,9 +71,11 @@ dependencies:
     - subject-profile-tmpl.yaml
     - credibility-analysis-tmpl.yaml
   checklists:
-    - subject-credibility-checklist.md
+    - source-credibility-checklist.md
+    - integrity-assessment-checklist.md
     - conflict-of-interest-checklist.md
   data:
+    - carter-integrity-framework.md
     - bmad-kb.md
 ```
 

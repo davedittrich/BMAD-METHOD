@@ -1,0 +1,72 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: content-distillation-report
+  name: Content Distillation Report
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/content-distillation-{{content_id}}.md
+    title: "Content Distillation Report: {{content_title}}"
+
+workflow:
+  mode: interactive
+  elicitation: advanced-elicitation
+  custom_elicitation:
+    title: "Content Distillation Elicitation Actions"
+    options:
+      - "Expand market sizing calculations with sensitivity analysis"
+      - "Deep dive into a specific customer segment"
+      - "Analyze an emerging market trend in detail"
+      - "Compare this market to an analogous market"
+      - "Stress test market assumptions"
+      - "Explore adjacent market opportunities"
+      - "Challenge market definition and boundaries"
+      - "Generate strategic scenarios (best/base/worst case)"
+      - "If only we had considered [X market factor]..."
+      - "Proceed to next section"
+
+sections:
+  - id: source-identification
+    title: SOURCE
+    template: |
+      - **Title:** {{content_title}}
+      - **ID:** {{content_id}}
+      - **Length:** {{content_length}}
+      - **URL:** {{content_url}}
+      - **Published Date:** {{content_publish_date}}
+
+  - id: executive-summary
+    title: SUMMARY
+    instruction: Produce the SUMMARY extracted from the input.
+
+  - id: one-sentence-takeaway
+    title: ONE-SENTENCE TAKEAWAY
+    instructions: Produce the ONE-SENTENCE TAKEAWAY extracted from the input.
+
+  - id: facts
+    title: FACTS
+    instructions: List the FACTS extracted from the input.
+
+  - id: quotes
+    title: QUOTES
+    instruction: List the QUOTES extracted from the input.
+
+  - id: insights
+    title: INSIGHTS
+    instructions: List the INSIGHTS extracted from the input.
+
+  - id: ideas
+    title: IDEAS
+    instructions: List the IDEAS extracted from the input.
+
+  - id: habits
+    title: HABITS
+    instructions: List the HABITS extracted from the input.
+
+  - id: recommendations
+    title: RECOMMENDATIONS
+    instructions: List the RECOMMENDATIONS extracted from the input.
+
+  - id: references
+    title: REFERENCES
+    instructions: List the REFERENCES extracted from the input.

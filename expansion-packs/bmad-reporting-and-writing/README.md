@@ -6,6 +6,9 @@ Transform your AI into a comprehensive reporting and content creation studio wit
 
 The Reporting & Writing Expansion Pack extends BMAD-Method with a comprehensive suite of social media and journalism-focused agents, workflows, and tools. Whether you're conducting investigative reporting, creating social media content, fact-checking claims, or responding to published work, this pack provides structured AI assistance throughout your research and writing process.
 
+For a full list of available expansion packs, see the [Expansion Packs documentation](../../docs/expansion-packs.md).
+
+
 ### Key Features
 
 - 🤖 **11 Specialized Agents** - From research strategy to platform optimization
@@ -18,23 +21,23 @@ The Reporting & Writing Expansion Pack extends BMAD-Method with a comprehensive 
 
 ### Research Team
 
-1. **Research Strategist** - Investigation planning, source strategy, methodology development
-2. **Context Researcher** - Historical background, timeline development, stakeholder mapping
-3. **Subject Analyst** - People and organization analysis, credibility assessment, motivation analysis
-4. **Fact Checker** - Source verification, claim checking, integrity analysis using Carter framework
+1.  **Research Strategist** - Develops a comprehensive plan for the investigation, including defining research questions, identifying potential sources, and establishing a methodology for data collection and analysis.
+2.  **Context Researcher** - Gathers and analyzes historical data, creating timelines and mapping out the key stakeholders and their relationships to provide a deep understanding of the subject's background.
+3.  **Subject Analyst** - Conducts in-depth analysis of individuals and organizations, assessing their credibility, motivations, and potential biases.
+4.  **Fact Checker** - Verifies all claims and data points, using a rigorous, multi-source confirmation process to ensure the accuracy and integrity of the information, leveraging the Carter framework for integrity analysis.
 
 ### Content Creation Team
 
-5. **Content Strategist** - Content planning, series development, distribution strategy
-6. **Script Writer** - Video scripts, social media content, engaging narratives
-7. **Style Editor** - Voice consistency, style refinement, final polish
-8. **Argument Analyst** - Logical structure analysis, fallacy identification
+5.  **Content Strategist** - Plans and develops the content series, defining the narrative arc, target audience, and distribution strategy to maximize impact.
+6.  **Script Writer** - Crafts compelling narratives for various formats, including video scripts, social media content, and long-form articles, ensuring the story is engaging and easy to understand.
+7.  **Style Editor** - Refines the content to ensure a consistent voice and style, polishing the final product for clarity, flow, and impact.
+8.  **Argument Analyst** - Analyzes the logical structure of arguments, identifying fallacies and ensuring that the reasoning is sound and well-supported by evidence.
 
 ### Optimization Team
 
-9. **Platform Specialist** - Algorithm optimization, platform-specific formatting
-10. **Audience Optimizer** - Engagement optimization, retention strategies
-11. **Style Analyst** - Writing style analysis, voice pattern extraction
+9.  **Platform Specialist** - Optimizes content for specific platforms, such as YouTube or Twitter, using knowledge of algorithms and best practices to maximize reach and engagement.
+10. **Audience Optimizer** - Focuses on strategies to increase audience engagement and retention, such as crafting compelling hooks and calls-to-action.
+11. **Style Analyst** - Analyzes writing styles to extract patterns and create style guides, ensuring that the content aligns with the desired brand voice.
 
 ## 🚀 Installation
 
@@ -70,10 +73,10 @@ bmad activate script-writer
 
 ### Available Workflows
 
-- **article-research-to-publish** - Complete research-driven article development with fact-checking
-- **youtube-video-production** - Algorithm-optimized video script creation and optimization
-- **response-journalism** - Systematic analysis and response to published content with integrity analysis
-- **social-media-content-series** - Coordinated multi-platform content series with consistent messaging
+- **article-research-to-publish** - A comprehensive workflow that takes you from the initial research phase to a fully-vetted, publishable article. This workflow leverages the entire research team to ensure accuracy and depth, and then brings in the content creation team to craft a compelling narrative.
+- **youtube-video-production** - This workflow is designed to create high-quality, algorithm-optimized YouTube videos. It starts with the research team to gather information, then moves to the script writer and style editor to create an engaging script, and finally uses the platform specialist to optimize for YouTube.
+- **response-journalism** - This workflow provides a structured process for analyzing and responding to published content. It uses the fact-checker and argument analyst to deconstruct the original piece, and then the content creation team to craft a well-reasoned response.
+- **social-media-content-series** - This workflow is designed to create a coordinated content series across multiple social media platforms. It uses the content strategist to plan the series, the script writer to create the content, and the platform specialist to optimize for each platform.
 
 ## 📋 Key Components
 
