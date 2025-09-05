@@ -11,19 +11,6 @@ template:
 workflow:
   mode: interactive
   elicitation: advanced-elicitation
-  custom_elicitation:
-    title: "Content Distillation Elicitation Actions"
-    options:
-      - "Expand market sizing calculations with sensitivity analysis"
-      - "Deep dive into a specific customer segment"
-      - "Analyze an emerging market trend in detail"
-      - "Compare this market to an analogous market"
-      - "Stress test market assumptions"
-      - "Explore adjacent market opportunities"
-      - "Challenge market definition and boundaries"
-      - "Generate strategic scenarios (best/base/worst case)"
-      - "If only we had considered [X market factor]..."
-      - "Proceed to next section"
 
 sections:
   - id: source-identification
