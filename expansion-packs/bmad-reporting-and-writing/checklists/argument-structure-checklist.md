@@ -44,6 +44,10 @@ Use this checklist to systematically evaluate argument structure using Damer's f
 - [ ] **Invalid Syllogism**: Formal logical errors in deductive reasoning
 - [ ] **Affirming the Consequent**: "If A then B; B; therefore A"
 - [ ] **Denying the Antecedent**: "If A then B; not A; therefore not B"
+- [ ] **Undistributed Middle**: Middle term not distributed in at least one premise
+- [ ] **Illicit Major/Minor**: Major or minor term distributed in conclusion but not premise
+- [ ] **Modal Fallacies**: Incorrect reasoning about necessity and possibility
+- [ ] **Temporal Fallacies**: Incorrect reasoning about time relationships
 
 ### 2. Relevance Criterion Violations
 
@@ -57,13 +61,20 @@ Use this checklist to systematically evaluate argument structure using Damer's f
 
 **Common Relevance Fallacies to Check**:
 - [ ] **Ad Hominem**: Attacking person instead of argument
+  - [ ] **Abusive**: Direct personal attack
+  - [ ] **Circumstantial**: Attacking person's circumstances or motivations
+  - [ ] **Tu Quoque**: "You too" - pointing out opponent's hypocrisy
 - [ ] **Red Herring**: Introducing irrelevant information to distract
 - [ ] **Straw Man**: Misrepresenting opponent's position
 - [ ] **Appeal to Force**: Using threats instead of reasons
 - [ ] **Appeal to Pity**: Using sympathy instead of evidence
+- [ ] **Appeal to Fear**: Using fear to avoid rational evaluation
+- [ ] **Appeal to Flattery**: Using praise to avoid critical evaluation
 - [ ] **Genetic Fallacy**: Rejecting claim based on irrelevant origin
 - [ ] **Appeal to Tradition**: "We've always done it this way"
 - [ ] **Appeal to Novelty**: "This is new, therefore better"
+- [ ] **Appeal to Popularity/Bandwagon**: Argument from majority opinion
+- [ ] **Poisoning the Well**: Pre-emptive attack on opponent's credibility
 
 ### 3. Acceptability Criterion Violations
 
@@ -101,6 +112,11 @@ Use this checklist to systematically evaluate argument structure using Damer's f
 - [ ] **Cherry Picking**: Selecting only favorable evidence
 - [ ] **False Analogy**: Drawing conclusions from weak analogies
 - [ ] **Slippery Slope**: Assuming extreme consequences without justification
+- [ ] **Post Hoc Ergo Propter Hoc**: Assuming causation from temporal sequence
+- [ ] **Correlation Implies Causation**: Confusing correlation with causation
+- [ ] **Oversimplified Cause**: Ignoring multiple causal factors
+- [ ] **Survivorship Bias**: Focusing only on survivors while overlooking failures
+- [ ] **Base Rate Fallacy**: Ignoring prior probability when making judgments
 
 ### 5. Rebuttal Criterion Violations
 
@@ -221,4 +237,39 @@ Use this checklist to systematically evaluate argument structure using Damer's f
 - [ ] **Resolution Recognition**: Recognize when sufficient evidence supports conclusion
 - [ ] **Graceful Concession**: Accept when your position has been effectively challenged
 
-This checklist provides a comprehensive framework for argument analysis based on T. Edward Damer's systematic approach to identifying faulty reasoning and constructing sound arguments.
+## Additional Fallacy Categories
+
+### Ambiguity and Linguistic Fallacies
+
+- [ ] **Equivocation**: Same word used with different meanings in argument
+- [ ] **Amphiboly**: Grammatical ambiguity leading to misinterpretation
+- [ ] **Accent**: Misleading through emphasis or pronunciation
+- [ ] **Category Error**: Applying inappropriate categories or concepts
+- [ ] **Reification**: Treating abstract concepts as concrete entities
+- [ ] **Definitional Problems**: Exploiting unclear or shifting definitions
+
+### Distraction and Misdirection
+
+- [ ] **Moving the Goalposts**: Changing standards or criteria when convenient
+- [ ] **Topic Shifting**: Changing subject to avoid addressing argument
+- [ ] **Complexity Introduction**: Making arguments unnecessarily complex to confuse
+- [ ] **Selective Quotation**: Using quotes out of context
+- [ ] **Attribution Errors**: Attributing positions opponent doesn't hold
+
+### Pattern Analysis Framework
+
+- [ ] **Fallacy Frequency**: Track which fallacies appear most often
+- [ ] **Context Patterns**: Note whether certain topics trigger specific fallacies
+- [ ] **Severity Assessment**: Evaluate how much fallacies weaken arguments
+- [ ] **Intentionality**: Assess whether fallacies appear deliberate or unconscious
+- [ ] **Educational Opportunities**: Identify areas where logic education would help
+
+### Comprehensive Documentation
+
+- [ ] **Fallacy Catalog**: Complete list of identified fallacies with examples
+- [ ] **Context Impact**: How context affects fallacy interpretation
+- [ ] **Pattern Summary**: Overall trends in reasoning quality
+- [ ] **Credibility Assessment**: How fallacies affect source credibility
+- [ ] **Improvement Recommendations**: Specific suggestions for strengthening arguments
+
+This checklist provides a comprehensive framework for argument analysis based on T. Edward Damer's systematic approach to identifying faulty reasoning and constructing sound arguments, enhanced with additional fallacy categories and assessment methods.

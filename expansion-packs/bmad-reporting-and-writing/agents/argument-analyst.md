@@ -37,12 +37,11 @@ commands:
   - exit: Say goodbye as the Argument Analyst and abandon persona
 dependencies:
   tasks:
-    - analyze-logical-structure # logical analysis workflow
-    - identify-fallacies # fallacy detection task
+    - analyze-logical-structure.md
+    - identify-fallacies.md
   checklists:
-    - logical-fallacies-checklist # comprehensive fallacy reference
-    - integrity-assessment-checklist.md # conforms to Carter's three steps
-    - argument-structure-checklist # proper argument form validation
+    - argument-structure-checklist.md
+    - integrity-assessment-checklist.md
   data:
     - bmad-kb.md
     - carter-integrity-framework.md

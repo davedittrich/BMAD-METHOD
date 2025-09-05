@@ -28,6 +28,24 @@ Damer's approach defines **a fallacy as a violation of one or more of the five c
 - Invalid syllogisms
 - Affirming the consequent
 - Denying the antecedent
+- False dilemma (presenting only two options when more exist)
+
+**Specific Examples**:
+
+**Affirming the Consequent**:
+- Pattern: If P then Q. Q is true. Therefore P is true.
+- Example: "If it rains, the ground gets wet. The ground is wet. Therefore it rained."
+- Problem: Q could be true for other reasons.
+
+**Denying the Antecedent**:
+- Pattern: If P then Q. P is false. Therefore Q is false.
+- Example: "If you study, you'll pass. You didn't study. Therefore you'll fail."
+- Problem: Q might still be true despite not-P.
+
+**False Dilemma (Either/Or)**:
+- Pattern: Only two options presented when more exist
+- Example: "You're either with us or against us."
+- Problem: Excludes middle ground or alternative options.
 
 ### 2. Relevance Criterion
 **Definition**: One who presents an argument for or against a position should attempt to set forth only reasons that are directly related to the merit of the position at issue.
@@ -45,6 +63,46 @@ Damer's approach defines **a fallacy as a violation of one or more of the five c
 - Appeal to pity (using sympathy instead of evidence)
 - Genetic fallacy (rejecting claims based on irrelevant origins)
 - Appeal to tradition or novelty
+- Straw man (misrepresenting opponent's position)
+- Appeal to authority (citing irrelevant or false authority)
+- Circular reasoning (using the conclusion as a premise)
+- Slippery slope (claiming extreme consequences without justification)
+
+**Specific Examples**:
+
+**Ad Hominem**:
+- Types:
+  - Personal attack: "You're stupid, so your argument is wrong"
+  - Circumstantial: "You would say that because you work there"
+  - Tu quoque: "You do it too, so you can't criticize"
+
+**Straw Man**:
+- Pattern: Misrepresenting opponent's position to make it easier to attack
+- Example: Person A: "We should have background checks for guns." Person B: "You want to take away all guns and leave us defenseless."
+
+**Appeal to Authority (Argumentum ad Verecundiam)**:
+- Pattern: Citing irrelevant or false authority
+- Problem: Authority must be relevant and legitimate
+- Example: "Einstein was a genius, so his views on politics must be right."
+
+**Appeal to Emotion**:
+- Types:
+  - Fear: "If we don't act now, disaster will strike"
+  - Pity: "You should believe me because I've suffered"
+  - Anger: Using outrage instead of reasoning
+  - Bandwagon: "Everyone believes this"
+
+**Circular Reasoning (Begging the Question)**:
+- Pattern: Using the conclusion as a premise
+- Example: "God exists because the Bible says so, and the Bible is true because it's the word of God."
+
+**Slippery Slope**:
+- Pattern: Claiming one event will lead to extreme consequences without justification
+- Example: "If we allow gay marriage, next people will marry animals."
+
+**False Cause (Post Hoc)**:
+- Pattern: Assuming correlation implies causation
+- Example: "I wore my lucky shirt and won the game, so the shirt caused the victory."
 
 ### 3. Acceptability Criterion  
 **Definition**: One who presents an argument for or against a position should attempt to use reasons that are likely to be accepted by a rationally mature person and that meet standard criteria of acceptability.
@@ -63,6 +121,18 @@ Damer's approach defines **a fallacy as a violation of one or more of the five c
 - Equivocation (using words with different meanings in same argument)
 - Division/composition fallacies
 
+**Specific Examples**:
+
+**Loaded Question/Complex Question**:
+- Pattern: Question contains controversial assumptions
+- Example: "Have you stopped beating your wife?" (assumes wife-beating occurred)
+- Problem: Forces acceptance of unproven premises
+
+**Equivocation**:
+- Pattern: Using same word with different meanings within argument
+- Example: Using "bank" to mean both river bank and financial institution
+- Problem: Creates confusion and invalid reasoning
+
 ### 4. Sufficiency Criterion
 **Definition**: One who presents an argument for or against a position should attempt to provide reasons that are sufficient in number, kind, and weight to support acceptance of the conclusion.
 
@@ -80,6 +150,36 @@ Damer's approach defines **a fallacy as a violation of one or more of the five c
 - Cherry-picking (selecting only favorable evidence)
 - False analogies used as primary evidence
 
+**Specific Examples**:
+
+**Hasty Generalization**:
+- Pattern: Drawing broad conclusions from limited evidence
+- Example: "I met three rude New Yorkers, so all New Yorkers are rude."
+- Problem: Sample size inadequate for conclusion
+
+**Anecdotal Evidence**:
+- Pattern: Using personal experience as universal proof
+- Example: "Smoking isn't dangerous - my grandfather smoked and lived to 90."
+- Problem: Personal anecdotes insufficient for general claims
+
+**Statistical and Probabilistic Fallacies**:
+
+**Cherry Picking**:
+- Pattern: Selecting only data that supports your position
+- Example: Citing only studies that confirm your view while ignoring contradictory evidence.
+
+**Base Rate Fallacy**:
+- Pattern: Ignoring prior probability when making judgments
+- Example: A rare disease test is 99% accurate, but the disease affects only 0.1% of population.
+
+**Gambler's Fallacy**:
+- Pattern: Believing past events affect future probabilities in independent events
+- Example: "I've flipped heads five times, so tails is due."
+
+**Survivorship Bias**:
+- Pattern: Focusing only on survivors while overlooking those who didn't survive
+- Example: "Successful entrepreneurs dropped out of college, so dropping out leads to success."
+
 ### 5. Rebuttal Criterion
 **Definition**: One who presents an argument for or against a position should attempt to provide an effective rebuttal to all serious challenges to the argument or position and to the strongest arguments for viable alternative positions.
 
@@ -96,6 +196,19 @@ Damer's approach defines **a fallacy as a violation of one or more of the five c
 - Poisoning the well (preemptively discrediting opposition)
 - Tu quoque ("you do it too" instead of addressing the argument)
 - Appeal to hypocrisy (focusing on opponent's inconsistency)
+- Red herring (introducing irrelevant information to distract)
+
+**Specific Examples**:
+
+**Poisoning the Well**:
+- Pattern: Preemptively discrediting opposition before they can present arguments
+- Example: "Don't listen to my opponent - he's funded by special interests"
+- Problem: Prevents fair consideration of counterarguments
+
+**Red Herring**:
+- Pattern: Introducing irrelevant information to distract from the main issue
+- Example: Responding to criticism of policy by attacking the critic's personal life
+- Problem: Diverts attention from real issues that need addressing
 
 ## Code of Intellectual Conduct (12 Principles)
 
@@ -208,6 +321,60 @@ Damer provides three specific approaches for addressing fallacies when encounter
 - **Writing instruction**: Structure for constructing persuasive essays and reports
 - **Debate preparation**: Comprehensive approach to argument analysis and construction
 - **Professional development**: Framework for clear business and academic communication
+
+## Additional Common Fallacies
+
+### Moving the Goalposts
+- **Pattern**: Changing standards of evidence after initial standards are met
+- **Example**: "Show me evidence." [Evidence provided] "Well, that's not enough evidence."
+- **Damer Category**: Violates rebuttal criterion - changes the terms of engagement unfairly
+
+### No True Scotsman
+- **Pattern**: Dismissing counterexamples by redefining terms
+- **Example**: "No vegetarian eats meat." "My friend is vegetarian but eats fish." "Well, no true vegetarian eats fish."
+- **Damer Category**: Violates acceptability criterion - uses unreasonable redefinition
+
+### Loaded Question
+- **Pattern**: Question containing controversial assumption
+- **Example**: "When did you stop beating your wife?"
+- **Damer Category**: Violates acceptability criterion - contains unacceptable assumptions
+
+## Practical Fallacy Identification Guidelines
+
+### Questions to Ask:
+1. **Structure**: Is the logical structure valid?
+2. **Premises**: Are the premises actually true?
+3. **Relevance**: Do the premises support the conclusion?
+4. **Completeness**: Is important information being omitted?
+5. **Context**: Is the argument appropriate for the context?
+
+### Common Contexts for Fallacies:
+- Political debates and campaigns
+- Advertising and marketing
+- Social media discussions
+- Academic or professional disagreements
+- Personal conflicts and negotiations
+
+### Assessment Framework Using Damer's Method:
+
+1. **Apply the Five Criteria**:
+   - **Structural**: Check for valid logical form and internal consistency
+   - **Relevance**: Ensure premises provide genuine evidence for conclusion
+   - **Acceptability**: Verify premises would be accepted by rational people
+   - **Sufficiency**: Confirm adequate evidence quantity and quality
+   - **Rebuttal**: Assess whether counterarguments are properly addressed
+
+2. **Follow the Code of Intellectual Conduct**:
+   - Apply principle of charity to opposing arguments
+   - Maintain focus on truth-seeking rather than winning
+   - Acknowledge fallibility and remain open to correction
+   - Provide clear definitions and avoid linguistic confusion
+
+3. **Constructive Approach**:
+   - Focus on strengthening arguments rather than just attacking
+   - Suggest improvements for identified problems
+   - Maintain respectful discourse focused on ideas, not persons
+   - Recognize when issues are effectively resolved
 
 ## Advanced Applications
 

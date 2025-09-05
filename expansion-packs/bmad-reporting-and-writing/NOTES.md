@@ -108,7 +108,7 @@ Identified 48 missing files referenced by agents but not present in filesystem:
 
 **Reference Materials:**
 
-- `logical-fallacies-guide.md` - Comprehensive fallacy identification reference
+- `damer-framework.md` - T. Edward Damer's comprehensive framework for argument analysis and fallacy identification
 - `research-methods.md` - Complete methodology guide for investigation
 - `source-types.md` - Classification and evaluation of different source types
 - `platform-best-practices.md` - Optimization strategies by platform
