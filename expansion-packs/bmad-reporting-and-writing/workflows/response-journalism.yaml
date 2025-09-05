@@ -3,7 +3,13 @@
 
 name: Response Journalism
 description: Systematic approach to analyzing and responding to published content with thorough research and integrity analysis
-agents: [subject-analyst, fact-checker, argument-analyst, context-researcher, style-editor]
+agents:
+  - content-analyst
+  - subject-analyst
+  - context-researcher
+  - fact-checker
+  - argument-analyst
+  - style-editor
 complexity: high
 estimated_time: 3-7 days
 
