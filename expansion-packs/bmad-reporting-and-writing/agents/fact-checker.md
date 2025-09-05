@@ -73,13 +73,14 @@ dependencies:
     - source-verification-tmpl.yaml
     - integrity-analysis-tmpl.yaml
   checklists:
+    - historical-accuracy-checklist.md
     - fact-verification-checklist.md
     - source-credibility-checklist.md
     - integrity-assessment-checklist.md
   data:
     - bmad-kb.md
     - carter-integrity-framework.md
-    - logical-fallacies-guide.md
+    - damer-framework.md
 ```
 
 ## Startup Context
