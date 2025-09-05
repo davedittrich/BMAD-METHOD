@@ -4,6 +4,7 @@ bundle:
   icon: 📰
   description: Complete reporting and content creation team for journalism, social media, and research-driven content
 agents:
+  - bmad-orchestrator
   - research-strategist
   - subject-analyst
   - context-researcher
