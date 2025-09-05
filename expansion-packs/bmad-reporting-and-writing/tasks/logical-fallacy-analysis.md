@@ -45,6 +45,13 @@ Systematically identify and analyze logical fallacies in arguments, statements, 
    - Provide constructive suggestions for addressing identified problems
    - Assess whether arguments can be improved to meet the five criteria
 
+7. **Overall Assessment**
+   - Rate the logical strength of the argument using Damer's criteria
+   - Identify the strongest and weakest points in the reasoning
+   - Assess the credibility and quality of evidence used
+   - Note any patterns in reasoning errors or strengths
+   - Recommend specific improvements to logical structure and evidence
+
 ## Elicitation Requirements
 
 elicit: true
@@ -73,9 +80,12 @@ Please specify:
 
 Deliver comprehensive logical fallacy analysis using Damer's framework including:
 
+- Argument structure diagram or outline showing logical flow
 - Assessment against each of Damer's five criteria for good arguments
 - Normal form reconstruction of arguments with numbered premises and clear conclusions
 - Detailed inventory of criterion violations with specific fallacy identification
+- Assessment of logical validity, soundness, and evidence quality
 - Application of Code of Intellectual Conduct principles
+- Rating of overall logical strength with justification
+- Identification of strongest and weakest elements
 - Constructive recommendations for strengthening arguments to meet all five criteria
-- Overall assessment of argument quality and areas for improvement

@@ -75,11 +75,10 @@ Identified 48 missing files referenced by agents but not present in filesystem:
 - `write-video-script.md` - Platform-optimized video script creation
 - `optimize-retention.md` - Engagement and retention enhancement
 - `analyze-writing-style.md` - Style pattern analysis and replication
-- `analyze-logical-structure.md` - Argument analysis and fallacy detection
+- `logical-fallacy-analysis.md` - Systematic logical analysis using Damer's five criteria framework
 
 **Additional Tasks:**
 
-- `identify-fallacies.md` - Logical fallacy recognition
 - `trend-analysis.md` - Pattern analysis and prediction
 - Plus additional tasks for specific agent workflows
 
@@ -211,8 +210,7 @@ _Content Creation & Optimization (6 tasks):_
 - `write-video-script.md` - Platform-optimized video script creation
 - `optimize-retention.md` - Audience engagement and retention optimization
 - `analyze-writing-style.md` - Style pattern analysis for consistency
-- `analyze-logical-structure.md` - Argument analysis and fallacy detection
-- `identify-fallacies.md` - Logical fallacy recognition procedures
+- `logical-fallacy-analysis.md` - Systematic logical analysis using Damer's five criteria framework
 - `trend-analysis.md` - Pattern analysis and predictive insights
 
 _Framework Tasks (3 tasks):_

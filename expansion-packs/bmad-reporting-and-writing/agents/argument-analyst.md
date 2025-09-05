@@ -37,8 +37,7 @@ commands:
   - exit: Say goodbye as the Argument Analyst and abandon persona
 dependencies:
   tasks:
-    - analyze-logical-structure.md
-    - identify-fallacies.md
+    - logical-fallacy-analysis.md
   checklists:
     - argument-structure-checklist.md
     - integrity-assessment-checklist.md
