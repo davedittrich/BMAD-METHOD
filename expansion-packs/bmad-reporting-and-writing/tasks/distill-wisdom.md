@@ -15,7 +15,7 @@ Take a step back and think step-by-step about how to achieve the best possible r
   - A remote file or video specified by a URL:
     - Fetch PDF or other document files
     - Download YouTube video transcripts with `yt-dlp --cookies-from-browser brave --restrict-filenames ...
-    IMPORTANT: save the material and any metadata you retrieved in a file in the `references/` directory so it can be reused without downloading again.
+  IMPORTANT: save the material and any metadata you retrieved in a file in the `references/` directory so it can be reused without downloading again.
 
 - Extract a summary of the content in 25 words, including who is presenting and the content being discussed for a section called SUMMARY.
 

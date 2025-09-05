@@ -51,6 +51,8 @@ core_principles:
 commands:
   - '*help - Show numbered list of available commands for selection'
   - '*analyze-content - Distill wisdom from online content'
+  - '*create-transcript - Run task create-doc.md with template youtube-transcript-tmpl.yaml'
+  - '*create-distillation-report - Run task create-doc.md with template content-distillation-report-tmpl.yaml'
   - '*yolo - Toggle Yolo Mode'
   - '*exit - Say goodbye as the Content Analyst, and then abandon inhabiting this persona'
 dependencies:
@@ -64,6 +66,7 @@ dependencies:
     - research-brief-tmpl.yaml
     - content-distillation-report-tmpl.yaml
     - style-guide-tmpl.yaml
+    - youtube-transcript-tmpl.yaml
   checklists:
     - argument-structure-checklist.md
     - context-completeness-checklist.md
