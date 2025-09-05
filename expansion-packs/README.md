@@ -11,7 +11,7 @@ Expansion packs extend BMad-Method beyond traditional software development, prov
 
 ### Creative & Content
 - **bmad-creative-writing** - Fiction writing, storytelling, and narrative development
-- **bmad-reporting-and-writing** - Research, analysis, and professional reporting with T. Edward Damer's argumentation methodology
+- **bmad-reporting-and-writing** - Research, analysis, and professional reporting with T. Edward Damer's argumentation methodology and Stephen L. Carter's "Integrity" evaluation methodology
 
 ## Installation
 
