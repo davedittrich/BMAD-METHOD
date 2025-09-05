@@ -16,6 +16,11 @@ In his book, Carter defines "integrity" this way:
 > of an integral person as steadfast, which includes the sense of keeping commitments. The third
 > reminds us that a person of integrity is unashamed of doing the right." -- Stephen L. Carter
 
+The Three Steps in Brief:
+  1. Discernment - Discerning what is right and wrong
+  2. Right Action - Acting on what you have discerned, even at personal cost
+  3. Transparency - Saying openly that you are acting on your understanding of right and wrong
+
 As to the opposite of integrity, Carter says:
 
 > "If integrity has an opposite, perhaps it is corruption. We say that we are a nation that demands
