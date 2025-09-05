@@ -4,7 +4,11 @@
 name: Social Media Content Series
 description: Develop coordinated content series across multiple social platforms with consistent messaging and optimized engagement
 agents:
-  [research-strategist, script-writer, platform-specialist, audience-optimizer, content-strategist]
+  - research-strategist
+  - script-writer
+  - platform-specialist
+  - audience-optimizer
+  - content-strategist
 complexity: medium
 estimated_time: 1-3 days
 

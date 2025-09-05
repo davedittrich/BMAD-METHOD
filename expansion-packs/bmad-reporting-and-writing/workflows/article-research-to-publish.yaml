@@ -4,15 +4,13 @@
 name: Article Research to Publication
 description: Comprehensive workflow for creating well-researched, fact-checked articles from concept to publication
 agents:
-  [
-    research-strategist,
-    context-researcher,
-    subject-analyst,
-    fact-checker,
-    style-analyst,
-    style-editor,
-    platform-specialist,
-  ]
+  - research-strategist
+  - context-researcher
+  - subject-analyst
+  - fact-checker
+  - style-analyst
+  - style-editor
+  - platform-specialist
 complexity: medium
 estimated_time: 2-5 days
 
