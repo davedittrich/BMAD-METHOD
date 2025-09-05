@@ -1,0 +1,16 @@
+# <!-- Powered by BMAD™ Core -->
+bundle:
+  name: Research Team
+  icon: 📰
+  description: Complete research team for journalism, social media, and research-driven content
+agents:
+  - bmad-orchestrator
+  - research-strategist
+  - subject-analyst
+  - context-researcher
+  - fact-checker
+  - content-analyst
+  - argument-analyst
+workflows:
+  - article-research-to-publish
+  - response-journalism
