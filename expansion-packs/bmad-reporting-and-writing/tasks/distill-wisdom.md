@@ -15,11 +15,11 @@ Take a step back and think step-by-step about how to achieve the best possible r
   - A remote file or video specified by a URL:
     - Fetch PDF or other document files
     - Download YouTube video transcripts with `yt-dlp --cookies-from-browser brave --restrict-filenames ...
-    IMPORTANT: save the material and any metadata you retrieved in a file in the `references/` directory so it can be reused without downloading again. 
- 
+    IMPORTANT: save the material and any metadata you retrieved in a file in the `references/` directory so it can be reused without downloading again.
+
 - Extract a summary of the content in 25 words, including who is presenting and the content being discussed for a section called SUMMARY.
 
-- Extract 10 to 20 of the best insights from the input and from a combination of the raw input and the IDEAS above for a section called INSIGHTS. These INSIGHTS should be fewer, more refined, more insightful, and more abstracted versions of the best ideas in the content. 
+- Extract 10 to 20 of the best insights from the input and from a combination of the raw input and the IDEAS above for a section called INSIGHTS. These INSIGHTS should be fewer, more refined, more insightful, and more abstracted versions of the best ideas in the content.
 
 - Extract 15 to 30 of the most surprising, insightful, and/or interesting quotes from the input for a section called QUOTES. Use the exact quote text from the input. Include the name of the speaker of the quote at the end.
 
@@ -46,6 +46,8 @@ Please specify:
 ## Output Requirements
 
 - Only output Markdown.
+- CRITICAL: Always save research output in a single file (content-distillation-report) that can be used by other agents
+- CRITICAL: DO NOT put anything in output to the user that is not preserved in a file: we do not want to lose any context
 - Write the IDEAS bullets as exactly 16 words.
 - Write the RECOMMENDATIONS bullets as exactly 16 words.
 - Write the HABITS bullets as exactly 16 words.
@@ -56,7 +58,7 @@ Please specify:
 - Extract at least 20 items for the other output sections.
 - Do not give warnings or notes; only output the requested sections.
 - You use bulleted lists for output, not numbered lists.
-- Do not repeat ideas, insights, quotes, habits, facts, or references.
+- Do not repeat ideas, insights, quotes, habits, facts, or references from the input being analyzed.
 - Do not start items with the same opening words.
 - Ensure you follow ALL these instructions when creating your output.
 
