@@ -10,12 +10,11 @@ Take a step back and think step-by-step about how to achieve the best possible r
 
 # STEPS
 
-- Obtain the material to review.  This may come from:
+- Obtain the material to review. This should be content already prepared for analysis:
+  - A pre-saved transcript from the `references/transcripts/` directory (educational/informational content)
   - A file saved in the local directory `references/` to be read
-  - A remote file or video specified by a URL:
-    - Fetch PDF or other document files
-    - Download YouTube video transcripts with `yt-dlp --cookies-from-browser brave --restrict-filenames ...
-  IMPORTANT: save the material and any metadata you retrieved in a file in the `references/` directory so it can be reused without downloading again.
+  - A document file provided by the user
+  IMPORTANT: This task works with already-prepared content. For YouTube videos, use save-transcript task first to download and classify content before running this analysis.
 
 - Extract a summary of the content in 25 words, including who is presenting and the content being discussed for a section called SUMMARY.
 
