@@ -1,0 +1,13 @@
+# <!-- Powered by BMAD™ Core -->
+bundle:
+  name: Writing Team
+  icon: ✍️
+  description: Content creation and editorial team focused on style consistency and content strategy
+agents:
+  - bmad-orchestrator
+  - content-strategist
+  - style-analyst
+  - style-editor
+workflows:
+  - article-research-to-publish
+  - response-journalism

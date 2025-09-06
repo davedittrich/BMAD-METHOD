@@ -17,6 +17,17 @@ phases:
   analysis:
     description: Analyze the original content and its creators
     steps:
+      - step: source_preparation
+        agent: content-analyst
+        action: save transcripts if YouTube sources provided
+        task: save-transcript
+        deliverables:
+          - YouTube transcripts saved to local files
+          - Content type classified (debate vs. educational)
+          - Source metadata documented
+        transitions:
+          next: subject_analysis
+
       - step: subject_analysis
         agent: subject-analyst
         action: analyze the original author/organization
@@ -29,13 +40,19 @@ phases:
           next: content_analysis
 
       - step: content_analysis
-        agent: argument-analyst
-        action: analyze the logical structure and arguments
+        agent: debate-analyst OR argument-analyst
+        action: analyze content based on type classification
+        routing: |
+          - If content type is "debate": use debate-analyst for structured debate analysis
+          - If content type is "educational/other": use argument-analyst for logical analysis
+          - Focus on substantive analysis over performance elements
         deliverables:
-          - Arguments mapped to normal form
-          - Logical fallacies identified
-          - Evidence quality assessed
-          - Counterarguments considered
+          - Arguments mapped to normal form (both agents)
+          - Logical fallacies identified (both agents)
+          - Evidence quality assessed (both agents)
+          - Counterarguments considered (both agents)
+          - Debate structure analysis (debate-analyst only)
+          - Integrity assessment using Carter framework (both agents)
         transitions:
           next: fact_verification
 

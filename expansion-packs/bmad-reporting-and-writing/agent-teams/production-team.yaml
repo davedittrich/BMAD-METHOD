@@ -1,0 +1,13 @@
+# <!-- Powered by BMAD™ Core -->
+bundle:
+  name: Production Team
+  icon: 🎥
+  description: Video and content production team focused on platform optimization and audience engagement
+agents:
+  - bmad-orchestrator
+  - script-writer
+  - platform-specialist
+  - audience-optimizer
+workflows:
+  - youtube-video-production
+  - social-media-content-series

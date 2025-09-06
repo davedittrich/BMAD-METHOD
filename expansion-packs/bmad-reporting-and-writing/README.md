@@ -57,6 +57,12 @@ npx bmad-method install
    ```
 3. Run the BMAD installer to register the pack
 
+## 📖 Documentation
+
+- [Transcript Workflow Guide](docs/transcript-workflow-guide.md) - YouTube transcript saving and content routing
+- [Team Structure Guide](docs/team-structure-guide.md) - Research, production, and writing teams
+- [Development Notes](docs/development-notes.md) - Technical implementation history
+
 ## 💡 Usage
 
 ### Quick Start
@@ -207,7 +213,7 @@ Special thanks to Brian (BMAD) for creating the BMAD Method framework.
 
 ---
 
-**Version:** 1.0.0  
-**Compatible with:** BMAD Method v4.0+  
+**Version:** 1.0.0
+**Compatible with:** BMAD Method v4.0+
 **Focus:** Independent journalism, content creation, fact-checking, platform optimization
 **Last Updated:** 8/26/2025

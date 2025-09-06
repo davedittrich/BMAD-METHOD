@@ -26,6 +26,17 @@ phases:
           - Source strategy outlined
           - Timeline established
         transitions:
+          next: source_preparation
+
+      - step: source_preparation
+        agent: research-strategist
+        action: save transcripts for any YouTube sources
+        task: save-transcript
+        deliverables:
+          - YouTube transcripts saved to local files
+          - Content type classified (debate vs. educational)
+          - Source metadata documented
+        transitions:
           next: context_research
 
   research:
@@ -48,6 +59,20 @@ phases:
           - Subject profiles created
           - Credibility assessments completed
           - Motivation analysis documented
+        transitions:
+          next: content_analysis
+
+      - step: content_analysis
+        agent: content-analyst OR debate-analyst
+        action: analyze video/content based on type classification
+        routing: |
+          - If content type is "debate": use debate-analyst for argumentation analysis
+          - If content type is "educational/documentary": use content-analyst with distill-wisdom
+          - If multiple content types: route each piece appropriately
+        deliverables:
+          - Content insights extracted (debate analysis OR wisdom distillation)
+          - Key arguments or insights documented
+          - Quality and credibility assessment completed
         transitions:
           next: fact_verification
 

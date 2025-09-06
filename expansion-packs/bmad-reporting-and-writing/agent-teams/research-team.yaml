@@ -11,6 +11,7 @@ agents:
   - fact-checker
   - content-analyst
   - argument-analyst
+  - debate-analyst
 workflows:
   - article-research-to-publish
   - response-journalism

@@ -59,6 +59,7 @@ dependencies:
   tasks:
     - create-doc.md
     - distill-wisdom.md
+    - save-transcript.md
     - plan-investigation.md
     - execute-checklist.md
     - advanced-elicitation.md

@@ -1,19 +1,21 @@
 # <!-- Powered by BMAD™ Core -->
 bundle:
-  name: Reporting & Writing Team
+  name: Full Reporting & Writing Team
   icon: 📰
-  description: Complete reporting and content creation team for journalism, social media, and research-driven content
+  description: Complete reporting and content creation team including all specialized sub-teams for journalism, social media, and research-driven content
 agents:
   - bmad-orchestrator
   - research-strategist
   - subject-analyst
   - context-researcher
   - fact-checker
+  - content-analyst
+  - argument-analyst
+  - debate-analyst
   - audience-optimizer
   - script-writer
   - content-strategist
   - platform-specialist
-  - argument-analyst
   - style-analyst
   - style-editor
 workflows:
