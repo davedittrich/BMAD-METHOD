@@ -61,8 +61,7 @@ dependencies:
     - integrity-analysis.md
     - execute-checklist.md
     - advanced-elicitation.md
-  templates:
-    - beta-feedback-form.yaml
+  templates: []
   checklists:
     - argument-structure-checklist.md
     - historical-accuracy-checklist.md
