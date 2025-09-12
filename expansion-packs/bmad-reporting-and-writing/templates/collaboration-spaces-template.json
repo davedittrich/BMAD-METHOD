@@ -1,0 +1,65 @@
+{
+  "$schema": "collaboration-spaces-schema",
+  "collaboration_registry": "global-collaboration-registry",
+  "last_updated": "",
+  "collaboration_spaces": [
+    {
+      "space_id": "",
+      "space_name": "",
+      "participating_projects": [],
+      "collaboration_type": "shared_research|methodology_development|insight_synthesis|review_coordination",
+      "created": "",
+      "status": "active|inactive|completed|archived",
+      "participants": [
+        {
+          "participant_id": "",
+          "name": "",
+          "role": "lead_researcher|collaborator|contributor|reviewer",
+          "projects": [],
+          "joined": "",
+          "last_active": ""
+        }
+      ],
+      "shared_resources": {
+        "templates": [],
+        "methodologies": [],
+        "source_materials": [],
+        "best_practices": []
+      },
+      "collaborative_annotations": [
+        {
+          "annotation_id": "",
+          "author": "",
+          "content": "",
+          "type": "insight|question|reference|methodology_note",
+          "created": "",
+          "related_projects": [],
+          "replies": [],
+          "tags": []
+        }
+      ],
+      "communication_channels": [
+        {
+          "channel_id": "",
+          "channel_type": "discussion|updates|coordination|questions",
+          "created": "",
+          "last_activity": "",
+          "message_count": 0
+        }
+      ]
+    }
+  ],
+  "collaboration_metrics": {
+    "total_spaces": 0,
+    "active_collaborations": 0,
+    "total_participants": 0,
+    "annotation_count": 0,
+    "knowledge_sharing_events": 0
+  },
+  "collaboration_health": {
+    "participation_trends": [],
+    "knowledge_sharing_effectiveness": 0,
+    "collaboration_satisfaction": 0,
+    "last_health_assessment": ""
+  }
+}
