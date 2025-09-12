@@ -11,7 +11,9 @@ Take a step back and think step-by-step about how to achieve the best possible r
 # STEPS
 
 - Obtain the material to review. This should be content already prepared for analysis:
-  - A pre-saved transcript from the `references/transcripts/` directory (educational/informational content)
+  - A pre-saved transcript from appropriate directory based on project context:
+    - **Project context provided**: Look in `projects/{project-name}/references/`
+    - **No project context**: Look in global `references/transcripts/` directory
   - A file saved in the local directory `references/` to be read
   - A document file provided by the user
   IMPORTANT: This task works with already-prepared content. For YouTube videos, use save-transcript task first to download and classify content before running this analysis.
@@ -34,9 +36,14 @@ Take a step back and think step-by-step about how to achieve the best possible r
 
 ## Elicitation Requirements
 
-elicit: false
+elicit: true
 format: |
 Please specify:
+
+**Project Context (Optional):**
+
+- Should this analysis be associated with a specific research project? (Leave blank for standalone analysis)
+- If yes, what is the project name? (Must match an existing project from project-list)
 
 **Analysis Subject:**
 
@@ -46,6 +53,10 @@ Please specify:
 
 - Only output Markdown.
 - CRITICAL: Always save research output in a single file (content-distillation-report) that can be used by other agents
+- CRITICAL: Route output based on project context:
+  - **Project context provided**: Save to `projects/{project-name}/analyses/content-distillation-report-{YYYY-MM-DD}.md`
+  - **No project context**: Save to existing location (content-distillation-report)
+- CRITICAL: Update project metadata `analyses_completed` array when saving to project location
 - CRITICAL: DO NOT put anything in output to the user that is not preserved in a file: we do not want to lose any context
 - Write the IDEAS bullets as exactly 16 words.
 - Write the RECOMMENDATIONS bullets as exactly 16 words.

@@ -25,10 +25,14 @@ Download and save YouTube video transcripts to local files for efficient context
      - Entertainment/casual (unstructured conversation)
 
 4. **File Storage**
-   - Create `references/transcripts/` directory if it doesn't exist
+   - Route storage based on project context:
+     - **Project context provided**: Save to `projects/{project-name}/references/`
+     - **No project context**: Save to global `references/transcripts/` directory
+   - Create target directory if it doesn't exist
    - Use naming convention: `YYYY-MM-DD_video-id_title-slug.md`
    - Include structured metadata header
    - Store full transcript content with timing markers if available
+   - Update project metadata `references_count` when saving to project location
 
 5. **Context-Efficient Response**
    - Return file path and basic metadata only
@@ -41,6 +45,11 @@ Download and save YouTube video transcripts to local files for efficient context
 elicit: true
 format: |
 Please specify:
+
+**Project Context (Optional):**
+
+- Should this transcript be associated with a specific research project? (Leave blank for standalone storage)
+- If yes, what is the project name? (Must match an existing project from project-list)
 
 **Video Source:**
 

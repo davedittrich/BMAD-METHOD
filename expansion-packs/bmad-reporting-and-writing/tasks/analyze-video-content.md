@@ -8,7 +8,9 @@ Analyze YouTube video content by first saving the transcript locally, then perfo
 
 1. **Transcript Acquisition**
    - If transcript not already saved, use save-transcript task to download and classify content
-   - Locate existing transcript in `references/transcripts/` directory if available
+   - Locate existing transcript in appropriate directory based on project context:
+     - **Project context provided**: Look in `projects/{project-name}/references/`
+     - **No project context**: Look in global `references/transcripts/` directory
    - Note content type classification (debate vs. educational) for routing
 
 2. **Content Type Routing**
@@ -25,6 +27,9 @@ Analyze YouTube video content by first saving the transcript locally, then perfo
    - Create single comprehensive report file
    - Include transcript metadata and source information
    - Combine analysis results with context for future reference
+   - Route output based on project context:
+     - **Project context provided**: Save to `projects/{project-name}/analyses/`
+     - **No project context**: Save to global location as before
    - Save as content-analysis-report or content-distillation-report as appropriate
 
 5. **Context Efficiency**
@@ -37,6 +42,11 @@ Analyze YouTube video content by first saving the transcript locally, then perfo
 elicit: true
 format: |
 Please specify:
+
+**Project Context (Optional):**
+
+- Should this analysis be associated with a specific research project? (Leave blank for standalone analysis)
+- If yes, what is the project name? (Must match an existing project from project-list)
 
 **Video Source:**
 
@@ -59,9 +69,11 @@ Please specify:
 - Key findings summary for quick reference
 - Recommendations for follow-up analysis or content creation
 
-**File Naming:**
-- `docs/video-analysis-{YYYY-MM-DD}_{video-id}.md` (using today's date) for comprehensive reports
+**File Naming and Location:**
+- **Project context provided**: Save to `projects/{project-name}/analyses/video-analysis-{YYYY-MM-DD}_{video-id}.md`
+- **No project context**: Save to `docs/video-analysis-{YYYY-MM-DD}_{video-id}.md` (existing behavior)
 - Include links to source transcript file for full context
+- Update project metadata `analyses_completed` array when saving to project location
 
 **Context Efficiency:**
 - Analysis report stays under 3000 words for readability
