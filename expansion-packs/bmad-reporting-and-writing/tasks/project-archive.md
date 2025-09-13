@@ -2,45 +2,69 @@
 
 ## Task Overview
 
-Manage research project and source lifecycle through comprehensive archival, storage optimization, and restoration capabilities while maintaining data integrity and research accessibility.
+Move completed projects to archive location with comprehensive lifecycle management, preserving all analysis outputs, source materials, and cross-project relationships while maintaining accessibility for future reference and maintaining organized active workspace.
 
 ## Instructions
 
-1. **Archive Scope and Planning**
-   - Support multiple archive operations: full project archive, source-specific archive, collection archive
-   - Validate archive readiness: ensure all pending analyses completed or explicitly deferred
-   - Calculate storage requirements and optimize archive size through compression and deduplication
-   - Create archive manifest with complete inventory of archived materials and metadata
+1. **Project Selection and Validation**
+   - Identify target project for archival (use active project context if available)
+   - Validate project exists and has proper directory structure and metadata
+   - Check project status and lifecycle eligibility for archival operations
+   - Verify project completion requirements and archive readiness criteria
 
-2. **Source Archival Process**
-   - **Individual Source Archive**: Archive specific sources while maintaining project integrity
-   - **Collection Archive**: Archive entire source collections with relationship preservation
-   - **Project Archive**: Comprehensive project archival with all sources, analyses, and metadata
-   - Update source archive_status to 'archived' and preserve all metadata and relationships
+2. **Pre-Archive Preparation**
+   - Analyze project components: references, analyses, drafts, configuration files
+   - Calculate project size and storage requirements for archive planning
+   - Identify cross-project relationships and dependencies requiring preservation
+   - Generate project summary and categorization metadata for archive indexing
 
-3. **Data Preservation and Integrity**
-   - Preserve all source metadata including version history and cross-references
-   - Maintain analysis results and transcript files with original file structure
-   - Preserve source relationships, collections, and cross-project references
-   - Create integrity checksums for all archived files and metadata
+3. **Archive Location Preparation**
+   - Create archive directory structure following `archive/{year}/{project-name}/` pattern
+   - Initialize archive metadata using archive-metadata-template.json structure
+   - Prepare archive index entry for global archive registry integration
+   - Set up archive integrity monitoring and validation systems
 
-4. **Archive Organization and Storage**
-   - Create structured archive directories following established project patterns
-   - Implement compression for analysis files and transcripts to optimize storage
-   - Maintain searchable archive index for future discovery and restoration
-   - Organize archives by project, date, and content type for efficient management
+4. **Comprehensive Data Migration**
+   - Copy complete project directory structure preserving all files and metadata
+   - Migrate project configuration including relationships.json and project.json
+   - Preserve cross-project references and update global reference registry
+   - Transfer collaboration spaces and shared resource associations
 
-5. **Archive Discovery and Access**
-   - Create archive inventory with search capabilities for archived material discovery
-   - Maintain archive metadata for restoration planning and content verification
-   - Enable preview capabilities for archived sources without full restoration
-   - Provide archive statistics and storage optimization recommendations
+5. **Cross-Project Reference Management**
+   - Update cross-project relationships to reflect archived project status
+   - Modify dependency graphs and relationship visualizations appropriately
+   - Preserve collaboration spaces with archived project participant status
+   - Update global cross-reference registry with archived project location
 
-6. **Restoration Capabilities**
-   - **Individual Source Restoration**: Restore specific archived sources to active projects
-   - **Collection Restoration**: Restore entire archived collections with relationships intact
-   - **Project Restoration**: Full project restoration from archive with all dependencies
-   - Validate restoration integrity and update metadata and cross-references appropriately
+6. **Archive Metadata Creation**
+   - Generate comprehensive archive-info.json with project preservation details
+   - Create lifecycle history documentation with archive reason and timestamp
+   - Document preserved components with counts, sizes, and integrity information
+   - Initialize search metadata with keywords, categories, and indexable content
+
+7. **Data Integrity Validation**
+   - Perform comprehensive integrity check comparing original and archived files
+   - Validate archive metadata completeness and accuracy
+   - Test archive accessibility and search indexing functionality
+   - Generate integrity hash for future validation and corruption detection
+
+8. **Active Project Cleanup**
+   - Update active project context if archived project was current active project
+   - Remove project from active project listings while preserving searchability
+   - Update project status to "archived" and record lifecycle transition
+   - Clean up active workspace directory after successful archive validation
+
+9. **Archive Registry Updates**
+   - Update global archive index with new archived project entry
+   - Add archive search metadata for discovery and categorization
+   - Update archive health monitoring and maintenance schedules
+   - Initialize archive backup and redundancy protocols
+
+10. **Confirmation and Reporting**
+    - Display archive creation summary with location and access information
+    - Provide archive search and restoration guidance for future reference
+    - Update project context awareness and navigation capabilities
+    - Generate archive completion report with integrity validation results
 
 ## Elicitation Requirements
 
@@ -48,102 +72,102 @@ elicit: true
 format: |
 Please specify:
 
-**Archive Operation:**
+**Project Selection:**
 
-- What would you like to archive?
-  - Specific sources (provide source IDs or URLs)
-  - Source collections (provide collection names)
-  - Entire projects (provide project names)
-  - Search-based selection (use project-search results)
+- Should a specific project be archived? (Leave blank to use active project context)
+- If yes, what is the project name to archive? (Must match an existing active project)
+- Confirm project is ready for archival (completed research, no pending analysis)?
 
-**Archive Scope:**
+**Archive Configuration:**
 
-- Should this be a permanent archive or temporary storage?
-- Include all related analysis files and transcripts?
-- Preserve cross-project references and relationships?
+- What is the reason for archiving this project? (completed, manual_archive, storage_optimization, project_cleanup)
+- Should cross-project relationships be preserved during archival?
+- Any specific archive categories or tags for organization and discovery?
 
-**Archive Organization:**
+**Archive Policies:**
 
-- Any specific archive naming or organization preferences?
-- Should related sources be archived together as collections?
-- Include source history and version information in archive?
+- Should archived project remain searchable in global search results?
+- Include project in collaboration spaces as archived participant?
+- Any specific retention policies or backup requirements?
 
-**Data Retention:**
+**Integration Preferences:**
 
-- How long should archived materials be retained?
-- Any compliance or research data retention requirements?
-- Should original files be removed after successful archive?
+- Should active project context be updated if this is the current project?
+- Any specific restoration requirements or access controls needed?
+- Integration with cross-project analysis or reporting after archival?
 
-**Restoration Planning:**
+**Validation Requirements:**
 
-- Will archived materials need restoration capabilities?
-- Any specific restoration timeline or access requirements?
-- Should archive include restoration instructions and metadata?
+- Should comprehensive data integrity validation be performed?
+- Require confirmation before removing project from active workspace?
+- Any specific archive health monitoring or maintenance schedules?
 
 ## Output Requirements
 
-**Archive Success Confirmation:**
-- Confirmation of successful archive creation with archive identifier and location
-- Archive manifest listing all included sources, analyses, transcripts, and metadata
-- Archive statistics: total files, compressed size, storage optimization achieved
-- Archive integrity verification results and checksum validation
+**Archive Creation Confirmation:**
+- Successful project archival completed with comprehensive data preservation
+- Archive location established at `archive/{year}/{project-name}/` with complete directory structure
+- Archive metadata stored in `archive-info.json` following Archive Metadata Model
+- Project lifecycle status updated to "archived" with transition history and reasoning
 
-**Archive Organization:**
-- Archives stored in structured directory: `archives/{archive-type}/{archive-date}/`
-- Archive manifest file: `archives/{archive-id}/manifest.json` with complete inventory
-- Archive metadata file: `archives/{archive-id}/metadata.json` with archive details and restoration info
-- Compressed archive files with original directory structure preserved
+**Data Preservation Validation:**
+- Complete project directory structure preserved with all references, analyses, drafts, and configuration
+- Cross-project relationships maintained with updated reference locations and status indicators
+- Collaboration spaces updated with archived project participant status and access preservation
+- Source materials and version history preserved with integrity validation and hash verification
 
-**Source Status Updates:**
-- Source archive_status updated to 'archived' in source registries
-- Project metadata updated with archived source counts and active source adjustments
-- Cross-project references maintained with archive location information
-- Global source index updated to reflect archived status and archive locations
+**Archive Index Updates:**
+- Global archive registry updated in `archive/index.json` with searchable project entry
+- Archive search metadata generated with keywords, categories, and research domain classification
+- Archive health monitoring initialized with integrity checking and maintenance scheduling
+- Archive categorization updated with project classification and organizational metadata
 
-**Archive Inventory:**
-- Archive added to global archive index: `config/archive-index.json`
-- Archive searchable metadata for future discovery and management
-- Archive access log initialization for restoration tracking
-- Integration with project-search for archived source discovery
+**Cross-Project Integration:**
+- Cross-project reference registry updated with archived project location and access information
+- Dependency graphs modified to reflect archived project status without breaking relationship integrity
+- Collaboration spaces maintained with archived participant status and shared resource preservation
+- Project relationship metadata updated across all linked projects with archival status indicators
 
-**Data Integrity:**
-- File integrity checksums for all archived files and verification procedures
-- Archive validation report confirming all sources and metadata preserved correctly
-- Cross-reference validation ensuring archived sources maintain research relationships
-- Restoration test verification confirming archive can be successfully restored
+**Active Workspace Management:**
+- Project removed from active project listings while maintaining search discoverability
+- Active project context updated if archived project was currently selected
+- Project context switching updated to handle archived project navigation appropriately
+- Workspace organization improved with archive-based cleanup and storage optimization
 
-**Storage Optimization:**
-- Compression statistics showing storage space savings achieved
-- Deduplication report for sources archived across multiple projects
-- Storage optimization recommendations for future archive operations
-- Archive size and performance metrics for archive management planning
+**Archive Accessibility:**
+- Archived project remains accessible through archive search and discovery mechanisms
+- Direct archive access paths provided for future reference and restoration procedures
+- Archive navigation integrated with existing project context and relationship management
+- Search functionality extended to include archived project content and metadata
 
-**Restoration Readiness:**
-- Restoration instructions and procedures documentation in archive manifest
-- Archive dependency mapping for successful restoration of related materials
-- Restoration testing verification confirming archive integrity and completeness
-- Integration guidance for restored sources with current project workflows
+**Integrity and Validation:**
+- Comprehensive data integrity validation completed with hash verification and corruption detection
+- Archive metadata completeness verified with all required fields and proper format validation
+- Archive accessibility tested with search indexing and discovery functionality confirmation
+- Integrity monitoring activated with automated health checking and maintenance scheduling
 
-**Archive Management:**
-- Archive lifecycle management recommendations and retention policy guidance
-- Archive access permissions and security considerations for research data
-- Migration planning for archive format updates and long-term preservation
-- Backup and disaster recovery recommendations for archived research materials
-
-**Integration with Previous Stories:**
-- Compatibility with Story 1.1 project directory structure and metadata formats
-- Integration with Story 1.2 enhanced task workflows for archived source reactivation
-- Compatibility with Story 1.3 project context management for archive operations
-- Seamless integration with project-add-source for source reactivation workflows
+**Performance Metrics:**
+- Archive operation completed in reasonable time with progress feedback and status updates
+- Archive storage optimization achieved without data loss or corruption
+- Archive search indexing efficient and responsive for discovery operations
+- Integration performance maintained with existing project management and analysis workflows
 
 **Error Handling:**
-- Clear messages for archive failures, insufficient storage, or permission issues
-- Guidance for resolving archive conflicts and incomplete archive operations
-- Recovery procedures for failed archive operations and partial archive states
-- Validation instructions for confirming archive integrity and completeness
+- Clear messages for invalid projects, insufficient permissions, or archive creation failures
+- Guidance for resolving archive conflicts, storage limitations, or integrity validation errors
+- Rollback procedures for failed archive operations with complete cleanup and restoration
+- Comprehensive validation reporting for archive health and integrity monitoring
 
-**Performance Requirements:**
-- Archive operations complete efficiently with progress reporting for large projects
-- Minimal impact on active project operations during archive creation
-- Optimized archive storage with effective compression and deduplication
-- Fast archive discovery and search capabilities for archived material management
+**Integration Requirements:**
+- Seamless compatibility with Story 1.1 project infrastructure and directory organization
+- Integration with Story 1.2 enhanced tasks maintaining project-aware parameter validation
+- Utilization of Story 1.3 project context management for archive-aware navigation and switching
+- Extension of Story 1.4 source management preserving source relationships and search capabilities
+- Compatibility with Story 1.5 cross-project references maintaining relationship integrity and collaboration preservation
+
+**Documentation and Guidance:**
+- Archive operation guidance with best practices and recommended workflows
+- Restoration procedures documented for future project recovery and reactivation
+- Archive management recommendations for long-term preservation and maintenance
+- Integration documentation for archive functionality with existing BMAD framework operations
+
