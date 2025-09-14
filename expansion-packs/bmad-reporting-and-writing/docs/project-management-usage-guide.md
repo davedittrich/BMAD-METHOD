@@ -3,11 +3,13 @@
 ## Quick Start Reference
 
 ### Essential Task Commands
+
 ```
 project-init                    # Create new research project
 project-switch                  # Change active project context
 project-status                  # View current project details
 project-list                    # List all projects
+project-rename                  # Rename existing project
 project-add-source              # Add source materials to project
 project-search                  # Search across projects and sources
 project-link                    # Create project relationships
@@ -18,6 +20,7 @@ project-restore                 # Restore archived projects
 ```
 
 ### Core Analysis Tasks (Now Project-Aware)
+
 ```
 analyze-video-content           # Enhanced with optional project context
 distill-wisdom                 # Enhanced with optional project context
@@ -29,6 +32,7 @@ save-transcript                 # Enhanced with optional project context
 ### 1. Starting a New Research Project
 
 **Quick Setup**:
+
 ```
 1. project-init
    → Enter project name (e.g., "climate-investigation-2025")
@@ -43,6 +47,7 @@ save-transcript                 # Enhanced with optional project context
 ```
 
 **Project Structure Created**:
+
 ```
 projects/climate-investigation-2025/
 ├── references/          # Source materials (transcripts, documents)
@@ -54,6 +59,7 @@ projects/climate-investigation-2025/
 ### 2. Daily Research Workflow
 
 **Recommended Pattern**:
+
 ```
 1. project-switch        # Set context for today's focus
 2. project-status        # Review current project state
@@ -63,6 +69,7 @@ projects/climate-investigation-2025/
 ```
 
 **Context Benefits**:
+
 - No need to specify project for each task
 - All outputs automatically organized
 - Clear progress tracking
@@ -71,6 +78,7 @@ projects/climate-investigation-2025/
 ### 3. Managing Multiple Projects
 
 **Best Practices**:
+
 ```
 Morning Routine:
 1. project-list          # See all active projects
@@ -89,9 +97,44 @@ Weekly Review:
 3. Plan next week's priorities
 ```
 
-### 4. Source Management
+### 4. Project Organization and Maintenance
+
+**Renaming Projects**:
+
+```
+When to Rename:
+- Research scope evolved beyond original name
+- Initial working title needs professional refinement
+- Better descriptive name improves organization
+- Team collaboration requires clearer naming
+
+Rename Process:
+1. project-rename
+   → Enter current project name
+   → Provide new name (lowercase, hyphens only)
+   → Confirm operation with backup option
+   → All data and relationships preserved
+
+Safety Features:
+- Automatic backup before rename
+- Atomic operation (all-or-nothing)
+- Cross-project references updated automatically
+- Active project context preserved
+- Rollback capability if issues occur
+```
+
+**Best Practices**:
+
+- Use descriptive names that explain the investigation focus
+- Keep names concise but informative (e.g., "climate-policy-analysis-2025")
+- Avoid changing names frequently to maintain consistency
+- Consider team members when renaming collaborative projects
+- Update any external documentation referencing the old name
+
+### 5. Source Management
 
 **Adding Sources**:
+
 ```
 Manual Addition:
 1. project-add-source
@@ -106,6 +149,7 @@ Via Analysis Tasks:
 ```
 
 **Finding Sources**:
+
 ```
 Within Project:
 - project-status shows recent sources
@@ -118,13 +162,15 @@ Across Projects:
 ```
 
 **Source Deduplication**:
+
 - Same source added to multiple projects = one copy stored
 - System tracks which projects reference each source
 - Updates available across all projects automatically
 
-### 5. Cross-Project Research
+### 6. Cross-Project Research
 
 **Creating Relationships**:
+
 ```
 1. project-link
    → Select source project
@@ -138,6 +184,7 @@ Across Projects:
 ```
 
 **Analyzing Patterns**:
+
 ```
 1. project-insights
    → Analyzes patterns across related projects
@@ -146,9 +193,10 @@ Across Projects:
    → Highlights collaborative opportunities
 ```
 
-### 6. Team Collaboration
+### 7. Team Collaboration
 
 **Setting Up Collaboration**:
+
 ```
 1. project-collaborate
    → Define team members and roles
@@ -158,25 +206,28 @@ Across Projects:
 ```
 
 **Collaboration Features**:
+
 - Shared resource management
 - Team coordination workflows
 - Collaborative annotation systems
 - Multi-researcher support
 
-### 7. Project Lifecycle Management
+### 8. Project Lifecycle Management
 
 **Lifecycle Progression**:
+
 ```
 Active (default)
 ↓
 Review (research complete, under validation)
-↓ 
+↓
 Completed (objectives met, documented)
 ↓
 Archived (long-term storage)
 ```
 
 **Managing Transitions**:
+
 ```
 Moving to Review:
 - Complete research objectives
@@ -196,6 +247,7 @@ Moving to Archived:
 ```
 
 **Archive Management**:
+
 ```
 Restore Archived Project:
 1. project-restore
@@ -214,6 +266,7 @@ Archive Search:
 ### Research Portfolio Management
 
 **Organizing Large Research Programs**:
+
 ```
 1. Create main investigation project
 2. Create sub-projects for specific aspects
@@ -223,10 +276,11 @@ Archive Search:
 ```
 
 **Example Structure**:
+
 ```
 climate-change-main          (Main investigation)
 ├── linked to: climate-policy-analysis
-├── linked to: renewable-energy-study  
+├── linked to: renewable-energy-study
 ├── linked to: carbon-markets-research
 └── linked to: international-agreements
 ```
@@ -234,6 +288,7 @@ climate-change-main          (Main investigation)
 ### Iterative Research Development
 
 **Expanding Research Scope**:
+
 ```
 1. Start with narrow focus project
 2. Add sources as questions emerge
@@ -243,6 +298,7 @@ climate-change-main          (Main investigation)
 ```
 
 **Source Evolution**:
+
 ```
 Week 1: Basic video analysis
 Week 2: Add supporting documents
@@ -254,6 +310,7 @@ Week 5: Historical context materials
 ### Quality Assurance Workflows
 
 **Regular Review Process**:
+
 ```
 Daily:
 - project-status for progress check
@@ -275,26 +332,31 @@ Monthly:
 ### Common Issues and Solutions
 
 **"I can't find my analysis outputs"**
+
 - Check active project context with project-status
 - Use project-search to search across all projects
 - Verify project was active when analysis was run
 
 **"Project switching isn't working"**
+
 - Ensure project exists with project-list
 - Check project names for typos
 - Verify project hasn't been archived
 
 **"Sources appear in multiple projects"**
+
 - This is normal! Source deduplication saves storage
 - Same source can be referenced by multiple projects
 - Check project-status to see project-specific references
 
 **"Cross-project relationships are confusing"**
+
 - Start simple with one or two relationships
 - Use project-insights to see relationship maps
 - Focus on clear dependency or reference relationships
 
 **"Archive/restore operations failing"**
+
 - Check available disk space
 - Verify project status allows archival
 - Check for cross-project relationship conflicts
@@ -302,6 +364,7 @@ Monthly:
 ### Performance Optimization
 
 **For Large Research Portfolios**:
+
 ```
 - Archive completed projects regularly
 - Use specific project context instead of global search
@@ -310,6 +373,7 @@ Monthly:
 ```
 
 **For Team Collaboration**:
+
 ```
 - Establish clear project naming conventions
 - Define relationship types consistently
@@ -322,6 +386,7 @@ Monthly:
 ### Adopting Project Management Gradually
 
 **Phase 1: Basic Projects (Week 1)**
+
 ```
 1. Create project for current research
 2. Start using project context for new analysis
@@ -329,6 +394,7 @@ Monthly:
 ```
 
 **Phase 2: Organization (Week 2-3)**
+
 ```
 1. Organize existing materials into projects
 2. Practice project switching
@@ -336,6 +402,7 @@ Monthly:
 ```
 
 **Phase 3: Advanced Features (Week 4+)**
+
 ```
 1. Create project relationships
 2. Explore cross-project insights
@@ -346,6 +413,7 @@ Monthly:
 ### Organizing Existing Materials
 
 **Retroactive Organization**:
+
 ```
 1. Identify main research themes in existing work
 2. Create projects for each major theme
@@ -357,6 +425,7 @@ Monthly:
 ## Best Practices
 
 ### Project Naming Conventions
+
 ```
 Good Examples:
 - climate-policy-investigation-2025
@@ -370,6 +439,7 @@ Avoid:
 ```
 
 ### Research Organization Tips
+
 ```
 - One project per major research question
 - Use clear, descriptive project names
@@ -379,6 +449,7 @@ Avoid:
 ```
 
 ### Team Collaboration Guidelines
+
 ```
 - Establish clear naming conventions
 - Define role responsibilities upfront
@@ -388,6 +459,7 @@ Avoid:
 ```
 
 ### Source Management Efficiency
+
 ```
 - Add descriptive titles when adding sources
 - Use tags consistently across projects
@@ -403,6 +475,7 @@ Avoid:
 Projects use JSON configuration files that can be customized:
 
 **Project Metadata Template**:
+
 ```json
 {
   "name": "project-name",
@@ -417,6 +490,7 @@ Projects use JSON configuration files that can be customized:
 ```
 
 **Archive Metadata Template**:
+
 ```json
 {
   "archive_date": "ISO-8601-timestamp",
@@ -431,6 +505,7 @@ Projects use JSON configuration files that can be customized:
 ## Getting Help
 
 ### Built-in Help
+
 ```
 - Use *help command in BMAD system
 - Each task includes detailed instructions
@@ -438,6 +513,7 @@ Projects use JSON configuration files that can be customized:
 ```
 
 ### Documentation Resources
+
 ```
 - User Training Guide: Complete learning modules
 - Story Documentation: Technical implementation details
@@ -445,6 +521,7 @@ Projects use JSON configuration files that can be customized:
 ```
 
 ### Support and Feedback
+
 ```
 - Report issues through BMAD framework support
 - Share experiences with other researchers
@@ -460,6 +537,6 @@ The BMAD Reporting & Writing Project Management System transforms research from 
 ✅ **Intelligent Source Management**: Deduplication and cross-project discovery  
 ✅ **Collaborative Research**: Team coordination and shared resources  
 ✅ **Lifecycle Management**: Complete project progression with archival capabilities  
-✅ **Cross-Project Intelligence**: Pattern recognition and relationship insights  
+✅ **Cross-Project Intelligence**: Pattern recognition and relationship insights
 
 Start with basic project creation and gradually adopt advanced features as they become natural to your workflow. The system is designed to enhance productivity while maintaining the simplicity and flexibility that makes BMAD Reporting & Writing expansion pack effective.
