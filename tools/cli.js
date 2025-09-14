@@ -2,6 +2,7 @@ const { Command } = require('commander');
 const WebBuilder = require('./builders/web-builder');
 const V3ToV4Upgrader = require('./upgraders/v3-to-v4-upgrader');
 const IdeSetup = require('./installer/lib/ide-setup');
+const TaskReferenceValidator = require('./lib/task-reference-validator');
 const path = require('node:path');
 
 const program = new Command();
@@ -127,7 +128,16 @@ program
         console.log(`  ✓ ${team}`);
       }
 
-      console.log('\nAll configurations are valid!');
+      console.log('');
+      const validator = new TaskReferenceValidator(process.cwd());
+      const taskRefsValid = await validator.validate();
+
+      if (taskRefsValid) {
+        console.log('\nAll configurations are valid!');
+      } else {
+        console.log('\nConfiguration validation completed with warnings.');
+        console.log('Task reference issues found (see above). Please review manually.');
+      }
     } catch (error) {
       console.error('Validation failed:', error.message);
       process.exit(1);
