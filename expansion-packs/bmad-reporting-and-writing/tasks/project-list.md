@@ -28,7 +28,7 @@ Display all available research projects with status, creation date, and basic me
    - Use clear status indicators: active, review, completed, archived
    - Highlight active projects for easy identification
    - Show project count summary at bottom
-   - Include helpful guidance for next actions (project-activate, project-add-source)
+   - Include helpful guidance for next actions (project-switch, project-add-source)
 
 ## Elicitation Requirements
 

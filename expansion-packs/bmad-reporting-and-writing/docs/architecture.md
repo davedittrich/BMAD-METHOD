@@ -152,7 +152,7 @@ This document supplements the existing BMAD Method natural language framework ar
 
 **Key Interfaces:**
 - `project-init` - Creates standardized project structure with metadata initialization
-- `project-activate` - Sets project context for subsequent task execution
+- `project-switch` - Sets project context for subsequent task execution
 - `project-status` - Displays project progress and analysis inventory
 - `project-list` - Shows available projects with status and activity metrics
 
@@ -284,7 +284,7 @@ expansion-packs/bmad-reporting-and-writing/
 │   ├── distill-wisdom.md            # Enhanced with project context  
 │   ├── save-transcript.md           # Enhanced with project context
 │   ├── project-init.md              # New - project initialization
-│   ├── project-activate.md          # New - context management
+│   ├── project-switch.md           # New - context management
 │   ├── project-list.md              # New - project listing
 │   ├── project-status.md            # New - progress tracking
 │   ├── project-add-source.md        # New - iterative source addition
@@ -381,7 +381,7 @@ expansion-packs/bmad-reporting-and-writing/
 
 ### Enhancement-Specific Standards
 
-- **Project Task Naming:** All new project management tasks prefixed with `project-` (e.g., `project-init.md`, `project-activate.md`)
+- **Project Task Naming:** All new project management tasks prefixed with `project-` (e.g., `project-init.md`, `project-switch.md`)
 - **Backward Compatibility Validation:** All modified tasks must maintain identical behavior when no project context provided
 - **Project Context Handling:** Consistent optional parameter patterns across all project-enhanced tasks
 - **Error Handling Integration:** Project context errors follow existing BMAD task error reporting patterns
@@ -445,5 +445,6 @@ Existing system compatibility requirements with specific verification steps:
 Clear sequencing of implementation to minimize risk to existing functionality:
 1. Start with Story 1.1 - Project Infrastructure Foundation (project-init, project-list)
 2. Proceed to Story 1.2 - Project-Aware Task Enhancement (modify existing tasks)
-3. Continue with Story 1.3 - Project Context Management (project-activate, project-status)
+3. Continue with Story 1.3 - Project Context Management (project-switch, project-status)
 Each story must be fully tested for backward compatibility before proceeding to next."
+
