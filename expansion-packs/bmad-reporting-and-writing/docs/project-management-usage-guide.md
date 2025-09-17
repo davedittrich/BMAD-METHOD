@@ -2,6 +2,27 @@
 
 ## Quick Start Reference
 
+### Using the Project Manager Agent
+
+**Recommended Approach**: Use the dedicated `project-manager` agent for all project management tasks.
+
+```
+1. Activate the project-manager agent from BMAD Reporting & Writing team
+2. Use agent commands (e.g., *init, *rename, *status) for streamlined workflow
+3. All project management features available through single agent interface
+```
+
+**Agent Commands Mapping**:
+- *init → project-init (create new project)
+- *rename → project-rename (rename existing project)
+- *list → project-list (show all projects)
+- *switch → project-switch (change active context)
+- *status → project-status (show current project details)
+- *add-source → project-add-source (add materials)
+- *search → project-search (find content across projects)
+- *archive → project-archive (move to archive)
+- *restore → project-restore (restore from archive)
+
 ### Essential Task Commands
 
 ```
@@ -102,6 +123,12 @@ Weekly Review:
 **Renaming Projects**:
 
 ```
+Using Project Manager Agent:
+1. Activate project-manager agent
+2. Use *rename command
+3. Follow prompts for current and new project names
+4. Confirm operation to proceed
+
 When to Rename:
 - Research scope evolved beyond original name
 - Initial working title needs professional refinement
@@ -109,7 +136,7 @@ When to Rename:
 - Team collaboration requires clearer naming
 
 Rename Process:
-1. project-rename
+1. *rename (via project-manager agent) OR project-rename (direct task)
    → Enter current project name
    → Provide new name (lowercase, hyphens only)
    → Confirm operation with backup option

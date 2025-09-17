@@ -5,6 +5,7 @@ bundle:
   description: Complete research team for journalism, social media, and research-driven content
 agents:
   - bmad-orchestrator
+  - project-manager
   - research-strategist
   - subject-analyst
   - context-researcher

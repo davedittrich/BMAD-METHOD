@@ -151,26 +151,32 @@ Key tasks include:
 
 Transform your AI into a comprehensive reporting and content creation studio with specialized agents for journalism, research, and platform-optimized content. This pack provides structured AI assistance throughout your research and writing process.
 
-**Research Team**
+**Project Management & Research Team**
+
+- **Project Manager**: Research project organization, lifecycle management, cross-project intelligence
 - **Research Strategist**: Investigation planning, source strategy, methodology development
 - **Context Researcher**: Historical background, timeline development, stakeholder mapping
 - **Subject Analyst**: People and organization analysis, credibility assessment, motivation analysis
 - **Fact Checker**: Source verification, claim checking, integrity analysis using Carter framework
 
 **Content Creation Team**
+
 - **Content Strategist**: Content planning, series development, distribution strategy
 - **Script Writer**: Video scripts, social media content, engaging narratives
 - **Style Editor**: Voice consistency, style refinement, final polish
 - **Argument Analyst**: Logical structure analysis, fallacy identification
 
 **Optimization Team**
+
 - **Platform Specialist**: Algorithm optimization, platform-specific formatting
 - **Audience Optimizer**: Engagement optimization, retention strategies
 - **Style Analyst**: Writing style analysis, voice pattern extraction
 
 Key features include:
+
+- **Project Management System**: Complete research project lifecycle management with organization, context switching, and cross-project intelligence
 - **Fact-Checking Framework**: Systematic verification using multiple independent sources
-- **Carter Integrity Analysis**: Three-step integrity assessment (discernment, acknowledgment, consistency)
+- **Carter Integrity Analysis**: Three-step integrity assessment (discernment, right action, transparency)
 - **Source Credibility Assessment**: Comprehensive evaluation of source reliability and trustworthiness
 - **Logical Fallacy Detection**: Systematic identification and analysis of reasoning flaws
 

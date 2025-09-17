@@ -5,6 +5,7 @@ bundle:
   description: Complete reporting and content creation team including all specialized sub-teams for journalism, social media, and research-driven content
 agents:
   - bmad-orchestrator
+  - project-manager
   - research-strategist
   - subject-analyst
   - context-researcher
