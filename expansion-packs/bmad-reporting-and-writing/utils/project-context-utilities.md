@@ -16,32 +16,32 @@ This document defines utility functions and patterns for project context validat
 // Pseudo-code for validation logic
 function validateProjectContext() {
   // 1. Check if config/active-project.json exists
-  if (!fileExists("config/active-project.json")) {
-    return { valid: false, reason: "no_context_file" };
+  if (!fileExists('config/active-project.json')) {
+    return { valid: false, reason: 'no_context_file' };
   }
-  
+
   // 2. Parse JSON and validate structure
-  const context = parseJSON("config/active-project.json");
+  const context = parseJSON('config/active-project.json');
   if (!context.active_project) {
-    return { valid: false, reason: "no_active_project" };
+    return { valid: false, reason: 'no_active_project' };
   }
-  
+
   // 3. Verify project directory exists
   const projectPath = `projects/${context.active_project}`;
   if (!directoryExists(projectPath)) {
-    return { valid: false, reason: "project_not_found", project: context.active_project };
+    return { valid: false, reason: 'project_not_found', project: context.active_project };
   }
-  
+
   // 4. Verify project metadata exists and is readable
   const metadataPath = `${projectPath}/config/project.json`;
   if (!fileExists(metadataPath)) {
-    return { valid: false, reason: "metadata_missing", project: context.active_project };
+    return { valid: false, reason: 'metadata_missing', project: context.active_project };
   }
-  
+
   // 5. Update last_accessed timestamp
   context.last_accessed = new Date().toISOString();
-  writeJSON("config/active-project.json", context);
-  
+  writeJSON('config/active-project.json', context);
+
   return { valid: true, project: context.active_project, context: context };
 }
 ```
@@ -59,9 +59,9 @@ function validateProjectIntegrity(projectName) {
     valid: true,
     issues: [],
     structure: {},
-    metadata: null
+    metadata: null,
   };
-  
+
   // Check directory structure
   const requiredDirs = ['references', 'analyses', 'drafts', 'config'];
   for (const dir of requiredDirs) {
@@ -72,12 +72,12 @@ function validateProjectIntegrity(projectName) {
       validation.valid = false;
     }
   }
-  
+
   // Validate metadata
   try {
     const metadataPath = `${projectPath}/config/project.json`;
     validation.metadata = parseJSON(metadataPath);
-    
+
     // Validate required metadata fields
     const requiredFields = ['name', 'description', 'created_date', 'status'];
     for (const field of requiredFields) {
@@ -90,7 +90,7 @@ function validateProjectIntegrity(projectName) {
     validation.issues.push(`Metadata parsing error: ${error.message}`);
     validation.valid = false;
   }
-  
+
   return validation;
 }
 ```
@@ -106,7 +106,7 @@ function validateProjectIntegrity(projectName) {
 ```javascript
 function resolveProjectPath(directory, filename = null) {
   const context = validateProjectContext();
-  
+
   if (context.valid) {
     // Project context active - use project directory
     const basePath = `projects/${context.project}/${directory}`;
@@ -128,33 +128,33 @@ function resolveProjectPath(directory, filename = null) {
 ```javascript
 function discoverProjectFiles(directory, limit = 10) {
   const context = validateProjectContext();
-  
+
   if (!context.valid) {
-    return { files: [], context_status: "no_context" };
+    return { files: [], context_status: 'no_context' };
   }
-  
+
   const directoryPath = `projects/${context.project}/${directory}`;
   if (!directoryExists(directoryPath)) {
-    return { files: [], context_status: "directory_missing" };
+    return { files: [], context_status: 'directory_missing' };
   }
-  
+
   // Get files sorted by modification date (newest first)
   const files = listFiles(directoryPath)
     .sort((a, b) => b.modified - a.modified)
     .slice(0, limit)
-    .map(file => ({
+    .map((file) => ({
       path: file.path,
       name: file.name,
       size: file.size,
       modified: file.modified,
-      relativePath: `projects/${context.project}/${directory}/${file.name}`
+      relativePath: `projects/${context.project}/${directory}/${file.name}`,
     }));
-  
-  return { 
+
+  return {
     files: files,
-    context_status: "valid",
+    context_status: 'valid',
     project: context.project,
-    total_count: listFiles(directoryPath).length
+    total_count: listFiles(directoryPath).length,
   };
 }
 ```
@@ -174,35 +174,35 @@ function activateProjectContext(projectName) {
   if (!validation.valid) {
     return {
       success: false,
-      error: "project_invalid",
-      issues: validation.issues
+      error: 'project_invalid',
+      issues: validation.issues,
     };
   }
-  
+
   // Generate session ID
   const sessionId = generateSessionId();
-  
+
   // Create context object
   const context = {
     active_project: projectName,
     context_set_date: new Date().toISOString(),
     session_id: sessionId,
     last_accessed: new Date().toISOString(),
-    context_source: "manual",
-    project_metadata: validation.metadata
+    context_source: 'manual',
+    project_metadata: validation.metadata,
   };
-  
+
   // Create config directory if needed
-  ensureDirectoryExists("config");
-  
+  ensureDirectoryExists('config');
+
   // Save context
-  writeJSON("config/active-project.json", context);
-  
+  writeJSON('config/active-project.json', context);
+
   return {
     success: true,
     project: projectName,
     session_id: sessionId,
-    metadata: validation.metadata
+    metadata: validation.metadata,
   };
 }
 ```
@@ -215,29 +215,29 @@ function activateProjectContext(projectName) {
 
 ```javascript
 function deactivateProjectContext() {
-  if (!fileExists("config/active-project.json")) {
+  if (!fileExists('config/active-project.json')) {
     return { success: true, was_active: false };
   }
-  
-  const context = parseJSON("config/active-project.json");
+
+  const context = parseJSON('config/active-project.json');
   const wasActive = context.active_project;
-  
+
   // Clear context but preserve deactivation record
   const deactivatedContext = {
     active_project: null,
     context_set_date: new Date().toISOString(),
     session_id: context.session_id,
     last_accessed: new Date().toISOString(),
-    context_source: "manual_deactivation",
-    project_metadata: null
+    context_source: 'manual_deactivation',
+    project_metadata: null,
   };
-  
-  writeJSON("config/active-project.json", deactivatedContext);
-  
+
+  writeJSON('config/active-project.json', deactivatedContext);
+
   return {
     success: true,
     was_active: wasActive !== null,
-    previous_project: wasActive
+    previous_project: wasActive,
   };
 }
 ```
@@ -256,28 +256,28 @@ function cleanupInvalidContext(reason, projectName = null) {
     cleaned: false,
     reason: reason,
     previous_project: projectName,
-    timestamp: new Date().toISOString()
+    timestamp: new Date().toISOString(),
   };
-  
-  if (fileExists("config/active-project.json")) {
-    const context = parseJSON("config/active-project.json");
+
+  if (fileExists('config/active-project.json')) {
+    const context = parseJSON('config/active-project.json');
     cleanup.previous_project = context.active_project;
     cleanup.cleaned = true;
-    
+
     // Clear context with cleanup record
     const cleanedContext = {
       active_project: null,
       context_set_date: cleanup.timestamp,
       session_id: generateSessionId(),
       last_accessed: cleanup.timestamp,
-      context_source: "auto_cleanup",
+      context_source: 'auto_cleanup',
       cleanup_reason: reason,
-      project_metadata: null
+      project_metadata: null,
     };
-    
-    writeJSON("config/active-project.json", cleanedContext);
+
+    writeJSON('config/active-project.json', cleanedContext);
   }
-  
+
   return cleanup;
 }
 ```
@@ -290,27 +290,27 @@ function cleanupInvalidContext(reason, projectName = null) {
 
 ```javascript
 function checkContextExpiration(maxAgeDays = 30) {
-  if (!fileExists("config/active-project.json")) {
-    return { expired: false, reason: "no_context" };
+  if (!fileExists('config/active-project.json')) {
+    return { expired: false, reason: 'no_context' };
   }
-  
-  const context = parseJSON("config/active-project.json");
+
+  const context = parseJSON('config/active-project.json');
   if (!context.active_project || !context.last_accessed) {
-    return { expired: false, reason: "no_active_context" };
+    return { expired: false, reason: 'no_active_context' };
   }
-  
+
   const lastAccessed = new Date(context.last_accessed);
   const ageInDays = (new Date() - lastAccessed) / (1000 * 60 * 60 * 24);
-  
+
   if (ageInDays > maxAgeDays) {
-    const cleanup = cleanupInvalidContext("context_expired", context.active_project);
+    const cleanup = cleanupInvalidContext('context_expired', context.active_project);
     return {
       expired: true,
       age_days: ageInDays,
-      cleanup: cleanup
+      cleanup: cleanup,
     };
   }
-  
+
   return { expired: false, age_days: ageInDays };
 }
 ```
@@ -322,16 +322,18 @@ function checkContextExpiration(maxAgeDays = 30) {
 When context validation fails, enhanced tasks should:
 
 1. **Log Context Issues** (for debugging):
+
    ```
    Context validation failed: [reason]
-   Previous project: [project-name]  
+   Previous project: [project-name]
    Falling back to global behavior
    ```
 
 2. **Auto-Cleanup Invalid Context**:
+
    ```javascript
-   if (!context.valid && context.reason === "project_not_found") {
-     cleanupInvalidContext("project_deleted", context.project);
+   if (!context.valid && context.reason === 'project_not_found') {
+     cleanupInvalidContext('project_deleted', context.project);
    }
    ```
 
@@ -353,38 +355,38 @@ function attemptContextRecovery() {
   const recovery = {
     attempted: [],
     succeeded: [],
-    failed: []
+    failed: [],
   };
-  
+
   // Attempt 1: Recreate missing config directory
-  if (!directoryExists("config")) {
+  if (!directoryExists('config')) {
     try {
-      createDirectory("config");
-      recovery.attempted.push("create_config_directory");
-      recovery.succeeded.push("create_config_directory");
+      createDirectory('config');
+      recovery.attempted.push('create_config_directory');
+      recovery.succeeded.push('create_config_directory');
     } catch (error) {
-      recovery.failed.push({ action: "create_config_directory", error: error.message });
+      recovery.failed.push({ action: 'create_config_directory', error: error.message });
     }
   }
-  
+
   // Attempt 2: Validate and repair context file format
-  if (fileExists("config/active-project.json")) {
+  if (fileExists('config/active-project.json')) {
     try {
-      const context = parseJSON("config/active-project.json");
+      const context = parseJSON('config/active-project.json');
       if (!context.session_id) {
         context.session_id = generateSessionId();
       }
       if (!context.last_accessed) {
         context.last_accessed = new Date().toISOString();
       }
-      writeJSON("config/active-project.json", context);
-      recovery.attempted.push("repair_context_format");
-      recovery.succeeded.push("repair_context_format");
+      writeJSON('config/active-project.json', context);
+      recovery.attempted.push('repair_context_format');
+      recovery.succeeded.push('repair_context_format');
     } catch (error) {
-      recovery.failed.push({ action: "repair_context_format", error: error.message });
+      recovery.failed.push({ action: 'repair_context_format', error: error.message });
     }
   }
-  
+
   return recovery;
 }
 ```
@@ -400,28 +402,28 @@ function attemptContextRecovery() {
 ```javascript
 function getContextStatus() {
   const status = {
-    context_file_exists: fileExists("config/active-project.json"),
+    context_file_exists: fileExists('config/active-project.json'),
     context_readable: false,
     context_valid: false,
     active_project: null,
     project_accessible: false,
     validation_issues: [],
     last_accessed: null,
-    session_info: null
+    session_info: null,
   };
-  
+
   if (status.context_file_exists) {
     try {
-      const context = parseJSON("config/active-project.json");
+      const context = parseJSON('config/active-project.json');
       status.context_readable = true;
       status.active_project = context.active_project;
       status.last_accessed = context.last_accessed;
       status.session_info = {
         session_id: context.session_id,
         context_source: context.context_source,
-        set_date: context.context_set_date
+        set_date: context.context_set_date,
       };
-      
+
       if (context.active_project) {
         const validation = validateProjectIntegrity(context.active_project);
         status.context_valid = validation.valid;
@@ -432,7 +434,7 @@ function getContextStatus() {
       status.validation_issues.push(`Context file parsing error: ${error.message}`);
     }
   }
-  
+
   return status;
 }
 ```
@@ -442,6 +444,7 @@ function getContextStatus() {
 ### For Enhanced Tasks
 
 1. **Always validate context before use**:
+
    ```javascript
    const context = validateProjectContext();
    if (context.valid) {
@@ -452,9 +455,10 @@ function getContextStatus() {
    ```
 
 2. **Handle context issues gracefully**:
+
    ```javascript
-   if (!context.valid && context.reason === "project_not_found") {
-     cleanupInvalidContext("project_deleted", context.project);
+   if (!context.valid && context.reason === 'project_not_found') {
+     cleanupInvalidContext('project_deleted', context.project);
      // Inform user and continue with global behavior
    }
    ```
@@ -468,12 +472,14 @@ function getContextStatus() {
 ### For Management Tasks
 
 1. **Use comprehensive validation**:
+
    ```javascript
    // project-switch should use validateProjectIntegrity()
    // project-status should use getContextStatus()
    ```
 
 2. **Provide detailed feedback**:
+
    ```javascript
    // Include validation results in user-facing output
    // Show context status and any issues found

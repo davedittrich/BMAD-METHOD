@@ -239,10 +239,15 @@ sections:
           **Update Monitoring:** [How to monitor for updates or corrections]
           **Citation Practices:** [How to cite this source appropriately]
 
-## Documentation Requirements
-
-- [ ] **Complete source information**: Full bibliographic information recorded
-- [ ] **Analysis methodology**: Clear documentation of analysis approach
-- [ ] **Evidence compilation**: Supporting evidence organized and referenced
-- [ ] **Assessment rationale**: Clear reasoning for reliability assessments
-- [ ] **Usage tracking**: Record of how source was ultimately used
+  - id: documentation_requirements
+    title: "Documentation Requirements"
+    instruction: "Ensure all documentation standards are met"
+    sections:
+      - id: requirements_checklist
+        title: "Requirements Checklist"
+        template: |
+          - [ ] **Complete source information**: Full bibliographic information recorded
+          - [ ] **Analysis methodology**: Clear documentation of analysis approach
+          - [ ] **Evidence compilation**: Supporting evidence organized and referenced
+          - [ ] **Assessment rationale**: Clear reasoning for reliability assessments
+          - [ ] **Usage tracking**: Record of how source was ultimately used

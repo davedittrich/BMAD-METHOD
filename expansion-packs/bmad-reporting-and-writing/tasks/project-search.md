@@ -21,7 +21,7 @@ Discover and search research materials across all projects with advanced filteri
 3. **Advanced Filtering System**
    - **Content Type Filtering**: Filter by video, document, transcript, external-source
    - **Analysis Status Filtering**: Filter by pending, analyzing, completed, archived
-   - **Date Range Filtering**: Filter by added_date or last_modified within specified ranges  
+   - **Date Range Filtering**: Filter by added_date or last_modified within specified ranges
    - **Tag-Based Filtering**: Include/exclude sources with specific tags or tag combinations
    - **Project Filtering**: Search within specific projects or exclude certain projects
    - **Collection Filtering**: Filter by source collection membership for organized discovery
@@ -86,54 +86,63 @@ Please specify:
 ## Output Requirements
 
 **Search Results Display:**
+
 - Formatted list of matching sources with key metadata and relevance scores
 - Source information: title, type, project location, tags, analysis status
 - Cross-project references and relationships for comprehensive research context
 - Direct file paths for accessing transcripts, analysis results, and source materials
 
 **Search Result Metadata:**
+
 - Total number of results found across all searched projects
 - Search execution time and performance metrics
 - Applied filters and ranking methodology explanation
 - Cross-project distribution summary for research scope understanding
 
 **Search Result Organization:**
+
 - Group results by project, content type, or relevance score as requested
 - Highlight sources from active project context for immediate relevance
 - Show source relationships and cross-references for research trail discovery
 - Include source collection memberships for organized material grouping
 
 **File Access Information:**
+
 - **Source Files**: Direct paths to `projects/{project-name}/references/` for source materials
 - **Analysis Files**: Paths to `projects/{project-name}/analyses/` for completed analysis reports
 - **Transcript Files**: Paths to transcript files for immediate content access
 - **Metadata Files**: Paths to source configuration files for detailed metadata
 
 **Cross-Project Discovery:**
+
 - Sources referenced across multiple projects with cross-reference details
 - Duplicate source detection results showing canonical and reference locations
 - Related source suggestions based on content similarity and tagging
 - Research trail connections showing source relationships and dependencies
 
 **Export Capabilities:**
+
 - JSON export with complete metadata and cross-references for external analysis
 - CSV export for spreadsheet analysis and research workflow integration
 - Markdown export for documentation and research note integration
 - Filtered exports based on user selection and ranking preferences
 
 **Performance and Context:**
+
 - Search completion time and efficiency metrics for large source collections
 - Active project context integration showing prioritized results
 - Search history and suggestion capabilities for repeated research patterns
 - Integration guidance for using search results in analysis and content creation workflows
 
 **Error Handling:**
+
 - Clear messages for no results found or invalid search parameters
 - Guidance for refining search queries and filters for better results
 - Fallback suggestions when search scope is too narrow or broad
 - Help text for using advanced search features and boolean operators
 
 **Next Steps Guidance:**
+
 - Suggested actions based on search results (analyze sources, create collections, cross-reference)
 - Recommendations for expanding or refining research based on discovered materials
 - Integration tips for using found sources in current project workflows

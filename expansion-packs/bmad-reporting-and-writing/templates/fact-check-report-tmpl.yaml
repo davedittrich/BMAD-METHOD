@@ -305,10 +305,15 @@ sections:
           **Institution 3:** [Complete information and data accessed]
           [Continue for all institutional sources]
 
-## Fact-Check Standards
-
-- [ ] **Transparency**: All sources and methods clearly documented
-- [ ] **Independence**: Fact-checker has no conflicts of interest
-- [ ] **Accuracy**: All information verified through multiple sources when possible
-- [ ] **Fairness**: All perspectives considered and evaluated fairly
-- [ ] **Accountability**: Clear contact information provided for follow-up questions
+  - id: quality_standards
+    title: "Fact-Check Quality Standards"
+    instruction: "Ensure all fact-checking standards are met"
+    sections:
+      - id: standards_checklist
+        title: "Standards Checklist"
+        template: |
+          - [ ] **Transparency**: All sources and methods clearly documented
+          - [ ] **Independence**: Fact-checker has no conflicts of interest
+          - [ ] **Accuracy**: All information verified through multiple sources when possible
+          - [ ] **Fairness**: All perspectives considered and evaluated fairly
+          - [ ] **Accountability**: Clear contact information provided for follow-up questions

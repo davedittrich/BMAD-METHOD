@@ -65,10 +65,12 @@ Please specify:
 ## Output Requirements
 
 **File Structure:**
+
 ```markdown
 # Video Transcript: [Title]
 
 ## Metadata
+
 - **URL:** [YouTube URL]
 - **Video ID:** [extracted ID]
 - **Title:** [full video title]
@@ -85,10 +87,12 @@ Please specify:
 [Full transcript content with timing if available]
 
 ---
-*Saved using BMAD save-transcript task*
+
+_Saved using BMAD save-transcript task_
 ```
 
 **Agent Response:**
+
 - File path where transcript was saved
 - Basic metadata (title, duration, content type)
 - Participant names if identified
@@ -96,6 +100,7 @@ Please specify:
 - Brief quality assessment of transcript (clarity, timing accuracy)
 
 **Context Efficiency Notes:**
+
 - Full transcript content stays in local file
 - Agents can read specific sections as needed
 - Eliminates context window consumption for transcript content

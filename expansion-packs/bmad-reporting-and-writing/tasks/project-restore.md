@@ -105,60 +105,70 @@ Please specify:
 ## Output Requirements
 
 **Restoration Success Confirmation:**
+
 - Successful project restoration completed with comprehensive data recovery and integrity validation
 - Restored project location established in active workspace with complete directory structure
 - Project metadata restored from archive with updated restoration information and lifecycle history
 - Project status updated to "active" with restoration event logging and transition documentation
 
 **Data Recovery Validation:**
+
 - Complete project directory structure restored with all references, analyses, drafts, and configuration intact
 - Cross-project relationships reactivated with updated reference locations and status indicators
 - Collaboration spaces restored with active participant status and shared resource accessibility
 - Source materials and version history recovered with integrity validation and accessibility confirmation
 
 **Integration Restoration:**
+
 - Project integration with BMAD framework validated and operational for task execution and analysis workflows
 - Enhanced task compatibility confirmed with project-aware parameter validation and routing
 - Project context management integration restored with navigation and session persistence capabilities
 - Cross-project relationship functionality validated with dependency graphs and collaboration features operational
 
 **Active Workspace Updates:**
+
 - Project added to active project listings with immediate search discoverability and context availability
 - Active project context updated if restoration includes context switching requirements
 - Project navigation and management integrated with existing workspace organization and workflow management
 - Workspace storage and organization optimized with restored project integration and accessibility
 
 **Cross-Project Reference Restoration:**
+
 - Cross-project reference registry updated with restored project location and active status indicators
 - Dependency graphs rebuilt to reflect restored project status and relationship integrity
 - Collaboration spaces reactivated with restored participant access and shared resource availability
 - Project relationship metadata synchronized across all linked projects with restoration status updates
 
 **Archive Management Updates:**
+
 - Archive registry updated with restoration event tracking and access statistics
 - Archive metadata maintained with restoration count and last access information updates
 - Archive preservation continued for future restoration needs and backup purposes
 - Archive health monitoring continued with integrity validation and maintenance scheduling
 
 **Restoration Integrity Results:**
+
 - Comprehensive data integrity validation completed with hash verification and corruption detection
 - Restored project functionality verified through task execution testing and workflow validation
 - Cross-project relationship integrity confirmed with accessibility and operational testing
 - Integration compatibility validated with existing BMAD framework operations and enhanced task execution
 
 **Performance Metrics:**
+
 - Restoration operation completed in reasonable time with progress feedback and status updates
 - Restored project performance validated with analysis workflow execution and response time testing
 - Integration performance maintained with existing project management and cross-project functionality
 - Archive access and restoration efficiency optimized for future restoration operations
 
 **Error Handling:**
+
 - Clear messages for restoration failures, archive corruption, or workspace conflicts
 - Guidance for resolving restoration conflicts, storage limitations, or integrity validation errors
 - Rollback procedures for failed restoration operations with complete cleanup and archive preservation
 - Comprehensive validation reporting for restoration quality and integration verification
 
 **Integration Requirements:**
+
 - Seamless compatibility with Story 1.1 project infrastructure and directory organization
 - Integration with Story 1.2 enhanced tasks maintaining project-aware parameter validation and routing
 - Utilization of Story 1.3 project context management for restored project navigation and session management
@@ -166,6 +176,7 @@ Please specify:
 - Compatibility with Story 1.5 cross-project references maintaining relationship integrity and collaboration restoration
 
 **Documentation and Guidance:**
+
 - Restoration operation guidance with best practices and recommended post-restoration workflows
 - Project reactivation procedures for integrating restored projects with current research activities
 - Archive management recommendations for maintaining restoration capabilities and backup procedures

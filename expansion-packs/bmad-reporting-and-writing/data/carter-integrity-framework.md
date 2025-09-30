@@ -8,18 +8,19 @@ Based on Stephen L. Carter's "Integrity" - A framework for analyzing integrity i
 
 In his book, Carter defines "integrity" this way:
 
-> "When I refer to *integrity*, I have something very simple and specific in mind. Integrity,
-> as I will use the term, requires three steps: (1) *discerning* what is right and what is wrong;
-> (2) *acting* on what you have discerned, even at personal cost; and (3) *saying openly* that
+> "When I refer to _integrity_, I have something very simple and specific in mind. Integrity,
+> as I will use the term, requires three steps: (1) _discerning_ what is right and what is wrong;
+> (2) _acting_ on what you have discerned, even at personal cost; and (3) _saying openly_ that
 > you are acting on your understanding of right and wrong. The first criterion captures the idea
 > of integrity as requiring a degree of moral reflectiveness. The second brings in the ideal of
 > of an integral person as steadfast, which includes the sense of keeping commitments. The third
 > reminds us that a person of integrity is unashamed of doing the right." -- Stephen L. Carter
 
 The Three Steps in Brief:
-  1. Discernment - Discerning what is right and wrong
-  2. Right Action - Acting on what you have discerned, even at personal cost
-  3. Transparency - Saying openly that you are acting on your understanding of right and wrong
+
+1. Discernment - Discerning what is right and wrong
+2. Right Action - Acting on what you have discerned, even at personal cost
+3. Transparency - Saying openly that you are acting on your understanding of right and wrong
 
 As to the opposite of integrity, Carter says:
 
@@ -27,11 +28,11 @@ As to the opposite of integrity, Carter says:
 > integrity, but are we really? We call ourselves a nation of laws, but millions of us cheat on our
 > taxes. We seem not to believe in the integrity of our commitments, with half of marriages ending
 > in divorce. We say we want integrity in our politics, and our politicians promise it endlessly.
-> (Try searching the Nexis database for uses of the word *integrity* by politicians and
+> (Try searching the Nexis database for uses of the word _integrity_ by politicians and
 > commentators and you will be inundated.) But we reward innuendo and smear and barefaced lies
 > with our votes." -- Stephen L. Carter
 
-"Corruption" can involve money, but a direct *quid pro quo* or "pay-to-play" arrangement trading
+"Corruption" can involve money, but a direct _quid pro quo_ or "pay-to-play" arrangement trading
 money for a policy or judicial decision is not necessary for an act to be corrupt. Illegality is
 similarly not a requirement for an act to be corrupt, or for someone to be acting with corrupt
 intent. The application of Carter's three criteria together helps decide when an act is
@@ -128,4 +129,3 @@ not assumptions about internal motivations.
 > soundbite is more attractive (that is, marketable) than a principled argument, but also
 > because the media seem far more interested in tracking down hypocrisy than in reporting
 > episodes of integrity." -- Stephen L. Carter
-

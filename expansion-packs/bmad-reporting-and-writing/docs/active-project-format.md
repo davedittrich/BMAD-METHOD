@@ -16,7 +16,7 @@ The active project context persistence system uses a JSON configuration file to 
 {
   "active_project": "project-name-or-null",
   "context_set_date": "ISO-8601-timestamp",
-  "session_id": "unique-session-identifier", 
+  "session_id": "unique-session-identifier",
   "last_accessed": "ISO-8601-timestamp",
   "context_source": "manual|auto-detected|restored",
   "project_metadata": {
@@ -35,7 +35,7 @@ The active project context persistence system uses a JSON configuration file to 
 ### Core Context Fields
 
 - **`active_project`**: String - Currently active project name (null if no project active)
-- **`context_set_date`**: ISO-8601 timestamp - When context was last activated  
+- **`context_set_date`**: ISO-8601 timestamp - When context was last activated
 - **`session_id`**: String - Unique identifier for current workflow session
 - **`last_accessed`**: ISO-8601 timestamp - Most recent context usage for cleanup purposes
 - **`context_source`**: Enum - How context was set (manual, auto-detected, restored)

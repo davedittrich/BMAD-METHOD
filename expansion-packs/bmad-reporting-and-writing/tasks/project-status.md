@@ -85,6 +85,7 @@ Please specify:
 ## Output Requirements
 
 **Enhanced Project Overview Section:**
+
 - Project name, description, and creation date with lifecycle information
 - Current project status: active, review, completed, archived
 - Lifecycle history with status transitions, dates, and transition reasons
@@ -92,54 +93,63 @@ Please specify:
 - Active context status and cross-project relationship participation
 
 **File Inventory and Metrics:**
+
 - File counts by directory: references (X files), analyses (Y files), drafts (Z files)
 - Total project scope and material volume indicators
 - Recent activity summary (files added/modified in last 7/30 days)
 - Storage utilization and project size information
 
 **Cross-Project Relationship Status:**
+
 - Project relationships with types, strength, and collaboration status
 - Dependency graph participation and relationship health monitoring
 - Collaboration space participation and shared resource access
 - Cross-project reference integrity and validation results
 
 **Archive and Lifecycle Management:**
+
 - Archive status and restoration history if applicable
 - Archive health monitoring and backup status reporting
 - Lifecycle transition recommendations and next steps guidance
 - Storage optimization and archive readiness assessment
 
 **Analysis Completion Dashboard:**
+
 - List of completed analyses with dates and types
 - Analysis workflow patterns and research progression
 - Identified analysis gaps or missing investigations
 - Recommended follow-up analyses based on available materials
 
 **Context-Aware File Discovery:**
+
 - Available materials by category (transcripts, documents, sources)
 - File relationships and cross-references for workflow planning
 - Underutilized materials and optimization opportunities
 - Quick access paths to key project files
 
 **Enhanced Research Recommendations:**
+
 - Next suggested research actions based on current project state and lifecycle status
 - Specific task recommendations with lifecycle and cross-project context
 - Workflow optimization suggestions including archive readiness and relationship management
 - Project organization, cross-project collaboration, and lifecycle progression guidance
 
 **Activity Timeline with Lifecycle Context:**
+
 - Recent project activity with lifecycle transition events
 - File modification patterns and relationship development history
 - Project momentum indicators and research velocity across lifecycle phases
 - Suggestions for maintaining research continuity, collaboration, or archive preparation
 
 **Navigation and Quick Actions:**
+
 - File paths for direct access to key project materials
 - Command suggestions for immediate next steps
 - Context switching guidance if project not currently active
 - Integration tips for using project context with enhanced tasks
 
 **Performance Metrics:**
+
 - Status generation completed in <3 seconds
 - Comprehensive project analysis without performance impact
 - Scalable reporting for projects with large file inventories

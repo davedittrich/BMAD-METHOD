@@ -1,5 +1,6 @@
 # Argument Structure Assessment Checklist
-*Based on T. Edward Damer's "Attacking Faulty Reasoning" methodology*
+
+_Based on T. Edward Damer's "Attacking Faulty Reasoning" methodology_
 
 Use this checklist to systematically evaluate argument structure using Damer's five criteria for good arguments and principles of effective discussion.
 
@@ -39,6 +40,7 @@ Use this checklist to systematically evaluate argument structure using Damer's f
 - [ ] **Proper Inference Rules**: Valid inference patterns used throughout
 
 **Common Structural Fallacies to Check**:
+
 - [ ] **Begging the Question**: Conclusion assumed in premises
 - [ ] **Self-Contradiction**: Premises contradict each other or the conclusion
 - [ ] **Invalid Syllogism**: Formal logical errors in deductive reasoning
@@ -60,6 +62,7 @@ Use this checklist to systematically evaluate argument structure using Damer's f
 - [ ] **Material Connection**: Evidence materially affects probability of conclusion
 
 **Common Relevance Fallacies to Check**:
+
 - [ ] **Ad Hominem**: Attacking person instead of argument
   - [ ] **Abusive**: Direct personal attack
   - [ ] **Circumstantial**: Attacking person's circumstances or motivations
@@ -87,6 +90,7 @@ Use this checklist to systematically evaluate argument structure using Damer's f
 - [ ] **Factual Accuracy**: Factual claims are accurate and up-to-date
 
 **Common Acceptability Fallacies to Check**:
+
 - [ ] **Appeal to Ignorance**: "We don't know it's false, so it's true"
 - [ ] **False Dilemma**: Only two options presented when more exist
 - [ ] **Complex Question**: Question contains unjustified assumptions
@@ -106,6 +110,7 @@ Use this checklist to systematically evaluate argument structure using Damer's f
 - [ ] **Statistical Adequacy**: Statistical evidence meets adequacy standards
 
 **Common Sufficiency Fallacies to Check**:
+
 - [ ] **Hasty Generalization**: Drawing broad conclusions from limited evidence
 - [ ] **Insufficient Sample**: Statistical conclusions from inadequate samples
 - [ ] **Anecdotal Evidence**: Over-relying on personal stories
@@ -129,6 +134,7 @@ Use this checklist to systematically evaluate argument structure using Damer's f
 - [ ] **Alternative Consideration**: Alternative explanations considered
 
 **Common Rebuttal Fallacies to Check**:
+
 - [ ] **Straw Man**: Misrepresenting counterarguments to easily defeat them
 - [ ] **Avoiding the Issue**: Not addressing the real counterarguments
 - [ ] **Poisoning the Well**: Pre-emptively discrediting opposition
@@ -156,11 +162,13 @@ Use this checklist to systematically evaluate argument structure using Damer's f
 ## Fallacy Categories by Criterion
 
 ### Structural Fallacies
+
 - [ ] **Circular Reasoning/Begging the Question**: P1: A is true because B. P2: B is true because A. C: Therefore A.
 - [ ] **Self-Contradiction**: Premises contradict each other or conclusion
 - [ ] **Invalid Inference**: Conclusion doesn't follow from premises
 
 ### Relevance Fallacies
+
 - [ ] **Personal Attack (Ad Hominem)**: Attacking arguer rather than argument
 - [ ] **Appeal to Force (Ad Baculum)**: Using threats to compel acceptance
 - [ ] **Appeal to Pity (Ad Misericordiam)**: Using sympathy to gain acceptance
@@ -171,6 +179,7 @@ Use this checklist to systematically evaluate argument structure using Damer's f
 - [ ] **Straw Man**: Misrepresenting opponent's position
 
 ### Acceptability Fallacies
+
 - [ ] **Appeal to Ignorance**: Lack of disproof treated as proof
 - [ ] **False Dilemma**: Presenting only two options when more exist
 - [ ] **Loaded Question**: Question contains controversial assumptions
@@ -179,6 +188,7 @@ Use this checklist to systematically evaluate argument structure using Damer's f
 - [ ] **Composition**: Assuming whole has properties of parts
 
 ### Sufficiency Fallacies
+
 - [ ] **Hasty Generalization**: Inadequate sample size for conclusion
 - [ ] **Anecdotal Evidence**: Personal experience treated as universal truth
 - [ ] **False Analogy**: Poor comparison used as evidence
@@ -187,6 +197,7 @@ Use this checklist to systematically evaluate argument structure using Damer's f
 - [ ] **Appeal to Ignorance**: "No one has proven it false"
 
 ### Rebuttal Fallacies
+
 - [ ] **Avoiding the Issue**: Not addressing main counterarguments
 - [ ] **Attacking the Fallacy**: Focusing on opponent's errors rather than defending position
 - [ ] **Circumstantial Ad Hominem**: "You would say that because..."

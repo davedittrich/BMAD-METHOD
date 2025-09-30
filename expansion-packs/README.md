@@ -5,11 +5,13 @@ Expansion packs extend BMad-Method beyond traditional software development, prov
 ## Available Expansion Packs
 
 ### Development & Technical
+
 - **bmad-infrastructure-devops** - DevOps, infrastructure, and deployment automation
 - **bmad-2d-phaser-game-dev** - 2D game development using Phaser framework
 - **bmad-2d-unity-game-dev** - 2D game development using Unity
 
 ### Creative & Content
+
 - **bmad-creative-writing** - Fiction writing, storytelling, and narrative development
 - **bmad-reporting-and-writing** - Research, analysis, and professional reporting with T. Edward Damer's argumentation methodology and Stephen L. Carter's "Integrity" evaluation methodology
 

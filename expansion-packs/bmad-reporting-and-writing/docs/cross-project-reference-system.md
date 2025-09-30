@@ -7,6 +7,7 @@ The Cross-Project Reference System enables sophisticated connections and depende
 ## Architecture Components
 
 ### 1. Project Relationship Metadata
+
 Each project maintains its relationships in `projects/{project-name}/config/relationships.json`:
 
 ```json
@@ -27,6 +28,7 @@ Each project maintains its relationships in `projects/{project-name}/config/rela
 ```
 
 ### 2. Global Project Dependency Graph
+
 Maintained in `config/project-graph.json` for network-wide analysis:
 
 ```json
@@ -55,6 +57,7 @@ Maintained in `config/project-graph.json` for network-wide analysis:
 ```
 
 ### 3. Cross-Project Reference Registry
+
 Maintained in `config/cross-references.json` for referential integrity:
 
 ```json
@@ -83,6 +86,7 @@ Maintained in `config/cross-references.json` for referential integrity:
 ```
 
 ### 4. Collaboration Spaces
+
 Maintained in `config/collaboration-spaces.json` for team coordination:
 
 ```json
@@ -116,6 +120,7 @@ Maintained in `config/collaboration-spaces.json` for team coordination:
 ## System Operations
 
 ### Relationship Creation
+
 1. **Validation**: Ensure both projects exist and are accessible
 2. **Bidirectional Setup**: Create relationship metadata in both projects
 3. **Graph Update**: Update global dependency graph
@@ -123,12 +128,14 @@ Maintained in `config/collaboration-spaces.json` for team coordination:
 5. **Validation**: Check for circular dependencies
 
 ### Dependency Resolution
+
 1. **Graph Traversal**: Analyze project relationships using topological sorting
 2. **Cycle Detection**: Identify circular dependencies using depth-first search
 3. **Critical Path**: Calculate longest dependency chain
 4. **Health Assessment**: Evaluate overall network health
 
 ### Reference Validation
+
 1. **Integrity Check**: Verify referenced files and content exist
 2. **Consistency Validation**: Ensure bidirectional references match
 3. **Health Monitoring**: Track broken or outdated references
@@ -137,21 +144,25 @@ Maintained in `config/collaboration-spaces.json` for team coordination:
 ## Integration Points
 
 ### Story 1.1 - Project Infrastructure
+
 - Utilizes established project directory structure
 - Extends project metadata format with relationship information
 - Maintains backward compatibility with existing projects
 
-### Story 1.2 - Enhanced Tasks  
+### Story 1.2 - Enhanced Tasks
+
 - Cross-project analysis triggers enhanced tasks across related projects
 - Project-aware routing considers relationship context
 - Maintains consistent parameter patterns
 
 ### Story 1.3 - Project Context Management
+
 - Active project context includes linked project awareness
 - Navigation capabilities extended to related projects
 - Status reporting includes relationship health
 
 ### Story 1.4 - Source Management
+
 - Cross-project source linking leverages existing deduplication system
 - Source relationships tracked across project boundaries
 - Archive operations maintain cross-project references
@@ -159,6 +170,7 @@ Maintained in `config/collaboration-spaces.json` for team coordination:
 ## Usage Patterns
 
 ### Basic Project Linking
+
 ```bash
 # Link projects with dependency relationship
 project-link --source research-phase-1 --target research-phase-2 --type dependency --strength strong
@@ -168,6 +180,7 @@ project-link --target collaborative-analysis --type collaboration --strength cri
 ```
 
 ### Cross-Project Analysis
+
 ```bash
 # Analyze patterns across related projects
 project-insights --include-relationships --focus patterns
@@ -177,6 +190,7 @@ project-insights --visualization --include-timelines
 ```
 
 ### Team Collaboration
+
 ```bash
 # Initialize collaboration space
 project-collaborate --type shared-research --participants "researcher1,researcher2"
@@ -188,18 +202,21 @@ project-collaborate --enable-annotations --shared-resources templates,methodolog
 ## Validation and Maintenance
 
 ### Health Monitoring
+
 - Automated reference validation on project modifications
 - Dependency graph consistency checking
 - Collaboration space activity monitoring
 - Performance impact assessment
 
 ### Error Recovery
+
 - Broken reference detection and repair suggestions
 - Circular dependency resolution guidance
 - Collaboration conflict resolution mechanisms
 - Data integrity preservation during failures
 
 ### Performance Considerations
+
 - Scalable graph algorithms for large project networks
 - Efficient cross-reference validation without full content analysis
 - Memory-efficient collaboration data storage
@@ -208,12 +225,14 @@ project-collaborate --enable-annotations --shared-resources templates,methodolog
 ## Security and Isolation
 
 ### Project Boundaries
+
 - Relationships enable connection while preserving isolation
 - Cross-project access respects individual project permissions
 - Collaboration features maintain data sovereignty
 - Reference validation preserves project autonomy
 
 ### Data Integrity
+
 - Atomic operations for bidirectional relationship creation
 - Transactional updates for dependency graph modifications
 - Consistent backup and recovery for relationship metadata

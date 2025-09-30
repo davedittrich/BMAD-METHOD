@@ -105,60 +105,70 @@ Please specify:
 ## Output Requirements
 
 **Archive Creation Confirmation:**
+
 - Successful project archival completed with comprehensive data preservation
 - Archive location established at `archive/{year}/{project-name}/` with complete directory structure
 - Archive metadata stored in `archive-info.json` following Archive Metadata Model
 - Project lifecycle status updated to "archived" with transition history and reasoning
 
 **Data Preservation Validation:**
+
 - Complete project directory structure preserved with all references, analyses, drafts, and configuration
 - Cross-project relationships maintained with updated reference locations and status indicators
 - Collaboration spaces updated with archived project participant status and access preservation
 - Source materials and version history preserved with integrity validation and hash verification
 
 **Archive Index Updates:**
+
 - Global archive registry updated in `archive/index.json` with searchable project entry
 - Archive search metadata generated with keywords, categories, and research domain classification
 - Archive health monitoring initialized with integrity checking and maintenance scheduling
 - Archive categorization updated with project classification and organizational metadata
 
 **Cross-Project Integration:**
+
 - Cross-project reference registry updated with archived project location and access information
 - Dependency graphs modified to reflect archived project status without breaking relationship integrity
 - Collaboration spaces maintained with archived participant status and shared resource preservation
 - Project relationship metadata updated across all linked projects with archival status indicators
 
 **Active Workspace Management:**
+
 - Project removed from active project listings while maintaining search discoverability
 - Active project context updated if archived project was currently selected
 - Project context switching updated to handle archived project navigation appropriately
 - Workspace organization improved with archive-based cleanup and storage optimization
 
 **Archive Accessibility:**
+
 - Archived project remains accessible through archive search and discovery mechanisms
 - Direct archive access paths provided for future reference and restoration procedures
 - Archive navigation integrated with existing project context and relationship management
 - Search functionality extended to include archived project content and metadata
 
 **Integrity and Validation:**
+
 - Comprehensive data integrity validation completed with hash verification and corruption detection
 - Archive metadata completeness verified with all required fields and proper format validation
 - Archive accessibility tested with search indexing and discovery functionality confirmation
 - Integrity monitoring activated with automated health checking and maintenance scheduling
 
 **Performance Metrics:**
+
 - Archive operation completed in reasonable time with progress feedback and status updates
 - Archive storage optimization achieved without data loss or corruption
 - Archive search indexing efficient and responsive for discovery operations
 - Integration performance maintained with existing project management and analysis workflows
 
 **Error Handling:**
+
 - Clear messages for invalid projects, insufficient permissions, or archive creation failures
 - Guidance for resolving archive conflicts, storage limitations, or integrity validation errors
 - Rollback procedures for failed archive operations with complete cleanup and restoration
 - Comprehensive validation reporting for archive health and integrity monitoring
 
 **Integration Requirements:**
+
 - Seamless compatibility with Story 1.1 project infrastructure and directory organization
 - Integration with Story 1.2 enhanced tasks maintaining project-aware parameter validation
 - Utilization of Story 1.3 project context management for archive-aware navigation and switching
@@ -166,8 +176,8 @@ Please specify:
 - Compatibility with Story 1.5 cross-project references maintaining relationship integrity and collaboration preservation
 
 **Documentation and Guidance:**
+
 - Archive operation guidance with best practices and recommended workflows
 - Restoration procedures documented for future project recovery and reactivation
 - Archive management recommendations for long-term preservation and maintenance
 - Integration documentation for archive functionality with existing BMAD framework operations
-

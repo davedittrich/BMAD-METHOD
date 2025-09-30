@@ -16,7 +16,7 @@ Take a step back and think step-by-step about how to achieve the best possible r
     - **No project context**: Look in global `references/transcripts/` directory
   - A file saved in the local directory `references/` to be read
   - A document file provided by the user
-  IMPORTANT: This task works with already-prepared content. For YouTube videos, use save-transcript task first to download and classify content before running this analysis.
+    IMPORTANT: This task works with already-prepared content. For YouTube videos, use save-transcript task first to download and classify content before running this analysis.
 
 - Extract a summary of the content in 25 words, including who is presenting and the content being discussed for a section called SUMMARY.
 
@@ -71,5 +71,3 @@ Please specify:
 - Do not repeat ideas, insights, quotes, habits, facts, or references from the input being analyzed.
 - Do not start items with the same opening words.
 - Ensure you follow ALL these instructions when creating your output.
-
-

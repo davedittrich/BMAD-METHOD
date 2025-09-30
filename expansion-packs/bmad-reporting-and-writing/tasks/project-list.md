@@ -44,4 +44,3 @@ No user input required - this task displays all available projects automatically
 - Format consistent with BMAD task output patterns
 - Include helpful next-step guidance for project management
 - CRITICAL: Read-only operation - no modifications to project data
-

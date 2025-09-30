@@ -53,7 +53,7 @@
 - **Setup** (5-10 minutes): Context, participants, ground rules
 - **Position Statements** (10-15 minutes each): Detailed opening arguments
 - **Cross-Discussion** (45-90 minutes): Back-and-forth examination
-- **Audience Questions** (15-30 minutes): Q&A if applicable  
+- **Audience Questions** (15-30 minutes): Q&A if applicable
 - **Wrap-up** (5-10 minutes): Final thoughts and next steps
 
 ## Town Hall Format

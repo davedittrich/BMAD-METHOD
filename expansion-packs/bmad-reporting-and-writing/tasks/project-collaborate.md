@@ -105,78 +105,91 @@ Please specify:
 ## Output Requirements
 
 **Collaboration Space Establishment:**
+
 - Collaborative workspace created for project network with participant tracking and role assignment
 - Shared collaboration metadata stored in `config/collaboration-spaces.json`
 - Team coordination framework initialized with communication channels and workflow management
 - Collaborative annotation system activated for cross-project insights and shared knowledge development
 
 **Team Coordination Framework:**
+
 - Project participants identified and collaboration roles established across related projects
 - Team communication channels created within BMAD framework for coordination and updates
 - Collaborative workflow management implemented with task assignment and progress tracking capabilities
 - Team coordination metadata integrated with project relationship management and context systems
 
 **Collaborative Annotation System:**
+
 - Shared annotation framework operational for cross-project insights and commentary
 - Annotation threading implemented with reply capabilities and discussion management
 - Annotation categorization system established (insights, questions, references, methodology notes)
 - Integration completed with existing project analyses and research materials for contextual annotation
 
 **Knowledge Sharing Infrastructure:**
+
 - Shared resource repository created for templates, methodologies, and collaborative best practices
 - Knowledge inheritance system implemented for insight propagation across related projects
 - Shared source collection established with cross-project access and comprehensive reference tracking
 - Collaborative research methodology library created with version control and evolution tracking
 
 **Collaboration History and Attribution:**
+
 - Collaboration event tracking implemented with comprehensive logging and timeline generation
 - Contributor attribution system operational for shared insights and collaborative developments
 - Collaboration timeline created with milestone tracking and team coordination event documentation
 - Change logging system implemented for collaborative modifications and knowledge evolution tracking
 
 **Communication and Discussion Framework:**
+
 - Communication channels established for project updates and research coordination
 - Notification system implemented for collaborative events and shared resource updates
 - Discussion threading created for research questions and methodology debates
 - Integration completed with project context management and relationship navigation systems
 
 **Collaborative Analysis Workflows:**
+
 - Shared analysis workflows implemented combining multiple researcher perspectives
 - Collaborative synthesis capabilities created for cross-project insight development
 - Team-based review processes established for research quality and methodology validation
 - Analysis assignment and progress tracking systems operational for collaborative research management
 
 **Integration with Project Network:**
+
 - Collaboration scope determined using project linking and relationship metadata
 - Integration completed with cross-project insights for collaborative knowledge synthesis
 - Compatibility maintained with project context management and navigation systems
 - Collaboration boundaries properly established respecting project isolation while enabling knowledge sharing
 
 **Quality Assurance and Validation:**
+
 - Collaboration effectiveness metrics implemented for team productivity analysis
 - Validation systems created for collaborative contributions and shared knowledge quality assessment
 - Conflict resolution mechanisms established for research disagreements and methodology differences
 - Collaboration health monitoring implemented with participation tracking and engagement measurement
 
 **Performance and Scalability:**
+
 - Collaboration system performance optimized for multiple concurrent users and extensive project networks
 - Scalable architecture supporting large research teams and complex collaboration relationships
 - Efficient notification and communication systems minimizing performance impact on existing workflows
 - Memory-efficient collaborative data storage and retrieval for comprehensive collaboration history
 
 **Navigation and Management:**
+
 - Collaboration management interface providing team oversight and coordination capabilities
 - Direct access paths to collaborative annotations, shared resources, and team communication channels
 - Integration with project navigation systems for seamless collaboration context switching
 - Collaborative workflow guidance and best practices documentation for research team effectiveness
 
 **Error Handling and Support:**
+
 - Clear guidance for resolving collaboration access issues and team coordination problems
 - Fallback procedures for maintaining collaboration continuity during system maintenance or updates
 - Comprehensive support documentation for collaboration features and team workflow optimization
 - Validation reporting for collaboration quality and team effectiveness assessment
 
 **Documentation and Reporting:**
+
 - Collaboration summary reports with team participation and knowledge sharing effectiveness metrics
 - Contributor attribution documentation preserving individual and team contribution recognition
 - Collaboration timeline visualization showing team interaction patterns and knowledge development progression

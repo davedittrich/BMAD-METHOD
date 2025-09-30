@@ -11,6 +11,7 @@
 **Core Purpose**: Supports independent journalism and content creation through systematic research methodology, fact-checking, and multi-platform optimization.
 
 **Current Architecture**: Traditional linear workflow with centralized data management
+
 - **11 Specialized Agents**: Research, content creation, and optimization teams
 - **4 Complete Workflows**: Article research, YouTube production, response journalism, social media
 - **15+ Research Tasks**: Including `analyze-video-content`, `distill-wisdom`, `save-transcript`
@@ -19,8 +20,9 @@
 ### Available Documentation Analysis
 
 ✅ **Document-project analysis available** - Using existing technical documentation
+
 - Expansion pack README with comprehensive feature overview
-- Task documentation with workflow specifications  
+- Task documentation with workflow specifications
 - Agent definitions and capabilities mapping
 - Template system for structured output
 
@@ -28,12 +30,13 @@
 
 **Enhancement Type**: ✅ **Major Feature Modification** + **New Feature Addition**
 
-**Enhancement Description**: 
+**Enhancement Description**:
 Transform the expansion pack from a linear, centralized workflow to a modular, project-based system that supports iterative research and writing. Enable organization of research data, sharded documents, and analysis output into separate project containers that support exploration, expansion of reference materials, and iterative article development.
 
 **Impact Assessment**: ✅ **Significant Impact** (substantial existing code changes)
+
 - Requires new project organization structure
-- Modifications to existing tasks for project-aware operation  
+- Modifications to existing tasks for project-aware operation
 - New workflow patterns for iterative research
 - Integration with existing agents while maintaining backward compatibility
 
@@ -50,9 +53,10 @@ Transform the expansion pack from a linear, centralized workflow to a modular, p
 The current expansion pack excels at linear research-to-publication workflows but lacks support for iterative, exploratory research common in investigative journalism. When researching complex topics that require multiple sources, follow-up questions, and iterative analysis, the current centralized approach creates confusion and context loss. The enhancement will enable systematic exploration while maintaining the pack's excellent analysis capabilities.
 
 ### Change Log
-| Change | Date | Version | Description | Author |
-|--------|------|---------|-------------|---------|
-| Initial Analysis | 2025-01-09 | PRD-v1 | Brownfield PRD creation for modular research enhancement | PM John |
+
+| Change           | Date       | Version | Description                                              | Author  |
+| ---------------- | ---------- | ------- | -------------------------------------------------------- | ------- |
+| Initial Analysis | 2025-01-09 | PRD-v1  | Brownfield PRD creation for modular research enhancement | PM John |
 
 ## Requirements
 
@@ -110,22 +114,26 @@ The current expansion pack excels at linear research-to-publication workflows bu
 
 ### Integration Approach
 
-**Directory Integration Strategy**: 
+**Directory Integration Strategy**:
+
 - Hierarchical project structure: `projects/{project-name}/{references,analyses,drafts}`
 - Maintain existing `references/` as global fallback for backward compatibility
 - Project-aware path resolution in modified tasks
 
 **Task Integration Strategy**:
+
 - Modify existing tasks to accept optional project context parameter
 - Implement project detection logic for automatic context switching
 - Preserve original task behavior when no project context provided
 
 **Agent Integration Strategy**:
+
 - No agent modifications required - agents work with enhanced tasks transparently
 - Project context passed through task execution rather than agent awareness
 - Maintain existing agent command interfaces and behaviors
 
 **Workflow Integration Strategy**:
+
 - Extend existing workflows with optional project initialization step
 - Project-aware file routing in analysis and output tasks
 - Backward compatible workflow execution for non-project users
@@ -134,11 +142,11 @@ The current expansion pack excels at linear research-to-publication workflows bu
 
 **File Structure Approach**: Follow existing expansion pack patterns with new project management tasks added to `tasks/` directory
 
-**Naming Conventions**: Maintain current BMAD naming standards, prefix new project tasks with `project-` (e.g., `project-init.md`, `project-add-source.md`)  
+**Naming Conventions**: Maintain current BMAD naming standards, prefix new project tasks with `project-` (e.g., `project-init.md`, `project-add-source.md`)
 
 **Documentation Standards**: Update existing task documentation with project usage examples while preserving original usage patterns
 
-### Deployment and Operations  
+### Deployment and Operations
 
 **Build Process Integration**: No changes to existing build process - new tasks auto-detected by standard BMAD build system
 
@@ -147,20 +155,24 @@ The current expansion pack excels at linear research-to-publication workflows bu
 ### Risk Assessment and Mitigation
 
 **Technical Risks**:
+
 - Path resolution complexity in cross-platform environments
 - File organization conflicts with existing user workflows
 - Performance impact of project context checking
 
-**Integration Risks**: 
+**Integration Risks**:
+
 - Breaking changes to existing user workflows
 - Agent confusion with multiple project contexts
 - Template output routing errors
 
 **Deployment Risks**:
-- User adoption resistance to new workflow patterns  
+
+- User adoption resistance to new workflow patterns
 - Migration complexity for existing research in progress
 
 **Mitigation Strategies**:
+
 - Comprehensive backward compatibility testing
 - Gradual rollout with legacy support
 - Clear migration documentation and optional adoption
@@ -175,7 +187,8 @@ The current expansion pack excels at linear research-to-publication workflows bu
 
 **Epic Goal**: Transform the bmad-reporting-and-writing expansion pack to support iterative, project-based research workflows that organize materials, analysis, and outputs by topic while maintaining full backward compatibility.
 
-**Integration Requirements**: 
+**Integration Requirements**:
+
 - All existing workflows must remain functional
 - New features must integrate transparently with existing agents
 - Project organization must be additive, not disruptive
@@ -231,7 +244,7 @@ so that I can work on multiple investigations without manually specifying projec
 
 1. `project-switch` task sets current project context for subsequent operations
 2. `project-list` task shows all available projects with status and recent activity
-3. `project-status` task displays current project progress and analysis inventory  
+3. `project-status` task displays current project progress and analysis inventory
 4. Project context persists across task executions within same session
 5. Clear indicators show which project is currently active
 
@@ -243,7 +256,7 @@ so that I can work on multiple investigations without manually specifying projec
 
 ## Story 1.4: Iterative Source Management
 
-As a research journalist, 
+As a research journalist,
 I want to add new reference materials to existing projects through dedicated commands,
 so that I can expand my research iteratively as new questions and sources emerge.
 

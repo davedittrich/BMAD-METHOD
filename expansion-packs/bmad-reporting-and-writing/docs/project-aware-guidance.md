@@ -15,19 +15,25 @@ Tasks check for active project context by reading `config/active-project.json`:
 ## Enhanced Task Integration
 
 ### analyze-video-content Task
+
 When active project context available:
+
 - **Output Enhancement**: Include project-specific analysis routing information
 - **Contextual Recommendations**: Suggest related analyses within the project
 - **Project Integration**: Show how analysis fits into overall project research
 
-### distill-wisdom Task  
+### distill-wisdom Task
+
 When active project context available:
+
 - **Output Enhancement**: Reference previous project analyses for context
 - **Contextual Recommendations**: Suggest follow-up research based on project progress
 - **Project Integration**: Connect insights to existing project materials
 
 ### save-transcript Task
+
 When active project context available:
+
 - **Output Enhancement**: Confirm project-specific storage location
 - **Contextual Recommendations**: Suggest next steps based on transcript content and project focus
 - **Project Integration**: Reference related project materials and analyses
@@ -40,18 +46,21 @@ Each enhanced task follows this pattern:
 ## Project Context Integration
 
 IF active project context exists:
-  1. Read active project from config/active-project.json
-  2. Validate project exists and is accessible
-  3. Include project-aware guidance in task output
-  4. Update project metadata if applicable
-ELSE:
-  5. Proceed with standard task execution (backward compatibility)
+
+1. Read active project from config/active-project.json
+2. Validate project exists and is accessible
+3. Include project-aware guidance in task output
+4. Update project metadata if applicable
+   ELSE:
+5. Proceed with standard task execution (backward compatibility)
 ```
 
 ## Context-Aware Output Sections
 
 ### Project Context Header
+
 When context active, tasks include:
+
 ```
 **Active Project Context**: {project-name}
 **Project Focus**: {project-description}
@@ -59,12 +68,15 @@ When context active, tasks include:
 ```
 
 ### Contextual Recommendations
+
 Based on project state and progress:
+
 - **Next Research Steps**: Suggested follow-up tasks and analyses
-- **Related Materials**: Links to existing project files and analyses  
+- **Related Materials**: Links to existing project files and analyses
 - **Workflow Optimization**: Project-specific guidance for research efficiency
 
 ### Project Integration Notes
+
 - **Cross-References**: Connections to other project materials
 - **Research Continuity**: How current task fits into overall project workflow
 - **Progress Indicators**: Impact on project completion and research momentum
@@ -72,14 +84,18 @@ Based on project state and progress:
 ## Error Handling
 
 ### Invalid Context Recovery
+
 If active context references invalid project:
+
 1. Display clear error message explaining the issue
 2. Provide instructions for context cleanup or project recovery
 3. Offer to deactivate context and proceed in global mode
 4. Suggest using project-list to see available valid projects
 
 ### Context Validation
+
 Before applying project-aware guidance:
+
 1. Verify project directory structure exists
 2. Confirm project metadata is accessible and valid
 3. Check write permissions for project directories

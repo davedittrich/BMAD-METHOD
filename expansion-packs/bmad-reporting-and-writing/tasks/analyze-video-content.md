@@ -63,6 +63,7 @@ Please specify:
 ## Output Requirements
 
 **Single Consolidated Report:**
+
 - Transcript metadata and source information
 - Content type and analysis methodology used
 - Analysis results (debate analysis OR wisdom distillation)
@@ -70,13 +71,14 @@ Please specify:
 - Recommendations for follow-up analysis or content creation
 
 **File Naming and Location:**
+
 - **Project context provided**: Save to `projects/{project-name}/analyses/video-analysis-{YYYY-MM-DD}_{video-id}.md`
 - **No project context**: Save to `docs/video-analysis-{YYYY-MM-DD}_{video-id}.md` (existing behavior)
 - Include links to source transcript file for full context
 - Update project metadata `analyses_completed` array when saving to project location
 
 **Context Efficiency:**
+
 - Analysis report stays under 3000 words for readability
 - Reference transcript file for full content access
 - Summary section for quick insights without reading full analysis
-

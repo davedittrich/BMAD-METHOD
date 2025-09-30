@@ -29,7 +29,7 @@ Add new research materials to projects with intelligent deduplication, automatic
 4. **Automatic Analysis Integration**
    - Detect content type and trigger appropriate enhanced tasks from Story 1.2:
      - **Video content**: Automatically trigger analyze-video-content task
-     - **Document content**: Route to appropriate document analysis workflow  
+     - **Document content**: Route to appropriate document analysis workflow
      - **Transcript content**: Process with distill-wisdom task if educational
      - **External sources**: Add to references with manual analysis option
    - Use active project context from Story 1.3 for seamless workflow integration
@@ -85,42 +85,50 @@ Please specify:
 ## Output Requirements
 
 **Source Addition Success:**
+
 - Confirmation of source added to project with unique identifier
 - Source metadata summary: type, title, URL, fingerprint, version
 - Analysis status and automatic task triggering confirmation
 - Cross-project duplicate detection results and actions taken
 
 **Source Registry Updates:**
+
 - Source added to `projects/{project-name}/config/sources.json` following Enhanced Source Reference Model
 - Global source index updated in `config/source-index.json` for deduplication tracking
 - Project metadata updated with incremented references_count and analysis queue status
 
 **Analysis Integration:**
+
 - Automatic analysis tasks queued based on content type detection
 - Integration with Story 1.2 enhanced tasks (analyze-video-content, distill-wisdom, save-transcript)
 - Project context from Story 1.3 applied automatically for seamless workflow
 
 **Source Organization:**
+
 - Initial tags and categorization applied based on content analysis
-- Source collection memberships created for related material grouping  
+- Source collection memberships created for related material grouping
 - Cross-references established for duplicate or related sources across projects
 
 **Next Steps Guidance:**
+
 - Recommended follow-up actions based on source type and project context
 - Timeline for automatic analysis completion and result availability
 - Suggestions for additional related sources or research directions
 
 **Error Handling:**
+
 - Clear messages for invalid URLs, inaccessible sources, or format issues
 - Guidance for resolving duplicate source conflicts and cross-referencing options
 - Fallback instructions for manual source addition when automatic detection fails
 
 **File Operations:**
+
 - Source metadata storage in project-specific and global configuration files
 - Integration with existing project directory structure from Story 1.1
 - Compatibility with enhanced task routing and project context management
 
 **Performance Requirements:**
+
 - Source addition and deduplication check complete in <10 seconds
 - Minimal impact on project listing and status reporting performance
 - Efficient cross-project duplicate detection without full content analysis

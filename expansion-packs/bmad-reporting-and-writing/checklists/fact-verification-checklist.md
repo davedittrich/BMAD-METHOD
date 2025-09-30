@@ -1,11 +1,13 @@
 # Fact Verification Checklist
-*Systematic approach to verifying claims, sources, and evidence*
+
+_Systematic approach to verifying claims, sources, and evidence_
 
 Use this checklist to thoroughly verify factual claims using both primary source verification and Damer's acceptability criterion standards.
 
 ## Source Verification
 
 ### Primary Sources
+
 - [ ] **Original Documents**: Access to original documents, records, or data
 - [ ] **Witness Testimony**: Direct witness accounts or first-hand observations
 - [ ] **Government Records**: Official government documents, reports, or databases
@@ -14,6 +16,7 @@ Use this checklist to thoroughly verify factual claims using both primary source
 - [ ] **Financial Records**: Official financial statements or regulatory filings
 
 ### Secondary Sources
+
 - [ ] **News Reports**: Multiple independent news sources covering the claim
 - [ ] **Expert Analysis**: Commentary from recognized experts in relevant field
 - [ ] **Historical Accounts**: Established historical narratives or documentation
@@ -24,6 +27,7 @@ Use this checklist to thoroughly verify factual claims using both primary source
 ## Claim Assessment (Damer's Acceptability Criterion)
 
 ### Source Credibility Analysis
+
 - [ ] **Author Expertise**: Author has relevant expertise or credentials
 - [ ] **Institutional Affiliation**: Author affiliated with credible institution
 - [ ] **Track Record**: Author has history of accurate reporting or research
@@ -32,6 +36,7 @@ Use this checklist to thoroughly verify factual claims using both primary source
 - [ ] **Peer Review**: Information has undergone appropriate peer review process
 
 ### Evidence Verifiability
+
 - [ ] **Independent Verification**: Claims can be verified through independent sources
 - [ ] **Source Citation**: All claims properly cited with accessible sources
 - [ ] **Primary Source Access**: Primary sources available for examination
@@ -42,6 +47,7 @@ Use this checklist to thoroughly verify factual claims using both primary source
 ## Factual Accuracy Assessment
 
 ### Quantitative Claims
+
 - [ ] **Statistical Accuracy**: Numbers and statistics are accurate and properly contextualized
 - [ ] **Data Source Quality**: Statistical data comes from reliable, authoritative sources
 - [ ] **Sample Size Adequacy**: Statistical claims based on adequate sample sizes
@@ -50,6 +56,7 @@ Use this checklist to thoroughly verify factual claims using both primary source
 - [ ] **Comparative Context**: Statistics presented with appropriate comparative context
 
 ### Qualitative Claims
+
 - [ ] **Definition Clarity**: Key terms clearly and consistently defined
 - [ ] **Context Completeness**: Claims presented with sufficient contextual information
 - [ ] **Causal Claims**: Causation vs. correlation properly distinguished
@@ -60,6 +67,7 @@ Use this checklist to thoroughly verify factual claims using both primary source
 ## Red Flags and Warning Signs
 
 ### Source Issues
+
 - [ ] **Anonymous Sources**: Heavy reliance on unnamed or anonymous sources
 - [ ] **Single Source**: Critical claims based on only one source
 - [ ] **Circular Citations**: Sources that ultimately reference each other
@@ -68,6 +76,7 @@ Use this checklist to thoroughly verify factual claims using both primary source
 - [ ] **Non-Expert Sources**: Complex technical claims from non-expert sources
 
 ### Content Issues
+
 - [ ] **Extraordinary Claims**: Extraordinary claims without extraordinary evidence
 - [ ] **Emotional Language**: Heavy use of emotional or inflammatory language
 - [ ] **Absolute Statements**: Inappropriate use of absolute terms (always, never, all)
@@ -78,6 +87,7 @@ Use this checklist to thoroughly verify factual claims using both primary source
 ## Verification Process
 
 ### Initial Assessment
+
 - [ ] **Plausibility Check**: Does the claim seem reasonable given known facts?
 - [ ] **Source Identification**: Can you identify the ultimate source of the claim?
 - [ ] **Context Review**: Do you understand the context in which claim was made?
@@ -85,6 +95,7 @@ Use this checklist to thoroughly verify factual claims using both primary source
 - [ ] **Complexity Evaluation**: Is the claim appropriately complex for the subject matter?
 
 ### Deep Verification
+
 - [ ] **Primary Source Location**: Locate and access primary sources when possible
 - [ ] **Expert Consultation**: Consult with relevant experts when needed
 - [ ] **Cross-Reference Verification**: Verify claims through multiple independent sources
@@ -95,6 +106,7 @@ Use this checklist to thoroughly verify factual claims using both primary source
 ## Documentation Standards
 
 ### Verification Documentation
+
 - [ ] **Source Recording**: Complete bibliographic information for all sources
 - [ ] **Verification Notes**: Detailed notes on verification process and findings
 - [ ] **Confidence Assessment**: Explicit assessment of confidence level in each claim
@@ -103,6 +115,7 @@ Use this checklist to thoroughly verify factual claims using both primary source
 - [ ] **Update Tracking**: System for tracking when information was last verified
 
 ### Quality Control
+
 - [ ] **Systematic Application**: Consistent application of verification standards
 - [ ] **Completeness Check**: All significant claims have been addressed
 - [ ] **Proportional Effort**: Verification effort appropriate to importance of claims
@@ -113,6 +126,7 @@ Use this checklist to thoroughly verify factual claims using both primary source
 ## Special Considerations
 
 ### Digital Information
+
 - [ ] **Website Credibility**: Website has indicators of credibility and reliability
 - [ ] **URL Verification**: URLs lead to claimed sources and are not broken
 - [ ] **Archive Status**: Important web sources archived for future reference
@@ -121,6 +135,7 @@ Use this checklist to thoroughly verify factual claims using both primary source
 - [ ] **Metadata Analysis**: Digital file metadata examined when applicable
 
 ### Historical Claims
+
 - [ ] **Contemporary Sources**: Access to sources from the time period in question
 - [ ] **Historical Context**: Claims understood within appropriate historical context
 - [ ] **Historiographical Awareness**: Understanding of different historical interpretations
@@ -129,6 +144,7 @@ Use this checklist to thoroughly verify factual claims using both primary source
 - [ ] **Documentary Chain**: Clear chain of documentary evidence when possible
 
 ### Scientific Claims
+
 - [ ] **Peer Review Status**: Scientific claims from peer-reviewed sources
 - [ ] **Replication Status**: Research findings have been replicated when relevant
 - [ ] **Methodology Soundness**: Research methodology is scientifically sound

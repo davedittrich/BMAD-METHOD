@@ -1,11 +1,13 @@
 # Context Completeness Assessment Checklist
-*Systematic approach to evaluating contextual adequacy and identifying information gaps*
+
+_Systematic approach to evaluating contextual adequacy and identifying information gaps_
 
 Use this checklist to ensure comprehensive contextual coverage while identifying missing elements that could affect understanding or analysis quality.
 
 ## Core Context Elements
 
 ### Temporal Context
+
 - [ ] **Time Period Boundaries**: Clear start and end dates or periods established
 - [ ] **Historical Background**: Relevant historical context provided for understanding
 - [ ] **Chronological Sequence**: Events and developments placed in proper temporal order
@@ -14,6 +16,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 - [ ] **Seasonality/Cycles**: Recurring patterns or cycles identified when relevant
 
 ### Geographic Context
+
 - [ ] **Location Specificity**: Precise geographic locations identified and described
 - [ ] **Spatial Relationships**: Relationships between different locations explained
 - [ ] **Regional Variations**: Geographic differences or variations acknowledged
@@ -22,6 +25,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 - [ ] **Environmental Factors**: Relevant environmental or geographic influences included
 
 ### Stakeholder Context
+
 - [ ] **Primary Stakeholders**: Key parties with direct interest or influence identified
 - [ ] **Secondary Stakeholders**: Additional parties with indirect interest included
 - [ ] **Stakeholder Relationships**: Relationships and interactions between parties described
@@ -30,6 +34,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 - [ ] **Potential Opposition**: Parties who might oppose or resist identified
 
 ### Institutional Context
+
 - [ ] **Organizational Structure**: Relevant organizational frameworks described
 - [ ] **Governance Systems**: Decision-making and authority structures explained
 - [ ] **Regulatory Environment**: Applicable laws, regulations, and policies identified
@@ -40,6 +45,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 ## Information Landscape Assessment
 
 ### Source Coverage
+
 - [ ] **Source Diversity**: Multiple types of sources (primary, secondary, expert, etc.)
 - [ ] **Perspective Balance**: Different viewpoints and perspectives represented
 - [ ] **Authority Levels**: Sources with appropriate authority and credibility included
@@ -48,6 +54,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 - [ ] **Stakeholder Representation**: Sources representing different stakeholder perspectives
 
 ### Information Quality
+
 - [ ] **Factual Accuracy**: Factual claims verified through reliable sources
 - [ ] **Currency**: Information is current and up-to-date for the analysis needs
 - [ ] **Completeness**: Information covers all significant aspects of the subject
@@ -56,6 +63,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 - [ ] **Breadth Adequacy**: Scope of information adequate to support conclusions
 
 ### Gap Identification
+
 - [ ] **Missing Perspectives**: Stakeholder perspectives not adequately represented
 - [ ] **Information Voids**: Areas where insufficient information is available
 - [ ] **Temporal Gaps**: Time periods not adequately covered
@@ -66,6 +74,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 ## Causal and Relational Context
 
 ### Cause and Effect Relationships
+
 - [ ] **Primary Causes**: Main factors leading to current situation identified
 - [ ] **Contributing Factors**: Secondary or supporting causes acknowledged
 - [ ] **Causal Chains**: Sequential cause-and-effect relationships mapped
@@ -74,6 +83,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 - [ ] **Root Cause Analysis**: Underlying fundamental causes explored
 
 ### Systems Relationships
+
 - [ ] **System Boundaries**: Boundaries of the system under analysis defined
 - [ ] **Interconnections**: Relationships between system components described
 - [ ] **Dependencies**: Critical dependencies and interdependencies identified
@@ -84,6 +94,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 ## Environmental Context Assessment
 
 ### Political Environment
+
 - [ ] **Political Landscape**: Relevant political conditions and influences
 - [ ] **Policy Context**: Applicable policies and their development/implementation
 - [ ] **Leadership Factors**: Relevant leaders and their positions/influences
@@ -92,6 +103,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 - [ ] **Electoral Considerations**: Election cycles or political timing factors
 
 ### Economic Environment
+
 - [ ] **Economic Conditions**: Relevant economic indicators and trends
 - [ ] **Financial Constraints**: Budget limitations or financial pressures
 - [ ] **Economic Incentives**: Economic motivations and incentive structures
@@ -100,6 +112,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 - [ ] **Economic Stakeholders**: Economic interests and their influence
 
 ### Social and Cultural Environment
+
 - [ ] **Cultural Norms**: Relevant cultural values and expectations
 - [ ] **Social Dynamics**: Important social relationships and tensions
 - [ ] **Demographic Factors**: Relevant population characteristics
@@ -108,6 +121,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 - [ ] **Trust Levels**: Levels of trust between different parties
 
 ### Technological Environment
+
 - [ ] **Technology Availability**: Relevant technologies and their accessibility
 - [ ] **Technical Constraints**: Technological limitations affecting the situation
 - [ ] **Innovation Factors**: New technologies or innovations influencing the context
@@ -118,6 +132,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 ## Completeness Assessment Framework
 
 ### Coverage Evaluation
+
 - [ ] **Scope Adequacy**: Analysis scope appropriate to the subject matter
 - [ ] **Detail Balance**: Appropriate balance between breadth and depth
 - [ ] **Perspective Completeness**: All relevant perspectives included
@@ -126,6 +141,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 - [ ] **Scale Appropriateness**: Analysis conducted at appropriate scale(s)
 
 ### Gap Impact Assessment
+
 - [ ] **Critical Gaps**: Identification of gaps that significantly affect understanding
 - [ ] **Minor Gaps**: Recognition of less significant but notable omissions
 - [ ] **Uncertainty Areas**: Areas where uncertainty due to incomplete information acknowledged
@@ -134,6 +150,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 - [ ] **Mitigation Strategies**: Strategies for addressing or compensating for identified gaps
 
 ### Quality Control Measures
+
 - [ ] **Peer Review**: Context assessment reviewed by knowledgeable others
 - [ ] **Expert Consultation**: Relevant experts consulted to verify completeness
 - [ ] **Stakeholder Input**: Key stakeholders asked to identify missing elements
@@ -144,6 +161,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 ## Special Context Considerations
 
 ### Crisis or Emergency Context
+
 - [ ] **Urgency Factors**: Time pressures and urgency affecting the situation
 - [ ] **Emergency Protocols**: Special procedures or protocols in effect
 - [ ] **Resource Constraints**: Limited resources due to crisis conditions
@@ -152,6 +170,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 - [ ] **Recovery Considerations**: Post-crisis recovery factors and planning
 
 ### Cross-Cultural Context
+
 - [ ] **Cultural Differences**: Recognition of different cultural perspectives
 - [ ] **Language Factors**: Language barriers or communication challenges
 - [ ] **Value Systems**: Different value systems affecting interpretation
@@ -160,6 +179,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 - [ ] **Conflict Resolution**: Different approaches to handling disagreement or conflict
 
 ### Technical or Specialized Context
+
 - [ ] **Domain Expertise**: Relevant technical or specialized knowledge included
 - [ ] **Professional Standards**: Applicable professional or industry standards
 - [ ] **Technical Constraints**: Technical limitations affecting the situation
@@ -168,6 +188,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 - [ ] **Quality Standards**: Relevant quality or performance standards
 
 ### Legal and Regulatory Context
+
 - [ ] **Legal Framework**: Applicable laws and legal precedents
 - [ ] **Regulatory Requirements**: Relevant regulations and compliance requirements
 - [ ] **Enforcement Mechanisms**: How laws and regulations are enforced
@@ -178,6 +199,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 ## Documentation and Reporting
 
 ### Gap Documentation
+
 - [ ] **Gap Inventory**: Complete list of identified information gaps
 - [ ] **Gap Significance**: Assessment of importance for each identified gap
 - [ ] **Gap Sources**: Explanation of why gaps exist (access, time, resources, etc.)
@@ -186,6 +208,7 @@ Use this checklist to ensure comprehensive contextual coverage while identifying
 - [ ] **Future Research**: Recommendations for additional research to fill gaps
 
 ### Context Summary
+
 - [ ] **Context Overview**: Summary of key contextual elements covered
 - [ ] **Context Quality**: Assessment of overall context quality and completeness
 - [ ] **Context Limitations**: Clear statement of context limitations and boundaries

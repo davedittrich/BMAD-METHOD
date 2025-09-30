@@ -8,7 +8,6 @@ The Reporting & Writing Expansion Pack extends BMAD-Method with a comprehensive 
 
 For a full list of available expansion packs, see the [Expansion Packs documentation](../../docs/expansion-packs.md).
 
-
 ### Key Features
 
 - 🤖 **11 Specialized Agents** - From research strategy to platform optimization

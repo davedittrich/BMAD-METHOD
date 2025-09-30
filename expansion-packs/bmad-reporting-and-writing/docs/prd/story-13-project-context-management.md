@@ -8,7 +8,7 @@ so that I can work on multiple investigations without manually specifying projec
 
 1. `project-switch` task sets current project context for subsequent operations
 2. `project-list` task shows all available projects with status and recent activity
-3. `project-status` task displays current project progress and analysis inventory  
+3. `project-status` task displays current project progress and analysis inventory
 4. Project context persists across task executions within same session
 5. Clear indicators show which project is currently active
 

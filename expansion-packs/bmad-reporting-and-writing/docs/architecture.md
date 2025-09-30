@@ -10,28 +10,32 @@ This document supplements the existing BMAD Method natural language framework ar
 ### Existing Project Analysis
 
 **Current Project State:**
+
 - **Primary Purpose:** Comprehensive AI-powered reporting and content creation framework with 11 specialized agents, research workflows, and platform optimization
 - **Current Tech Stack:** BMAD Method v4+ natural language framework, Markdown-based agent definitions, YAML configuration, Node.js build tools
 - **Architecture Style:** Modular agent-based system with centralized task orchestration and linear workflow patterns
 - **Deployment Method:** Expansion pack integration via BMAD installer with file-system based storage
 
 **Available Documentation:**
+
 - Comprehensive README with agent descriptions and workflows
-- 15+ task definitions with detailed instructions and elicitation patterns  
+- 15+ task definitions with detailed instructions and elicitation patterns
 - Agent team definitions and workflow orchestration
 - Template system for structured output generation
 - Quality assurance checklists for content validation
 
 **Identified Constraints:**
+
 - Must maintain BMAD Method natural language framework principles
-- Backward compatibility required for existing 11 agents and 4 workflows  
+- Backward compatibility required for existing 11 agents and 4 workflows
 - File-system based approach (no external database dependencies)
 - Cross-platform path resolution requirements
 - Integration with existing expansion pack build and installation system
 
 ### Change Log
-| Change | Date | Version | Description | Author |
-|--------|------|---------|-------------|---------|
+
+| Change               | Date       | Version | Description                                                       | Author            |
+| -------------------- | ---------- | ------- | ----------------------------------------------------------------- | ----------------- |
 | Initial Architecture | 2025-01-09 | ARCH-v1 | Brownfield architecture creation for modular research enhancement | Architect Winston |
 
 ## Enhancement Scope and Integration Strategy
@@ -44,25 +48,29 @@ This document supplements the existing BMAD Method natural language framework ar
 
 ### Integration Approach
 
-**Code Integration Strategy:** 
+**Code Integration Strategy:**
+
 - Additive layer approach - new project management tasks supplement existing workflow tasks
 - Modified existing tasks (`analyze-video-content`, `distill-wisdom`, `save-transcript`) gain optional project context parameters
 - Preserve existing task behavior when no project context provided
 - New `project-*` tasks handle project lifecycle and context management
 
-**Database Integration:** 
+**Database Integration:**
+
 - Extend file-system based approach with hierarchical project directories (`projects/{project-name}/`)
 - Maintain existing `references/transcripts/` as global fallback for backward compatibility
 - Project metadata stored in lightweight JSON/YAML files within project directories
 - No external database dependencies introduced
 
-**API Integration:** 
+**API Integration:**
+
 - No breaking changes to existing task interfaces
 - Optional project parameters added to existing task commands
 - New project management commands follow existing BMAD command patterns
 - Agent interfaces remain unchanged - project context flows through task execution
 
-**UI Integration:** 
+**UI Integration:**
+
 - Command-line interface enhancements for project selection and status
 - Project context indicators in task output and feedback
 - Existing agent interaction patterns preserved
@@ -79,16 +87,16 @@ This document supplements the existing BMAD Method natural language framework ar
 
 ### Existing Technology Stack
 
-| Category | Current Technology | Version | Usage in Enhancement | Notes |
-|----------|-------------------|---------|----------------------|-------|
-| **Framework** | BMAD Method | v4+ | Core agent orchestration and task execution | Must maintain natural language framework principles |
-| **Agent Definition** | Markdown | Standard | Agent persona and command definitions | No changes to existing agents |
-| **Configuration** | YAML | Standard | Task templates, workflows, expansion pack config | Extended with project metadata |
-| **Build System** | JavaScript/Node.js | v20+ | CLI tools, installers, validation | Project management tasks auto-detected |
-| **File Processing** | fs-extra, glob | Current | File system operations and pattern matching | Enhanced for project directory management |
-| **Template Engine** | BMAD template system | v4 | Document generation from YAML templates | Project-aware path resolution added |
-| **Storage** | File system | N/A | Markdown files, transcripts, analysis outputs | Hierarchical project structure added |
-| **Package Management** | npm | Current | Dependency management and installation | No new external dependencies |
+| Category               | Current Technology   | Version  | Usage in Enhancement                             | Notes                                               |
+| ---------------------- | -------------------- | -------- | ------------------------------------------------ | --------------------------------------------------- |
+| **Framework**          | BMAD Method          | v4+      | Core agent orchestration and task execution      | Must maintain natural language framework principles |
+| **Agent Definition**   | Markdown             | Standard | Agent persona and command definitions            | No changes to existing agents                       |
+| **Configuration**      | YAML                 | Standard | Task templates, workflows, expansion pack config | Extended with project metadata                      |
+| **Build System**       | JavaScript/Node.js   | v20+     | CLI tools, installers, validation                | Project management tasks auto-detected              |
+| **File Processing**    | fs-extra, glob       | Current  | File system operations and pattern matching      | Enhanced for project directory management           |
+| **Template Engine**    | BMAD template system | v4       | Document generation from YAML templates          | Project-aware path resolution added                 |
+| **Storage**            | File system          | N/A      | Markdown files, transcripts, analysis outputs    | Hierarchical project structure added                |
+| **Package Management** | npm                  | Current  | Dependency management and installation           | No new external dependencies                        |
 
 ## Data Models and Schema Changes
 
@@ -100,6 +108,7 @@ This document supplements the existing BMAD Method natural language framework ar
 **Integration:** Lightweight JSON files stored within each project directory, no interference with existing global workflows
 
 **Key Attributes:**
+
 - `name`: string - Human-readable project identifier
 - `created`: timestamp - Project creation date for organization
 - `status`: enum - Project lifecycle state (active, review, completed, archived)
@@ -108,6 +117,7 @@ This document supplements the existing BMAD Method natural language framework ar
 - `analyses_completed`: array - List of completed analysis files for progress tracking
 
 **Relationships:**
+
 - **With Existing:** References existing task output formats, maintains compatibility with current `references/` structure
 - **With New:** Links to project-specific analysis files and research materials
 
@@ -117,6 +127,7 @@ This document supplements the existing BMAD Method natural language framework ar
 **Integration:** Extends existing transcript and analysis tracking with project-aware organization
 
 **Key Attributes:**
+
 - `url`: string - Source URL for YouTube videos or document references
 - `type`: enum - Content classification (video, document, transcript, external-source)
 - `added_date`: timestamp - When source was added to project
@@ -125,18 +136,21 @@ This document supplements the existing BMAD Method natural language framework ar
 - `tags`: array - User-defined categorization labels for organization
 
 **Relationships:**
+
 - **With Existing:** Compatible with current save-transcript and analyze-video-content output patterns
 - **With New:** Links to project directory structure and cross-references other project sources
 
 ### Schema Integration Strategy
 
 **Database Changes Required:**
+
 - **New Tables:** None - file-system based approach maintained
-- **Modified Tables:** None - existing file structures preserved  
+- **Modified Tables:** None - existing file structures preserved
 - **New Indexes:** Directory-based organization provides natural indexing
 - **Migration Strategy:** Zero-migration approach - existing data remains in current locations, projects created on-demand
 
 **Backward Compatibility:**
+
 - Existing `references/transcripts/` directory structure continues operating for non-project workflows
 - Current analysis output formats and file naming preserved
 - No changes to existing agent expectations or task behaviors when project context not specified
@@ -151,12 +165,14 @@ This document supplements the existing BMAD Method natural language framework ar
 **Integration Points:** Integrates with existing task execution framework, extends current command patterns used by agents
 
 **Key Interfaces:**
+
 - `project-init` - Creates standardized project structure with metadata initialization
 - `project-switch` - Sets project context for subsequent task execution
 - `project-status` - Displays project progress and analysis inventory
 - `project-list` - Shows available projects with status and activity metrics
 
 **Dependencies:**
+
 - **Existing Components:** Uses current file system utilities (fs-extra, glob), follows existing task definition patterns
 - **New Components:** Coordinates with Enhanced Task Router and Project Context Manager
 
@@ -168,12 +184,14 @@ This document supplements the existing BMAD Method natural language framework ar
 **Integration Points:** Modifies existing `analyze-video-content`, `distill-wisdom`, and `save-transcript` tasks with project parameter support
 
 **Key Interfaces:**
+
 - Project-aware file path resolution for analysis outputs
-- Optional project parameter handling in existing task commands  
+- Optional project parameter handling in existing task commands
 - Automatic context detection and routing decisions
 - Backward compatibility mode for non-project usage
 
 **Dependencies:**
+
 - **Existing Components:** Current task execution framework, existing agent command interfaces
 - **New Components:** Project Context Manager for state management
 
@@ -185,12 +203,14 @@ This document supplements the existing BMAD Method natural language framework ar
 **Integration Points:** Transparent integration with existing agent execution - no agent modifications required
 
 **Key Interfaces:**
+
 - Active project context storage and retrieval
 - Project-aware path resolution for file operations
 - Context validation and error handling
 - Session-based context persistence
 
 **Dependencies:**
+
 - **Existing Components:** Current configuration system, existing file path utilities
 - **New Components:** Project Manager for metadata access
 
@@ -202,12 +222,14 @@ This document supplements the existing BMAD Method natural language framework ar
 **Integration Points:** Coordinates with existing analysis tasks, maintains current transcript and analysis output formats
 
 **Key Interfaces:**
+
 - `project-add-source` - Integrates new materials into project structure
 - Automatic content type detection and analysis routing
 - Duplicate source detection and prevention
 - Cross-project reference discovery
 
 **Dependencies:**
+
 - **Existing Components:** Current `save-transcript` and `analyze-video-content` tasks, existing content analysis workflows
 - **New Components:** Project Manager for directory operations, Enhanced Task Router for analysis execution
 
@@ -258,7 +280,7 @@ graph TD
 expansion-packs/bmad-reporting-and-writing/
 ├── README.md
 ├── agents/                    # 11 specialized agents
-├── agent-teams/              # Team bundles 
+├── agent-teams/              # Team bundles
 ├── checklists/               # Quality assurance checklists
 ├── config.yaml              # Expansion pack configuration
 ├── data/                     # Knowledge base files
@@ -281,7 +303,7 @@ expansion-packs/bmad-reporting-and-writing/
 ├── docs/                     # Existing documentation (unchanged)
 ├── tasks/                    # Enhanced and new tasks
 │   ├── analyze-video-content.md     # Enhanced with project context
-│   ├── distill-wisdom.md            # Enhanced with project context  
+│   ├── distill-wisdom.md            # Enhanced with project context
 │   ├── save-transcript.md           # Enhanced with project context
 │   ├── project-init.md              # New - project initialization
 │   ├── project-switch.md           # New - context management
@@ -390,7 +412,7 @@ expansion-packs/bmad-reporting-and-writing/
 
 - **Existing API Compatibility:** All current task invocations continue working unchanged, optional project parameters added without breaking existing usage
 - **Database Integration:** File-system based approach maintained, project metadata stored in standard JSON/YAML formats
-- **Error Handling:** Project context errors reported through existing task feedback mechanisms, no new error handling patterns introduced  
+- **Error Handling:** Project context errors reported through existing task feedback mechanisms, no new error handling patterns introduced
 - **Logging Consistency:** Project operations logged through existing task execution patterns, maintains current verbosity and format standards
 
 ## Next Steps
@@ -399,23 +421,26 @@ expansion-packs/bmad-reporting-and-writing/
 
 **For Scrum Master collaboration:**
 
-"Begin implementation of the modular research project management enhancement for bmad-reporting-and-writing expansion pack. Reference the completed architecture document at `docs/architecture.md` and sharded PRD in `docs/prd/`. 
+"Begin implementation of the modular research project management enhancement for bmad-reporting-and-writing expansion pack. Reference the completed architecture document at `docs/architecture.md` and sharded PRD in `docs/prd/`.
 
 Key integration requirements validated with user:
+
 - Maintain full backward compatibility with existing 11 agents and 4 workflows
 - Use additive layer approach with optional project context parameters
 - Follow existing BMAD Method natural language framework patterns
 - Implement file-system based project organization without external dependencies
 
 Existing system constraints based on actual project analysis:
+
 - Centralized `references/transcripts/` structure must remain functional as fallback
 - Task-based architecture where agents execute markdown workflows unchanged
 - Cross-platform file path resolution requirements
 - Integration with existing expansion pack build and installation system
 
 First story to implement: Story 1.1 - Project Infrastructure Foundation with clear integration checkpoints:
+
 - Validate project directory creation doesn't interfere with existing workflows
-- Verify project metadata storage follows BMAD configuration patterns  
+- Verify project metadata storage follows BMAD configuration patterns
 - Ensure existing tasks continue unchanged operation when no project context active
 
 Emphasis on maintaining existing system integrity throughout implementation - each story must preserve all current functionality while adding new capabilities."
@@ -427,24 +452,27 @@ Emphasis on maintaining existing system integrity throughout implementation - ea
 "Begin development of modular research project management for bmad-reporting-and-writing expansion pack. Reference architecture document at `docs/architecture.md` and existing coding standards analyzed from actual project.
 
 Integration requirements with existing codebase validated with user:
+
 - All new project tasks follow existing markdown task definition patterns found in `tasks/` directory
 - Enhanced existing tasks (`analyze-video-content.md`, `distill-wisdom.md`, `save-transcript.md`) maintain current interfaces with optional project parameters
 - Project management uses existing file system utilities (fs-extra, glob) and YAML configuration patterns
 
 Key technical decisions based on real project constraints:
+
 - No external dependencies added - use existing BMAD Method v4+ framework capabilities
 - File-system based project storage in `projects/{project-name}/` hierarchy
 - Backward compatibility maintained through conditional project context handling
 - Cross-platform support using existing path resolution patterns
 
 Existing system compatibility requirements with specific verification steps:
+
 - Test all existing task invocations produce identical results when no project context provided
-- Verify existing agent workflows continue without modification when using enhanced tasks  
+- Verify existing agent workflows continue without modification when using enhanced tasks
 - Validate project context parameter handling doesn't break existing command patterns
 
 Clear sequencing of implementation to minimize risk to existing functionality:
+
 1. Start with Story 1.1 - Project Infrastructure Foundation (project-init, project-list)
 2. Proceed to Story 1.2 - Project-Aware Task Enhancement (modify existing tasks)
 3. Continue with Story 1.3 - Project Context Management (project-switch, project-status)
-Each story must be fully tested for backward compatibility before proceeding to next."
-
+   Each story must be fully tested for backward compatibility before proceeding to next."

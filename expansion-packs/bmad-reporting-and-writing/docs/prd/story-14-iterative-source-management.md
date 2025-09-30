@@ -1,6 +1,6 @@
 # Story 1.4: Iterative Source Management
 
-As a research journalist, 
+As a research journalist,
 I want to add new reference materials to existing projects through dedicated commands,
 so that I can expand my research iteratively as new questions and sources emerge.
 

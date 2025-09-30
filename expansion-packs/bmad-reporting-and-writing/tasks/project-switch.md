@@ -60,19 +60,23 @@ Please specify:
 ## Output Requirements
 
 **Context Activation Success:**
+
 - Confirmation of project context activation
 - Display active project name, description, and basic metrics
 - Show project directory locations (references, analyses, drafts)
 - Provide guidance on how project context affects enhanced tasks
 
 **Context Status Display:**
+
 - Current active project (or "No active project" if global mode)
 - Context activation timestamp and session information
 - Project progress summary and recent activity
 - Next suggested research actions based on project state
 
 **Context Persistence:**
+
 - Store context state in `config/active-project.json` with format:
+
 ```json
 {
   "active_project": "project-name",
@@ -84,16 +88,19 @@ Please specify:
 ```
 
 **Integration Guidance:**
+
 - Explain how active context affects analyze-video-content, distill-wisdom, and save-transcript tasks
 - Provide examples of project-aware routing behavior
 - Show how to override context with explicit project parameters if needed
 
 **Error Handling:**
+
 - Clear messages for invalid project names or missing projects
 - Guidance for resolving context conflicts or corrupted project data
 - Fallback instructions when project context becomes unavailable
 
 **Context Efficiency:**
+
 - Context switching operations complete in <2 seconds
 - Minimal impact on subsequent task execution performance
 - Automatic cleanup of invalid or deleted project contexts
