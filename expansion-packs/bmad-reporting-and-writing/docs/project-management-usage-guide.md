@@ -13,15 +13,16 @@
 ```
 
 **Agent Commands Mapping**:
-- *init → project-init (create new project)
-- *rename → project-rename (rename existing project)
-- *list → project-list (show all projects)
-- *switch → project-switch (change active context)
-- *status → project-status (show current project details)
-- *add-source → project-add-source (add materials)
-- *search → project-search (find content across projects)
-- *archive → project-archive (move to archive)
-- *restore → project-restore (restore from archive)
+
+- \*init → project-init (create new project)
+- \*rename → project-rename (rename existing project)
+- \*list → project-list (show all projects)
+- \*switch → project-switch (change active context)
+- \*status → project-status (show current project details)
+- \*add-source → project-add-source (add materials)
+- \*search → project-search (find content across projects)
+- \*archive → project-archive (move to archive)
+- \*restore → project-restore (restore from archive)
 
 ### Essential Task Commands
 
