@@ -13,7 +13,7 @@ Display comprehensive project progress overview with enhanced lifecycle manageme
 
 2. **Enhanced Lifecycle Status Assessment**
    - Read project metadata from `projects/{project-name}/config/project.json` with lifecycle information
-   - Display current project status: active, review, completed, archived
+   - Display current project status: In Progress, Review, Completed, Archived
    - Show lifecycle history with status transitions, dates, and reasons
    - Assess project readiness for lifecycle progression and archive eligibility
 
@@ -87,7 +87,8 @@ Please specify:
 **Enhanced Project Overview Section:**
 
 - Project name, description, and creation date with lifecycle information
-- Current project status: active, review, completed, archived
+- Current project status: In Progress, Review, Completed, Archived
+- A clear statement indicating if this project is the current 'Active Context'.
 - Lifecycle history with status transitions, dates, and transition reasons
 - Archive eligibility and readiness assessment for lifecycle progression
 - Active context status and cross-project relationship participation

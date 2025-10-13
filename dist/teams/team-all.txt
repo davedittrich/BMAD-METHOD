@@ -9706,6 +9706,17 @@ required:
 - Validate testing approach against `docs/testing-strategy.md`
 - Ensure all guidelines mentioned in the story are followed
 
+### 4a. Task Name Consistency Validation
+
+- **Cross-Reference Validation**: Scan all guidance text, help messages, and documentation for task name references
+- **Implementation Verification**: Verify all referenced task names correspond to actual task files
+- **Naming Consistency**: Check task names are consistent across:
+  - Task file names vs references in guidance text
+  - Usage documentation vs implementation
+  - Help text vs actual command names
+- **Distribution Sync**: Validate that built distribution files reflect source corrections
+- **Common Issues**: Look for task references to non-existent tasks, inconsistent hyphenation, or similar-sounding task names
+
 ### 5. Acceptance Criteria Validation
 
 - Verify each AC is fully implemented
@@ -9756,6 +9767,7 @@ After review and any refactoring, append your results to the story file in the Q
 - Project Structure: [✓/✗] [notes if any]
 - Testing Strategy: [✓/✗] [notes if any]
 - All ACs Met: [✓/✗] [notes if any]
+- Task Name Consistency: [✓/✗] [notes if any - list any incorrect task references found and corrected]
 
 ### Improvements Checklist
 

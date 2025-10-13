@@ -20,13 +20,14 @@ Display all available research projects with status, creation date, and basic me
 
 3. **Display Formatting**
    - Format output consistent with existing BMAD task output patterns
-   - Show projects in table format with columns: Name, Status, Created, Description
+   - Show projects in table format with columns: Active Context, Name, Status, Created, Description
+   - The 'Active Context' column should clearly indicate which project is the current active context (e.g., with a '*')
    - Include metrics summary (references, analyses) when available
    - Sort by creation date (newest first) or allow status-based grouping
 
 4. **Status Indicators**
-   - Use clear status indicators: active, review, completed, archived
-   - Highlight active projects for easy identification
+   - Use clear status indicators for the 'Status' column: In Progress, Review, Completed, Archived
+   - Use a clear indicator in the 'Active Context' column for the project that is the current active context.
    - Show project count summary at bottom
    - Include helpful guidance for next actions (project-switch, project-add-source)
 
