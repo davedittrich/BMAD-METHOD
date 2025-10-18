@@ -1,0 +1,12 @@
+# Publish Article Workflow Configuration
+name: "publish-article"
+description: "A standard workflow for Medium/Substack/WordPress integration, metadata and SEO handling, and API authentication."
+author: "BMad"
+
+config_source: "{project-root}/src/modules/content-creation/config.yaml"
+output_folder: "{config_source}:output_folder"
+user_name: "{config_source}:user_name"
+date: system-generated
+
+installed_path: "{project-root}/src/modules/content-creation/workflows/publish-article"
+instructions: "{installed_path}/instructions.md"
