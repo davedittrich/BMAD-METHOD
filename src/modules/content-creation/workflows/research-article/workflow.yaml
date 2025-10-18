@@ -1,0 +1,14 @@
+# Research Article Workflow Configuration
+name: "research-article"
+description: "A workflow to research and write a new article."
+author: "BMad"
+
+config_source: "{project-root}/src/modules/content-creation/config.yaml"
+output_folder: "{config_source}:output_folder"
+user_name: "{config_source}:user_name"
+date: system-generated
+
+installed_path: "{project-root}/src/modules/content-creation/workflows/research-article"
+template: "{installed_path}/template.md"
+instructions: "{installed_path}/instructions.md"
+validation: "{installed_path}/checklist.md"
