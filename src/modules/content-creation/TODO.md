@@ -15,10 +15,10 @@
 
 - [x] Module structure and directory scaffolding
 - [x] Module configuration (config.yaml)
-- [x] Module installer configuration
-- [x] Module README documentation
-- [x] Producer agent (primary entry point)
-- [x] research-article workflow (complete with instructions, template, checklist)
+- [ ] Module installer configuration
+- [ ] Module README documentation
+- [ ] Producer agent (primary entry point)
+- [ ] research-article workflow (complete with instructions, template, checklist)
 
 ### ✅ Completed (Updated 2025-10-18)
 
