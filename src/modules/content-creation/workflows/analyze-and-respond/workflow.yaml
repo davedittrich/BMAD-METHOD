@@ -1,0 +1,12 @@
+# Analyze and Respond Workflow Configuration
+name: "analyze-and-respond"
+description: "A complex workflow for critical analysis of a topic, applying integrity and fallacy frameworks, and supporting iterative source addition."
+author: "BMad"
+
+config_source: "{project-root}/src/modules/content-creation/config.yaml"
+output_folder: "{config_source}:output_folder"
+user_name: "{config_source}:user_name"
+date: system-generated
+
+installed_path: "{project-root}/src/modules/content-creation/workflows/analyze-and-respond"
+instructions: "{installed_path}/instructions.md"
