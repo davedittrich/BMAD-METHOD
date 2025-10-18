@@ -1,0 +1,4 @@
+# Content Creation Module Installer Configuration
+name: "Content Creation"
+description: "Install the Content Creation module."
+version: "1.0.0"
