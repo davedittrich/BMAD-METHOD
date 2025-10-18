@@ -1,0 +1,12 @@
+# Format Article Workflow Configuration
+name: "format-article"
+description: "A standard workflow for platform-specific formatting, image sourcing and integration, and link preview handling."
+author: "BMad"
+
+config_source: "{project-root}/src/modules/content-creation/config.yaml"
+output_folder: "{config_source}:output_folder"
+user_name: "{config_source}:user_name"
+date: system-generated
+
+installed_path: "{project-root}/src/modules/content-creation/workflows/format-article"
+instructions: "{installed_path}/instructions.md"
