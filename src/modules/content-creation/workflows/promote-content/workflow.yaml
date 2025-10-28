@@ -1,0 +1,14 @@
+# Promote Content Workflow Configuration
+name: "promote-content"
+description: "Create multi-platform promotional campaign to drive traffic to published content (articles, videos, podcasts)."
+author: "BMad"
+
+config_source: "{project-root}/src/modules/content-creation/config.yaml"
+output_folder: "{config_source}:output_folder"
+user_name: "{config_source}:user_name"
+date: system-generated
+
+installed_path: "{project-root}/src/modules/content-creation/workflows/promote-content"
+template: "{installed_path}/template.md"
+instructions: "{installed_path}/instructions.md"
+validation: "{installed_path}/checklist.md"

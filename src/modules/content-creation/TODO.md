@@ -1,8 +1,8 @@
 # Content Creation Toolkit - Development Roadmap
 
 **Module:** content-creation
-**Version:** 1.0.0 (Phase 1 MVP - In Progress)
-**Last Updated:** 2025-10-18
+**Version:** 2.0.0 (Phase 2 - Video & Promotion Complete)
+**Last Updated:** 2025-10-27
 
 ---
 
@@ -137,27 +137,35 @@
 **Goal:** Expand pipeline to include video production and multi-platform promotion
 **Target:** Article to Video use case (User Story 1)
 
-### 📋 Video Production Workflows
+### ✅ Video Production Workflows (Completed 2025-10-27)
 
-- [ ] **create-video-assets** (Complex)
+- [x] **create-video-assets** (Complex)
+  - [x] Created
+  - [ ] Validated
   - Script to storyboard conversion
   - Audio generation (text-to-speech)
   - Visual asset provisioning (AI-generated or user-provided)
   - Two output paths: Production kit OR AI-generated video
 
-- [ ] **publish-video** (Complex)
+- [x] **publish-video** (Complex)
+  - [x] Created
+  - [ ] Validated
   - YouTube/TikTok integration
   - Metadata and thumbnail handling
   - Platform API authentication
 
-### 📋 Promotion Workflows
+### ✅ Promotion Workflows (Completed 2025-10-27)
 
-- [ ] **adapt-for-social-media** (Standard)
+- [x] **adapt-for-social-media** (Standard)
+  - [x] Created
+  - [ ] Validated
   - Content breakdown and analysis
   - Platform-native format creation (Twitter threads, LinkedIn carousels)
   - YouTube Shorts script generation
 
-- [ ] **promote-content** (Standard)
+- [x] **promote-content** (Standard)
+  - [x] Created
+  - [ ] Validated
   - Content analysis for promotional hooks
   - Multi-platform post generation
   - Scheduling integration
@@ -458,10 +466,11 @@ npm run install:bmad
 2. ✅ Producer agent created
 3. ✅ research-article workflow created
 4. ✅ **DONE: Created all 8 core tasks (2025-10-18)**
-5. ➡️ **NOW: Create remaining agents (Priority 2)**
-6. Create remaining Phase 1 workflows
-7. End-to-end testing of MVP
-8. Move to Phase 2
+5. ✅ **DONE: Created all 14 agents**
+6. ✅ **DONE: Created all Phase 1 workflows**
+7. ✅ **DONE: Created all Phase 2 workflows (2025-10-27)**
+8. ➡️ **NOW: End-to-end testing and validation**
+9. Move to Phase 3 (Advanced Analysis & Automation)
 
 ---
 
