@@ -1,0 +1,14 @@
+# Create Video Assets Workflow Configuration
+name: "create-video-assets"
+description: "Transform written content into video production assets: storyboard, audio narration, and visual elements."
+author: "BMad"
+
+config_source: "{project-root}/src/modules/content-creation/config.yaml"
+output_folder: "{config_source}:output_folder"
+user_name: "{config_source}:user_name"
+date: system-generated
+
+installed_path: "{project-root}/src/modules/content-creation/workflows/create-video-assets"
+template: "{installed_path}/template.md"
+instructions: "{installed_path}/instructions.md"
+validation: "{installed_path}/checklist.md"
