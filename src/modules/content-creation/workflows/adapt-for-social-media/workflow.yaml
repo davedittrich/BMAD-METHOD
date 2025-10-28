@@ -1,0 +1,14 @@
+# Adapt for Social Media Workflow Configuration
+name: "adapt-for-social-media"
+description: "Transform long-form content into platform-optimized social media posts, threads, carousels, and short-form video scripts."
+author: "BMad"
+
+config_source: "{project-root}/src/modules/content-creation/config.yaml"
+output_folder: "{config_source}:output_folder"
+user_name: "{config_source}:user_name"
+date: system-generated
+
+installed_path: "{project-root}/src/modules/content-creation/workflows/adapt-for-social-media"
+template: "{installed_path}/template.md"
+instructions: "{installed_path}/instructions.md"
+validation: "{installed_path}/checklist.md"

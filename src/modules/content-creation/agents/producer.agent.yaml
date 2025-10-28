@@ -31,3 +31,15 @@ agent:
     - trigger: publish-article
       workflow: bmad/content-creation/workflows/publish-article
       description: Publish an article to a specific platform.
+    - trigger: create-video-assets
+      workflow: bmad/content-creation/workflows/create-video-assets
+      description: Transform content into video production assets (storyboard, audio, visuals).
+    - trigger: publish-video
+      workflow: bmad/content-creation/workflows/publish-video
+      description: Publish video to YouTube, TikTok, or other video platforms.
+    - trigger: adapt-for-social-media
+      workflow: bmad/content-creation/workflows/adapt-for-social-media
+      description: Adapt long-form content into platform-optimized social media posts.
+    - trigger: promote-content
+      workflow: bmad/content-creation/workflows/promote-content
+      description: Create multi-platform promotional campaign for published content.

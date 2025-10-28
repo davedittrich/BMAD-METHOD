@@ -1,0 +1,13 @@
+# Publish Video Workflow Configuration
+name: "publish-video"
+description: "Publish video content to YouTube, TikTok, or other video platforms with proper metadata and configuration."
+author: "BMad"
+
+config_source: "{project-root}/src/modules/content-creation/config.yaml"
+output_folder: "{config_source}:output_folder"
+user_name: "{config_source}:user_name"
+date: system-generated
+
+installed_path: "{project-root}/src/modules/content-creation/workflows/publish-video"
+instructions: "{installed_path}/instructions.md"
+validation: "{installed_path}/checklist.md"
