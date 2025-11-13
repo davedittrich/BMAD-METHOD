@@ -224,12 +224,29 @@ The tasks below are generated from a deep analysis of both the v4 and v6 codebas
 
 ## 3. Task Migration
 
-**Status:** 90% COMPLETE. Core tasks migrated successfully. Of 10 remaining v4 tasks identified:
+**Status:** ✅ 100% COMPLETE. All v4 tasks migrated or resolved. Of 10 remaining v4 tasks identified:
 - 7 tasks newly migrated to v6
 - 1 task already in BMAD Core
 - 1 task already in v6 (different name)
-- 1 task deferred (create-doc - complex workflow template system)
+- 1 task deprecated in v6 (create-doc - see architectural change below)
 - 4 tasks already covered by existing v6 tasks (integrity-analysis, logical-fallacy-analysis, optimize-retention, plan-investigation)
+
+### Architectural Change: create-doc.md
+
+**v4 Architecture:** Centralized `create-doc.md` task processed YAML templates with interactive elicitation.
+
+**v6 Architecture:** Template processing is now handled by the core workflow engine (`.bmad/core/tasks/workflow.xml`). Each workflow manages its own templates:
+- **workflow.yaml**: Configuration with template references
+- **instructions.md**: XML-based step-by-step execution instructions with `<template-output>` tags
+- **template.md**: Document template with variable placeholders
+- **Advanced elicitation**: Available via core task (`.bmad/core/tasks/adv-elicit.xml`)
+
+**Decision:** `create-doc.md` is **not needed in v6**. The new architecture is more modular, maintainable, and provides better separation of concerns. Workflows that need templates implement their own template processing using the core workflow engine.
+
+**Examples of v6 workflow templates:**
+- `.bmad/core/workflows/brainstorming/`
+- `.bmad/bmb/workflows/module-brief/`
+- `.bmad/bmm/workflows/2-plan-workflows/tech-spec/`
 
 ### Core Tasks (Already Migrated)
 - `analyze-integrity.md`
@@ -246,7 +263,7 @@ The tasks below are generated from a deep analysis of both the v4 and v6 codebas
 - [x] Migrate Task: `analyze-subject-background.md` - Migrated to v6
 - [x] Migrate Task: `analyze-video-content.md` - Migrated to v6
 - [x] Migrate Task: `analyze-writing-style.md` - Already in v6 as `analyze-style.md`
-- [ ] Migrate Task: `create-doc.md` - DEFERRED (complex YAML workflow template system, needs special handling)
+- [x] Migrate Task: `create-doc.md` - DEPRECATED in v6 (replaced by core workflow engine with per-workflow templates)
 - [x] Migrate Task: `credibility-assessment.md` - Migrated to v6
 - [x] Migrate Task: `distill-wisdom.md` - Migrated to v6
 - [x] Migrate Task: `execute-checklist.md` - Migrated to v6
