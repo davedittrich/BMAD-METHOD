@@ -1,0 +1,113 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: integrity-analysis-report
+  name: Integrity Analysis Report
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/integrity-analysis-{{analysis_subject}}.md
+    title: "Integrity Analysis Report: {{analysis_subject}}"
+
+workflow:
+  mode: interactive
+  elicitation: advanced-elicitation
+
+sections:
+  - id: executive_summary
+    title: "Executive Summary"
+    instruction: "Provide overview of integrity assessment findings"
+    sections:
+      - id: subject_overview
+        title: "Analysis Subject"
+        template: |
+          **Subject:** {{analysis_subject}}
+          **Context:** {{analysis_context}}
+          **Analysis Date:** [Date]
+          **Overall Integrity Assessment:** [High/Moderate/Low]
+
+      - id: key_findings
+        title: "Key Findings"
+        template: |
+          **Primary Strengths:** [Main integrity strengths identified]
+          **Primary Concerns:** [Main integrity concerns identified]
+          **Recommendation:** [Overall assessment and guidance]
+
+  - id: discernment_assessment
+    title: "Step 1: Discernment Assessment"
+    instruction: "Evaluate subject's ability to distinguish right from wrong"
+    sections:
+      - id: moral_awareness
+        title: "Moral Awareness Evidence"
+        template: |
+          **Evidence of Moral Recognition:** [Specific examples]
+          **Understanding of Consequences:** [Demonstrated awareness]
+          **Acknowledgment of Competing Values:** [Examples]
+          **Recognition of Stakeholder Impact:** [Evidence]
+
+      - id: discernment_failures
+        title: "Discernment Red Flags"
+        template: |
+          **Moral Blindness:** [Any evidence of willful ignorance]
+          **Ethical Dismissal:** [Examples of dismissing moral concerns]
+          **Oversimplification:** [Reducing complex moral issues]
+          **Pattern Analysis:** [Consistent discernment patterns]
+
+  - id: acknowledgment_assessment
+    title: "Step 2: Acknowledgment Assessment"
+    instruction: "Evaluate consistency between understanding and action"
+    sections:
+      - id: consistency_evidence
+        title: "Values-Action Alignment"
+        template: |
+          **Stated Values:** [What subject claims to value]
+          **Demonstrated Actions:** [How actions align with values]
+          **Promise Keeping:** [Track record of following through]
+          **Moral Courage:** [Examples of doing right despite cost]
+
+      - id: acknowledgment_failures
+        title: "Acknowledgment Red Flags"
+        template: |
+          **Hypocrisy Patterns:** [Say one thing, do another]
+          **Convenient Flexibility:** [Values change based on convenience]
+          **Promise Breaking:** [Pattern of not following through]
+          **Cost Avoidance:** [Avoiding moral action when costly]
+
+  - id: consistency_assessment
+    title: "Step 3: Action Consistency Assessment"
+    instruction: "Evaluate public defensibility and transparency"
+    sections:
+      - id: transparency_evidence
+        title: "Transparency and Accountability"
+        template: |
+          **Public Defensibility:** [Willingness to defend actions publicly]
+          **Moral Reasoning:** [Openness about decision-making process]
+          **Responsibility Taking:** [Acceptance of accountability]
+          **Response to Criticism:** [How challenges are handled]
+
+      - id: consistency_failures
+        title: "Consistency Red Flags"
+        template: |
+          **Secretive Behavior:** [Hidden decision-making processes]
+          **Public vs. Private:** [Different behavior in different contexts]
+          **Blame Shifting:** [Avoiding responsibility]
+          **Ethics as PR:** [Using ethics for image management]
+
+  - id: overall_assessment
+    title: "Overall Integrity Assessment"
+    instruction: "Synthesize findings into comprehensive evaluation"
+    sections:
+      - id: integrity_rating
+        title: "Integrity Rating"
+        template: |
+          **Overall Assessment:** [High/Moderate/Low Integrity]
+          **Confidence Level:** [How certain is this assessment]
+          **Key Supporting Evidence:** [Most important findings]
+          **Assessment Limitations:** [What couldn't be determined]
+
+      - id: recommendations
+        title: "Recommendations"
+        template: |
+          **Trustworthiness:** [Level of trust appropriate]
+          **Verification Needs:** [What should be verified]
+          **Monitoring:** [What to watch for going forward]
+          **Context Considerations:** [Important factors to remember]

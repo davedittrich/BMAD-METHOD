@@ -1,0 +1,114 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: source-verification-report
+  name: Source Verification Report
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/source-verification-{{source_url}}.md
+    title: "Source Verification Report: {{source_url}}"
+
+workflow:
+  mode: interactive
+  elicitation: advanced-elicitation
+
+sections:
+  - id: source_identification
+    title: "Source Identification"
+    instruction: "Clearly identify the source being evaluated with complete citation information"
+    sections:
+      - id: basic_info
+        title: "Basic Information"
+        template: |
+          **Source:** {{source_url}}
+          **Author/Organization:** {{source_author}}
+          **Publication Date:** [Date]
+          **Type of Source:** [Academic, News, Government, Personal Blog, etc.]
+          **Purpose of Verification:** {{verification_purpose}}
+
+      - id: source_context
+        title: "Source Context"
+        template: |
+          **Publication Platform:** [Description]
+          **Intended Audience:** [Analysis]
+          **Content Type:** [News, Opinion, Research, etc.]
+
+  - id: credibility_assessment
+    title: "Credibility Assessment"
+    instruction: "Systematically evaluate source credibility using established criteria"
+    sections:
+      - id: author_expertise
+        title: "Author/Organization Expertise"
+        template: |
+          **Relevant Qualifications:** [Assessment]
+          **Track Record:** [Historical performance]
+          **Peer Recognition:** [Awards, citations, etc.]
+          **Specialization:** [Area of expertise match]
+
+      - id: publication_standards
+        title: "Publication Standards"
+        template: |
+          **Editorial Process:** [Fact-checking, peer review]
+          **Correction Policy:** [How errors are handled]
+          **Transparency:** [Funding, ownership disclosure]
+          **Reputation:** [Industry standing]
+
+  - id: content_analysis
+    title: "Content Analysis"
+    instruction: "Evaluate the quality and reliability of the content itself"
+    sections:
+      - id: evidence_quality
+        title: "Evidence and Documentation"
+        template: |
+          **Source Citations:** [Quality of sources cited]
+          **Evidence Type:** [Primary vs. secondary sources]
+          **Verifiability:** [Can claims be checked independently]
+          **Documentation:** [Completeness and accessibility]
+
+      - id: bias_assessment
+        title: "Bias and Independence"
+        template: |
+          **Financial Conflicts:** [Assessment]
+          **Political Bias:** [Evaluation]
+          **Institutional Pressure:** [Analysis]
+          **Balance:** [Multiple perspectives included]
+
+  - id: verification_results
+    title: "Verification Results"
+    instruction: "Provide overall assessment and recommendations"
+    sections:
+      - id: credibility_rating
+        title: "Overall Credibility Rating"
+        template: |
+          **Credibility Level:** [High/Moderate/Low/Insufficient Data]
+          **Confidence Level:** [How certain is this assessment]
+          **Key Strengths:** [What makes this source reliable]
+          **Key Weaknesses:** [Concerns or limitations]
+
+      - id: usage_recommendations
+        title: "Usage Recommendations"
+        template: |
+          **Recommended Use:** [How to appropriately use this source]
+          **Additional Verification:** [What else should be checked]
+          **Limitations:** [What this source cannot establish]
+          **Risk Assessment:** [Potential for misinformation]
+
+  - id: supporting_documentation
+    title: "Supporting Documentation"
+    instruction: "Document the verification process and evidence"
+    sections:
+      - id: methodology
+        title: "Verification Methodology"
+        template: |
+          **Assessment Criteria Used:** [Which standards applied]
+          **Sources Consulted:** [What was checked]
+          **Time Frame:** [When verification conducted]
+          **Limitations:** [What couldn't be verified]
+
+      - id: evidence_record
+        title: "Evidence Record"
+        template: |
+          **Supporting Evidence:** [What supports credibility assessment]
+          **Contradictory Evidence:** [Any concerning findings]
+          **Cross-References:** [Other sources confirming/contradicting]
+          **Follow-up Needed:** [Additional verification required]

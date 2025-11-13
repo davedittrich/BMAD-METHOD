@@ -1,0 +1,141 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: youtube-short-script-template
+  name: YouTube Shorts Script
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/youtube-short-script-{{video_topic}}.md
+    title: "YouTube Shorts Script: {{video_topic}}"
+
+workflow:
+  mode: interactive
+  elicitation: advanced-elicitation
+
+sections:
+  - id: script_header
+    title: "Script Information"
+    instruction: "Document the basic script parameters and optimization strategy"
+    sections:
+      - id: video_details
+        title: "Video Details"
+        template: |
+          **Topic:** {{video_topic}}
+          **Target Length:** {{target_length}} seconds
+          **Style:** {{content_style}}
+          **Hook Strategy:** [Primary attention-grabbing approach]
+          **Key Message:** [Core takeaway in one sentence]
+
+      - id: optimization_notes
+        title: "Optimization Strategy"
+        template: |
+          **Trending Elements:** [Hashtags, sounds, formats to leverage]
+          **Engagement Triggers:** [Questions, challenges, calls-to-action]
+          **Retention Hooks:** [What keeps viewers watching]
+          **Shareability Factor:** [What makes this worth sharing]
+
+  - id: script_content
+    title: "Script Content"
+    instruction: "Write the complete script with timing and visual cues"
+    sections:
+      - id: hook_section
+        title: "Hook (0-3 seconds)"
+        template: |
+          **VISUAL:** [What viewer sees]
+          **AUDIO/SCRIPT:** [Exact words to say]
+
+          **HOOK TECHNIQUE:** [Pattern interrupt, question, bold statement, etc.]
+          **ATTENTION GRAB:** [Why this stops the scroll]
+
+      - id: main_content
+        title: "Main Content (3-50 seconds)"
+        template: |
+          **SECTION 1 (3-15 seconds)**
+          **VISUAL:** [Scene/shot description]
+          **SCRIPT:** [Exact dialogue]
+
+          **SECTION 2 (15-35 seconds)**
+          **VISUAL:** [Scene/shot description]
+          **SCRIPT:** [Exact dialogue]
+
+          **SECTION 3 (35-50 seconds)**
+          **VISUAL:** [Scene/shot description]
+          **SCRIPT:** [Exact dialogue]
+
+      - id: conclusion_cta
+        title: "Conclusion & CTA (50-60 seconds)"
+        template: |
+          **FINAL MESSAGE:** [Key takeaway]
+          **VISUAL CTA:** [Text overlay or visual element]
+          **SCRIPT CTA:** [Exact call-to-action words]
+          **ENGAGEMENT ASK:** [Like, follow, comment request]
+
+  - id: production_notes
+    title: "Production Guidelines"
+    instruction: "Provide technical and creative guidance for filming"
+    sections:
+      - id: visual_direction
+        title: "Visual Direction"
+        template: |
+          **Aspect Ratio:** 9:16 (vertical)
+          **Shot Types:** [Close-up, medium, wide shots needed]
+          **Camera Movement:** [Static, handheld, transitions]
+          **Lighting:** [Requirements and setup notes]
+          **B-Roll Needs:** [Additional footage required]
+
+      - id: audio_requirements
+        title: "Audio Requirements"
+        template: |
+          **Music/Sound:** [Trending sounds or original audio]
+          **Voice Quality:** [Clear, energetic, appropriate volume]
+          **Sound Effects:** [Any SFX needed]
+          **Audio Timing:** [Sync points with visuals]
+
+      - id: editing_notes
+        title: "Editing Guidelines"
+        template: |
+          **Pacing:** [Fast cuts, smooth transitions, etc.]
+          **Text Overlays:** [What text to add and when]
+          **Effects:** [Zoom, transitions, filters to use]
+          **Color Correction:** [Style and mood notes]
+
+  - id: optimization_checklist
+    title: "Platform Optimization"
+    instruction: "Ensure the script meets YouTube Shorts requirements"
+    sections:
+      - id: algorithm_optimization
+        title: "Algorithm Optimization"
+        template: |
+          **Hook Strength:** [0-3 second engagement assessment]
+          **Watch Time Optimization:** [Retention throughout]
+          **Engagement Triggers:** [Comment baits, questions]
+          **Trending Elements:** [Current hashtags, sounds, formats]
+
+      - id: technical_requirements
+        title: "Technical Requirements"
+        template: |
+          **Duration:** Under 60 seconds ✓
+          **Vertical Format:** 9:16 aspect ratio ✓
+          **Mobile Optimization:** [Readable on small screens ✓]
+          **Captions:** [Auto-captions friendly dialogue]
+          **Thumbnail:** [First frame optimization]
+
+  - id: performance_metrics
+    title: "Success Metrics"
+    instruction: "Define what success looks like for this Short"
+    sections:
+      - id: engagement_targets
+        title: "Engagement Targets"
+        template: |
+          **View Duration:** [Target average view percentage]
+          **Engagement Rate:** [Likes, comments, shares target]
+          **Completion Rate:** [How many watch to end]
+          **Share Rate:** [Viral potential assessment]
+
+      - id: content_goals
+        title: "Content Goals"
+        template: |
+          **Primary Goal:** [Awareness, education, entertainment, etc.]
+          **Secondary Goals:** [Channel growth, brand building, etc.]
+          **Success Indicators:** [What metrics matter most]
+          **Follow-up Strategy:** [How to build on success]

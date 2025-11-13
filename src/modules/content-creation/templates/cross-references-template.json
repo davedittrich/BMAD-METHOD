@@ -1,0 +1,44 @@
+{
+  "$schema": "cross-references-schema",
+  "registry_id": "global-cross-reference-registry",
+  "last_updated": "",
+  "cross_references": [
+    {
+      "reference_id": "",
+      "source_project": "",
+      "target_projects": [],
+      "reference_type": "source|analysis|insight|methodology|template",
+      "reference_path": "",
+      "reference_context": "",
+      "bidirectional": false,
+      "reference_strength": 1,
+      "created": "",
+      "last_validated": "",
+      "validation_status": "valid|warning|broken",
+      "usage_count": 0
+    }
+  ],
+  "validation_history": [
+    {
+      "validation_date": "",
+      "total_references": 0,
+      "valid_references": 0,
+      "broken_references": 0,
+      "warning_references": 0,
+      "validation_notes": ""
+    }
+  ],
+  "reference_patterns": {
+    "most_referenced_projects": [],
+    "most_referencing_projects": [],
+    "common_reference_types": [],
+    "reference_health_trends": []
+  },
+  "integrity_monitoring": {
+    "automatic_validation": true,
+    "validation_frequency": "daily|weekly|monthly",
+    "alert_threshold": 0.1,
+    "last_health_check": "",
+    "health_status": "healthy|degraded|critical"
+  }
+}

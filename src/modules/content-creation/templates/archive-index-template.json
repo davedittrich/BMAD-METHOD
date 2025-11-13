@@ -1,0 +1,61 @@
+{
+  "$schema": "archive-index-schema",
+  "archive_registry": {
+    "registry_id": "global-archive-registry",
+    "last_updated": "",
+    "total_archived_projects": 0,
+    "archive_storage_size_bytes": 0,
+    "oldest_archive": "",
+    "newest_archive": ""
+  },
+  "archived_projects": [
+    {
+      "project_name": "",
+      "archive_path": "",
+      "archive_date": "",
+      "original_created": "",
+      "archive_status": "healthy|degraded|corrupted",
+      "last_accessed": "",
+      "search_tags": [],
+      "project_summary": "",
+      "restoration_available": true,
+      "size_bytes": 0,
+      "has_relationships": false,
+      "collaboration_count": 0
+    }
+  ],
+  "archive_categories": {
+    "by_year": {},
+    "by_status": {
+      "healthy": 0,
+      "degraded": 0,
+      "corrupted": 0
+    },
+    "by_research_domain": {},
+    "by_size": {
+      "small": 0,
+      "medium": 0,
+      "large": 0
+    }
+  },
+  "search_index": {
+    "keywords": {},
+    "content_types": {},
+    "research_topics": {},
+    "collaboration_networks": {}
+  },
+  "archive_health": {
+    "total_health_score": 1.0,
+    "integrity_violations": [],
+    "maintenance_required": [],
+    "last_health_check": "",
+    "backup_status": "current|outdated|missing"
+  },
+  "archive_policies": {
+    "auto_archive_after_days": 365,
+    "archive_size_limit_gb": 100,
+    "integrity_check_frequency": "monthly",
+    "backup_frequency": "weekly",
+    "retention_policy": "indefinite"
+  }
+}
