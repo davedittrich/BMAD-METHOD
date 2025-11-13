@@ -1,0 +1,51 @@
+{
+  "$schema": "project-graph-schema",
+  "graph_id": "global-project-dependency-graph",
+  "last_updated": "",
+  "nodes": [
+    {
+      "project_name": "",
+      "project_status": "active|inactive|archived",
+      "created": "",
+      "relationship_count": 0,
+      "dependency_level": 0
+    }
+  ],
+  "edges": [
+    {
+      "source_project": "",
+      "target_project": "",
+      "relationship_type": "dependency|reference|collaboration|successor|parent|child",
+      "relationship_strength": "weak|moderate|strong|critical",
+      "edge_weight": 1,
+      "created": "",
+      "bidirectional": true
+    }
+  ],
+  "analysis_results": {
+    "cycles": [
+      {
+        "cycle_id": "",
+        "projects_in_cycle": [],
+        "cycle_length": 0,
+        "severity": "low|medium|high|critical",
+        "resolution_suggestions": []
+      }
+    ],
+    "critical_path": {
+      "path": [],
+      "length": 0,
+      "bottleneck_projects": []
+    },
+    "dependency_health": "healthy|warnings|critical|broken",
+    "last_analyzed": "",
+    "analysis_notes": ""
+  },
+  "graph_metrics": {
+    "total_projects": 0,
+    "total_relationships": 0,
+    "average_connectivity": 0,
+    "max_dependency_depth": 0,
+    "isolated_projects": []
+  }
+}

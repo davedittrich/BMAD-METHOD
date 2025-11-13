@@ -1,0 +1,153 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: credibility-analysis-report
+  name: Credibility Analysis Report
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/credibility-analysis-{{analysis_subject}}.md
+    title: "Credibility Analysis Report: {{analysis_subject}}"
+
+workflow:
+  mode: interactive
+  elicitation: advanced-elicitation
+
+sections:
+  - id: executive_summary
+    title: "Executive Summary"
+    instruction: "Provide overview of credibility assessment"
+    sections:
+      - id: assessment_overview
+        title: "Assessment Overview"
+        template: |
+          **Subject:** {{analysis_subject}}
+          **Context:** {{credibility_context}}
+          **Analysis Date:** [Date]
+          **Overall Credibility Rating:** [High/Moderate/Low]
+
+      - id: key_findings
+        title: "Key Credibility Findings"
+        template: |
+          **Primary Credibility Strengths:** [Main positive indicators]
+          **Primary Credibility Concerns:** [Main concerns or red flags]
+          **Confidence Level:** [How certain is this assessment]
+
+  - id: expertise_assessment
+    title: "Expertise and Qualifications"
+    instruction: "Evaluate subject's expertise and qualifications"
+    sections:
+      - id: formal_qualifications
+        title: "Formal Qualifications"
+        template: |
+          **Education:** [Relevant educational background]
+          **Certifications:** [Professional certifications and credentials]
+          **Training:** [Specialized training and experience]
+          **Recognition:** [Peer recognition and professional standing]
+
+      - id: demonstrated_expertise
+        title: "Demonstrated Expertise"
+        template: |
+          **Track Record:** [History of accurate information or successful outcomes]
+          **Peer Assessment:** [What peers and experts say about their work]
+          **Publication Record:** [Quality and impact of published work]
+          **Expertise Scope:** [Areas of genuine expertise vs. claimed expertise]
+
+  - id: reliability_assessment
+    title: "Reliability and Track Record"
+    instruction: "Evaluate historical reliability and consistency"
+    sections:
+      - id: accuracy_record
+        title: "Accuracy Record"
+        template: |
+          **Prediction Accuracy:** [Track record of accurate predictions or statements]
+          **Fact-Checking Record:** [Results of fact-checking efforts]
+          **Correction History:** [How errors are handled and corrected]
+          **Consistency:** [Consistency of information over time]
+
+      - id: reliability_patterns
+        title: "Reliability Patterns"
+        template: |
+          **Information Quality:** [Pattern of information quality provided]
+          **Source Citation:** [Quality of sources and citations used]
+          **Methodological Rigor:** [Rigor in research or analysis methods]
+          **Bias Recognition:** [Acknowledgment and handling of potential biases]
+
+  - id: independence_assessment
+    title: "Independence and Conflicts"
+    instruction: "Evaluate independence and potential conflicts of interest"
+    sections:
+      - id: financial_independence
+        title: "Financial Independence"
+        template: |
+          **Funding Sources:** [Sources of funding or financial support]
+          **Financial Incentives:** [Potential financial motivations]
+          **Economic Dependencies:** [Economic relationships that might influence judgment]
+          **Disclosure:** [Transparency about financial relationships]
+
+      - id: ideological_independence
+        title: "Ideological and Institutional Independence"
+        template: |
+          **Institutional Pressures:** [Pressures from affiliated institutions]
+          **Ideological Commitments:** [Strong ideological positions that might bias judgment]
+          **Political Affiliations:** [Political relationships that might influence credibility]
+          **Social Pressures:** [Social or peer pressures affecting independence]
+
+  - id: transparency_assessment
+    title: "Transparency and Accountability"
+    instruction: "Evaluate openness and accountability practices"
+    sections:
+      - id: transparency_practices
+        title: "Transparency Practices"
+        template: |
+          **Methodology Disclosure:** [Openness about methods and processes]
+          **Source Transparency:** [Willingness to reveal sources when appropriate]
+          **Limitation Acknowledgment:** [Honesty about limitations and uncertainties]
+          **Correction Policies:** [Policies and practices for corrections]
+
+      - id: accountability_mechanisms
+        title: "Accountability Mechanisms"
+        template: |
+          **Verification Systems:** [Systems in place for verifying information]
+          **Peer Review:** [Exposure to peer review and professional oversight]
+          **Feedback Responsiveness:** [Response to criticism and feedback]
+          **Professional Standards:** [Adherence to professional or ethical standards]
+
+  - id: contextual_factors
+    title: "Contextual Factors"
+    instruction: "Consider relevant contextual factors affecting credibility"
+    sections:
+      - id: situational_factors
+        title: "Situational Factors"
+        template: |
+          **Information Access:** [Access to relevant information and sources]
+          **Resource Constraints:** [Limitations affecting quality of work]
+          **Time Pressures:** [Time constraints affecting thoroughness]
+          **External Pressures:** [External pressures affecting independence]
+
+      - id: domain_considerations
+        title: "Domain-Specific Considerations"
+        template: |
+          **Field Standards:** [Relevant standards in the subject's field]
+          **Domain Complexity:** [Complexity of the subject matter]
+          **Evolving Knowledge:** [How rapidly knowledge changes in this area]
+          **Consensus Level:** [Level of expert consensus on relevant topics]
+
+  - id: overall_credibility
+    title: "Overall Credibility Assessment"
+    instruction: "Synthesize findings into comprehensive credibility evaluation"
+    sections:
+      - id: credibility_rating
+        title: "Credibility Rating"
+        template: |
+          **Overall Rating:** [High/Moderate/Low with specific justification]
+          **Confidence Level:** [How confident in this assessment]
+          **Key Supporting Evidence:** [Most important evidence for the rating]
+          **Rating Limitations:** [Limitations or uncertainties in the assessment]
+
+      - id: usage_recommendations
+        title: "Usage Recommendations"
+        template: |
+          **Appropriate Reliance:** [How much to rely on this source]
+          **Verification Requirements:** [What should be independently verified]
+          **Context Limitations:** [Contexts where credibility might be different]
+          **Monitoring Recommendations:** [What to watch for going forward]

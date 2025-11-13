@@ -1,0 +1,162 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: historical-timeline-template
+  name: Historical Timeline Template
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/historical-timeline-{{timeline_title}}.md
+    title: "Historical Timeline: {{timeline_title}}"
+
+workflow:
+  mode: interactive
+  elicitation: advanced-elicitation
+
+sections:
+  - id: overview
+    title: Timeline Overview
+    instruction: High-level summary of the historical period and key themes
+    template: |
+      # {{timeline_title}}
+
+      **Period:** {{time_period}}
+
+      **Date of Analysis:** {{current_date}}
+
+      ## Overview
+
+      **Scope:** {{subject_scope}}
+
+      **Major Themes:** {{major_themes}}
+
+      **Significance:** {{significance_summary}}
+  - id: methodology
+    title: Research Methodology
+    instruction: Sources, methods, and standards used in timeline construction
+    template: |
+      ## Research Methodology
+
+      ### Sources and Methods
+      **Source Types:** {{source_types}}
+
+      **Research Methods:** {{research_methods}}
+
+      **Verification Standards:** {{verification_standards}}
+
+      **Limitations:** {{limitations_noted}}
+  - id: early_period
+    title: Early Period
+    instruction: Initial phase or foundation period of the timeline
+    template: |
+      ## Historical Periods
+
+      ### {{early_period_name}} ({{early_timeframe}})
+
+      **Key Events:** {{early_key_events}}
+
+      **Context:** {{early_context}}
+
+      **Outcomes:** {{early_outcomes}}
+  - id: development_period
+    title: Development Period
+    instruction: Middle phase showing growth, change, or evolution
+    template: |
+      ### {{development_period_name}} ({{development_timeframe}})
+
+      **Key Events:** {{development_key_events}}
+
+      **Major Trends:** {{development_trends}}
+
+      {{#if development_turning_points}}
+      **Turning Points:** {{development_turning_points}}
+      {{/if}}
+  - id: mature_period
+    title: Mature Period
+    instruction: Later phase showing culmination, peak, or current state
+    template: |
+      ### {{mature_period_name}} ({{mature_timeframe}})
+
+      **Key Events:** {{mature_key_events}}
+
+      **Achievements:** {{mature_achievements}}
+
+      {{#if mature_challenges}}
+      **Challenges:** {{mature_challenges}}
+      {{/if}}
+  - id: detailed_chronology
+    title: Detailed Event Chronology
+    instruction: Specific dated events in chronological order
+    template: |
+      ## Detailed Chronology
+
+      {{#if event_categories}}
+      **Event Categories:** {{event_categories}}
+      {{/if}}
+
+      ### Timeline of Events
+      {{event_entries}}
+
+      {{#if event_significance_notes}}
+      ### Significance Notes
+      {{event_significance_notes}}
+      {{/if}}
+  - id: patterns_analysis
+    title: Patterns and Trends Analysis
+    instruction: Analysis of recurring patterns, cycles, or trends visible in the timeline
+    template: |
+      ## Analysis of Patterns and Trends
+
+      ### Recurring Patterns
+      {{recurring_patterns}}
+
+      ### Directional Trends
+      {{directional_trends}}
+
+      ### Causal Relationships
+      {{causal_relationships}}
+
+      {{#if external_influences}}
+      ### External Influences
+      {{external_influences}}
+      {{/if}}
+  - id: key_figures
+    title: Key Figures and Actors
+    instruction: Important people or entities that shaped the timeline
+    template: |
+      ## Key Figures and Actors
+
+      ### Primary Actors
+      {{primary_actors}}
+
+      ### Roles and Influence
+      {{actor_roles}}
+
+      {{actor_influences}}
+
+      {{#if actor_relationships}}
+      ### Key Relationships
+      {{actor_relationships}}
+      {{/if}}
+  - id: implications_lessons
+    title: Implications and Lessons
+    instruction: What the timeline reveals and its broader meaning
+    template: |
+      ## Implications and Lessons
+
+      ### Historical Significance
+      {{historical_significance}}
+
+      ### Lessons Learned
+      {{lessons_learned}}
+
+      ### Contemporary Relevance
+      {{contemporary_relevance}}
+
+      {{#if future_implications}}
+      ### Future Implications
+      {{future_implications}}
+      {{/if}}
+
+      ---
+
+      *Generated using BMAD Historical Timeline Template*

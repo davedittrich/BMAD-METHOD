@@ -1,0 +1,155 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: social-media-post-template
+  name: Social Media Post Template
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/social-media-post-{{content_topic}}.md
+    title: "Social Media Post: {{content_topic}}"
+
+workflow:
+  mode: interactive
+  elicitation: advanced-elicitation
+
+sections:
+  - id: post_planning
+    title: "Post Planning"
+    instruction: "Plan the social media post strategy and approach"
+    sections:
+      - id: platform_specifications
+        title: "Platform Specifications"
+        template: |
+          **Platform:** {{platform_type}}
+          **Character/Word Limit:** [Platform-specific limits]
+          **Optimal Post Length:** [Recommended length for engagement]
+          **Best Posting Times:** [Optimal timing for target audience]
+
+      - id: content_strategy
+        title: "Content Strategy"
+        template: |
+          **Topic:** {{content_topic}}
+          **Target Audience:** {{target_audience}}
+          **Primary Goal:** [Awareness, engagement, traffic, conversion, etc.]
+          **Key Message:** [Core message to communicate]
+
+  - id: post_content
+    title: "Post Content"
+    instruction: "Create the main social media post content"
+    sections:
+      - id: main_post
+        title: "Main Post Text"
+        template: |
+          **Hook/Opening:** [Attention-grabbing opening line]
+
+          **Main Content:**
+          [Main body of the post - keep within platform limits]
+
+          **Call to Action:** [Clear call to action if applicable]
+
+      - id: engagement_elements
+        title: "Engagement Elements"
+        template: |
+          **Hashtags:** [Relevant and strategic hashtags]
+          **Mentions:** [Strategic mentions of relevant accounts]
+          **Questions:** [Questions to encourage comments and engagement]
+          **Polls/Interactive Elements:** [If applicable to platform]
+
+  - id: visual_elements
+    title: "Visual Elements"
+    instruction: "Plan visual components to accompany the post"
+    sections:
+      - id: visual_strategy
+        title: "Visual Strategy"
+        template: |
+          **Visual Type:** [Image, video, carousel, graphic, etc.]
+          **Visual Description:** [Description of planned visual content]
+          **Brand Consistency:** [How visuals align with brand guidelines]
+          **Platform Optimization:** [Visual specs for the specific platform]
+
+      - id: alt_text
+        title: "Accessibility"
+        template: |
+          **Alt Text:** [Descriptive alt text for images]
+          **Caption Considerations:** [Accessibility considerations for captions]
+          **Screen Reader Friendly:** [Elements that support screen readers]
+
+  - id: optimization
+    title: "Post Optimization"
+    instruction: "Optimize the post for maximum reach and engagement"
+    sections:
+      - id: seo_social
+        title: "SEO and Discoverability"
+        template: |
+          **Keywords:** [Relevant keywords for discoverability]
+          **Trending Topics:** [Connection to current trends or events]
+          **Searchable Terms:** [Terms that help with platform search]
+          **Cross-Platform Strategy:** [How this connects to other platform content]
+
+      - id: timing_scheduling
+        title: "Timing and Scheduling"
+        template: |
+          **Optimal Post Time:** [Best time to post for target audience]
+          **Day of Week:** [Best day for this type of content]
+          **Frequency Consideration:** [How this fits into overall posting schedule]
+          **Time Zone Considerations:** [Audience time zone considerations]
+
+  - id: engagement_plan
+    title: "Engagement Plan"
+    instruction: "Plan for post-publication engagement and interaction"
+    sections:
+      - id: response_strategy
+        title: "Response Strategy"
+        template: |
+          **Comment Response Plan:** [How to handle different types of comments]
+          **Engagement Timeline:** [How quickly to respond to interactions]
+          **Escalation Protocol:** [How to handle negative comments or issues]
+          **Community Building:** [How to use responses to build community]
+
+      - id: amplification
+        title: "Amplification Strategy"
+        template: |
+          **Sharing Strategy:** [How to encourage shares and retweets]
+          **Cross-Platform Promotion:** [How to promote on other platforms]
+          **Influencer Engagement:** [Strategy for influencer interactions]
+          **Paid Promotion:** [Any paid amplification considerations]
+
+  - id: performance_tracking
+    title: "Performance Tracking"
+    instruction: "Plan how to measure and track post performance"
+    sections:
+      - id: success_metrics
+        title: "Success Metrics"
+        template: |
+          **Primary KPIs:** [Key performance indicators for this post]
+          **Engagement Metrics:** [Likes, shares, comments, saves]
+          **Reach Metrics:** [Impressions, reach, discovery metrics]
+          **Conversion Metrics:** [Click-throughs, website visits, conversions]
+
+      - id: analysis_plan
+        title: "Analysis Plan"
+        template: |
+          **Tracking Timeline:** [How long to track post performance]
+          **Comparison Benchmarks:** [What to compare performance against]
+          **Learning Objectives:** [What insights to gain from this post]
+          **Future Optimization:** [How insights will inform future posts]
+
+  - id: compliance_considerations
+    title: "Compliance and Guidelines"
+    instruction: "Ensure compliance with platform and legal guidelines"
+    sections:
+      - id: platform_compliance
+        title: "Platform Guidelines"
+        template: |
+          **Community Standards:** [Adherence to platform community standards]
+          **Content Policies:** [Compliance with platform content policies]
+          **Advertising Guidelines:** [If promotional, compliance with ad guidelines]
+          **Copyright Considerations:** [Proper attribution and usage rights]
+
+      - id: legal_ethical
+        title: "Legal and Ethical Considerations"
+        template: |
+          **Disclosure Requirements:** [Any required disclosures or disclaimers]
+          **Privacy Considerations:** [Privacy implications of the content]
+          **Accuracy Verification:** [Fact-checking and accuracy verification]
+          **Ethical Standards:** [Alignment with ethical communication standards]

@@ -18,6 +18,9 @@ agent:
       - Distinguish between fact and opinion.
       - Acknowledge uncertainty.
       - Correct errors transparently.
+  knowledge:
+    - bmad/content-creation/tasks/fact-verification-checklist.md
+    - bmad/content-creation/workflows/analyze-and-respond/integrity-assessment-checklist.md
   menu:
     - trigger: verify-claims
       workflow: bmad/content-creation/workflows/verify-claims

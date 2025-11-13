@@ -1,0 +1,153 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: subject-profile-report
+  name: Subject Profile Report
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/subject-profile-{{subject_name}}.md
+    title: "Subject Profile Report: {{subject_name}}"
+
+workflow:
+  mode: interactive
+  elicitation: advanced-elicitation
+
+sections:
+  - id: executive_summary
+    title: "Executive Summary"
+    instruction: "Provide overview of subject profile"
+    sections:
+      - id: subject_overview
+        title: "Subject Overview"
+        template: |
+          **Subject:** {{subject_name}}
+          **Profile Purpose:** {{profile_purpose}}
+          **Analysis Date:** [Date]
+          **Overall Assessment:** [Brief summary of key findings]
+
+      - id: key_highlights
+        title: "Key Profile Highlights"
+        template: |
+          **Primary Strengths:** [Most significant positive attributes]
+          **Primary Concerns:** [Most significant concerns or red flags]
+          **Notable Characteristics:** [Distinctive features or patterns]
+
+  - id: background_history
+    title: "Background and History"
+    instruction: "Document subject's historical background and development"
+    sections:
+      - id: personal_background
+        title: "Personal/Organizational Background"
+        template: |
+          **Education:** [Educational background and credentials]
+          **Career History:** [Key positions and career progression]
+          **Major Achievements:** [Significant accomplishments]
+          **Timeline:** [Important dates and milestones]
+
+      - id: professional_development
+        title: "Professional Development"
+        template: |
+          **Expertise Areas:** [Claimed and demonstrated expertise]
+          **Recognition:** [Awards, honors, peer recognition]
+          **Affiliations:** [Professional organizations and memberships]
+          **Publications/Work:** [Notable publications or projects]
+
+  - id: credibility_assessment
+    title: "Credibility and Track Record"
+    instruction: "Evaluate subject's credibility and reliability patterns"
+    sections:
+      - id: expertise_evaluation
+        title: "Expertise Assessment"
+        template: |
+          **Claimed Expertise:** [What subject claims to know]
+          **Demonstrated Competence:** [Evidence of actual expertise]
+          **Accuracy Record:** [Track record of accurate information]
+          **Expertise Limitations:** [Areas of weakness or gaps]
+
+      - id: reliability_patterns
+        title: "Reliability Patterns"
+        template: |
+          **Consistency:** [Consistency in statements and actions]
+          **Promise Keeping:** [Track record of following through]
+          **Error Handling:** [How mistakes are acknowledged and corrected]
+          **Transparency:** [Openness and honesty in communications]
+
+  - id: motivations_interests
+    title: "Motivations and Interests"
+    instruction: "Analyze potential motivations and conflicts of interest"
+    sections:
+      - id: financial_interests
+        title: "Financial Interests"
+        template: |
+          **Funding Sources:** [Key sources of income or funding]
+          **Business Relationships:** [Relevant business connections]
+          **Financial Incentives:** [How financial interests might influence behavior]
+          **Conflicts of Interest:** [Potential conflicts identified]
+
+      - id: ideological_motivations
+        title: "Ideological and Personal Motivations"
+        template: |
+          **Stated Beliefs:** [Publicly stated beliefs and values]
+          **Ideological Patterns:** [Consistent ideological tendencies]
+          **Personal Motivations:** [Apparent personal drivers and goals]
+          **Bias Indicators:** [Evidence of particular biases or agendas]
+
+  - id: network_relationships
+    title: "Network and Relationships"
+    instruction: "Map key relationships and associations"
+    sections:
+      - id: key_relationships
+        title: "Key Relationships"
+        template: |
+          **Mentors/Influences:** [Key influential relationships]
+          **Professional Network:** [Important professional connections]
+          **Institutional Affiliations:** [Organizations and institutions]
+          **Collaboration Patterns:** [Who they work with regularly]
+
+      - id: influence_assessment
+        title: "Influence and Power Assessment"
+        template: |
+          **Sources of Influence:** [Where influence comes from]
+          **Network Reach:** [Scope of influence network]
+          **Power Dynamics:** [Role in relevant power structures]
+          **Influence Patterns:** [How influence is exercised]
+
+  - id: integrity_evaluation
+    title: "Integrity Assessment"
+    instruction: "Evaluate integrity patterns and ethical behavior"
+    sections:
+      - id: integrity_indicators
+        title: "Integrity Indicators"
+        template: |
+          **Ethical Behavior:** [Examples of ethical decision-making]
+          **Transparency:** [Openness in decision-making and disclosure]
+          **Accountability:** [Taking responsibility for actions and mistakes]
+          **Consistency:** [Alignment between stated values and actions]
+
+      - id: integrity_concerns
+        title: "Integrity Concerns"
+        template: |
+          **Ethical Red Flags:** [Concerning ethical behavior patterns]
+          **Inconsistencies:** [Gaps between words and actions]
+          **Transparency Issues:** [Areas of concerning secrecy or obfuscation]
+          **Accountability Gaps:** [Patterns of avoiding responsibility]
+
+  - id: overall_assessment
+    title: "Overall Assessment"
+    instruction: "Synthesize profile findings into comprehensive evaluation"
+    sections:
+      - id: profile_summary
+        title: "Profile Summary"
+        template: |
+          **Overall Credibility:** [High/Moderate/Low with justification]
+          **Reliability Assessment:** [How reliable as a source or actor]
+          **Key Strengths:** [Most important positive characteristics]
+          **Key Concerns:** [Most important concerns or limitations]
+
+      - id: recommendations
+        title: "Recommendations"
+        template: |
+          **Trust Level:** [Appropriate level of trust]
+          **Verification Needs:** [What should be verified when relying on subject]
+          **Monitoring:** [What to watch for in future interactions]
+          **Context Considerations:** [Important contextual factors]

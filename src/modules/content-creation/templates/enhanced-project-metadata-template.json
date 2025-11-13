@@ -1,0 +1,52 @@
+{
+  "$schema": "enhanced-project-metadata-schema",
+  "name": "",
+  "created": "",
+  "status": "active",
+  "description": "",
+  "references_count": 0,
+  "analyses_completed": [],
+  "lifecycle_management": {
+    "status_options": ["active", "review", "completed", "archived"],
+    "current_status": "active",
+    "lifecycle_history": [
+      {
+        "status": "active",
+        "changed_date": "",
+        "changed_by": "",
+        "reason": "Project initialization",
+        "previous_status": null
+      }
+    ],
+    "archive_eligible": false,
+    "archive_readiness": {
+      "completed_research": false,
+      "pending_analyses": 0,
+      "cross_project_dependencies": 0,
+      "collaboration_status": "inactive"
+    },
+    "lifecycle_locked": false,
+    "last_activity": ""
+  },
+  "archive_info": {
+    "archive_date": null,
+    "archive_location": null,
+    "restoration_count": 0,
+    "last_restored": null,
+    "archive_reason": null
+  },
+  "cross_project_relationships": {
+    "has_relationships": false,
+    "relationship_count": 0,
+    "collaboration_spaces": [],
+    "dependency_status": "independent"
+  },
+  "enhanced_metadata": {
+    "project_size_bytes": 0,
+    "last_analysis_date": null,
+    "research_domain": "",
+    "tags": [],
+    "priority": "normal",
+    "estimated_completion": null
+  }
+}
