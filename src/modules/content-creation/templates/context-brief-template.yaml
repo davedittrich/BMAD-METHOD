@@ -1,0 +1,182 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: context-brief-template
+  name: Context Brief Template
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/context-brief-{{subject_name}}.md
+    title: "Context Brief: {{subject_name}}"
+
+workflow:
+  mode: interactive
+  elicitation: advanced-elicitation
+
+sections:
+  - id: executive_summary
+    title: Executive Summary
+    instruction: High-level overview of subject and key contextual factors
+    template: |
+      # {{subject_name}} - Context Brief
+
+      **Analysis Scope:** {{analysis_scope}}
+
+      **Date:** {{current_date}}
+
+      ## Executive Summary
+
+      {{key_findings}}
+
+      **Relevance:** {{relevance_statement}}
+  - id: historical_background
+    title: Historical Background
+    instruction: Historical development and evolution of subject
+    template: |
+      ## Historical Background
+
+      ### Timeline and Development
+      {{origin_timeline}}
+
+      ### Evolution Over Time
+      {{evolution_summary}}
+
+      ### Historical Context
+      {{historical_context}}
+
+      {{#if historical_precedents}}
+      ### Historical Precedents
+      {{historical_precedents}}
+      {{/if}}
+  - id: current_situation
+    title: Current Situation
+    instruction: Present state and immediate circumstances
+    template: |
+      ## Current Situation
+
+      ### Current Status
+      {{current_status}}
+
+      ### Active Influences
+      {{active_factors}}
+
+      ### Recent Developments
+      {{recent_developments}}
+
+      ### Immediate Context
+      {{immediate_context}}
+  - id: stakeholder_landscape
+    title: Stakeholder Landscape
+    instruction: Key parties with interest or influence in the subject
+    template: |
+      ## Stakeholder Landscape
+
+      ### Primary Stakeholders
+      {{primary_stakeholders}}
+
+      {{#if secondary_stakeholders}}
+      ### Secondary Stakeholders
+      {{secondary_stakeholders}}
+      {{/if}}
+
+      ### Power Dynamics
+      {{power_dynamics}}
+
+      {{#if conflicting_interests}}
+      ### Conflicting Interests
+      {{conflicting_interests}}
+      {{/if}}
+  - id: environmental_factors
+    title: Environmental Factors
+    instruction: External conditions and influences affecting the subject
+    template: |
+      ## Environmental Factors
+
+      {{#if political_context}}
+      ### Political Context
+      {{political_context}}
+      {{/if}}
+
+      {{#if economic_factors}}
+      ### Economic Factors
+      {{economic_factors}}
+      {{/if}}
+
+      {{#if social_cultural_context}}
+      ### Social and Cultural Context
+      {{social_cultural_context}}
+      {{/if}}
+
+      {{#if technological_factors}}
+      ### Technological Factors
+      {{technological_factors}}
+      {{/if}}
+
+      {{#if regulatory_environment}}
+      ### Regulatory Environment
+      {{regulatory_environment}}
+      {{/if}}
+  - id: critical_issues
+    title: Critical Issues and Challenges
+    instruction: Key problems, controversies, and areas of concern
+    template: |
+      ## Critical Issues and Challenges
+
+      ### Primary Challenges
+      {{primary_challenges}}
+
+      {{#if controversy_areas}}
+      ### Areas of Controversy
+      {{controversy_areas}}
+      {{/if}}
+
+      ### Risk Factors
+      {{risk_factors}}
+
+      {{#if uncertainty_areas}}
+      ### Areas of Uncertainty
+      {{uncertain_areas}}
+      {{/if}}
+  - id: information_landscape
+    title: Information Landscape
+    instruction: Sources, quality, and gaps in available information
+    template: |
+      ## Information Landscape
+
+      ### Primary Sources
+      {{primary_sources}}
+
+      ### Information Gaps
+      {{information_gaps}}
+
+      {{#if conflicting_accounts}}
+      ### Conflicting Accounts
+      {{conflicting_accounts}}
+      {{/if}}
+
+      ### Source Reliability Assessment
+      {{source_reliability}}
+  - id: implications_outlook
+    title: Implications and Outlook
+    instruction: Consequences, trends, and future considerations
+    template: |
+      ## Implications and Outlook
+
+      ### Immediate Implications
+      {{immediate_implications}}
+
+      {{#if long_term_implications}}
+      ### Long-term Implications
+      {{long_term_implications}}
+      {{/if}}
+
+      ### Trend Analysis
+      {{trend_analysis}}
+
+      {{#if future_scenarios}}
+      ### Future Scenarios
+      {{future_scenarios}}
+      {{/if}}
+
+      ---
+
+      *Generated using BMAD Context Brief Template*

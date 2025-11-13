@@ -1,0 +1,33 @@
+{
+  "$schema": "relationships-config-schema",
+  "project_links": [
+    {
+      "target_project": "",
+      "relationship_type": "dependency|reference|collaboration|successor|parent|child",
+      "relationship_id": "",
+      "link_created": "",
+      "link_purpose": "",
+      "link_strength": "weak|moderate|strong|critical",
+      "dependency_order": 0,
+      "collaboration_status": "active|inactive|completed|archived",
+      "bidirectional": true,
+      "metadata": {
+        "created_by": "",
+        "workflow_integration": false,
+        "shared_resources": false,
+        "collaboration_features": false
+      }
+    }
+  ],
+  "relationship_health": {
+    "last_validated": "",
+    "validation_status": "healthy|warnings|critical|broken",
+    "validation_notes": "",
+    "broken_references": []
+  },
+  "collaboration_metadata": {
+    "active_collaborations": [],
+    "shared_annotations": [],
+    "collaborative_spaces": []
+  }
+}

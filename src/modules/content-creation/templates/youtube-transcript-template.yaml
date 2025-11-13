@@ -1,0 +1,35 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: youtube-transcript-template
+  name: YouTube Transcript
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/youtube-transcript-{{content_id}}.md
+    title: "YouTube Transcript: {{content_id}}"
+
+workflow:
+  mode: interactive
+  elicitation: advanced-elicitation
+
+sections:
+  - id: source-identification
+    title: SOURCE
+    template: |
+      - **Title:** {{content_title}}
+      - **ID:** {{content_id}}
+      - **Length:** {{content_length}}
+      - **URL:** {{content_url}}
+      - **Published Date:** {{content_publish_date}}
+
+  - id: transcript_content
+    title: "Transcript Content"
+    instruction: "Write the complete transcript with timing and speaker name (if available)"
+    template: |
+      **Transcript:**
+
+      [TRANSCRIPT]
+
+      ---
+
+      *Generated using BMAD Historical Timeline Template*

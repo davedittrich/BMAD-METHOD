@@ -1,0 +1,45 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: research-brief-template
+  name: Research Brief Template
+  version: 1.0
+  output:
+    format: markdown
+    filename: research-brief.md
+    title: "Research Brief"
+
+workflow:
+  mode: incremental
+  elicit: true
+  iterative: true
+
+sections:
+  - id: topic_overview
+    title: Topic Overview
+    instruction: |
+      Define the research topic clearly and concisely. Include why this topic is important and timely.
+
+  - id: research_questions
+    title: Key Research Questions
+    instruction: |
+      List 3-5 specific questions this research aims to answer. Make them focused and investigable.
+
+  - id: source_strategy
+    title: Source Strategy
+    instruction: |
+      Identify types of sources needed (primary, secondary, expert interviews, etc.) and specific sources to target.
+
+  - id: methodology
+    title: Research Methodology
+    instruction: |
+      Outline the research approach - how will you gather, verify, and analyze information?
+
+  - id: timeline
+    title: Research Timeline
+    instruction: |
+      Create a realistic timeline with milestones for different research phases.
+
+  - id: potential_challenges
+    title: Potential Challenges
+    instruction: |
+      Anticipate difficulties in research and plan mitigation strategies.

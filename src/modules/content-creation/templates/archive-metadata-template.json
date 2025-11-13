@@ -1,0 +1,64 @@
+{
+  "$schema": "archive-metadata-schema",
+  "archive_info": {
+    "project_name": "",
+    "archive_date": "",
+    "archive_reason": "completed|manual_archive|storage_optimization|project_cleanup",
+    "original_location": "",
+    "archive_status": "healthy|degraded|corrupted",
+    "restoration_count": 0,
+    "last_accessed": "",
+    "preserve_relationships": true,
+    "archive_size_bytes": 0,
+    "integrity_hash": ""
+  },
+  "lifecycle_history": [
+    {
+      "status": "active|review|completed|archived",
+      "changed_date": "",
+      "changed_by": "",
+      "reason": "",
+      "previous_status": ""
+    }
+  ],
+  "preserved_components": {
+    "references": {
+      "count": 0,
+      "total_size_bytes": 0,
+      "file_types": []
+    },
+    "analyses": {
+      "count": 0,
+      "total_size_bytes": 0,
+      "analysis_types": []
+    },
+    "drafts": {
+      "count": 0,
+      "total_size_bytes": 0,
+      "draft_types": []
+    },
+    "config": {
+      "project_metadata": true,
+      "relationships": true,
+      "cross_references": true
+    }
+  },
+  "cross_project_relationships": {
+    "preserved_links": [],
+    "updated_references": [],
+    "collaboration_count": 0
+  },
+  "restoration_info": {
+    "can_restore": true,
+    "restoration_conflicts": [],
+    "restoration_requirements": [],
+    "last_validation": ""
+  },
+  "search_metadata": {
+    "keywords": [],
+    "categories": [],
+    "research_domains": [],
+    "indexed": true,
+    "searchable_content": ""
+  }
+}

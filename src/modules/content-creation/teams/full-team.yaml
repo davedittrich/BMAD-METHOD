@@ -1,0 +1,21 @@
+# <!-- Powered by BMAD™ Core -->
+bundle:
+  name: Full Content Creation Team
+  icon: 📰
+  description: Complete content creation team including all specialized sub-teams for journalism, social media, and research-driven content
+agents:
+  - bmad-orchestrator
+  - archival-researcher
+  - subject-analyst
+  - fact-checker
+  - argument-analyst
+  - audience-engagement-manager
+  - screenwriter
+  - distribution-manager
+  - style-analyst
+  - editor
+workflows:
+  - article-research-to-publish
+  - youtube-video-production
+  - response-journalism
+  - social-media-content-series

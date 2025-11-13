@@ -1,0 +1,230 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: trend-analysis-template
+  name: Trend Analysis Template
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/trend-analysis-{{analysis_subject}}.md
+    title: "Trend Analysis: {{analysis_subject}}"
+
+workflow:
+  mode: interactive
+  elicitation: advanced-elicitation
+
+sections:
+  - id: executive_summary
+    title: Executive Summary
+    instruction: Overview of key trends and their significance
+    template: |
+      # Trend Analysis: {{analysis_subject}}
+
+      **Analysis Period:** {{analysis_period}}
+
+      **Date of Analysis:** {{current_date}}
+
+      ## Executive Summary
+
+      {{key_trends_summary}}
+
+      **Significance:** {{trend_significance}}
+
+      **Confidence Level:** {{confidence_level}}
+  - id: methodology
+    title: Analysis Methodology
+    instruction: Methods and data sources used for trend identification
+    template: |
+      ## Methodology
+
+      ### Data and Methods
+      **Data Sources:** {{data_sources}}
+
+      **Analysis Methods:** {{analysis_methods}}
+
+      **Time Period:** {{time_period_selection}}
+
+      **Measurement Criteria:** {{measurement_criteria}}
+
+      **Limitations:** {{methodology_limitations}}
+  - id: baseline_establishment
+    title: Baseline and Historical Context
+    instruction: Foundation period and historical reference points
+    template: |
+      ## Baseline and Historical Context
+
+      **Baseline Period:** {{baseline_period}}
+
+      **Baseline Conditions:** {{baseline_conditions}}
+
+      **Contextual Factors:** {{contextual_factors}}
+
+      {{#if historical_precedents}}
+      **Historical Precedents:** {{historical_precedents}}
+      {{/if}}
+  - id: primary_trends
+    title: Primary Trends Identified
+    instruction: Main directional patterns and their characteristics
+    template: |
+      ## Primary Trends Identified
+
+      ### Trend 1
+      {{trend_one}}
+
+      **Supporting Evidence:** {{trend_one_evidence}}
+
+      {{#if trend_two}}
+      ### Trend 2
+      {{trend_two}}
+
+      **Supporting Evidence:** {{trend_two_evidence}}
+      {{/if}}
+
+      {{#if trend_three}}
+      ### Trend 3
+      {{trend_three}}
+
+      **Supporting Evidence:** {{trend_three_evidence}}
+      {{/if}}
+  - id: trend_dynamics
+    title: Trend Dynamics and Relationships
+    instruction: How trends interact, accelerate, or influence each other
+    template: |
+      ## Trend Dynamics and Relationships
+
+      ### Trend Interactions
+      {{trend_interactions}}
+
+      ### Acceleration Factors
+      {{acceleration_factors}}
+
+      ### Deceleration Factors
+      {{deceleration_factors}}
+
+      {{#if cyclical_patterns}}
+      ### Cyclical Patterns
+      {{cyclical_patterns}}
+      {{/if}}
+  - id: driving_forces
+    title: Driving Forces and Influences
+    instruction: Underlying causes and factors driving the observed trends
+    template: |
+      ## Driving Forces and Influences
+
+      ### Primary Drivers
+      {{primary_drivers}}
+
+      ### External Forces
+      {{external_forces}}
+
+      ### Internal Dynamics
+      {{internal_dynamics}}
+
+      {{#if secondary_influences}}
+      ### Secondary Influences
+      {{secondary_influences}}
+      {{/if}}
+  - id: quantitative_analysis
+    title: Quantitative Analysis
+    instruction: Statistical measures and numerical trend characterization
+    template: |
+      ## Quantitative Analysis
+
+      ### Rate of Change
+      {{rate_of_change}}
+
+      **Statistical Significance:** {{statistical_significance}}
+
+      ### Variability Measures
+      {{variability_measures}}
+
+      {{#if correlation_analysis}}
+      ### Correlation Analysis
+      {{correlation_analysis}}
+      {{/if}}
+  - id: inflection_points
+    title: Inflection Points and Discontinuities
+    instruction: Points where trends changed direction or intensity
+    template: |
+      ## Inflection Points and Discontinuities
+
+      ### Major Inflection Points
+      {{major_inflections}}
+
+      **Causes:** {{inflection_causes}}
+
+      {{#if trend_reversals}}
+      ### Trend Reversals
+      {{trend_reversals}}
+      {{/if}}
+
+      {{#if discontinuities}}
+      ### Discontinuities
+      {{discontinuities}}
+      {{/if}}
+  - id: comparative_analysis
+    title: Comparative Analysis
+    instruction: How these trends compare to similar patterns elsewhere
+    template: |
+      ## Comparative Analysis
+
+      {{#if peer_comparisons}}
+      ### Peer Comparisons
+      {{peer_comparisons}}
+      {{/if}}
+
+      {{#if industry_benchmarks}}
+      ### Industry Benchmarks
+      {{industry_benchmarks}}
+      {{/if}}
+
+      {{#if geographic_variations}}
+      ### Geographic Variations
+      {{geographic_variations}}
+      {{/if}}
+
+      {{#if temporal_comparisons}}
+      ### Temporal Comparisons
+      {{temporal_comparisons}}
+      {{/if}}
+  - id: future_projections
+    title: Future Projections
+    instruction: Potential future development of trends
+    template: |
+      ## Future Projections
+
+      ### Short-term Projection (6-12 months)
+      {{short_term_projection}}
+
+      ### Medium-term Projection (1-3 years)
+      {{medium_term_projection}}
+
+      {{#if long_term_projection}}
+      ### Long-term Projection (5+ years)
+      {{long_term_projection}}
+      {{/if}}
+
+      **Projection Confidence:** {{projection_confidence}}
+
+      ### Key Uncertainties
+      {{key_uncertainties}}
+  - id: implications_recommendations
+    title: Implications and Recommendations
+    instruction: What the trends mean and suggested actions
+    template: |
+      ## Implications and Recommendations
+
+      ### Strategic Implications
+      {{strategic_implications}}
+
+      ### Risk Assessment
+      {{risk_assessment}}
+
+      ### Opportunity Identification
+      {{opportunity_identification}}
+
+      ### Action Recommendations
+      {{action_recommendations}}
+
+      ---
+
+      *Generated using BMAD Trend Analysis Template*

@@ -1,0 +1,45 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: style-guide-template
+  name: Personal Writing Style Guide
+  version: 1.0
+  output:
+    format: markdown
+    filename: writing-style-guide.md
+    title: "Personal Writing Style Guide"
+
+workflow:
+  mode: incremental
+  elicit: true
+  iterative: true
+
+sections:
+  - id: voice_characteristics
+    title: Voice Characteristics
+    instruction: |
+      Analyze and document the writer's voice patterns - formal/casual, direct/nuanced, authoritative/conversational.
+
+  - id: sentence_structure
+    title: Sentence Structure Patterns
+    instruction: |
+      Document preferred sentence lengths, complexity, and variety patterns.
+
+  - id: vocabulary_preferences
+    title: Vocabulary and Word Choice
+    instruction: |
+      Identify preferred terminology, technical language level, and characteristic phrases.
+
+  - id: argumentation_style
+    title: Argumentation and Logic Style
+    instruction: |
+      Document how the writer typically presents evidence, structures arguments, and handles counterpoints.
+
+  - id: transition_patterns
+    title: Transition and Flow Patterns
+    instruction: |
+      Identify how the writer connects ideas and moves between topics.
+
+  - id: platform_adaptations
+    title: Platform-Specific Adaptations
+    instruction: |
+      Note how style varies across different platforms (articles, social media, videos, etc.).

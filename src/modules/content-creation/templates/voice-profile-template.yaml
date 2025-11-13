@@ -1,0 +1,173 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: voice-profile-report
+  name: Voice Profile Report
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/voice-profile-{{subject_name}}.md
+    title: "Voice Profile Report: {{subject_name}}"
+
+workflow:
+  mode: interactive
+  elicitation: advanced-elicitation
+
+sections:
+  - id: executive_summary
+    title: "Executive Summary"
+    instruction: "Provide overview of voice pattern analysis"
+    sections:
+      - id: analysis_overview
+        title: "Analysis Overview"
+        template: |
+          **Subject:** {{subject_name}}
+          **Analysis Purpose:** {{analysis_purpose}}
+          **Analysis Date:** [Date]
+          **Sample Size:** [Number and type of writing samples analyzed]
+
+      - id: key_voice_characteristics
+        title: "Key Voice Characteristics"
+        template: |
+          **Dominant Voice Traits:** [Most distinctive characteristics]
+          **Consistency Level:** [How consistent the voice is across samples]
+          **Unique Identifiers:** [Most distinctive markers for identification]
+
+  - id: linguistic_patterns
+    title: "Linguistic Patterns"
+    instruction: "Analyze core linguistic characteristics and patterns"
+    sections:
+      - id: sentence_structure
+        title: "Sentence Structure Patterns"
+        template: |
+          **Average Sentence Length:** [Typical sentence length patterns]
+          **Sentence Complexity:** [Simple, compound, complex sentence preferences]
+          **Punctuation Habits:** [Distinctive punctuation usage patterns]
+          **Paragraph Structure:** [Typical paragraph organization and length]
+
+      - id: vocabulary_patterns
+        title: "Vocabulary and Word Choice"
+        template: |
+          **Vocabulary Level:** [Sophistication and complexity of word choices]
+          **Specialized Terms:** [Use of technical, professional, or domain-specific language]
+          **Colloquialisms:** [Use of informal language, slang, or regional expressions]
+          **Recurring Phrases:** [Frequently used phrases or expressions]
+
+  - id: stylistic_elements
+    title: "Stylistic Elements"
+    instruction: "Identify distinctive style characteristics"
+    sections:
+      - id: tone_register
+        title: "Tone and Register"
+        template: |
+          **Primary Tone:** [Dominant emotional tone (formal, casual, authoritative, etc.)]
+          **Tone Consistency:** [How consistent tone is across different contexts]
+          **Emotional Range:** [Range of emotions expressed in writing]
+          **Register Adaptation:** [How writing style adapts to different audiences]
+
+      - id: rhetorical_devices
+        title: "Rhetorical Devices and Techniques"
+        template: |
+          **Persuasive Techniques:** [Common persuasive strategies used]
+          **Humor Usage:** [Use of humor, sarcasm, or wit]
+          **Metaphors/Analogies:** [Patterns in figurative language use]
+          **Questions and Engagement:** [Use of rhetorical questions or direct address]
+
+  - id: structural_preferences
+    title: "Structural Preferences"
+    instruction: "Analyze organizational and formatting patterns"
+    sections:
+      - id: organization_patterns
+        title: "Organization and Flow"
+        template: |
+          **Introduction Style:** [How content typically begins]
+          **Transition Methods:** [How ideas are connected and flow]
+          **Conclusion Patterns:** [How content typically ends]
+          **Logical Structure:** [Preferred organizational patterns]
+
+      - id: formatting_habits
+        title: "Formatting and Presentation"
+        template: |
+          **Header Usage:** [Use of headers, subheaders, formatting]
+          **List Preferences:** [Use of bullet points, numbered lists]
+          **Emphasis Methods:** [Use of bold, italics, capitalization for emphasis]
+          **Visual Organization:** [Spacing, indentation, visual structure habits]
+
+  - id: content_patterns
+    title: "Content Patterns"
+    instruction: "Analyze thematic and perspective patterns"
+    sections:
+      - id: thematic_preferences
+        title: "Thematic Preferences"
+        template: |
+          **Recurring Themes:** [Topics or themes frequently addressed]
+          **Interest Areas:** [Apparent areas of expertise or interest]
+          **Value Expressions:** [Values or principles frequently expressed]
+          **Perspective Consistency:** [Consistency of viewpoint and perspective]
+
+      - id: reference_patterns
+        title: "Reference and Citation Patterns"
+        template: |
+          **Source Usage:** [How sources and references are typically used]
+          **Citation Style:** [Formal vs. informal citation patterns]
+          **Authority Appeals:** [References to authorities or experts]
+          **Example Usage:** [How examples and illustrations are used]
+
+  - id: technical_elements
+    title: "Technical Writing Elements"
+    instruction: "Analyze technical aspects of writing"
+    sections:
+      - id: grammar_syntax
+        title: "Grammar and Syntax"
+        template: |
+          **Grammar Accuracy:** [Overall grammar accuracy patterns]
+          **Syntax Preferences:** [Preferred sentence constructions]
+          **Common Errors:** [Any recurring error patterns]
+          **Style Guide Adherence:** [Consistency with style guides]
+
+      - id: mechanical_elements
+        title: "Mechanical Elements"
+        template: |
+          **Spelling Patterns:** [Spelling accuracy and regional variations]
+          **Capitalization:** [Capitalization patterns and consistency]
+          **Number Usage:** [How numbers are expressed (spelled out vs. numerals)]
+          **Abbreviation Usage:** [Use of abbreviations, acronyms, contractions]
+
+  - id: voice_evolution
+    title: "Voice Evolution Analysis"
+    instruction: "Track changes in voice over time if applicable"
+    sections:
+      - id: temporal_analysis
+        title: "Voice Changes Over Time"
+        template: |
+          **Evolution Patterns:** [How voice has changed over time periods]
+          **Consistent Elements:** [Elements that remain consistent across time]
+          **Adaptation Patterns:** [How voice adapts to different contexts or audiences]
+          **Development Indicators:** [Signs of skill development or changes]
+
+      - id: contextual_variation
+        title: "Contextual Voice Variation"
+        template: |
+          **Platform Differences:** [Voice differences across platforms/media]
+          **Audience Adaptation:** [How voice changes for different audiences]
+          **Topic Variation:** [Voice changes based on subject matter]
+          **Formality Spectrum:** [Range from most formal to most casual]
+
+  - id: identification_profile
+    title: "Voice Identification Profile"
+    instruction: "Create distinctive fingerprint for identification purposes"
+    sections:
+      - id: unique_markers
+        title: "Unique Identifying Markers"
+        template: |
+          **Signature Phrases:** [Most distinctive phrases or expressions]
+          **Structural Signatures:** [Unique organizational or formatting patterns]
+          **Stylistic Fingerprints:** [Most distinctive stylistic elements]
+          **Technical Markers:** [Unique technical or mechanical patterns]
+
+      - id: verification_checklist
+        title: "Voice Verification Checklist"
+        template: |
+          **Primary Identifiers:** [Top 3-5 most reliable identifying characteristics]
+          **Secondary Markers:** [Supporting characteristics for verification]
+          **Red Flags:** [Elements that would suggest different authorship]
+          **Confidence Indicators:** [Factors that increase/decrease identification confidence]

@@ -1,0 +1,193 @@
+# <!-- Powered by BMAD™ Core -->
+template:
+  id: writing-sample-analysis-report
+  name: Writing Sample Analysis Report
+  version: 1.0
+  output:
+    format: markdown
+    filename: docs/writing-sample-analysis-{{sample_description}}.md
+    title: "Writing Sample Analysis Report: {{sample_description}}"
+
+workflow:
+  mode: interactive
+  elicitation: advanced-elicitation
+
+sections:
+  - id: executive_summary
+    title: "Executive Summary"
+    instruction: "Provide overview of writing sample analysis"
+    sections:
+      - id: analysis_overview
+        title: "Analysis Overview"
+        template: |
+          **Sample:** {{sample_description}}
+          **Analysis Purpose:** {{analysis_purpose}}
+          **Analysis Date:** [Date]
+          **Sample Characteristics:** [Brief overview of key characteristics]
+
+      - id: key_findings
+        title: "Key Analysis Findings"
+        template: |
+          **Writing Quality:** [Overall assessment of writing quality]
+          **Distinctive Features:** [Most notable characteristics]
+          **Analysis Confidence:** [How confident in the analysis results]
+
+  - id: content_analysis
+    title: "Content Analysis"
+    instruction: "Analyze the substantive content and messaging"
+    sections:
+      - id: message_clarity
+        title: "Message and Clarity"
+        template: |
+          **Main Message:** [Primary message or purpose of the writing]
+          **Clarity Level:** [How clearly the message is communicated]
+          **Audience Targeting:** [Apparent intended audience]
+          **Message Effectiveness:** [How effectively the message is conveyed]
+
+      - id: argument_structure
+        title: "Argument Structure"
+        template: |
+          **Logical Flow:** [Quality of logical organization and flow]
+          **Evidence Usage:** [How evidence and support are used]
+          **Persuasive Elements:** [Persuasive techniques and effectiveness]
+          **Counterargument Handling:** [How opposing views are addressed]
+
+  - id: style_analysis
+    title: "Style Analysis"
+    instruction: "Analyze writing style and voice characteristics"
+    sections:
+      - id: voice_tone
+        title: "Voice and Tone"
+        template: |
+          **Voice Character:** [Personality and character of the writing voice]
+          **Tone Consistency:** [Consistency of tone throughout]
+          **Emotional Register:** [Emotional level and appropriateness]
+          **Authority Level:** [Perceived authority and credibility]
+
+      - id: language_choices
+        title: "Language and Word Choice"
+        template: |
+          **Vocabulary Level:** [Sophistication and appropriateness of vocabulary]
+          **Language Precision:** [Precision and clarity of language use]
+          **Stylistic Devices:** [Use of metaphor, analogy, and other devices]
+          **Cultural References:** [Cultural, professional, or specialized references]
+
+  - id: technical_analysis
+    title: "Technical Analysis"
+    instruction: "Evaluate technical writing aspects"
+    sections:
+      - id: grammar_mechanics
+        title: "Grammar and Mechanics"
+        template: |
+          **Grammar Accuracy:** [Overall grammar correctness]
+          **Punctuation Usage:** [Accuracy and effectiveness of punctuation]
+          **Spelling Accuracy:** [Spelling correctness and patterns]
+          **Style Consistency:** [Consistency in mechanical elements]
+
+      - id: sentence_structure
+        title: "Sentence and Paragraph Structure"
+        template: |
+          **Sentence Variety:** [Variety and complexity of sentence structures]
+          **Sentence Length:** [Appropriateness of sentence length patterns]
+          **Paragraph Development:** [Quality of paragraph organization]
+          **Transition Quality:** [Effectiveness of transitions between ideas]
+
+  - id: rhetorical_analysis
+    title: "Rhetorical Analysis"
+    instruction: "Analyze rhetorical effectiveness and techniques"
+    sections:
+      - id: rhetorical_strategies
+        title: "Rhetorical Strategies"
+        template: |
+          **Persuasive Appeals:** [Use of ethos, pathos, logos]
+          **Rhetorical Questions:** [Effectiveness of rhetorical questions]
+          **Repetition/Emphasis:** [Use of repetition and emphasis techniques]
+          **Analogy/Metaphor:** [Effectiveness of figurative language]
+
+      - id: audience_engagement
+        title: "Audience Engagement"
+        template: |
+          **Reader Connection:** [How well the writing connects with readers]
+          **Engagement Techniques:** [Techniques used to maintain interest]
+          **Accessibility:** [How accessible the writing is to the intended audience]
+          **Call to Action:** [Effectiveness of any calls to action]
+
+  - id: structural_analysis
+    title: "Structural Analysis"
+    instruction: "Analyze organizational and structural elements"
+    sections:
+      - id: organization_pattern
+        title: "Organization Pattern"
+        template: |
+          **Overall Structure:** [How the piece is organized overall]
+          **Introduction Effectiveness:** [Quality of opening and introduction]
+          **Body Development:** [How the main content is developed]
+          **Conclusion Strength:** [Effectiveness of conclusion or ending]
+
+      - id: formatting_presentation
+        title: "Formatting and Presentation"
+        template: |
+          **Visual Organization:** [Use of headers, spacing, formatting]
+          **Readability Features:** [Elements that aid or hinder readability]
+          **Professional Presentation:** [Overall professional appearance]
+          **Medium Appropriateness:** [Suitability for the intended medium]
+
+  - id: contextual_analysis
+    title: "Contextual Analysis"
+    instruction: "Consider contextual factors affecting the writing"
+    sections:
+      - id: purpose_alignment
+        title: "Purpose Alignment"
+        template: |
+          **Purpose Achievement:** [How well the writing achieves its purpose]
+          **Genre Conventions:** [Adherence to relevant genre conventions]
+          **Context Appropriateness:** [Suitability for the context and situation]
+          **Stakeholder Considerations:** [Consideration of different stakeholders]
+
+      - id: situational_factors
+        title: "Situational Factors"
+        template: |
+          **Time Constraints:** [Evidence of time pressure or rushed writing]
+          **Resource Limitations:** [Any apparent resource or information limitations]
+          **External Pressures:** [Signs of external pressures or constraints]
+          **Collaborative Elements:** [Evidence of collaboration or multiple contributors]
+
+  - id: comparative_analysis
+    title: "Comparative Analysis"
+    instruction: "Compare with benchmarks or other samples if applicable"
+    sections:
+      - id: quality_benchmarking
+        title: "Quality Benchmarking"
+        template: |
+          **Industry Standards:** [Comparison to industry or field standards]
+          **Peer Comparison:** [How it compares to similar writers or content]
+          **Historical Comparison:** [Comparison to the author's previous work]
+          **Best Practice Alignment:** [Alignment with writing best practices]
+
+      - id: distinctive_elements
+        title: "Distinctive Elements"
+        template: |
+          **Unique Characteristics:** [What makes this writing distinctive]
+          **Signature Elements:** [Elements that could identify the author]
+          **Innovation/Creativity:** [Creative or innovative elements present]
+          **Memorability Factors:** [What makes this writing memorable]
+
+  - id: overall_assessment
+    title: "Overall Assessment"
+    instruction: "Synthesize findings into comprehensive evaluation"
+    sections:
+      - id: quality_rating
+        title: "Quality Rating"
+        template: |
+          **Overall Quality:** [High/Moderate/Low with specific justification]
+          **Strengths:** [Primary strengths identified in the analysis]
+          **Weaknesses:** [Primary weaknesses or areas for improvement]
+          **Effectiveness:** [How effective the writing is for its purpose]
+
+      - id: recommendations
+        title: "Recommendations"
+        template: |
+          **Improvement Areas:** [Specific areas where improvement is needed]
+          **Strengths to Maintain:** [Strengths that should be preserved]
+          **Contextual Considerations:** [Important context for interpreting the analysis]
+          **Future Analysis:** [Recommendations for additional analysis if needed]
