@@ -12,6 +12,7 @@ The Content Creation Module is a comprehensive BMAD v6 module providing a comple
 **Purpose:** Enable creators to produce text-based articles, video content, and multi-platform promotional campaigns with built-in quality assurance, fact-checking, and platform optimization.
 
 **Key Responsibilities:**
+
 - Research and analysis with comprehensive source management
 - Content creation guided by integrity and argument quality frameworks
 - Style analysis and application for consistent voice
@@ -20,6 +21,7 @@ The Content Creation Module is a comprehensive BMAD v6 module providing a comple
 - Project-based organization with lifecycle management
 
 **Integration Points:**
+
 - Documentary Film Crew metaphor with 17 specialized agents
 - 8 comprehensive workflows covering end-to-end content lifecycle
 - 43 granular tasks supporting integrity, argument quality, research, and project management
@@ -52,13 +54,16 @@ src/modules/content-creation/
 **Last Updated:** 2025-10-27
 
 **Completed Phases:**
+
 - ✅ Phase 1: MVP (Text-Based Content Pipeline)
 - ✅ Phase 2: Video & Promotion Enhancement
 
 **In Progress:**
+
 - 🔄 End-to-end testing and validation
 
 **Planned:**
+
 - 📋 Phase 3: Advanced Analysis & Automation (debate analysis, content series orchestration)
 
 ---
@@ -70,9 +75,11 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 ### Pre-Production Team (3 agents)
 
 #### 1. Archival Researcher 🗂️
+
 **Role:** Background & Historical Context Specialist
 **Expertise:** Archival research, historical analysis, trend patterns, stakeholder mapping
 **Principles:**
+
 - Context illuminates current events
 - Historical patterns inform present analysis
 - Multiple perspectives reveal fuller truth
@@ -81,9 +88,11 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Menu Commands:** research-topic, add-source, historical-timeline, trend-analysis, stakeholder-mapping, cultural-context, precedent-analysis
 
 #### 2. Subject Analyst 🎯
+
 **Role:** People & Organization Analysis Expert
 **Expertise:** Background research, credibility assessment, motivation analysis, behavioral patterns, rapid subject mastery
 **Principles:**
+
 - Actions reveal true character better than words
 - Past behavior predicts future patterns
 - Documented evidence trumps speculation
@@ -92,10 +101,12 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Menu Commands:** analyze-subject, analyze-person, analyze-organization, assess-credibility, identify-patterns, create-outline
 
 #### 3. Fact Checker 🔎
+
 **Role:** Diligent Fact Checker
 **Expertise:** Verification, credible sourcing, misinformation detection
 **Frameworks:** Fact verification checklist, Integrity assessment
 **Principles:**
+
 - Trust, but verify
 - Every claim requires a credible source
 - Distinguish between fact and opinion
@@ -106,9 +117,11 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 ### Production Team (4 agents)
 
 #### 4. Director 🎬
+
 **Role:** Creative Content Director
 **Expertise:** Storytelling vision, production oversight, quality assurance
 **Principles:**
+
 - Story is king
 - Vision without execution is hallucination
 - Every detail matters
@@ -117,9 +130,11 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Menu Commands:** oversee-production, review-draft
 
 #### 5. Screenwriter ✍️
+
 **Role:** Video Script & Platform Content Expert
 **Expertise:** YouTube scripts, social media copy, visual storytelling, platform optimization
 **Principles:**
+
 - Show, don't tell
 - Hook viewers in first 3 seconds
 - Platform optimization drives reach
@@ -128,9 +143,11 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Menu Commands:** write-script, write-video-script, write-social-copy, optimize-hook, adapt-for-platform, revise-script
 
 #### 6. Editor ✏️
+
 **Role:** Meticulous Content Editor
 **Expertise:** Language precision, style consistency, grammar
 **Principles:**
+
 - Clarity is key
 - Consistency is crucial
 - Grammar is not a suggestion
@@ -139,9 +156,11 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Menu Commands:** edit-draft, proofread-draft
 
 #### 7. Producer 🎬
+
 **Role:** Content Producer (Primary Entry Point)
 **Expertise:** Workflow orchestration, project management
 **Principles:**
+
 - Start with a clear goal
 - Follow the process
 - Quality over quantity
@@ -152,9 +171,11 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 ### Post-Production Team (2 agents)
 
 #### 8. Distribution Manager 🚀
+
 **Role:** Platform Optimization & Distribution Expert
 **Expertise:** YouTube/Medium/TikTok algorithms, SEO, platform best practices, monetization
 **Principles:**
+
 - Each platform has unique optimization requirements
 - Algorithm changes require strategy adaptation
 - Platform-native content performs better
@@ -163,9 +184,11 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Menu Commands:** distribute-content, optimize-youtube, optimize-seo, analyze-algorithm, monetization-strategy, track-performance, platform-best-practices
 
 #### 9. Audience Engagement Manager 💬
+
 **Role:** Engagement Optimization & Community Manager
 **Expertise:** Engagement analytics, retention patterns, conversion optimization, community building
 **Principles:**
+
 - Audience psychology drives engagement decisions
 - Retention optimization requires systematic analysis
 - The audience is the heart of the community
@@ -176,10 +199,12 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 ### Specialist Team (5 agents)
 
 #### 10. Argument Analyst ⚖️
+
 **Role:** Logical Analysis & Fallacy Detection Expert
 **Framework:** T. Edward Damer's "Attacking Faulty Reasoning"
 **Expertise:** Five Criteria analysis (Structural, Relevance, Acceptability, Sufficiency, Rebuttal), fallacy identification, normal form conversion
 **Principles:**
+
 - Apply Damer's Five Criteria systematically
 - Evidence must support claims with logical connection
 - The goal is to persuade through sound reasoning
@@ -187,10 +212,12 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Menu Commands:** analyze-argument, evaluate-evidence, reframe-normal-form
 
 #### 11. Integrity Analyst 🛡️
+
 **Role:** Principled Integrity Analyst
 **Framework:** Stephen L. Carter's Integrity Model
 **Expertise:** 3-step integrity analysis (Discernment, Acting, Acknowledging), ethical issue identification, conflict of interest detection
 **Principles:**
+
 - Integrity is applying moral principles to conduct
 - Discerning what is right and wrong
 - Acting on what you have discerned, even at personal cost
@@ -199,9 +226,11 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Menu Commands:** analyze-integrity, review-sources
 
 #### 12. Fallacy Detective 🕵️
+
 **Role:** Sharp-Witted Fallacy Detective
 **Expertise:** Logical fallacy identification across 50+ fallacy types
 **Principles:**
+
 - Reasoning should be sound and valid
 - Understanding fallacies is the first step to avoiding them
 - Promote critical thinking
@@ -209,9 +238,11 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Menu Commands:** detect-fallacies, explain-fallacy
 
 #### 13. Style Analyst 🎨
+
 **Role:** Perceptive Style Analyst
 **Expertise:** Voice/tone extraction, style pattern analysis, brand alignment
 **Principles:**
+
 - Style is substance
 - Consistency builds trust
 - Voice is the heart of a brand
@@ -220,9 +251,11 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Menu Commands:** analyze-style, create-style-guide
 
 #### 14. Style Guide 📖
+
 **Role:** Living Style Guide
 **Expertise:** Brand voice consistency, style guide maintenance
 **Principles:**
+
 - Consistency is key to brand identity
 - The style guide is a living document
 - Every piece of content should reflect brand voice
@@ -232,9 +265,11 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 ### Strategic Support (2 agents)
 
 #### 15. Content Analyst 👀
+
 **Role:** Content Review & Wisdom Distillation Expert
 **Expertise:** Video analysis, insight extraction, debate analysis, quote identification
 **Principles:**
+
 - Careful listening to locate gems in extensive dialog
 - Follow conversation threads to core intent
 - Document findings for easy reuse
@@ -243,9 +278,11 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Menu Commands:** analyze-content, extract-wisdom, create-distillation-report, analyze-debate, extract-quotes, summarize-insights
 
 #### 16. Content Strategist 📊
+
 **Role:** Content Strategy & Editorial Planning Expert
 **Expertise:** Content series planning, editorial calendars, audience analysis, distribution strategy, performance measurement
 **Principles:**
+
 - Audience-first content planning
 - Platform-specific adaptation strategies
 - Data informs creative decisions
@@ -254,9 +291,11 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Menu Commands:** plan-content-series, create-editorial-calendar, develop-distribution-strategy, analyze-audience, design-performance-framework, adapt-for-platforms, plan-campaign, optimize-strategy
 
 #### 17. Research Strategist 🔍
+
 **Role:** Investigation Planning & Methodology Specialist
 **Expertise:** Research methodology design, source evaluation, investigation frameworks, triangulation strategies
 **Principles:**
+
 - Primary sources trump secondary sources
 - Multiple independent sources strengthen credibility
 - Research methodology must match content goals
@@ -271,6 +310,7 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 ### Text-Based Content Workflows (4)
 
 #### 1. research-article
+
 **Purpose:** Research and write new article from scratch
 **Complexity:** Standard
 **Steps:** 9 steps from topic to final reviewed article
@@ -279,11 +319,13 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Outputs:** research_findings, subject_analysis, outline, article_draft, edited_draft, fact_check_report, final_article
 
 **Key Features:**
+
 - Optional YouTube transcript integration
 - Complete research-to-publication pipeline
 - Multiple quality checkpoints
 
 #### 2. analyze-and-respond
+
 **Purpose:** Critical analysis applying integrity/fallacy frameworks
 **Complexity:** Complex
 **Steps:** 5 steps with iterative source addition
@@ -291,11 +333,13 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Outputs:** integrity_analysis, fallacy_analysis, final_report
 
 **Key Features:**
+
 - Iterative analysis loop (add sources → analyze → repeat)
 - Dual-framework validation
 - Comprehensive reporting
 
 #### 3. format-article
+
 **Purpose:** Platform-specific formatting
 **Complexity:** Standard
 **Steps:** 6 steps
@@ -304,6 +348,7 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Platforms:** Medium, Substack, WordPress, etc.
 
 #### 4. publish-article
+
 **Purpose:** Publish to platforms
 **Complexity:** Standard
 **Steps:** 6 steps
@@ -314,6 +359,7 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 ### Video Content Workflows (2)
 
 #### 5. create-video-assets
+
 **Purpose:** Transform content into video production kit or AI-generated video
 **Complexity:** Complex
 **Steps:** 10 steps
@@ -321,10 +367,12 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Outputs:** video_structure, storyboard, narration_script, audio_file_path, visual_assets_paths, assembly_instructions
 
 **Output Modes:**
+
 - Production Kit: Organized directory with all assets
 - AI-Generated Video: Complete rendered video file
 
 #### 6. publish-video
+
 **Purpose:** Publish video to platforms with optimization
 **Complexity:** Complex
 **Steps:** 11 steps
@@ -336,6 +384,7 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 ### Multi-Platform Workflows (2)
 
 #### 7. adapt-for-social-media
+
 **Purpose:** Transform long-form content into platform-optimized posts
 **Complexity:** Standard
 **Steps:** 13 steps
@@ -345,6 +394,7 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Platforms:** Twitter/X, LinkedIn, Instagram, Facebook, YouTube Shorts, TikTok
 
 #### 8. promote-content
+
 **Purpose:** Multi-platform promotional campaign
 **Complexity:** Standard
 **Steps:** 14 steps
@@ -352,6 +402,7 @@ The module implements a "Documentary Film Crew" metaphor with specialized agents
 **Outputs:** content_analysis, promotional_posts, post_variations, visual_recommendations, posting_schedule, engagement_strategy, tracking_analytics_plan
 
 **Features:**
+
 - A/B testing support
 - UTM parameter generation
 - Scheduling integration (Buffer, Hootsuite, manual, API)
@@ -436,6 +487,7 @@ Tasks are organized into 10 functional categories supporting the complete conten
 **execute-checklist** - Systematic validation framework (Interactive or YOLO mode)
 
 **Available Checklists:**
+
 - style-consistency-checklist - Voice/tone/language/structural consistency
 - source-credibility-checklist - Author expertise, publication standards, bias
 - historical-accuracy-checklist - Primary source verification, chronological accuracy
@@ -506,18 +558,22 @@ Any Published Content
 ### Task-to-Framework Relationships
 
 **Carter Integrity Framework Tasks:**
+
 - analyze-integrity, guide-integrity-writing, check-integrity
 - Used by: analyze-and-respond workflow, fact-checker agent knowledge
 
 **Damer Argument Framework Tasks:**
+
 - analyze-fallacies, guide-argument-construction, check-argument-quality
 - Used by: analyze-and-respond workflow, argument-analyst agent knowledge
 
 **Style Framework Tasks:**
+
 - analyze-style, apply-style, extract-voice-patterns
 - Independent task chain for voice consistency
 
 **Project Management Tasks:**
+
 - project-init → project-add-source → project-status → project-archive
 - Lifecycle: init → active use → search/switch → archive → restore
 
@@ -552,16 +608,19 @@ Research Strategist
 **Source:** Stephen L. Carter's "Integrity"
 
 **3-Step Model:**
+
 1. **Discernment** - Distinguish right from wrong
 2. **Acting/Acknowledgment** - Act on discernment, even at personal cost
 3. **Transparency** - Openly acknowledge moral basis for actions
 
 **Implementation:**
+
 - **analyze-integrity** - Analytical application (identify issues)
 - **guide-integrity-writing** - Generative application (real-time guidance)
 - **check-integrity** - QA application (pass/fail certification)
 
 **Workflow Integration:**
+
 - analyze-and-respond workflow invokes integrity-analyst agent
 - Integrity assessment checklist referenced by multiple agents
 
@@ -570,6 +629,7 @@ Research Strategist
 **Source:** T. Edward Damer's "Attacking Faulty Reasoning"
 
 **Five Criteria for Good Arguments:**
+
 1. **Structural Soundness** - Valid logical form
 2. **Relevance** - Premises relevant to conclusion
 3. **Acceptability** - Premises acceptable/credible
@@ -577,16 +637,19 @@ Research Strategist
 5. **Rebuttal Handling** - Addresses counterarguments effectively
 
 **Additional Features:**
+
 - Fallacy categorization system (50+ fallacies)
 - Argument normal form conversion
 - Code of Intellectual Conduct (12 principles)
 
 **Implementation:**
+
 - **analyze-fallacies** - Analytical application (identify fallacies)
 - **guide-argument-construction** - Generative application (real-time guidance)
 - **check-argument-quality** - QA application (pass/fail certification)
 
 **Workflow Integration:**
+
 - analyze-and-respond workflow invokes fallacy-detective agent
 - Argument structure checklist referenced by multiple agents
 
@@ -670,6 +733,7 @@ Promotion Phase
 **Storage Location:** `.bmad/projects/{project_name}/`
 
 **Project Structure:**
+
 ```
 .bmad/projects/{project_name}/
 ├── metadata.json                  # Project info, created date, status
@@ -682,11 +746,13 @@ Promotion Phase
 ```
 
 **State Persistence:**
+
 - Active project: `.bmad/config/active-project.json`
 - Project registry: `.bmad/projects/registry.json`
 - Archive: `.bmad/archives/{year}/{project_name}/`
 
 **Context-Aware Routing:**
+
 - Many tasks support optional `project` parameter
 - If active project set, automatically routes outputs to project directory
 - Cross-project search via project-search task
@@ -696,6 +762,7 @@ Promotion Phase
 **Module Output Folder:** `{output_folder}` (configured in config.yaml)
 
 **Generated Artifacts:**
+
 ```
 {output_folder}/
 ├── social-media-kits/            # adapt-for-social-media
@@ -728,6 +795,7 @@ Promotion Phase
 **Current Status:** Agents and workflows created, validation in progress
 
 **Completion Matrix:**
+
 ```
 Agents (17):
 ├── Created: ✅ 17/17 (100%)
@@ -745,17 +813,20 @@ Tasks (43):
 ### Testing Strategy
 
 **Per-Component Testing** (Planned):
+
 - Each agent tested independently
 - Each workflow validated for edge cases
 - Each task validated for input/output specs
 
 **Integration Testing** (Planned):
+
 - Full pipeline: research-article → format-article → publish-article → promote-content
 - Video pipeline: create-video-assets → publish-video → promote-content
 - Framework integration: analyze-and-respond with both integrity + fallacy checks
 - Project management: init → add sources → analyze → archive → restore
 
 **User Acceptance Testing** (Planned):
+
 - Real content creation projects
 - Diverse style examples
 - Multiple platform publishing attempts
@@ -763,12 +834,14 @@ Tasks (43):
 ### Quality Assurance Features
 
 **Built-in QA System:**
+
 - 7 specialized checklists for different validation needs
 - execute-checklist task for systematic validation
 - Dual-framework validation (Carter + Damer)
 - Multi-stage quality gates (analysis, generation, QA)
 
 **Framework Checkpoints:**
+
 - Integrity: analyze → guide → check
 - Arguments: analyze → guide → check
 - Style: analyze → apply → consistency check
@@ -804,6 +877,7 @@ Tasks (43):
 ### Future Enhancements (Phase 3)
 
 **Advanced Features:**
+
 - Thematic & argument extraction system (cross-content analysis)
 - create-content-series orchestrator (multi-part planning)
 - Full AI video generation (complete assembly)
@@ -817,12 +891,14 @@ Tasks (43):
 - Multi-language support
 
 **Additional Platform Integrations:**
+
 - Twitter/X API
 - LinkedIn API
 - WordPress API
 - Additional video platforms (Vimeo, etc.)
 
 **UX Enhancements:**
+
 - Progress tracking across workflows
 - Resource allocation and scheduling
 - Quality gate checkpoints
@@ -864,11 +940,13 @@ Tasks (43):
 ### To Extend Framework Integration
 
 **Carter Integrity Framework:**
+
 - All tasks in `tasks/` starting with `analyze-integrity`, `guide-integrity`, `check-integrity`
 - Knowledge files in `knowledge/` or workflow checklists
 - Agent knowledge references: fact-checker, integrity-analyst, subject-analyst
 
 **Damer Argument Framework:**
+
 - All tasks starting with `analyze-fallacies`, `guide-argument`, `check-argument`
 - Knowledge files in workflow checklists
 - Agent knowledge references: argument-analyst, content-analyst
@@ -876,16 +954,19 @@ Tasks (43):
 ### To Add Platform Support
 
 **For Article Publishing:**
+
 - Add platform to format-article workflow (instructions.md)
 - Add platform to publish-article workflow (instructions.md)
 - Update distribution-manager agent if special optimization needed
 
 **For Video Publishing:**
+
 - Add platform to publish-video workflow (instructions.md)
 - Add authentication flow for new platform API
 - Update distribution-manager agent for platform-specific optimization
 
 **For Social Media Adaptation:**
+
 - Add platform to adapt-for-social-media workflow (instructions.md)
 - Add content generation step in screenwriter agent invocation
 - Update distribution-manager for posting schedule recommendations
@@ -893,11 +974,13 @@ Tasks (43):
 ### To Modify Project Management
 
 **Project Structure Changes:**
+
 - Modify project-init task for new directory structure
 - Update project-status for new metadata fields
 - Test with project-archive and project-restore for data integrity
 
 **Cross-Project Features:**
+
 - Phase 3 tasks: project-link, project-collaborate, project-insights
 - Requires global index implementation
 - Deduplication logic updates
@@ -909,12 +992,14 @@ Tasks (43):
 ### Before Making Changes
 
 **Risks & Gotchas:**
+
 - Agent modifications require recompilation via BMad installer
 - Workflow changes must follow workflow.xml execution model
 - Framework task changes affect multiple agents and workflows
 - Project management changes impact data persistence and lifecycle
 
 **Pre-Change Verification Steps:**
+
 1. Read complete TODO.md for development roadmap context
 2. Check which phase feature belongs to (Phase 1/2 complete, Phase 3 planned)
 3. Identify all dependent agents, workflows, and tasks
@@ -923,6 +1008,7 @@ Tasks (43):
 6. Verify module installer configuration
 
 **Suggested Tests Before PR:**
+
 1. Run BMad installer to compile changed agents
 2. Test workflow end-to-end with sample content
 3. Verify task inputs/outputs match specifications
@@ -951,6 +1037,7 @@ Tasks (43):
 ### Code Quality Observations
 
 **Strengths:**
+
 - Comprehensive framework integration (Carter + Damer)
 - Well-organized Documentary Film Crew metaphor
 - Clear separation of concerns across agents
@@ -959,6 +1046,7 @@ Tasks (43):
 - Multi-platform support with optimization
 
 **Areas for Improvement:**
+
 - Agent compilation needed (all 17 agents)
 - Workflow validation in progress
 - Task testing incomplete
@@ -970,12 +1058,14 @@ Tasks (43):
 See `TODO.md` for comprehensive roadmap. Key items:
 
 **Immediate (Phase 2 Completion):**
+
 - Validate all 17 agents
 - Validate all 8 workflows
 - Validate all 43 tasks
 - End-to-end pipeline testing
 
 **Phase 3 (Advanced Features):**
+
 - Thematic/argument extraction system
 - create-content-series orchestrator
 - Full AI video generation
@@ -1020,6 +1110,7 @@ See `TODO.md` for comprehensive roadmap. Key items:
 ### BMM Module Integration
 
 Content Creation module complements BMM (software development):
+
 - Shares Task agent for execution
 - Compatible with workflow execution model
 - Uses same installer infrastructure
@@ -1028,6 +1119,7 @@ Content Creation module complements BMM (software development):
 ### BMB Module Integration
 
 BMB module used to create Content Creation components:
+
 - `*create-agent` for all 17 agents
 - `*create-workflow` for all 8 workflows
 - Module creation infrastructure
@@ -1035,6 +1127,7 @@ BMB module used to create Content Creation components:
 ### CIS Module Integration
 
 Creative Intelligence Suite integration potential:
+
 - Brainstorming for content topics
 - Creative thinking for promotional campaigns
 - Ideation for video concepts

@@ -26,21 +26,24 @@ All 4 required workflow files created:
 ### ✅ BMAD v6 Compliance
 
 **Standard Config Block:**
+
 ```yaml
-config_source: "{project-root}/src/modules/content-creation/config.yaml"
-output_folder: "{config_source}:output_folder"
-user_name: "{config_source}:user_name"
-communication_language: "{config_source}:communication_language"
+config_source: '{project-root}/src/modules/content-creation/config.yaml'
+output_folder: '{config_source}:output_folder'
+user_name: '{config_source}:user_name'
+communication_language: '{config_source}:communication_language'
 date: system-generated
 ```
 
 **Workflow Structure:**
+
 - ✅ Workflow structure tags properly used (`<workflow>`, `<step>`, `<action>`)
 - ✅ Step numbering sequential (0-7)
 - ✅ Variable usage aligned between workflow.yaml and instructions.md
 - ✅ Template variables aligned with expected outputs
 
 **Files Present:**
+
 - ✅ workflow.yaml exists
 - ✅ instructions.md exists
 - ✅ template.md exists (document workflow)
@@ -51,6 +54,7 @@ date: system-generated
 **Variables Defined:** 24 total
 
 **Variables Used in Instructions:**
+
 - ✅ communication_language
 - ✅ target_module_name
 - ✅ target_module_path
@@ -68,6 +72,7 @@ date: system-generated
 - ✅ date
 
 **Variables Used in Template:**
+
 - ✅ All scoring and status variables
 - ✅ All component count variables
 - ✅ All issue tracking variables
@@ -76,6 +81,7 @@ date: system-generated
 - ✅ date
 
 **Metadata Variables (Not Used in Content):**
+
 - user_name (standard config, not needed for reports)
 - document_output_language (using communication_language instead)
 - template, instructions, validation (file paths for workflow engine)
@@ -88,12 +94,14 @@ date: system-generated
 ### ✅ Integration Status
 
 **Producer Agent Menu:**
+
 - ✅ Menu entry added to `src/modules/content-creation/agents/producer.agent.yaml`
 - ✅ Trigger: `validate-module`
 - ✅ Workflow: `bmad/content-creation/workflows/validate-module`
 - ✅ Description: Clear and accurate
 
 **Documentation:**
+
 - ✅ Testing guide updated: `docs/content-creation-testing-guide.md`
 - ✅ Summary created: `docs/validate-module-workflow-summary.md`
 - ✅ TASKS file updated: `src/modules/content-creation/TASKS-2025-11-13.md`
@@ -101,12 +109,14 @@ date: system-generated
 ### ✅ Validation Capabilities
 
 **Components Validated:**
+
 - ✅ 17 Agents (configuration, metadata, persona, menu, knowledge)
 - ✅ 8 Workflows (files, config, instructions, variables, dependencies)
 - ✅ 43 Tasks (structure, framework integration, categorization)
 - ✅ 4 Integration Pipelines (text, video, social, framework)
 
 **Validation Features:**
+
 - ✅ 4 validation modes (comprehensive, quick, components-only, integration-only)
 - ✅ Configurable thresholds (80% pass, 0 critical, 10 warnings)
 - ✅ Framework integration checks (Carter 3 tasks, Damer 3 tasks)
@@ -114,6 +124,7 @@ date: system-generated
 - ✅ Dependency validation (agent references, task references)
 
 **Reporting Features:**
+
 - ✅ Main validation report with executive summary
 - ✅ Detailed component reports (agents, workflows, tasks, integration)
 - ✅ Prioritized recommendations (critical, high, medium, low)
@@ -191,14 +202,17 @@ date: system-generated
 ### First Run
 
 1. **Load Producer Agent:**
+
    ```bash
    @producer
    ```
 
 2. **Execute Comprehensive Validation:**
+
    ```bash
    *validate-module
    ```
+
    - Select mode: 1 (Comprehensive)
    - Answer integration test prompts (manual/simulated/skip)
    - Review generated reports
@@ -223,11 +237,13 @@ date: system-generated
 ### Ongoing Use
 
 **During Development:**
+
 - Quick validation: Daily
 - Components-only: Weekly
 - Comprehensive: Before merges
 
 **Before Releases:**
+
 - Comprehensive validation: Always
 - Target score: ≥ 95%
 - Critical issues: 0
@@ -240,12 +256,14 @@ date: system-generated
 ### vs. BMB audit-workflow
 
 **audit-workflow:**
+
 - Scope: Single workflow configuration validation
 - Output: Console report with warnings
 - Time: 1-2 minutes per workflow
 - Use case: Quick config check during development
 
 **validate-module:**
+
 - Scope: All 135 module components + integration
 - Output: Comprehensive reports with recommendations
 - Time: 30-60 minutes (comprehensive mode)
@@ -256,12 +274,14 @@ date: system-generated
 ### vs. BMM Test Architect (TEA)
 
 **TEA:**
+
 - Scope: Test strategy and automation planning
 - Output: Test plans, frameworks, coverage analysis
 - Time: Varies by test complexity
 - Use case: Building comprehensive test suites
 
 **validate-module:**
+
 - Scope: Module structure and integration validation
 - Output: Validation reports with component scores
 - Time: 30-60 minutes
@@ -272,12 +292,14 @@ date: system-generated
 ### vs. Manual Testing (TASKS file checklist)
 
 **Manual Testing:**
+
 - Scope: End-to-end workflow execution with real data
 - Output: User experience insights, edge case discovery
 - Time: Several hours to days
 - Use case: Comprehensive quality assurance
 
 **validate-module:**
+
 - Scope: Automated structure, config, and integration checks
 - Output: Standardized validation reports
 - Time: 30-60 minutes
@@ -292,18 +314,21 @@ date: system-generated
 ### validate-module Workflow Quality
 
 **Self-Validation Score:** 100%
+
 - ✅ Configuration: 100%
 - ✅ Instructions: 100%
 - ✅ Template: 100%
 - ✅ Integration: 100%
 
 **BMAD v6 Compliance:** ✅ Full
+
 - ✅ Standard config block
 - ✅ Workflow structure tags
 - ✅ Variable alignment
 - ✅ File organization
 
 **Documentation Quality:** ✅ Complete
+
 - ✅ Testing guide updated
 - ✅ Summary document created
 - ✅ TASKS file updated
@@ -312,6 +337,7 @@ date: system-generated
 ### Expected Module Validation Results
 
 **First Run Targets:**
+
 - Overall score: ≥ 80% (minimum), target ≥ 90%
 - Critical issues: 0
 - Warnings: ≤ 10
@@ -320,6 +346,7 @@ date: system-generated
 - Task pass rate: ≥ 80% (35/43 minimum)
 
 **Production Release Targets:**
+
 - Overall score: ≥ 95%
 - Critical issues: 0
 - Warnings: ≤ 5

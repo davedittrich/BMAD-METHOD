@@ -13,6 +13,7 @@ Load the Content Creation module or activate the Producer agent as your entry po
 The `save-transcript` task enables you to download and save YouTube video transcripts with rich metadata for analysis.
 
 **Available through:**
+
 - Direct task invocation: `save-transcript`
 - Via Producer agent workflow menus
 - As part of research and analysis workflows
@@ -20,6 +21,7 @@ The `save-transcript` task enables you to download and save YouTube video transc
 ### 3. Provide Video Information
 
 The system will prompt you for:
+
 - **YouTube URL**: Paste your video link
 - **Participants**: Names will be auto-detected when possible
 - **Series context**: Whether this relates to other content
@@ -36,6 +38,7 @@ The system will prompt you for:
 - **Saved As**: `references/transcripts/YYYY-MM-DD_U00-5cFfsj8_debate-on-democracy.md`
 
 **Analysis Workflow:**
+
 1. Save transcript using `save-transcript` task
 2. Use `analyze-and-respond` workflow for comprehensive analysis
 3. Apply `argument-analyst` agent for logical structure evaluation
@@ -50,6 +53,7 @@ The system will prompt you for:
 - **Saved As**: `references/transcripts/YYYY-MM-DD_tAO3C470yfg_structured-debate.md`
 
 **Analysis Workflow:**
+
 1. Save transcript with debate classification
 2. Use `argument-analyst` to map argument structure
 3. Apply `integrity-analyst` for content integrity assessment
@@ -64,6 +68,7 @@ The system will prompt you for:
 - **Saved As**: `references/transcripts/YYYY-MM-DD_example123_educational-interview.md`
 
 **Analysis Workflow:**
+
 1. Save transcript with educational classification
 2. Use `subject-analyst` for key insight extraction
 3. Apply relevant analysis agents based on content focus
@@ -74,18 +79,21 @@ The system will prompt you for:
 ### Debate Content
 
 **Characteristics:**
+
 - Multiple participants with opposing viewpoints
 - Structured or semi-structured argumentation
 - Focus on persuasion and logical reasoning
 - Formal or informal debate format
 
 **Recommended Agents:**
+
 - **argument-analyst**: Logical structure analysis
 - **fallacy-detective**: Logical fallacy identification
 - **integrity-analyst**: Content integrity assessment
 - **fact-checker**: Claim verification
 
 **Analysis Approach:**
+
 - Substantive analysis over performance evaluation
 - Argument structure mapping
 - Logical fallacy identification
@@ -95,18 +103,21 @@ The system will prompt you for:
 ### Educational Content
 
 **Characteristics:**
+
 - Single speaker or interview format
 - Information sharing or teaching focus
 - Documentary or news reporting
 - Unstructured conversation
 
 **Recommended Agents:**
+
 - **subject-analyst**: Insight extraction and analysis
 - **fact-checker**: Fact verification
 - **archival-researcher**: Historical context
 - **integrity-analyst**: Content credibility assessment
 
 **Analysis Approach:**
+
 - Key insight extraction
 - Fact verification and source validation
 - Historical context development
@@ -115,12 +126,14 @@ The system will prompt you for:
 ### Interview/Discussion Content
 
 **Characteristics:**
+
 - Conversational format
 - Expert interviews or panel discussions
 - Topic exploration without debate structure
 - Information gathering focus
 
 **Recommended Agents:**
+
 - **subject-analyst**: Subject matter analysis
 - **archival-researcher**: Background research
 - **fact-checker**: Claim verification
@@ -227,6 +240,7 @@ Step 4: Track Progress
 **Best For**: Comprehensive analysis requiring multiple perspectives
 
 **Process:**
+
 1. Load full content creation team
 2. Use Producer agent as coordination point
 3. Save transcripts and classify content type
@@ -238,6 +252,7 @@ Step 4: Track Progress
 **Best For**: Quick analysis or specific expertise needs
 
 **Process:**
+
 1. Save transcript using save-transcript task
 2. Directly activate specific analysis agents
 3. Manual coordination of insights
@@ -308,6 +323,7 @@ After saving and analyzing transcripts:
 ## Available Agents for Transcript Analysis
 
 ### Analysis Agents
+
 - **argument-analyst**: Logical structure and argument analysis
 - **fallacy-detective**: Logical fallacy detection
 - **integrity-analyst**: Content integrity and credibility
@@ -315,10 +331,12 @@ After saving and analyzing transcripts:
 - **fact-checker**: Multi-source fact verification
 
 ### Research Agents
+
 - **archival-researcher**: Historical context and background
 - **subject-analyst**: People and organization analysis
 
 ### Content Creation Agents
+
 - **screenwriter**: Video script creation from transcripts
 - **editor**: Content refinement and style consistency
 - **style-analyst**: Writing style analysis

@@ -41,24 +41,24 @@ Analyze YouTube video content by first saving the transcript locally, then perfo
 
 elicit: true
 format: |
-  Please specify:
+Please specify:
 
-  **Project Context (Optional):**
+**Project Context (Optional):**
 
-  - Should this analysis be associated with a specific research project? (Leave blank for standalone analysis)
-  - If yes, what is the project name? (Must match an existing project from project-list)
+- Should this analysis be associated with a specific research project? (Leave blank for standalone analysis)
+- If yes, what is the project name? (Must match an existing project from project-list)
 
-  **Video Source:**
+**Video Source:**
 
-  - What is the YouTube URL or transcript file to analyze?
-  - Is this part of a larger research project or standalone analysis?
-  - Any specific aspects to focus on (arguments, insights, participants)?
+- What is the YouTube URL or transcript file to analyze?
+- Is this part of a larger research project or standalone analysis?
+- Any specific aspects to focus on (arguments, insights, participants)?
 
-  **Analysis Preferences:**
+**Analysis Preferences:**
 
-  - Should this be comprehensive analysis or focused on specific elements?
-  - Any particular audience or use case for the analysis?
-  - Integration with other research or content creation workflows?
+- Should this be comprehensive analysis or focused on specific elements?
+- Any particular audience or use case for the analysis?
+- Integration with other research or content creation workflows?
 
 ## Output Requirements
 

@@ -14,30 +14,33 @@
 
 **Validation Mode:** {validation_mode}
 **Components to Validate:**
+
 - Agents: {expected_agents}
 - Workflows: {expected_workflows}
 - Tasks: {expected_tasks}
 - Total: {expected_total_components}
 
 **Thresholds:**
+
 - Minimum Pass: {minimum_pass_percentage}%
 - Critical Issues: {critical_issues_threshold}
 - Warnings: {warning_threshold}
   </output>
 
   <ask>Select validation mode:
+
 1. **Comprehensive** - All components + integration testing (recommended)
 2. **Quick** - Configuration validation only (fast)
 3. **Components Only** - Agents, workflows, tasks (no integration)
 4. **Integration Only** - Pipeline testing only
 
 Your choice [1/2/3/4]:
-  </ask>
+</ask>
 
-  <action>Set validation_mode based on user selection</action>
-  <action>Create output directory: {detailed_reports_folder}</action>
+<action>Set validation_mode based on user selection</action>
+<action>Create output directory: {detailed_reports_folder}</action>
 
-  <template-output>validation_mode_selection</template-output>
+<template-output>validation_mode_selection</template-output>
 </step>
 
 <step n="1" goal="Agent Validation Loop" if="validation_mode != integration-only">
@@ -49,12 +52,12 @@ Your choice [1/2/3/4]:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   </output>
 
-  <action>Load all agent files from {target_module_path}/agents/*.yaml</action>
-  <action>Initialize agent_validation_results = []</action>
-  <action>Initialize agent_pass_count = 0</action>
-  <action>Initialize agent_fail_count = 0</action>
+<action>Load all agent files from {target_module_path}/agents/\*.yaml</action>
+<action>Initialize agent_validation_results = []</action>
+<action>Initialize agent_pass_count = 0</action>
+<action>Initialize agent_fail_count = 0</action>
 
-  <action>For each agent file in agents/ directory:</action>
+<action>For each agent file in agents/ directory:</action>
 
   <substep n="1a" title="Agent Configuration Validation">
     <action>Parse YAML file</action>
@@ -86,6 +89,7 @@ Your choice [1/2/3/4]:
 
     <action>Calculate agent_config_score (0-100)</action>
     <action>Determine status: PASS (>=80), WARN (60-79), FAIL (<60)</action>
+
   </substep>
 
   <substep n="1b" title="Agent Knowledge Integration Check">
@@ -97,6 +101,7 @@ Your choice [1/2/3/4]:
 
       <action>Record knowledge_files_valid (true/false)</action>
     </check>
+
   </substep>
 
   <substep n="1c" title="Agent Menu Command Validation">
@@ -106,6 +111,7 @@ Your choice [1/2/3/4]:
     - Check description is meaningful (>10 chars)
 
     <action>Record menu_commands_valid (true/false)</action>
+
   </substep>
 
   <substep n="1d" title="Record Agent Results">
@@ -128,9 +134,10 @@ Your choice [1/2/3/4]:
     <action if="status == FAIL">Increment agent_fail_count</action>
 
     <output>  {agent_name}: {status} ({config_score}%)</output>
+
   </substep>
 
-  <action>After all agents validated, display summary:</action>
+<action>After all agents validated, display summary:</action>
 
   <output>
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -139,10 +146,10 @@ Agent Validation Complete
 
 ✅ Passed: {agent_pass_count}/{expected_agents}
 ❌ Failed: {agent_fail_count}/{expected_agents}
-📊 Pass Rate: {(agent_pass_count/expected_agents)*100}%
-  </output>
+📊 Pass Rate: {(agent_pass_count/expected_agents)\*100}%
+</output>
 
-  <template-output>agent_validation_results</template-output>
+<template-output>agent_validation_results</template-output>
 </step>
 
 <step n="2" goal="Workflow Validation Loop" if="validation_mode != integration-only">
@@ -154,13 +161,13 @@ Agent Validation Complete
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   </output>
 
-  <action>Load all workflow directories from {target_module_path}/workflows/</action>
-  <action>Exclude: validate-module (this workflow)</action>
-  <action>Initialize workflow_validation_results = []</action>
-  <action>Initialize workflow_pass_count = 0</action>
-  <action>Initialize workflow_fail_count = 0</action>
+<action>Load all workflow directories from {target_module_path}/workflows/</action>
+<action>Exclude: validate-module (this workflow)</action>
+<action>Initialize workflow_validation_results = []</action>
+<action>Initialize workflow_pass_count = 0</action>
+<action>Initialize workflow_fail_count = 0</action>
 
-  <action>For each workflow directory:</action>
+<action>For each workflow directory:</action>
 
   <substep n="2a" title="Workflow Configuration Validation">
     <action>Extract workflow_name from directory name</action>
@@ -191,6 +198,7 @@ Agent Validation Complete
 
     <action>Calculate workflow_config_score (0-100)</action>
     <action>Determine status: PASS (>=80), WARN (60-79), FAIL (<60)</action>
+
   </substep>
 
   <substep n="2b" title="Workflow Instructions Validation">
@@ -212,6 +220,7 @@ Agent Validation Complete
 
       <action>Record instructions_valid (true/false)</action>
     </check>
+
   </substep>
 
   <substep n="2c" title="Agent Dependency Check">
@@ -222,6 +231,7 @@ Agent Validation Complete
     - Check agent is in previously validated agents list
 
     <action>Record agent_dependencies_valid (true/false)</action>
+
   </substep>
 
   <substep n="2d" title="Record Workflow Results">
@@ -246,9 +256,10 @@ Agent Validation Complete
     <action if="status == FAIL">Increment workflow_fail_count</action>
 
     <output>  {workflow_name}: {status} ({config_score}%)</output>
+
   </substep>
 
-  <action>After all workflows validated, display summary:</action>
+<action>After all workflows validated, display summary:</action>
 
   <output>
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -257,10 +268,10 @@ Workflow Validation Complete
 
 ✅ Passed: {workflow_pass_count}/{expected_workflows}
 ❌ Failed: {workflow_fail_count}/{expected_workflows}
-📊 Pass Rate: {(workflow_pass_count/expected_workflows)*100}%
-  </output>
+📊 Pass Rate: {(workflow_pass_count/expected_workflows)\*100}%
+</output>
 
-  <template-output>workflow_validation_results</template-output>
+<template-output>workflow_validation_results</template-output>
 </step>
 
 <step n="3" goal="Task Validation Loop" if="validation_mode != integration-only">
@@ -272,13 +283,13 @@ Workflow Validation Complete
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   </output>
 
-  <action>Load all task files from {target_module_path}/tasks/*.md</action>
-  <action>Initialize task_validation_results = []</action>
-  <action>Initialize task_pass_count = 0</action>
-  <action>Initialize task_fail_count = 0</action>
-  <action>Initialize framework_tasks_found = []</action>
+<action>Load all task files from {target_module_path}/tasks/\*.md</action>
+<action>Initialize task_validation_results = []</action>
+<action>Initialize task_pass_count = 0</action>
+<action>Initialize task_fail_count = 0</action>
+<action>Initialize framework_tasks_found = []</action>
 
-  <action>For each task file:</action>
+<action>For each task file:</action>
 
   <substep n="3a" title="Task Structure Validation">
     <action>Extract task_name from filename</action>
@@ -300,6 +311,7 @@ Workflow Validation Complete
 
     <action>Calculate task_structure_score (0-100)</action>
     <action>Determine status: PASS (>=80), WARN (60-79), FAIL (<60)</action>
+
   </substep>
 
   <substep n="3b" title="Framework Integration Check">
@@ -322,6 +334,7 @@ Workflow Validation Complete
     </check>
 
     <action>Record framework_integration_valid (true/false)</action>
+
   </substep>
 
   <substep n="3c" title="Task Category Validation">
@@ -339,6 +352,7 @@ Workflow Validation Complete
 
     <action>Verify task aligns with module purpose</action>
     <action>Record category and alignment</action>
+
   </substep>
 
   <substep n="3d" title="Record Task Results">
@@ -360,9 +374,10 @@ Workflow Validation Complete
     <action if="status == FAIL">Increment task_fail_count</action>
 
     <output>  {task_name}: {status} ({structure_score}%)</output>
+
   </substep>
 
-  <action>After all tasks validated, display summary:</action>
+<action>After all tasks validated, display summary:</action>
 
   <output>
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -371,15 +386,16 @@ Task Validation Complete
 
 ✅ Passed: {task_pass_count}/{expected_tasks}
 ❌ Failed: {task_fail_count}/{expected_tasks}
-📊 Pass Rate: {(task_pass_count/expected_tasks)*100}%
+📊 Pass Rate: {(task_pass_count/expected_tasks)\*100}%
 
 Framework Integration:
+
 - Carter Tasks Found: {count}
 - Damer Tasks Found: {count}
   </output>
 
   <template-output>task_validation_results</template-output>
-</step>
+  </step>
 
 <step n="4" goal="Integration Testing" if="validation_mode == comprehensive OR validation_mode == integration-only">
   <action>Display step header</action>
@@ -390,16 +406,17 @@ Framework Integration:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   </output>
 
-  <action>Initialize integration_test_results = []</action>
+<action>Initialize integration_test_results = []</action>
 
   <substep n="4a" title="Text Content Pipeline Test">
     <output>
 ### Pipeline 1: Text Content Pipeline
 
 Testing: research-article → format-article → publish-article → promote-content
-    </output>
+</output>
 
     <ask>Do you want to run the text content pipeline test?
+
 This will execute workflows in sequence with test data.
 
 [y] Yes, run test
@@ -407,7 +424,7 @@ This will execute workflows in sequence with test data.
 [s] Simulate test (check dependencies only)
 
 Your choice [y/n/s]:
-    </ask>
+</ask>
 
     <check if="user selects 'y'">
       <action>Display: "Starting text content pipeline test..."</action>
@@ -415,6 +432,7 @@ Your choice [y/n/s]:
       <action>Provide test instructions:</action>
 
       <output>
+
 **Test Instructions:**
 
 1. Run research-article with test topic: "AI in Content Creation"
@@ -424,6 +442,7 @@ Your choice [y/n/s]:
 5. Run promote-content with published article URL
 
 **Success Criteria:**
+
 - Each workflow completes without errors
 - Outputs are generated at each stage
 - Data flows correctly between workflows
@@ -433,7 +452,7 @@ Your choice [y/n/s]:
 Please execute this pipeline manually and report results.
 
 Pipeline executed successfully? [y/n]:
-      </output>
+</output>
 
       <ask>Did the text content pipeline execute successfully? [y/n]</ask>
 
@@ -455,6 +474,7 @@ Pipeline executed successfully? [y/n]:
     <check if="user selects 'n'">
       <action>Record: "Text pipeline test skipped"</action>
     </check>
+
   </substep>
 
   <substep n="4b" title="Video Content Pipeline Test">
@@ -462,12 +482,13 @@ Pipeline executed successfully? [y/n]:
 ### Pipeline 2: Video Content Pipeline
 
 Testing: create-video-assets → publish-video → promote-content
-    </output>
+</output>
 
     <ask>Do you want to run the video content pipeline test? [y/n/s]:</ask>
 
     <check if="user selects 'y'">
       <output>
+
 **Test Instructions:**
 
 1. Run create-video-assets with test content
@@ -477,7 +498,7 @@ Testing: create-video-assets → publish-video → promote-content
 5. Run promote-content with video URL
 
 Pipeline executed successfully? [y/n]:
-      </output>
+</output>
 
       <ask>Did the video content pipeline execute successfully? [y/n]</ask>
       <action>Record result in integration_test_results</action>
@@ -491,6 +512,7 @@ Pipeline executed successfully? [y/n]:
     <check if="user selects 'n'">
       <action>Record: "Video pipeline test skipped"</action>
     </check>
+
   </substep>
 
   <substep n="4c" title="Social Media Adaptation Test">
@@ -498,12 +520,13 @@ Pipeline executed successfully? [y/n]:
 ### Pipeline 3: Social Media Adaptation
 
 Testing: adapt-for-social-media with article/video input
-    </output>
+</output>
 
     <ask>Do you want to run the social media adaptation test? [y/n/s]:</ask>
 
     <check if="user selects 'y'">
       <output>
+
 **Test Instructions:**
 
 1. Run adapt-for-social-media with test article
@@ -512,7 +535,7 @@ Testing: adapt-for-social-media with article/video input
 4. Check posting schedule created
 
 All platform outputs generated successfully? [y/n]:
-      </output>
+</output>
 
       <ask>Did all platform outputs generate successfully? [y/n]</ask>
       <action>Record result in integration_test_results</action>
@@ -526,6 +549,7 @@ All platform outputs generated successfully? [y/n]:
     <check if="user selects 'n'">
       <action>Record: "Social media test skipped"</action>
     </check>
+
   </substep>
 
   <substep n="4d" title="Framework Integration Test">
@@ -533,12 +557,13 @@ All platform outputs generated successfully? [y/n]:
 ### Pipeline 4: Framework Integration
 
 Testing: analyze-and-respond with Carter + Damer frameworks
-    </output>
+</output>
 
     <ask>Do you want to run the framework integration test? [y/n/s]:</ask>
 
     <check if="user selects 'y'">
       <output>
+
 **Test Instructions:**
 
 1. Run analyze-and-respond with test topic/sources
@@ -548,7 +573,7 @@ Testing: analyze-and-respond with Carter + Damer frameworks
 5. Verify no conflicts between frameworks
 
 Both frameworks integrated successfully? [y/n]:
-      </output>
+</output>
 
       <ask>Did both frameworks integrate successfully? [y/n]</ask>
       <action>Record result in integration_test_results</action>
@@ -567,9 +592,10 @@ Both frameworks integrated successfully? [y/n]:
     <check if="user selects 'n'">
       <action>Record: "Framework test skipped"</action>
     </check>
+
   </substep>
 
-  <action>Display integration test summary:</action>
+<action>Display integration test summary:</action>
 
   <output>
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -581,9 +607,9 @@ Passed: {passed_count}
 Failed: {failed_count}
 Skipped: {skipped_count}
 Simulated: {simulated_count}
-  </output>
+</output>
 
-  <template-output>integration_test_results</template-output>
+<template-output>integration_test_results</template-output>
 </step>
 
 <step n="5" goal="Calculate Overall Validation Score">
@@ -592,8 +618,9 @@ Simulated: {simulated_count}
   - workflow_score = (workflow_pass_count / expected_workflows) * 100
   - task_score = (task_pass_count / expected_tasks) * 100
 
-  <action>Calculate weighted overall score:</action>
-  - overall_score = (agent_score * 0.3) + (workflow_score * 0.4) + (task_score * 0.3)
+<action>Calculate weighted overall score:</action>
+
+- overall_score = (agent_score _ 0.3) + (workflow_score _ 0.4) + (task_score \* 0.3)
 
   <check if="validation_mode == comprehensive">
     <action>Add integration test score (10% weight):</action>
@@ -601,19 +628,21 @@ Simulated: {simulated_count}
     - overall_score = (overall_score * 0.9) + (integration_score * 0.1)
   </check>
 
-  <action>Determine overall status:</action>
-  - EXCELLENT: >= 95%
-  - GOOD: 85-94%
-  - ACCEPTABLE: 75-84%
-  - NEEDS IMPROVEMENT: 60-74%
-  - FAILING: < 60%
+<action>Determine overall status:</action>
 
-  <action>Count total issues:</action>
-  - critical_issues_count
-  - warning_count
-  - bloat_count
+- EXCELLENT: >= 95%
+- GOOD: 85-94%
+- ACCEPTABLE: 75-84%
+- NEEDS IMPROVEMENT: 60-74%
+- FAILING: < 60%
 
-  <template-output>overall_validation_score</template-output>
+<action>Count total issues:</action>
+
+- critical_issues_count
+- warning_count
+- bloat_count
+
+<template-output>overall_validation_score</template-output>
 </step>
 
 <step n="6" goal="Generate Comprehensive Validation Report">
@@ -621,13 +650,14 @@ Simulated: {simulated_count}
   <action>Fill template with results</action>
   <action>Save to {default_output_file}</action>
 
-  <action>Generate detailed component reports:</action>
-  - Save agent details to {detailed_reports_folder}/agents-report.md
-  - Save workflow details to {detailed_reports_folder}/workflows-report.md
-  - Save task details to {detailed_reports_folder}/tasks-report.md
-  - Save integration details to {detailed_reports_folder}/integration-report.md
+<action>Generate detailed component reports:</action>
 
-  <template-output>final_validation_report</template-output>
+- Save agent details to {detailed_reports_folder}/agents-report.md
+- Save workflow details to {detailed_reports_folder}/workflows-report.md
+- Save task details to {detailed_reports_folder}/tasks-report.md
+- Save integration details to {detailed_reports_folder}/integration-report.md
+
+<template-output>final_validation_report</template-output>
 
   <output>
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -637,21 +667,24 @@ Simulated: {simulated_count}
 ## Overall Score: {overall_score}% - {overall_status}
 
 ### Component Scores:
+
 - Agents: {agent_score}% ({agent_pass_count}/{expected_agents} passed)
 - Workflows: {workflow_score}% ({workflow_pass_count}/{expected_workflows} passed)
 - Tasks: {task_score}% ({task_pass_count}/{expected_tasks} passed)
 
 ### Issues Summary:
+
 - Critical Issues: {critical_issues_count}
 - Warnings: {warning_count}
 - Bloat Detected: {bloat_count} unused variables
 
 ### Reports Generated:
+
 - Main Report: {default_output_file}
 - Detailed Reports: {detailed_reports_folder}/
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  </output>
+</output>
 </step>
 
 <step n="7" goal="Provide Recommendations and Next Steps">
@@ -662,6 +695,7 @@ Simulated: {simulated_count}
 ## Recommendations
 
 ### Critical Priority (Fix Immediately):
+
   </output>
 
   <check if="critical_issues_count > 0">
@@ -676,19 +710,19 @@ Simulated: {simulated_count}
 ### High Priority (Address This Week):
   </output>
 
-  <action>List high-priority warnings and improvements</action>
+<action>List high-priority warnings and improvements</action>
 
   <output>
 ### Medium Priority (Address This Month):
   </output>
 
-  <action>List medium-priority improvements</action>
+<action>List medium-priority improvements</action>
 
   <output>
 ### Low Priority (Future Enhancement):
   </output>
 
-  <action>List optimization opportunities</action>
+<action>List optimization opportunities</action>
 
   <output>
 ## Next Steps
@@ -700,13 +734,15 @@ Simulated: {simulated_count}
 5. **Re-run Validation:** After fixes, run validate-module again to verify
 
 **Validation Command:**
+
 ```bash
 @producer  # or load Producer agent
 *validate-module
 ```
+
   </output>
 
-  <template-output>recommendations_and_next_steps</template-output>
+<template-output>recommendations_and_next_steps</template-output>
 </step>
 
 </workflow>

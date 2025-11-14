@@ -161,28 +161,28 @@ Analyze writing samples to extract distinctive voice patterns, style characteris
 
 elicit: true
 format: |
-  Please specify:
+Please specify:
 
-  **Voice Analysis Subject:**
+**Voice Analysis Subject:**
 
-  - Whose voice patterns need to be extracted?
-  - What writing samples are available for analysis? (provide file paths, URLs, or text)
-  - What time period should the samples cover?
-  - How many samples are available? (minimum 5-10 recommended)
+- Whose voice patterns need to be extracted?
+- What writing samples are available for analysis? (provide file paths, URLs, or text)
+- What time period should the samples cover?
+- How many samples are available? (minimum 5-10 recommended)
 
-  **Sample Characteristics:**
+**Sample Characteristics:**
 
-  - What types of writing are available (articles, social media, emails, formal documents)?
-  - What is the approximate total word count for analysis?
-  - Are samples from different contexts or platforms?
-  - Any known ghost-written or collaborative content to exclude?
+- What types of writing are available (articles, social media, emails, formal documents)?
+- What is the approximate total word count for analysis?
+- Are samples from different contexts or platforms?
+- Any known ghost-written or collaborative content to exclude?
 
-  **Analysis Purpose:**
+**Analysis Purpose:**
 
-  - Why is voice pattern analysis needed?
-  - Will this be used for consistency checking, authorship verification, or voice replication?
-  - What level of detail is required (overview vs. forensic analysis)?
-  - How will this analysis be used?
+- Why is voice pattern analysis needed?
+- Will this be used for consistency checking, authorship verification, or voice replication?
+- What level of detail is required (overview vs. forensic analysis)?
+- How will this analysis be used?
 
 ## Output Requirements
 

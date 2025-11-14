@@ -76,6 +76,6 @@
 1. **Research Question**: What you're trying to understand
 2. **Methodology**: How you conducted your investigation
 3. **Findings**: What you discovered, organized by theme
-2. **Analysis**: What the findings mean and their implications
-3. **Limitations**: What you couldn't determine or verify
-4. **Next Steps**: Areas for further investigation
+4. **Analysis**: What the findings mean and their implications
+5. **Limitations**: What you couldn't determine or verify
+6. **Next Steps**: Areas for further investigation

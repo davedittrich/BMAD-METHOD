@@ -16,6 +16,7 @@ The Content Creation module is organized into specialized teams that can be used
 The Content Creation module includes 14 specialized agents:
 
 ### Research & Analysis Agents
+
 - **archival-researcher**: Historical background, timeline development, context research
 - **subject-analyst**: People/organization credibility assessment, motivation analysis
 - **fact-checker**: Multi-source verification, integrity framework application
@@ -24,6 +25,7 @@ The Content Creation module includes 14 specialized agents:
 - **fallacy-detective**: Specialized logical fallacy detection and analysis
 
 ### Content Creation Agents
+
 - **producer**: Primary entry point for content creation workflows
 - **screenwriter**: Video scripts, engaging narratives, storytelling
 - **editor**: Content refinement, style consistency, final polish
@@ -31,6 +33,7 @@ The Content Creation module includes 14 specialized agents:
 - **style-guide**: Style guide creation and maintenance
 
 ### Distribution & Engagement Agents
+
 - **audience-engagement-manager**: Engagement strategies, retention optimization
 - **distribution-manager**: Platform-specific formatting and optimization
 - **director**: Content orchestration and production management
@@ -44,18 +47,21 @@ The Content Creation module includes 14 specialized agents:
 ### Core Capabilities
 
 #### Research & Verification
+
 - Multi-source fact-checking and verification
 - Subject credibility assessment
 - Historical context and background research
 - Logical argument analysis
 
 #### Content Creation
+
 - Video script writing and optimization
 - Style analysis and consistency
 - Editorial refinement and polish
 - Content orchestration
 
 #### Distribution & Optimization
+
 - Platform-specific content adaptation
 - Audience engagement optimization
 - Multi-platform distribution strategy
@@ -63,12 +69,14 @@ The Content Creation module includes 14 specialized agents:
 ### When to Use Full Team
 
 **Ideal For:**
+
 - Complex projects requiring research, production, and editorial capabilities
 - Complete content creation pipelines from research to publication
 - Multi-format content development (articles, videos, social media)
 - Large-scale content strategy implementation
 
 **Load Command:**
+
 ```bash
 bmad load team full-team
 ```
@@ -76,6 +84,7 @@ bmad load team full-team
 ### Full Team Workflows
 
 The full team supports comprehensive workflows including:
+
 - **research-article**: Complete research to article pipeline
 - **create-video-assets**: Video script and asset creation
 - **analyze-and-respond**: Systematic analysis and response journalism
@@ -89,6 +98,7 @@ The full team supports comprehensive workflows including:
 ### Planned Team Composition
 
 Agents focused on investigation, analysis, and verification:
+
 - **archival-researcher**: Historical context and background
 - **subject-analyst**: People and organization analysis
 - **fact-checker**: Multi-source verification
@@ -99,17 +109,20 @@ Agents focused on investigation, analysis, and verification:
 ### Planned Capabilities
 
 #### Research Planning & Strategy
+
 - Investigation methodology and source strategy
 - Historical background and timeline development
 - Stakeholder mapping and context analysis
 
 #### Analysis & Verification
+
 - People/organization credibility assessment
 - Multi-source fact verification
 - Logical structure and argument analysis
 - Integrity framework application
 
 #### Content Type Routing
+
 - **Debate Content** → argument-analyst for substantive analysis
 - **Educational Content** → subject-analyst for insight extraction
 - **Claims Verification** → fact-checker for multi-source confirmation
@@ -118,6 +131,7 @@ Agents focused on investigation, analysis, and verification:
 ### When to Use Research Team
 
 **Ideal For:**
+
 - Investigative journalism projects
 - Fact-checking and claim verification
 - YouTube video analysis (debate or educational)
@@ -129,6 +143,7 @@ Agents focused on investigation, analysis, and verification:
 ### Planned Team Composition
 
 Agents focused on content creation and optimization:
+
 - **screenwriter**: Video scripts and engaging narratives
 - **distribution-manager**: Platform-specific optimization
 - **audience-engagement-manager**: Engagement and retention strategies
@@ -137,18 +152,21 @@ Agents focused on content creation and optimization:
 ### Planned Capabilities
 
 #### Content Creation
+
 - Video script development and optimization
 - Social media content creation
 - Platform-specific formatting
 - Engaging narrative development
 
 #### Platform Optimization
+
 - YouTube algorithm optimization
 - Social media platform adaptation
 - Audience engagement strategy
 - Retention optimization
 
 ### Planned Use Cases
+
 - YouTube video production from research insights
 - Social media content series development
 - Platform-specific content adaptation
@@ -159,6 +177,7 @@ Agents focused on content creation and optimization:
 ### Planned Team Composition
 
 Agents focused on editorial and writing services:
+
 - **editor**: Content refinement and final polish
 - **style-analyst**: Writing style analysis
 - **style-guide**: Style guide management
@@ -167,18 +186,21 @@ Agents focused on editorial and writing services:
 ### Planned Capabilities
 
 #### Editorial Services
+
 - Writing style analysis and voice extraction
 - Style consistency across content types
 - Editorial refinement and polish
 - Content strategy and planning
 
 #### Content Strategy
+
 - Multi-format content planning
 - Series development and coordination
 - Voice consistency maintenance
 - Editorial workflow management
 
 ### Planned Use Cases
+
 - Long-form article creation from research
 - Content series planning and development
 - Style consistency maintenance across projects
@@ -187,24 +209,28 @@ Agents focused on editorial and writing services:
 ## Team Selection Guide
 
 ### Choose Full Team When:
+
 - **Primary Goal**: Complete content creation pipeline
 - **Content Types**: All formats from research to final publication
 - **Workflow Needs**: Research → Production → Editorial → Publication
 - **Team Size**: Comprehensive coverage with all capabilities
 
 ### Choose Research Team When (Future):
+
 - **Primary Goal**: Investigation, analysis, fact-checking
 - **Content Types**: YouTube analysis, claim verification, background research
 - **Workflow Needs**: Research-focused with analysis outputs
 - **Team Size**: Focused expertise without content production overhead
 
 ### Choose Production Team When (Future):
+
 - **Primary Goal**: Content optimization for platforms
 - **Content Types**: Video scripts, social media content
 - **Workflow Needs**: Platform-specific optimization and audience engagement
 - **Team Size**: Lean production-focused team
 
 ### Choose Writing Team When (Future):
+
 - **Primary Goal**: Editorial and content strategy
 - **Content Types**: Articles, content series, editorial refinement
 - **Workflow Needs**: Style consistency and content planning
@@ -287,6 +313,7 @@ Agents focused on editorial and writing services:
 ## Migration Status
 
 **Current Status:**
+
 - ✅ Full Team available and operational
 - 🔄 Research Team in development
 - 🔄 Production Team in development

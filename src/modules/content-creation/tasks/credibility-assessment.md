@@ -59,26 +59,26 @@ Systematically evaluate the credibility and trustworthiness of individuals, orga
 
 elicit: true
 format: |
-  Please specify:
+Please specify:
 
-  **Assessment Subject:**
+**Assessment Subject:**
 
-  - Who or what organization needs credibility assessment?
-  - What specific claims, expertise, or context should be evaluated?
-  - What time period or specific incidents should be examined?
+- Who or what organization needs credibility assessment?
+- What specific claims, expertise, or context should be evaluated?
+- What time period or specific incidents should be examined?
 
-  **Assessment Purpose:**
+**Assessment Purpose:**
 
-  - Why is this credibility assessment needed?
-  - How will the results be used in your content?
-  - What standards of credibility are required for your purpose?
+- Why is this credibility assessment needed?
+- How will the results be used in your content?
+- What standards of credibility are required for your purpose?
 
-  **Available Information:**
+**Available Information:**
 
-  - What information is available about the subject?
-  - Are there specific sources, databases, or records to consult?
-  - What level of investigation is possible or appropriate?
-  - Any known red flags or concerns to investigate?
+- What information is available about the subject?
+- Are there specific sources, databases, or records to consult?
+- What level of investigation is possible or appropriate?
+- Any known red flags or concerns to investigate?
 
 ## Output Requirements
 

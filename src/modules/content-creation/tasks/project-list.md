@@ -21,7 +21,7 @@ Display all available research projects with status, creation date, and basic me
 3. **Display Formatting**
    - Format output consistent with existing BMAD task output patterns
    - Show projects in table format with columns: Active Context, Name, Status, Created, Description
-   - The 'Active Context' column should clearly indicate which project is the current active context (e.g., with a '*')
+   - The 'Active Context' column should clearly indicate which project is the current active context (e.g., with a '\*')
    - Include metrics summary (references, analyses) when available
    - Sort by creation date (newest first) or allow status-based grouping
 
@@ -35,7 +35,7 @@ Display all available research projects with status, creation date, and basic me
 
 elicit: false
 format: |
-    No user input required - this task displays all available projects automatically.
+No user input required - this task displays all available projects automatically.
 
 ## Output Requirements
 

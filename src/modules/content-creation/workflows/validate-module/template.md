@@ -9,6 +9,7 @@
 ## Executive Summary
 
 This comprehensive validation report analyzes all {{expected_total_components}} components of the {{target_module_name}} module:
+
 - **{{expected_agents}} Agents** - Documentary Film Crew specialized agents
 - **{{expected_workflows}} Workflows** - Complete content lifecycle workflows
 - **{{expected_tasks}} Tasks** - Framework-integrated task library
@@ -31,11 +32,12 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
 
 ## Validation Scores
 
-| Component | Score | Passed | Total | Status |
-|-----------|-------|--------|-------|--------|
-| **Agents** | {{agent_score}}% | {{agent_pass_count}} | {{expected_agents}} | {{agent_status}} |
+| Component     | Score               | Passed                  | Total                  | Status              |
+| ------------- | ------------------- | ----------------------- | ---------------------- | ------------------- |
+| **Agents**    | {{agent_score}}%    | {{agent_pass_count}}    | {{expected_agents}}    | {{agent_status}}    |
 | **Workflows** | {{workflow_score}}% | {{workflow_pass_count}} | {{expected_workflows}} | {{workflow_status}} |
-| **Tasks** | {{task_score}}% | {{task_pass_count}} | {{expected_tasks}} | {{task_status}} |
+| **Tasks**     | {{task_score}}%     | {{task_pass_count}}     | {{expected_tasks}}     | {{task_status}}     |
+
 {{#if integration_tested}}
 | **Integration** | {{integration_score}}% | {{integration_pass_count}} | {{integration_total}} | {{integration_status}} |
 {{/if}}
@@ -50,6 +52,7 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
 {{#if critical_issues_count > 0}}
 {{#each critical_issues}}
 **{{issue_component}}** - {{issue_type}}
+
 - **Description:** {{issue_description}}
 - **Impact:** {{issue_impact}}
 - **Fix:** {{issue_fix}}
@@ -65,6 +68,7 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
 {{#if warning_count > 0}}
 {{#each warnings}}
 **{{warning_component}}** - {{warning_type}}
+
 - **Description:** {{warning_description}}
 - **Impact:** {{warning_impact}}
 - **Recommendation:** {{warning_recommendation}}
@@ -78,11 +82,12 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
 
 {{#if bloat_count > 0}}
 {{#each bloat_items}}
+
 - **{{bloat_component}}**: {{bloat_variable}} (defined but unused)
-{{/each}}
-{{else}}
-✅ No unused variables detected!
-{{/if}}
+  {{/each}}
+  {{else}}
+  ✅ No unused variables detected!
+  {{/if}}
 
 ---
 
@@ -95,39 +100,44 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
 #### {{agent}} - {{status}} ({{config_score}}%)
 
 **Metadata:**
+
 - ID: {{metadata_valid ? '✅' : '❌'}} Properly formatted
 - Fields: {{persona_complete ? '✅' : '❌'}} Complete
 
 **Menu Commands:**
+
 - Validation: {{menu_valid ? '✅' : '❌'}} All commands valid
 - Count: {{menu_command_count}} commands
 
 **Knowledge Integration:**
 {{#if knowledge_valid}}
+
 - ✅ All knowledge files accessible
-{{else if has_knowledge_refs}}
+  {{else if has_knowledge_refs}}
 - ❌ Some knowledge files missing or inaccessible
-{{else}}
+  {{else}}
 - ℹ️ No knowledge files referenced
-{{/if}}
+  {{/if}}
 
 **Issues:**
 {{#if issues}}
 {{#each issues}}
+
 - {{this}}
-{{/each}}
-{{else}}
+  {{/each}}
+  {{else}}
 - None
-{{/if}}
+  {{/if}}
 
 **Warnings:**
 {{#if warnings}}
 {{#each warnings}}
+
 - {{this}}
-{{/each}}
-{{else}}
+  {{/each}}
+  {{else}}
 - None
-{{/if}}
+  {{/if}}
 
 ---
 
@@ -140,34 +150,39 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
 #### {{workflow}} - {{status}} ({{config_score}}%)
 
 **Configuration:**
+
 - Files: {{files_complete ? '✅' : '❌'}} All required files present
 - Config Block: {{config_valid ? '✅' : '❌'}} Standard config valid
 - Variables: {{variables_aligned ? '✅' : '⚠️'}} Aligned with usage
 
 **Instructions:**
+
 - Structure: {{instructions_valid ? '✅' : '❌'}} Valid workflow structure
 - Agent Dependencies: {{agent_deps_valid ? '✅' : '⚠️'}} All agents exist
 
 **Bloat Analysis:**
+
 - Unused Variables: {{bloat_detected}}
 
 **Issues:**
 {{#if issues}}
 {{#each issues}}
+
 - {{this}}
-{{/each}}
-{{else}}
+  {{/each}}
+  {{else}}
 - None
-{{/if}}
+  {{/if}}
 
 **Warnings:**
 {{#if warnings}}
 {{#each warnings}}
+
 - {{this}}
-{{/each}}
-{{else}}
+  {{/each}}
+  {{else}}
 - None
-{{/if}}
+  {{/if}}
 
 ---
 
@@ -180,8 +195,9 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
 {{#each task_categories}}
 **{{category_name}}** ({{category_count}} tasks)
 {{#each category_tasks}}
+
 - {{task}}: {{status}} ({{structure_score}}%)
-{{/each}}
+  {{/each}}
 
 {{/each}}
 
@@ -189,13 +205,15 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
 
 **Carter Integrity Framework:**
 {{#each carter_tasks}}
+
 - {{this}}: {{task_validation_results[this].framework_integrated ? '✅' : '❌'}}
-{{/each}}
+  {{/each}}
 
 **Damer Argument Framework:**
 {{#each damer_tasks}}
+
 - {{this}}: {{task_validation_results[this].framework_integrated ? '✅' : '❌'}}
-{{/each}}
+  {{/each}}
 
 **Detailed Task Results:**
 
@@ -210,16 +228,18 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
 {{#if issues}}
 **Issues:**
 {{#each issues}}
+
 - {{this}}
-{{/each}}
-{{/if}}
+  {{/each}}
+  {{/if}}
 
 {{#if warnings}}
 **Warnings:**
 {{#each warnings}}
+
 - {{this}}
-{{/each}}
-{{/if}}
+  {{/each}}
+  {{/if}}
 
 {{/each}}
 
@@ -244,13 +264,15 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
 {{#if test_type == 'simulated'}}
 **Dependency Check:**
 {{#each dependencies_checked}}
+
 - {{dependency}}: {{valid ? '✅' : '❌'}}
-{{/each}}
-{{/if}}
+  {{/each}}
+  {{/if}}
 
 {{/each}}
 
 **Integration Summary:**
+
 - Tests Run: {{integration_total}}
 - Passed: {{integration_pass_count}}
 - Failed: {{integration_fail_count}}
@@ -268,10 +290,11 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
 {{#if critical_issues_count > 0}}
 {{#each critical_recommendations}}
 {{recommendation_index}}. **{{recommendation_title}}**
-   - Component: {{component}}
-   - Action: {{action}}
-   - Estimated Time: {{estimated_time}}
-   - Impact: HIGH
+
+- Component: {{component}}
+- Action: {{action}}
+- Estimated Time: {{estimated_time}}
+- Impact: HIGH
 
 {{/each}}
 {{else}}
@@ -282,10 +305,11 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
 
 {{#each high_priority_recommendations}}
 {{recommendation_index}}. **{{recommendation_title}}**
-   - Component: {{component}}
-   - Action: {{action}}
-   - Estimated Time: {{estimated_time}}
-   - Impact: MEDIUM
+
+- Component: {{component}}
+- Action: {{action}}
+- Estimated Time: {{estimated_time}}
+- Impact: MEDIUM
 
 {{/each}}
 
@@ -293,10 +317,11 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
 
 {{#each medium_priority_recommendations}}
 {{recommendation_index}}. **{{recommendation_title}}**
-   - Component: {{component}}
-   - Action: {{action}}
-   - Estimated Time: {{estimated_time}}
-   - Impact: LOW-MEDIUM
+
+- Component: {{component}}
+- Action: {{action}}
+- Estimated Time: {{estimated_time}}
+- Impact: LOW-MEDIUM
 
 {{/each}}
 
@@ -304,9 +329,10 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
 
 {{#each low_priority_recommendations}}
 {{recommendation_index}}. **{{recommendation_title}}**
-   - Component: {{component}}
-   - Action: {{action}}
-   - Benefit: {{benefit}}
+
+- Component: {{component}}
+- Action: {{action}}
+- Benefit: {{benefit}}
 
 {{/each}}
 
@@ -321,13 +347,13 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
    - Understand all issues and warnings
 
 2. **Fix Critical Issues** ({{critical_issues_count}} issues)
-{{#if critical_issues_count > 0}}
-{{#each critical_issues}}
+   {{#if critical_issues_count > 0}}
+   {{#each critical_issues}}
    - {{issue_component}}: {{issue_fix}}
-{{/each}}
-{{else}}
+     {{/each}}
+     {{else}}
    - ✅ No critical issues to fix
-{{/if}}
+     {{/if}}
 
 3. **Address Warnings** ({{warning_count}} warnings)
    - Review detailed reports in: {{detailed_reports_folder}}/
@@ -359,25 +385,28 @@ This comprehensive validation report analyzes all {{expected_total_components}} 
 **Validation Mode:** {{validation_mode}}
 
 **Components Validated:**
+
 - Agent Configuration (YAML structure, metadata, persona, menu, knowledge)
 - Workflow Configuration (files, config block, variables, instructions)
 - Task Structure (markdown, inputs/outputs, framework integration)
-{{#if integration_tested}}
+  {{#if integration_tested}}
 - Integration Testing (pipeline execution, agent coordination, data flow)
-{{/if}}
+  {{/if}}
 
 **Scoring Criteria:**
+
 - **PASS:** ≥80% (Component meets all or most requirements)
 - **WARN:** 60-79% (Component has minor issues)
 - **FAIL:** <60% (Component has major issues)
 
 **Overall Score Calculation:**
+
 - Agents: 30% weight
 - Workflows: 40% weight
 - Tasks: 30% weight
-{{#if integration_tested}}
+  {{#if integration_tested}}
 - Integration: 10% bonus weight (when tested)
-{{/if}}
+  {{/if}}
 
 ---
 
@@ -388,16 +417,16 @@ Additional detailed reports available:
 - **Agents Report:** {{detailed_reports_folder}}/agents-report.md
 - **Workflows Report:** {{detailed_reports_folder}}/workflows-report.md
 - **Tasks Report:** {{detailed_reports_folder}}/tasks-report.md
-{{#if integration_tested}}
+  {{#if integration_tested}}
 - **Integration Report:** {{detailed_reports_folder}}/integration-report.md
-{{/if}}
+  {{/if}}
 
 ---
 
 ## Validation History
 
-| Date | Overall Score | Critical Issues | Warnings | Status |
-|------|--------------|-----------------|----------|--------|
+| Date     | Overall Score      | Critical Issues           | Warnings          | Status             |
+| -------- | ------------------ | ------------------------- | ----------------- | ------------------ |
 | {{date}} | {{overall_score}}% | {{critical_issues_count}} | {{warning_count}} | {{overall_status}} |
 
 _Previous validations will appear here on re-runs_
