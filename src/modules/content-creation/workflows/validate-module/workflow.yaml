@@ -1,0 +1,50 @@
+# Validate Module Workflow Configuration
+name: "validate-module"
+version: "1.0.0"
+description: "Automated validation of all module components (17 agents, 8 workflows, 43 tasks) with integration testing and comprehensive reporting"
+author: "Dave Dittrich"
+
+# Critical variables from config
+config_source: "{project-root}/src/modules/content-creation/config.yaml"
+output_folder: "{config_source}:output_folder"
+user_name: "{config_source}:user_name"
+communication_language: "{config_source}:communication_language"
+document_output_language: "{config_source}:document_output_language"
+date: system-generated
+
+# Module path and component files
+installed_path: "{project-root}/src/modules/content-creation/workflows/validate-module"
+template: "{installed_path}/template.md"
+instructions: "{installed_path}/instructions.md"
+validation: "{installed_path}/checklist.md"
+
+# Target module configuration
+target_module_name: "content-creation"
+target_module_path: "{project-root}/src/modules/content-creation"
+
+# Component counts for validation tracking
+expected_agents: 17
+expected_workflows: 8
+expected_tasks: 43
+expected_total_components: 68
+
+# Framework references
+carter_framework_tasks: "analyze-integrity,guide-integrity-writing,check-integrity"
+damer_framework_tasks: "analyze-fallacies,guide-argument-construction,check-argument-quality"
+
+# Validation thresholds
+minimum_pass_percentage: 80
+critical_issues_threshold: 0
+warning_threshold: 10
+
+# Output configuration
+default_output_file: "{output_folder}/validation-report-{target_module_name}-{date}.md"
+detailed_reports_folder: "{output_folder}/validation-reports/{target_module_name}-{date}"
+
+# Validation modes
+validation_mode: "comprehensive"  # comprehensive | quick | components-only | integration-only
+
+standalone: true
+
+# Web bundle configuration
+web_bundle: false  # Module validation runs locally
