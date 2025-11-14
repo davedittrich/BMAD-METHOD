@@ -64,6 +64,22 @@ AI-powered creative thinking and brainstorming.
 
 ---
 
+## 📚 Deep-Dive Documentation
+
+Comprehensive exhaustive analysis of specific modules:
+
+- [Content Creation Module Deep-Dive](./deep-dive-content-creation-module.md) - Complete analysis of content-creation module (135 files, 17 agents, 8 workflows, 43 tasks) - Generated 2025-11-13
+
+## 🧪 Testing & Validation
+
+Module testing, validation, and quality assurance documentation:
+
+- [Content Creation Testing Guide](./content-creation-testing-guide.md) - Comprehensive testing guide with 3 validation approaches (BMB audit-workflow, BMM Test Architect, validate-module workflow)
+- [validate-module Workflow Summary](./validate-module-workflow-summary.md) - Quick reference for automated module validation workflow
+- [validate-module Verification Report](./validate-module-verification.md) - Production readiness verification and self-validation results
+
+---
+
 ## 🖥️ IDE-Specific Guides
 
 Instructions for loading agents and running workflows in your development environment.

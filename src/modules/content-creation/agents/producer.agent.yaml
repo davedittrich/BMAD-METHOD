@@ -43,3 +43,6 @@ agent:
     - trigger: promote-content
       workflow: bmad/content-creation/workflows/promote-content
       description: Create multi-platform promotional campaign for published content.
+    - trigger: validate-module
+      workflow: bmad/content-creation/workflows/validate-module
+      description: Validate all module components (17 agents, 8 workflows, 43 tasks) with comprehensive reporting.
