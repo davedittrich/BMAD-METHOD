@@ -7,26 +7,26 @@
 ## Instructions
 
 1.  **Project Network Discovery**
-    -   Identify a target project and its linked projects for analysis.
-    -   (Future - Phase 3) Analyze a project relationship graph from `.bmad/config/project-graph.json`.
+    - Identify a target project and its linked projects for analysis.
+    - (Future - Phase 3) Analyze a project relationship graph from `.bmad/config/project-graph.json`.
 
 2.  **Cross-Project Pattern Recognition**
-    -   Aggregate analysis content from the `analyses/` directories of related projects.
-    -   Identify recurring themes and research patterns.
+    - Aggregate analysis content from the `analyses/` directories of related projects.
+    - Identify recurring themes and research patterns.
 
 3.  **Insight Aggregation and Synthesis**
-    -   Combine analysis results from multiple projects with proper source attribution.
-    -   Create meta-analysis summaries.
+    - Combine analysis results from multiple projects with proper source attribution.
+    - Create meta-analysis summaries.
 
 4.  **Cross-Project Visualization and Reporting**
-    -   (Future - Phase 3) Generate relationship graphs showing project connections.
-    -   Create insight aggregation reports.
+    - (Future - Phase 3) Generate relationship graphs showing project connections.
+    - Create insight aggregation reports.
 
 ## Elicitation Requirements
 
 elicit: true
 format: |
-    Please specify:
+Please specify:
 
     **Project Analysis Scope:**
 
@@ -41,18 +41,18 @@ format: |
 
 **Cross-Project Pattern Analysis:**
 
--   Identified themes, methodologies, and research patterns across related projects.
+- Identified themes, methodologies, and research patterns across related projects.
 
 **Insight Aggregation Results:**
 
--   Meta-analysis summaries combining findings from multiple related projects.
+- Meta-analysis summaries combining findings from multiple related projects.
 
 **Future (Phase 3) Output Requirements:**
 
--   Relationship strength assessment.
--   Trend analysis and evolution tracking.
--   Relationship visualization graphs.
+- Relationship strength assessment.
+- Trend analysis and evolution tracking.
+- Relationship visualization graphs.
 
 **Error Handling:**
 
--   Clear messages for projects with no links or analysis files.
+- Clear messages for projects with no links or analysis files.

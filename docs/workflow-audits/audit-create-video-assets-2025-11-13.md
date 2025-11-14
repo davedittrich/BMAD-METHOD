@@ -33,7 +33,6 @@ _Note: Full variable analysis requires manual audit-workflow execution in IDE_
 
 **Custom Variables Defined:**
 
-
 ---
 
 ## Manual Audit Steps Required

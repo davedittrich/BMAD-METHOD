@@ -11,6 +11,7 @@
 This guide provides comprehensive information on automating the validation and testing of the Content Creation module's 135 components (17 agents, 8 workflows, 43 tasks). It covers available BMAD v6 testing capabilities, recommended strategies, and automation approaches.
 
 **Related Documentation:**
+
 - [Deep-Dive Analysis](./deep-dive-content-creation-module.md) - Complete module architecture
 - [Task Tracking](../src/modules/content-creation/TASKS-2025-11-13.md) - Validation checklist
 
@@ -33,11 +34,11 @@ This guide provides comprehensive information on automating the validation and t
 
 BMAD v6 Alpha 9 provides **three complementary approaches** to automate module validation:
 
-| Approach | Purpose | Coverage | Automation Level |
-|----------|---------|----------|------------------|
-| **BMB audit-workflow** | Workflow configuration validation | 8 workflows | ✅ Fully Automated |
-| **BMM TEA workflows** | Test strategy & integration testing | Full pipelines | ⚡ Semi-Automated |
-| **Custom validate-module** | Complete module validation | All 135 components | 🔨 Build Required |
+| Approach                   | Purpose                             | Coverage           | Automation Level   |
+| -------------------------- | ----------------------------------- | ------------------ | ------------------ |
+| **BMB audit-workflow**     | Workflow configuration validation   | 8 workflows        | ✅ Fully Automated |
+| **BMM TEA workflows**      | Test strategy & integration testing | Full pipelines     | ⚡ Semi-Automated  |
+| **Custom validate-module** | Complete module validation          | All 135 components | 🔨 Build Required  |
 
 ---
 
@@ -52,29 +53,34 @@ Validate individual workflow quality and BMAD v6 configuration standards complia
 ### What It Tests
 
 ✅ **Workflow.yaml Structure**
+
 - Standard config block validation
 - Required variables (config_source, output_folder, user_name, etc.)
 - Module path configuration
 - Web bundle configuration
 
 ✅ **Variable Usage Alignment**
+
 - Cross-reference yaml variables with instructions.md
 - Cross-reference yaml variables with template.md
 - Identify unused variable bloat
 - Detect hardcoded values that should be variables
 
 ✅ **Config Variable Usage Audit**
+
 - Communication language integration
 - User name personalization
 - Output folder consistency
 - Date handling
 
 ✅ **Web Bundle Configuration**
+
 - Completeness check for web-compatible bundles
 - Required fields validation
 - Dependencies verification
 
 ✅ **BMAD v6 Compliance**
+
 - Adherence to v6 standards
 - Best practices validation
 - Convention compliance
@@ -101,6 +107,7 @@ See [Automation Scripts](#automation-scripts) section for the bash script that a
 ### Output
 
 Generates audit report with:
+
 - **Issues by Severity:** CRITICAL, BLOAT, WARNING, INFO
 - **Variable Analysis:** Used, unused, misaligned
 - **Compliance Score:** Percentage BMAD v6 compliant
@@ -109,12 +116,14 @@ Generates audit report with:
 ### Coverage
 
 **Handles from TASKS-2025-11-13.md:**
+
 - ✅ Workflow Validation (8 workflows)
 - ✅ Configuration validation
 - ✅ Variable usage validation
 - ✅ BMAD v6 compliance
 
 **Does NOT handle:**
+
 - ❌ Agent validation
 - ❌ Task validation
 - ❌ End-to-end workflow execution testing
@@ -139,6 +148,7 @@ Design and execute comprehensive test strategies for module functionality, integ
 **Purpose:** Set up test infrastructure for the module
 
 **Steps:**
+
 ```bash
 @tea
 *framework
@@ -151,6 +161,7 @@ Design and execute comprehensive test strategies for module functionality, integ
 ```
 
 **Output:** Test framework design document specifying:
+
 - Test infrastructure approach
 - Validation strategy
 - Tool recommendations
@@ -163,6 +174,7 @@ Design and execute comprehensive test strategies for module functionality, integ
 **Purpose:** Design comprehensive test plan for specific features
 
 **Steps:**
+
 ```bash
 @tea
 *test-design
@@ -176,6 +188,7 @@ Design and execute comprehensive test strategies for module functionality, integ
 ```
 
 **Output:** `test-design-epic-N.md` for each epic with:
+
 - Test scenarios
 - Validation criteria
 - Test data requirements
@@ -188,6 +201,7 @@ Design and execute comprehensive test strategies for module functionality, integ
 **Purpose:** Generate automated test scripts
 
 **Steps:**
+
 ```bash
 @tea
 *automate
@@ -208,6 +222,7 @@ Design and execute comprehensive test strategies for module functionality, integ
 **Purpose:** Audit test quality and coverage
 
 **Steps:**
+
 ```bash
 @tea
 *test-review
@@ -228,6 +243,7 @@ Design and execute comprehensive test strategies for module functionality, integ
 **Purpose:** Trace requirements/features to tests (coverage matrix)
 
 **Steps:**
+
 ```bash
 @tea
 *trace
@@ -247,6 +263,7 @@ Design and execute comprehensive test strategies for module functionality, integ
 **Purpose:** Write acceptance tests before implementation
 
 **Steps:**
+
 ```bash
 @tea
 *atdd
@@ -266,6 +283,7 @@ Design and execute comprehensive test strategies for module functionality, integ
 **Purpose:** Set up continuous integration for testing
 
 **Steps:**
+
 ```bash
 @tea
 *ci
@@ -285,6 +303,7 @@ Design and execute comprehensive test strategies for module functionality, integ
 **Purpose:** Assess non-functional requirements
 
 **Steps:**
+
 ```bash
 @tea
 *nfr-assess
@@ -331,6 +350,7 @@ graph TB
 ### Coverage
 
 **Handles from TASKS-2025-11-13.md:**
+
 - ✅ Integration Testing section
 - ✅ Full Pipeline Tests
 - ✅ Cross-Workflow Integration
@@ -340,6 +360,7 @@ graph TB
 - ✅ Quality gates
 
 **Does NOT handle:**
+
 - ❌ Individual agent validation (manual)
 - ❌ Task input/output specs (manual)
 - ❌ Configuration validation (use audit-workflow)
@@ -368,26 +389,26 @@ The validate-module workflow orchestrates comprehensive validation of all 135 mo
 
 ```yaml
 # validate-module/workflow.yaml
-name: "validate-module"
-description: "Automated validation of all module components (agents, workflows, tasks)"
-author: "Dave Dittrich"
+name: 'validate-module'
+description: 'Automated validation of all module components (agents, workflows, tasks)'
+author: 'Dave Dittrich'
 
-config_source: "{project-root}/src/modules/content-creation/config.yaml"
-output_folder: "{config_source}:output_folder"
-user_name: "{config_source}:user_name"
-communication_language: "{config_source}:communication_language"
+config_source: '{project-root}/src/modules/content-creation/config.yaml'
+output_folder: '{config_source}:output_folder'
+user_name: '{config_source}:user_name'
+communication_language: '{config_source}:communication_language'
 date: system-generated
 
-installed_path: "{project-root}/src/modules/content-creation/workflows/validate-module"
-instructions: "{installed_path}/instructions.md"
-validation: "{installed_path}/checklist.md"
+installed_path: '{project-root}/src/modules/content-creation/workflows/validate-module'
+instructions: '{installed_path}/instructions.md'
+validation: '{installed_path}/checklist.md'
 template: false
 
 # Module to validate
-target_module_path: "{project-root}/src/modules/content-creation"
+target_module_path: '{project-root}/src/modules/content-creation'
 
 # Output
-default_output_file: "{output_folder}/validation-report-{date}.md"
+default_output_file: '{output_folder}/validation-report-{date}.md'
 
 standalone: true
 ```
@@ -415,7 +436,7 @@ standalone: true
     <action>Check menu command rendering</action>
   </substep>
 
-  <template-output>agent_validation_results</template-output>
+<template-output>agent_validation_results</template-output>
 </step>
 
 <step n="2" goal="Workflow Validation Loop">
@@ -435,7 +456,7 @@ standalone: true
     <action>Check agent invocations work</action>
   </substep>
 
-  <template-output>workflow_validation_results</template-output>
+<template-output>workflow_validation_results</template-output>
 </step>
 
 <step n="3" goal="Task Validation Loop">
@@ -455,7 +476,7 @@ standalone: true
     <action>Check framework integration</action>
   </substep>
 
-  <template-output>task_validation_results</template-output>
+<template-output>task_validation_results</template-output>
 </step>
 
 <step n="4" goal="Integration Testing">
@@ -479,7 +500,7 @@ standalone: true
     <action>Verify: Carter + Damer simultaneous validation</action>
   </substep>
 
-  <template-output>integration_test_results</template-output>
+<template-output>integration_test_results</template-output>
 </step>
 
 <step n="5" goal="Generate Validation Report">
@@ -488,7 +509,7 @@ standalone: true
   <action>Identify critical issues</action>
   <action>Generate recommendations</action>
 
-  <template-output>final_validation_report</template-output>
+<template-output>final_validation_report</template-output>
 </step>
 ```
 
@@ -497,6 +518,7 @@ standalone: true
 **Workflow Path:** `src/modules/content-creation/workflows/validate-module/`
 
 **Files:**
+
 - `workflow.yaml` - Configuration with validation thresholds and settings
 - `instructions.md` - Comprehensive 7-step validation process
 - `template.md` - Detailed validation report template
@@ -529,6 +551,7 @@ standalone: true
 ### Coverage
 
 **Handles from TASKS-2025-11-13.md:**
+
 - ✅ Agent Validation (17 agents)
 - ✅ Workflow Validation (8 workflows)
 - ✅ Task Validation (43 tasks)
@@ -654,18 +677,21 @@ done
 ### What IS Automated in v6 Alpha 9
 
 ✅ **Workflow Configuration Validation** (audit-workflow)
+
 - YAML structure checking
 - Variable alignment
 - Config standards compliance
 - Web bundle validation
 
 ✅ **Test Strategy Design** (TEA workflows)
+
 - Test framework setup
 - Test plan creation
 - Test automation generation
 - Coverage tracking
 
 ✅ **Reporting & Tracking** (TEA workflows)
+
 - Coverage matrices
 - Quality assessments
 - Traceability reports
@@ -673,37 +699,44 @@ done
 ### What is NOT Automated Yet
 
 ❌ **Agent Menu Command Execution**
+
 - Requires manual loading in IDE
 - Menu command testing requires interaction
 - Cannot programmatically test agent responses
 
 ❌ **Workflow End-to-End Execution**
+
 - Requires manual workflow runs
 - Cannot programmatically execute workflows with test data
 - Agent invocations require IDE context
 
 ❌ **Task Input/Output Validation**
+
 - Requires manual task execution
 - No programmatic task invocation API
 - Framework integration testing is manual
 
 ❌ **Framework Integration Verification**
+
 - Carter/Damer framework application requires manual analysis
 - Cannot programmatically verify integrity/argument checks
 
 ### Workarounds
 
 **For Agent Testing:**
+
 - Use automation script to generate test checklist
 - Manual execution with documented test cases
 - IDE automation (if available) for menu command testing
 
 **For Workflow Testing:**
+
 - Use audit-workflow for configuration validation (automated)
 - Manual end-to-end runs with documented test scenarios
 - TEA test-design to create systematic test plans
 
 **For Task Testing:**
+
 - Categorize by framework (Integrity, Arguments, Style, etc.)
 - Manual execution with test inputs
 - Document results systematically
@@ -760,20 +793,24 @@ chmod +x validate-all-workflows.sh
 ### This Month
 
 **Week 1: Component Validation**
+
 - Run audit-workflow automation (Day 1)
 - Manual agent testing (Days 2-3)
 - Manual task testing (Days 4-5)
 
 **Week 2: Test Strategy**
+
 - TEA framework setup (Day 1)
 - TEA test-design (Days 2-4)
 - TEA automate (Day 5)
 
 **Week 3: Integration Testing**
+
 - Pipeline testing (Days 1-3)
 - Framework integration (Days 4-5)
 
 **Week 4: Quality Gate**
+
 - TEA test-review (Days 1-2)
 - TEA trace final coverage (Day 3)
 - TEA nfr-assess (Day 4)
@@ -790,12 +827,14 @@ chmod +x validate-all-workflows.sh
 See the actual script created in the next section.
 
 **Usage:**
+
 ```bash
 chmod +x validate-all-workflows.sh
 ./validate-all-workflows.sh
 ```
 
 **Output:**
+
 - Individual audit reports per workflow
 - Summary report with all issues
 - Completion status
@@ -951,12 +990,14 @@ echo "Run these pipelines manually and document results."
 ## Resources
 
 ### Documentation
+
 - [Deep-Dive Analysis](./deep-dive-content-creation-module.md)
 - [Task Tracking](../src/modules/content-creation/TASKS-2025-11-13.md)
 - [Module README](../src/modules/content-creation/README.md)
 - [Test Architecture Guide](../src/modules/bmm/docs/test-architecture.md)
 
 ### Workflows
+
 - BMB: `audit-workflow` - `.bmad/bmb/workflows/audit-workflow/`
 - TEA: `*framework` - `.bmad/bmm/workflows/testarch/framework/`
 - TEA: `*test-design` - `.bmad/bmm/workflows/testarch/test-design/`
@@ -964,6 +1005,7 @@ echo "Run these pipelines manually and document results."
 - TEA: `*trace` - `.bmad/bmm/workflows/testarch/trace/`
 
 ### Agents
+
 - `@bmb` - BMad Builder (for audit-workflow)
 - `@tea` - Test Architect (for TEA workflows)
 - `@producer` - Content Producer (entry point for content-creation)

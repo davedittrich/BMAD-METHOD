@@ -7,30 +7,30 @@
 ## Instructions
 
 1.  **Project Selection and Validation**
-    -   Identify a source and target project for the relationship.
-    -   Validate that both projects exist.
-    -   Check for existing relationships to prevent duplicates.
+    - Identify a source and target project for the relationship.
+    - Validate that both projects exist.
+    - Check for existing relationships to prevent duplicates.
 
 2.  **Relationship Type Classification**
-    -   **Dependency**: Source project depends on the target project.
-    -   **Reference**: Source project references materials from the target.
-    -   **Collaboration**: Active collaboration between projects.
-    -   **Successor**: Source project is a follow-up to the target.
+    - **Dependency**: Source project depends on the target project.
+    - **Reference**: Source project references materials from the target.
+    - **Collaboration**: Active collaboration between projects.
+    - **Successor**: Source project is a follow-up to the target.
 
 3.  **Bidirectional Relationship Creation**
-    -   Create relationship metadata in the source project's config: `.bmad/projects/{source-name}/config/relationships.json`.
-    -   Create a reciprocal relationship in the target project's config: `.bmad/projects/{target-name}/config/relationships.json`.
-    -   Assign a unique relationship identifier.
+    - Create relationship metadata in the source project's config: `.bmad/projects/{source-name}/config/relationships.json`.
+    - Create a reciprocal relationship in the target project's config: `.bmad/projects/{target-name}/config/relationships.json`.
+    - Assign a unique relationship identifier.
 
 4.  **Validation and Confirmation**
-    -   Verify that the relationship metadata was written to both projects.
-    -   Display a summary of the created relationship.
+    - Verify that the relationship metadata was written to both projects.
+    - Display a summary of the created relationship.
 
 ## Elicitation Requirements
 
 elicit: true
 format: |
-    Please specify:
+Please specify:
 
     **Project Context (Optional):**
 
@@ -46,16 +46,16 @@ format: |
 
 **Relationship Creation Confirmation:**
 
--   Successful bidirectional relationship established between source and target projects.
--   Relationship metadata stored in both project configurations.
+- Successful bidirectional relationship established between source and target projects.
+- Relationship metadata stored in both project configurations.
 
 **Future (Phase 3) Output Requirements:**
 
--   Updates to a global project dependency graph.
--   Circular dependency analysis.
--   Updates to a global cross-reference registry.
+- Updates to a global project dependency graph.
+- Circular dependency analysis.
+- Updates to a global cross-reference registry.
 
 **Error Handling:**
 
--   Clear messages for invalid or non-existent project names.
--   Guidance for resolving relationship conflicts.
+- Clear messages for invalid or non-existent project names.
+- Guidance for resolving relationship conflicts.

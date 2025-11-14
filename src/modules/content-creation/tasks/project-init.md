@@ -34,7 +34,7 @@ Initialize a new research project with standardized directory structure and meta
 
 elicit: true
 format: |
-    Please specify:
+Please specify:
 
     **Project Details:**
 
@@ -49,8 +49,8 @@ format: |
 
 ## Output Requirements
 
--   Create standardized project directory structure
--   Generate project metadata JSON file with complete attribute set
--   Validate cross-platform compatibility and no conflicts
--   Display confirmation of successful project initialization
--   CRITICAL: All operations use file-system approach with no external dependencies
+- Create standardized project directory structure
+- Generate project metadata JSON file with complete attribute set
+- Validate cross-platform compatibility and no conflicts
+- Display confirmation of successful project initialization
+- CRITICAL: All operations use file-system approach with no external dependencies

@@ -155,33 +155,33 @@ Conduct systematic historical research to provide context, background, and timel
 
 elicit: true
 format: |
-  Please provide:
+Please provide:
 
-  **Research Focus:**
+**Research Focus:**
 
-  - What current topic or question needs historical context?
-  - What specific historical aspects are most relevant?
-  - What time period should be covered (specific dates if known)?
-  - What geographical area or cultural context?
+- What current topic or question needs historical context?
+- What specific historical aspects are most relevant?
+- What time period should be covered (specific dates if known)?
+- What geographical area or cultural context?
 
-  **Research Priorities:**
+**Research Priorities:**
 
-  - Are there specific events, figures, or developments to prioritize?
-  - What historical questions are most important to answer?
-  - Any particular aspects that must be included?
+- Are there specific events, figures, or developments to prioritize?
+- What historical questions are most important to answer?
+- Any particular aspects that must be included?
 
-  **Research Depth and Scope:**
+**Research Depth and Scope:**
 
-  - How detailed should the historical research be (overview vs. deep dive)?
-  - What sources or archives should be consulted?
-  - What level of academic rigor is required?
-  - Any time or resource constraints on research?
+- How detailed should the historical research be (overview vs. deep dive)?
+- What sources or archives should be consulted?
+- What level of academic rigor is required?
+- Any time or resource constraints on research?
 
-  **Application Purpose:**
+**Application Purpose:**
 
-  - How will this historical research be used in your content?
-  - What connections to current events should be highlighted?
-  - Who is the intended audience for this historical context?
+- How will this historical research be used in your content?
+- What connections to current events should be highlighted?
+- Who is the intended audience for this historical context?
 
 ## Output Requirements
 

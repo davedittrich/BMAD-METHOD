@@ -44,7 +44,7 @@ Download and save YouTube video transcripts to local files for efficient context
 
 elicit: true
 format: |
-    Please specify:
+Please specify:
 
     **Project Context (Optional):**
 
@@ -71,16 +71,16 @@ format: |
 
 ## Metadata
 
--   **URL:** [YouTube URL]
--   **Video ID:** [extracted ID]
--   **Title:** [full video title]
--   **Duration:** [length]
--   **Published:** [date]
--   **Channel:** [channel name]
--   **Content Type:** [debate/educational/documentary/entertainment]
--   **Participants:** [names if detectable]
--   **Transcript Source:** [auto-generated/manual/captions]
--   **Downloaded:** [current date]
+- **URL:** [YouTube URL]
+- **Video ID:** [extracted ID]
+- **Title:** [full video title]
+- **Duration:** [length]
+- **Published:** [date]
+- **Channel:** [channel name]
+- **Content Type:** [debate/educational/documentary/entertainment]
+- **Participants:** [names if detectable]
+- **Transcript Source:** [auto-generated/manual/captions]
+- **Downloaded:** [current date]
 
 ## Transcript
 
@@ -93,15 +93,15 @@ _Saved using BMAD save-transcript task_
 
 **Agent Response:**
 
--   File path where transcript was saved
--   Basic metadata (title, duration, content type)
--   Participant names if identified
--   Content type classification for routing recommendations
--   Brief quality assessment of transcript (clarity, timing accuracy)
+- File path where transcript was saved
+- Basic metadata (title, duration, content type)
+- Participant names if identified
+- Content type classification for routing recommendations
+- Brief quality assessment of transcript (clarity, timing accuracy)
 
 **Context Efficiency Notes:**
 
--   Full transcript content stays in local file
--   Agents can read specific sections as needed
--   Eliminates context window consumption for transcript content
--   Enables reuse across multiple workflows and analysis sessions
+- Full transcript content stays in local file
+- Agents can read specific sections as needed
+- Eliminates context window consumption for transcript content
+- Enables reuse across multiple workflows and analysis sessions

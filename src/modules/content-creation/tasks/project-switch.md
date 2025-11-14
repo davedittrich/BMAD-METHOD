@@ -37,7 +37,7 @@ Switch between project contexts to maintain focus on specific research investiga
 
 elicit: true
 format: |
-    Please specify:
+Please specify:
 
     **Context Operation:**
 
@@ -61,46 +61,46 @@ format: |
 
 **Context Activation Success:**
 
--   Confirmation of project context activation
--   Display active project name, description, and basic metrics
--   Show project directory locations (references, analyses, drafts)
--   Provide guidance on how project context affects project-aware tasks
+- Confirmation of project context activation
+- Display active project name, description, and basic metrics
+- Show project directory locations (references, analyses, drafts)
+- Provide guidance on how project context affects project-aware tasks
 
 **Context Status Display:**
 
--   Current active project (or "No active project" if global mode)
--   Context activation timestamp and session information
--   Project progress summary and recent activity
--   Next suggested research actions based on project state
+- Current active project (or "No active project" if global mode)
+- Context activation timestamp and session information
+- Project progress summary and recent activity
+- Next suggested research actions based on project state
 
 **Context Persistence:**
 
--   Store context state in `.bmad/config/active-project.json` with format:
+- Store context state in `.bmad/config/active-project.json` with format:
 
-    ```json
-    {
-      "active_project": "project-name",
-      "context_set_date": "2025-01-09T14:30:00Z",
-      "session_id": "session-identifier",
-      "last_accessed": "2025-01-09T14:30:00Z",
-      "context_source": "manual"
-    }
-    ```
+  ```json
+  {
+    "active_project": "project-name",
+    "context_set_date": "2025-01-09T14:30:00Z",
+    "session_id": "session-identifier",
+    "last_accessed": "2025-01-09T14:30:00Z",
+    "context_source": "manual"
+  }
+  ```
 
 **Integration Guidance:**
 
--   Explain how active context affects tasks like `save-transcript`.
--   Provide examples of project-aware routing behavior.
--   Show how to override context with explicit project parameters if needed.
+- Explain how active context affects tasks like `save-transcript`.
+- Provide examples of project-aware routing behavior.
+- Show how to override context with explicit project parameters if needed.
 
 **Error Handling:**
 
--   Clear messages for invalid project names or missing projects
--   Guidance for resolving context conflicts or corrupted project data
--   Fallback instructions when project context becomes unavailable
+- Clear messages for invalid project names or missing projects
+- Guidance for resolving context conflicts or corrupted project data
+- Fallback instructions when project context becomes unavailable
 
 **Context Efficiency:**
 
--   Context switching operations complete in <2 seconds
--   Minimal impact on subsequent task execution performance
--   Automatic cleanup of invalid or deleted project contexts
+- Context switching operations complete in <2 seconds
+- Minimal impact on subsequent task execution performance
+- Automatic cleanup of invalid or deleted project contexts

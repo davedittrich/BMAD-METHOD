@@ -42,9 +42,9 @@ default_output_file: "{output_folder}/validation-report-{target_module_name}-{da
 detailed_reports_folder: "{output_folder}/validation-reports/{target_module_name}-{date}"
 
 # Validation modes
-validation_mode: "comprehensive"  # comprehensive | quick | components-only | integration-only
+validation_mode: "comprehensive" # comprehensive | quick | components-only | integration-only
 
 standalone: true
 
 # Web bundle configuration
-web_bundle: false  # Module validation runs locally
+web_bundle: false # Module validation runs locally

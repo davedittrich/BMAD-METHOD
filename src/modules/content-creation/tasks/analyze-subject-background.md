@@ -68,27 +68,27 @@ Conduct comprehensive background analysis of individuals or organizations to und
 
 elicit: true
 format: |
-  Please specify:
+Please specify:
 
-  **Background Analysis Subject:**
+**Background Analysis Subject:**
 
-  - Who or what organization needs background analysis?
-  - What specific aspects of their background are most relevant to your content?
-  - What time period should be covered (entire history or recent period)?
+- Who or what organization needs background analysis?
+- What specific aspects of their background are most relevant to your content?
+- What time period should be covered (entire history or recent period)?
 
-  **Analysis Focus:**
+**Analysis Focus:**
 
-  - What specific questions need to be answered about this subject?
-  - Are there particular areas of concern or special interest?
-  - What level of detail is required (overview vs. deep investigation)?
-  - How will this analysis be used in your content?
+- What specific questions need to be answered about this subject?
+- Are there particular areas of concern or special interest?
+- What level of detail is required (overview vs. deep investigation)?
+- How will this analysis be used in your content?
 
-  **Research Parameters:**
+**Research Parameters:**
 
-  - What sources are available for research (public records, publications, interviews)?
-  - Are there any restrictions on investigation methods or sources?
-  - What verification standards should be applied?
-  - What time constraints exist for this research?
+- What sources are available for research (public records, publications, interviews)?
+- Are there any restrictions on investigation methods or sources?
+- What verification standards should be applied?
+- What time constraints exist for this research?
 
 ## Output Requirements
 

@@ -90,17 +90,17 @@ Extract 15 to 30 of the most surprising, insightful, and/or interesting recommen
 
 elicit: true
 format: |
-  Please specify:
+Please specify:
 
-  **Project Context (Optional):**
+**Project Context (Optional):**
 
-  - Should this analysis be associated with a specific research project? (Leave blank for standalone analysis)
-  - If yes, what is the project name? (Must match an existing project from project-list)
+- Should this analysis be associated with a specific research project? (Leave blank for standalone analysis)
+- If yes, what is the project name? (Must match an existing project from project-list)
 
-  **Analysis Subject:**
+**Analysis Subject:**
 
-  - What source is available for the analysis? (file path, transcript location, or document)
-  - Any specific focus areas or themes to emphasize?
+- What source is available for the analysis? (file path, transcript location, or document)
+- Any specific focus areas or themes to emphasize?
 
 ## Output Requirements
 
