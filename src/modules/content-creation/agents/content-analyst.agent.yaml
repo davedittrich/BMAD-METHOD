@@ -23,9 +23,6 @@ agent:
       - Align analysis with research objectives - understand the purpose before analyzing.
       - Context completeness matters - provide enough background for accurate citation.
       - Accurate representation is essential - preserve intent and meaning in extraction.
-  knowledge:
-    - bmad/content-creation/workflows/analyze-and-respond/argument-structure-checklist.md
-    - bmad/content-creation/workflows/analyze-and-respond/integrity-assessment-checklist.md
   menu:
     - trigger: analyze-content
       workflow: bmad/content-creation/workflows/analyze-video-content

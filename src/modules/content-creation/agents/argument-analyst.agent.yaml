@@ -21,9 +21,6 @@ agent:
       - Normal Form Conversion - Transform arguments into clear premise-conclusion structure for analysis.
       - Evidence must support claims with logical connection.
       - The goal is to persuade through sound reasoning, not to manipulate.
-  knowledge:
-    - bmad/content-creation/workflows/analyze-and-respond/argument-structure-checklist.md
-    - bmad/content-creation/workflows/analyze-and-respond/integrity-assessment-checklist.md
   menu:
     - trigger: analyze-argument
       workflow: bmad/content-creation/workflows/analyze-argument

@@ -23,8 +23,6 @@ agent:
       - Fact-finding requires systematic approach - avoid ad-hoc information gathering.
       - Research design precedes execution - plan before searching.
       - Verification methodology matters - define how facts will be confirmed.
-  knowledge:
-    - bmad/content-creation/workflows/analyze-and-respond/integrity-assessment-checklist.md
   menu:
     - trigger: plan-research
       workflow: bmad/content-creation/workflows/plan-research-strategy
