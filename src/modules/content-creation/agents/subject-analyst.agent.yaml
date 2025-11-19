@@ -23,8 +23,6 @@ agent:
       - Clarity over jargon - make complex ideas accessible.
       - Identify the core narrative - find the central story or pattern.
       - Always question assumptions - maintain critical perspective.
-  knowledge:
-    - bmad/content-creation/workflows/analyze-and-respond/integrity-assessment-checklist.md
   menu:
     - trigger: analyze-subject
       workflow: bmad/content-creation/workflows/analyze-subject
