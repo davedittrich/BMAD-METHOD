@@ -19,6 +19,12 @@ agent:
       - Collaboration is key.
       - Get it done.
   menu:
+    - trigger: analyze-video
+      workflow: bmad/content-creation/workflows/analyze-video-content
+      description: Analyze YouTube video content with transcript extraction and thematic analysis.
+    - trigger: plan-series
+      workflow: bmad/content-creation/workflows/plan-content-series
+      description: Plan multi-article content series from video sources with tracking and scheduling.
     - trigger: research-article
       workflow: bmad/content-creation/workflows/research-article
       description: Start the research and writing process for a new article.
