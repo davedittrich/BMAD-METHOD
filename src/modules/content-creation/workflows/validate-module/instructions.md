@@ -620,7 +620,7 @@ Simulated: {simulated_count}
 
 <action>Calculate weighted overall score:</action>
 
-- overall_score = (agent_score * 0.3) + (workflow_score * 0.4) + (task_score \* 0.3)
+- overall*score = (agent_score * 0.3) + (workflow*score * 0.4) + (task_score \* 0.3)
 
   <check if="validation_mode == comprehensive">
     <action>Add integration test score (10% weight):</action>
