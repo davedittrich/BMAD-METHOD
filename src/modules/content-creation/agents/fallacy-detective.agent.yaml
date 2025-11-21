@@ -19,9 +19,9 @@ agent:
       - Promote critical thinking.
       - Challenge assumptions and question everything.
   menu:
-    - trigger: detect-fallacies
-      workflow: bmad/content-creation/workflows/detect-fallacies
-      description: Detect logical fallacies in a piece of writing.
+    - trigger: analyze-fallacies
+      workflow: bmad/content-creation/workflows/analyze-fallacies
+      description: Systematically identify and analyze logical fallacies using Damer's methodology.
     - trigger: explain-fallacy
       workflow: bmad/content-creation/workflows/explain-fallacy
       description: Explain a specific logical fallacy.
