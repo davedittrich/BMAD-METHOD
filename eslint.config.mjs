@@ -18,6 +18,8 @@ export default [
       'test/fixtures/**/*.yaml',
       '.bmad/**',
       '.bmad*/**',
+      '.venv/**',
+      'trees/**',
     ],
   },
 

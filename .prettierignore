@@ -4,3 +4,9 @@ test/fixtures/**
 # BMAD runtime folders (user-specific, not in repo)
 .bmad/
 .bmad*/
+
+# uv virtual environment
+.venv/
+
+# git worktrees
+trees/
